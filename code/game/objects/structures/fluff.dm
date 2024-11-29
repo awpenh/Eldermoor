@@ -136,6 +136,7 @@
 	var/lay = getwlayer(dir)
 	if(lay)
 		layer = lay
+	. = ..()
 
 /obj/structure/fluff/railing/corner
 	icon_state = "railing_corner"
@@ -147,6 +148,7 @@
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/fluff/railing/stonehedge
+	name = "stone railing"
 	icon_state = "stonehedge"
 	blade_dulling = DULLING_BASHCHOP
 	layer = ABOVE_MOB_LAYER
@@ -902,9 +904,9 @@
 							I = new /obj/item/clothing/under/roguetown/chainlegs(user.loc)
 					if(I)
 						I.sellprice = 0
-					playsound(loc,'sound/items/carvgood.ogg', 50, TRUE)
+					playsound(loc,'sound/items/matidol2.ogg', 50, TRUE)
 				else
-					playsound(loc,'sound/items/carvty.ogg', 50, TRUE)
+					playsound(loc,'sound/items/matidol1.ogg', 50, TRUE)
 				playsound(loc,'sound/misc/eat.ogg', rand(30,60), TRUE)
 				qdel(W)
 				return
