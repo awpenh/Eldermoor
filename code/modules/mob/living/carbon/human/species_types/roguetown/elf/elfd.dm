@@ -136,5 +136,9 @@
 /datum/species/elf/dark/random_surname()
 	return " [pick(world.file2list("strings/rt/names/elf/elfsnf.txt"))]"
 
-/datum/species/elf/dark/get_accent_list()
-	return strings("french_replacement.json", "french")
+/datum/species/elf/dark/get_accent_list(mob/living/carbon/human/species/elf/dark/H)
+	switch(H.skin_tone)
+		if(SKIN_COLOR_GLOOMHAVEN) //Gloomhaven
+			return strings("Anglish.json", "Anglish") //Test example of how accents, if's and elses work.
+		else
+			return strings("french_replacement.json", "french")
