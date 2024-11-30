@@ -13,7 +13,7 @@
 	name = "Humen"
 	id = "human"
 	desc = "<b>Humen</b><br>\
-	Humenity, creation in Psydon's image. \
+	Humenity, the ideal image in one of the many Saints. \
 	With their tenacity and overwhelming population, humens tend to outnumber the other species drastically. \
 	Humens come from a vast swathe of cultures and ethnicities all around Psydonia, most of which \
 	have historically been at odds with one another and other species. \
@@ -130,3 +130,8 @@
 
 /datum/species/human/northern/random_surname()
 	return " [pick(world.file2list("strings/rt/names/human/humnorlast.txt"))]"
+            
+/datum/species/human/northern/get_accent_list(mob/living/carbon/human/H)
+	switch(H.skin_tone)
+		if(SKIN_COLOR_ICECAP) //Anglish, just a placeholder for now for demonstration.
+			return strings("Anglish.json", "Anglish")
