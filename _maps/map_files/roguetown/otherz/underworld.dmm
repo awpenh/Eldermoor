@@ -19,7 +19,9 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/underworld)
 "fC" = (
-/obj/structure/bars,
+/obj/structure/bars{
+	max_integrity = 700000
+	},
 /turf/open/floor/rogue/church,
 /area/rogue/underworld)
 "ip" = (
@@ -94,8 +96,14 @@
 /turf/open/floor/rogue/underworld/space,
 /area/rogue/underworld)
 "xG" = (
-/obj/effect/landmark/underworldcoin,
+/obj/effect/landmark/underworld_spawnpoint,
 /turf/open/floor/rogue/church,
+/area/rogue/underworld)
+"xS" = (
+/obj/structure/bars{
+	max_integrity = 700000
+	},
+/turf/open/floor/rogue/churchrough,
 /area/rogue/underworld)
 "yn" = (
 /turf/closed/wall/mineral/rogue/underbrick{
@@ -260,6 +268,10 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/underworld)
+"Tb" = (
+/obj/structure/underworld/barrier,
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/underworld)
 "Td" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	pixel_y = -32
@@ -287,7 +299,8 @@
 /area/rogue/underworld)
 "Vp" = (
 /obj/structure/gate/bars{
-	gid = "death"
+	gid = "death";
+	max_integrity = 5000000
 	},
 /turf/open/floor/rogue/churchrough,
 /area/rogue/underworld)
@@ -15064,7 +15077,7 @@ sO
 sO
 sO
 sO
-sO
+rm
 sO
 sO
 sO
@@ -25199,7 +25212,7 @@ PP
 PP
 PP
 IP
-Lk
+Tb
 Lk
 fC
 Wt
@@ -25979,7 +25992,7 @@ PP
 PP
 PP
 IP
-Lk
+Tb
 Lk
 fC
 Wt
@@ -26110,7 +26123,7 @@ PP
 PP
 PP
 PP
-Bj
+xS
 sz
 Wt
 ol

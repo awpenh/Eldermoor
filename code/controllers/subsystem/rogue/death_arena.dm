@@ -17,20 +17,18 @@ SUBSYSTEM_DEF(death_arena)
 	var/fight_force_end = null
 
 /datum/controller/subsystem/death_arena/fire(resumed = 0)
-	var/list/waiting = list()
-	for(var/atom in waiting_fighters)
-		if(isnull(atom))
-			return
-		waiting |= atom
-	waiting_fighters = waiting
+	listclearnulls(waiting_fighters)
+	listclearnulls(tollless_clients)
 
-	for(var/client/client  as anything in tollless_clients)
-		if(QDELETED(client))
-			tollless_clients -= client
-			continue
+	for(var/client as anything in tollless_clients)
+
 		if(world.time > tollless_clients[client])
-			if(istype(client.mob, /mob/living/carbon/spirit))
-				var/mob/living/carbon/spirit/spirit = client.mob
+			for(var/mob/living/carbon/spirit/spirit in waiting_fighters)
+				if(!spirit?.client)
+					remove_fighter(spirit)
+					continue
+				if(spirit?.client.key != client)
+					continue
 				spirit.give_patron_toll()
 				remove_fighter(spirit)
 				tollless_clients -= client
@@ -48,7 +46,8 @@ SUBSYSTEM_DEF(death_arena)
 
 /datum/controller/subsystem/death_arena/proc/add_fighter(mob/living/fighter)
 	waiting_fighters += fighter
-	tollless_clients[fighter.client] = world.time + 8 MINUTES
+	tollless_clients[fighter.client.key] = world.time + 8 MINUTES
+	RegisterSignal(fighter, COMSIG_PARENT_QDELETING, PROC_REF(remove_fighter), fighter)
 
 /datum/controller/subsystem/death_arena/proc/remove_fighter(mob/living/fighter)
 	waiting_fighters -= fighter
@@ -76,6 +75,9 @@ SUBSYSTEM_DEF(death_arena)
 
 	first_skeleton.forceMove(get_turf(first_spawn))
 	second_skeleton.forceMove(get_turf(second_spawn))
+	var/necramessage = span_boldannounce("DECAPITATE YOUR OPPONENT AND BRING IT TO THE ALTAR ABOVE.")
+	to_chat(first_skeleton,necramessage)
+	to_chat(second_skeleton,necramessage)
 
 	qdel(first)
 	qdel(second)
@@ -97,8 +99,7 @@ SUBSYSTEM_DEF(death_arena)
 		return
 
 	fighters_heads = list()
-	user.returntolobby()
-	tollless_clients -= user.client
+	tollless_clients -= user?.client?.key
 
 	for(var/mob/living/carbon/carbon in fighters)
 		fighters -= carbon
@@ -109,7 +110,9 @@ SUBSYSTEM_DEF(death_arena)
 			O.ckey = carbon.ckey
 			ADD_TRAIT(O, TRAIT_PACIFISM, TRAIT_GENERIC)
 			add_fighter(O)
-		qdel(carbon)
+			qdel(carbon)
+		else
+			carbon.returntolobby()
 	fighters = list()
 
 	fighting = FALSE
@@ -172,6 +175,7 @@ SUBSYSTEM_DEF(death_arena)
 	desc = "It awaits an offering of your triumphs"
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "ravox_altar"
+	max_integrity = 1000000000
 
 /obj/structure/table/wood/fine/altar/after_added_effects(obj/item/item, mob/user)
 	if(!istype(item, /obj/item/bodypart/head))
@@ -187,6 +191,8 @@ SUBSYSTEM_DEF(death_arena)
 	plane = GAME_PLANE_UPPER
 	anchored = TRUE
 	density = TRUE
+	max_integrity = 1000000000
+	resistance_flags = INDESTRUCTIBLE
 
 
 /obj/structure/underworld/necra
@@ -198,6 +204,8 @@ SUBSYSTEM_DEF(death_arena)
 	plane = GAME_PLANE_UPPER
 	anchored = TRUE
 	density = TRUE
+	max_integrity = 1000000000
+	resistance_flags = INDESTRUCTIBLE
 
 /obj/structure/underworld/necra/Initialize()
 	. = ..()
