@@ -59,7 +59,7 @@
 	specstats = list("strength" = 0, "perception" = 0, "intelligence" = 2, "constitution" = 1, "endurance" = 1, "speed" = 0, "fortune" = 0)
 	specstats_f = list("strength" = 0, "perception" = 0, "intelligence" = 2, "constitution" = 1, "endurance" = 1, "speed" = 0, "fortune" = 0)
 	enflamed_icon = "widefire"
-	patreon_req = 0
+	patreon_req = 1
 
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,
@@ -172,3 +172,9 @@
 
 /datum/species/aasimar/get_accent_list()
 	return strings("proper_replacement.json", "proper")
+	
+/* Patron requirement was reactivated; why?
+Here's why! Aasimar (IN MY OPINION) does not fit the tone or setting of this code.
+They are wildly better than any other race and there's no reason to not choose them.
+Hunger doesn't even kill, it just causes issues.
+So what's the point of keeping them enabled when they give you more benefits then negatives? */

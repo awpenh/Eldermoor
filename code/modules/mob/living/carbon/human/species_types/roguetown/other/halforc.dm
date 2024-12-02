@@ -44,6 +44,7 @@
 	specstats = list("strength" = 1, "perception" = -2, "intelligence" = -2, "constitution" = 2, "endurance" = 1, "speed" = 0, "fortune" = 0)
 	specstats_f = list("strength" = 1, "perception" = -2, "intelligence" = -2, "constitution" = 2, "endurance" = 1, "speed" = 0, "fortune" = 0)
 	enflamed_icon = "widefire"
+	patreon_req = 1
 
 /datum/species/halforc/check_roundstart_eligible()
 	return TRUE
@@ -141,3 +142,8 @@
 
 /datum/species/halforc/get_accent_list()
 	return strings("middlespeak.json", "full")
+
+/* Patron requirement was reactivated; why?
+Here's why! Half-Orc (IN MY OPINION) imply some kind of force or non-consensual intercourse.
+Originally in Blackstone this became apparent; and people who played Horcs were typically fraggers.
+I feel like they don't really add much value and more questions to how they were created. */
