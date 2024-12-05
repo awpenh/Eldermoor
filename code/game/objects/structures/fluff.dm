@@ -253,7 +253,7 @@
 
 /obj/structure/bars/alt
 	icon_state = "bars_alt"
-	plane = -3
+	plane = GAME_PLANE
 	layer = WALL_OBJ_LAYER+0.05
 
 /obj/structure/bars/obj_break(damage_flag)
@@ -787,7 +787,7 @@
 					user.changeNext_move(CLICK_CD_MELEE)
 					if(W.max_blade_int)
 						W.remove_bintegrity(5)
-					if(!L.rogfat_add(rand(4,6)))
+					if(!L.adjust_stamina(rand(4,6)))
 						if(ishuman(L))
 							var/mob/living/carbon/human/H = L
 							if(H.tiredness >= 50)
