@@ -145,12 +145,24 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Veteran"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/jailor
+	name = "Jailor"
+	icon_state = "arrow"
+
 /obj/effect/landmark/start/dungeoneer
 	name = "Dungeoneer"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/watchman
-	name = "Garrison Archer"
+	name = "Watchman"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/forestwarden
+	name = "Forest Warden"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/forestguard
+	name = "Forest Guard"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/villager
@@ -330,6 +342,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Smithy Apprentice"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/innkeep_son
+	name = "Innkeepers Son"
+	icon_state = "arrow"
 
 /obj/effect/landmark/start/evilskeleton	// Trying to make EVIL SKELTON actually spawn
 	name = "Skeleton"
@@ -451,9 +466,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/underworld_spawnpoint/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
-	GLOB.underworldcoinspawns += loc
+	GLOB.underworldspiritspawns += loc
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/landmark/underworld_pull_location
+	name = "coin pull teleport zone"
+
+/obj/effect/landmark/underworld_pull_location/Initialize()
+	SHOULD_CALL_PARENT(FALSE)
+	GLOB.underworld_coinpull_locs += loc
+	return INITIALIZE_HINT_QDEL
 
 /obj/effect/landmark/death_arena
 	name = "Death arena spawn 1"

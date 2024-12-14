@@ -138,7 +138,7 @@
 	icon_state = "lootarmor"
 	spawned = list(
 		/obj/item/clothing/mask/rogue/facemask/copper = 15,
-		/datum/anvil_recipe/armor/copper/bracers = 15,
+		/obj/item/clothing/wrists/roguetown/bracers/copper = 15,
 		/obj/item/clothing/head/roguetown/helmet/coppercap = 15,
 		/obj/item/clothing/suit/roguetown/armor/cuirass/copperchest = 15,
 		/obj/item/clothing/under/roguetown/chainlegs/iron = 10,
@@ -380,38 +380,9 @@
 	. = ..()
 	set_quantity(rand(6,9))
 
-/obj/structure/trap/xylix
-	name = ""
-	desc = ""
-	icon_state = ""
-
-/obj/structure/trap/xylix/trap_effect(mob/living/L)
-	to_chat(L, "<span class='danger'><B>With a crack, the hostile constructs come out of hiding, stunning you!</B></span>")
-	L.electrocute_act(10, src, flags = SHOCK_NOGLOVES) // electrocute act does a message.
-	L.Paralyze(20)
-	new /mob/living/simple_animal/hostile/retaliate/gaseousform/xylix(loc)
-	QDEL_IN(src, 30)
-
-
-/obj/structure/trap/xylix_healing
-	name = ""
-	desc = ""
-	icon_state = ""
-
-/obj/structure/trap/xylix_healing/trap_effect(mob/living/L)
-	to_chat(L, "<span class='danger'><B>Flowers sprouts beneath your feet!</B></span>")
-	L.Paralyze(100)
-	L.adjustBruteLoss(-10)
-	switch(pick(1,2))
-		if (1)
-			new /obj/structure/flora/ausbushes/lavendergrass (drop_location())
-		if (2)
-			new /obj/structure/flora/ausbushes/brflowers (drop_location())
-
-	QDEL_IN(src, 200)
-
 /obj/structure/bars/passage/shutter/xy_a
 	redstone_id = "xhutterA"
+
 /obj/structure/bars/passage/shutter/open/xy_a
 	redstone_id = "xhutterA"
 
@@ -439,20 +410,6 @@
 		if (2)
 			redstone_id = "xhutterB"
 	return ..()
-
-/obj/effect/spawner/roguemap/xylixlabyrinth_frowny
-	icon = 'icons/mob/actions/roguespells.dmi'
-	icon_state = "tragedy"
-	alpha = 150
-	probby = 30
-	spawned = list(	/obj/structure/trap/xylix_healing = 10, /obj/structure/trap/xylix = 10)
-
-/obj/effect/spawner/roguemap/xylixlabyrinth_smiley
-	icon = 'icons/mob/actions/roguespells.dmi'
-	icon_state = "comedy"
-	alpha = 150
-	probby = 30
-	spawned = list(	/obj/structure/trap/xylix_healing = 10, /obj/structure/trap/xylix = 10)
 
 /obj/structure/fluff/walldeco/xylfrown
 	icon = 'modular/Mapping/icons/decoration.dmi'
@@ -523,6 +480,7 @@
 /obj/structure/spider/cocoon
 	name = "cocoon"
 	desc = ""
+	icon = 'icons/effects/effects.dmi'
 	icon_state = "cocoon1"
 	max_integrity = 40
 
@@ -898,9 +856,17 @@
 	aportalid = "banditin"
 	aportalgoesto = "banditexit"
 
+/obj/structure/fluff/traveltile/bandit
+	aportalid = "banditexit"
+	aportalgoesto = "banditin"
+
 /obj/structure/fluff/traveltile/exit_vampire	// mus NOT be a traveltile/vampire child, because that one has a check for banditcamp trait. People should always be able to leave the camp.
 	aportalid = "vampin"
 	aportalgoesto = "vampexit"
+
+/obj/structure/fluff/traveltile/vampire
+	aportalid = "vampexit"
+	aportalgoesto = "vampin"
 
 /obj/structure/fluff/traveltile/exit_inhumen
 	aportalid = "inhumenin"

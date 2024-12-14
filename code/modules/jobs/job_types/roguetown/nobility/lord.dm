@@ -27,13 +27,13 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	give_bank_account = 500
 	selection_color = "#7851A9"
 
-	cmode_music = 'sound/music/combat_noble.ogg'
+	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
 
 /datum/job/roguetown/lord/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(L)
 		SSticker.select_ruler()
-		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is King of Rockhill.</span></span></b>")
+		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is King of Vanderlin.</span></span></b>")
 		to_chat(world, "<br>")
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 	SSfamilytree.AddRoyal(L, FAMILY_FATHER)

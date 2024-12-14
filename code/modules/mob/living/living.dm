@@ -24,7 +24,6 @@
 		buckled.unbuckle_mob(src,force=1)
 
 	GLOB.mob_living_list -= src
-	QDEL_LIST(diseases)
 	for(var/s in ownedSoullinks)
 		var/datum/soullink/S = s
 		S.ownerDies(FALSE)
@@ -1684,6 +1683,7 @@
 	var/looktime = 50 - (STAPER * 2)
 	if(do_after(src, looktime, target = src))
 		// var/huhsneak
+		SEND_GLOBAL_SIGNAL(COMSIG_MOB_ACTIVE_PERCEPTION,src)
 		for(var/mob/living/M in view(7,src))
 			if(M == src)
 				continue
