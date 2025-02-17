@@ -104,6 +104,27 @@
 		message_admins("[header]:<br>[text]")
 		admin_ticket_log(target_ckey, "<font color='blue'>[header]</font>")
 		admin_ticket_log(target_ckey, text)
+
+		var/datum/client_interface/mock_player = new(target_ckey)
+		mock_player.prefs = new /datum/preferences(mock_player)
+
+		var/list/plexora_note = list(
+			"ckey" = target_ckey,
+			"type" = type,
+			"text" = text,
+			"secret" = secret,
+			"expiration_time" = expiry || null,
+			"note_severity" = note_severity,
+			"admin_ckey" = admin_ckey,
+			"admin_key_name" = key_name(usr),
+			"round_id" = GLOB.round_id,
+			"round_timer" = ROUND_TIME(),
+			"world_time" = world.time,
+		)
+
+		plexora_note["total_playtime"] = mock_player.get_exp_living()
+		SSplexora.new_note(plexora_note)
+
 		if(browse)
 			browse_messages("[type]")
 		else
@@ -502,7 +523,7 @@
 					alphatext = "filter: alpha(opacity=[alpha]); opacity: [alpha/100];"
 			var/list/data = list("<div style='margin:0px;[alphatext]'><p class='severity'>")
 			if(severity)
-				data += "<img src='[severity]_button.png' height='24' width='24'></img> "
+				data += "<img src='[SSassets.transport.get_asset_url("[severity]_button.png")]' height='24' width='24'></img> "
 			data += "<b>[timestamp] | [server] | [admin_key][secret ? " | <i>- Secret</i>" : ""]"
 			if(expire_timestamp)
 				data += " | Expires [expire_timestamp]"

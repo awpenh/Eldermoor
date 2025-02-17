@@ -57,28 +57,6 @@
 	color = "#8228A0"
 	toxpwr = 3
 
-/datum/reagent/toxin/plasma/on_temp_change()
-	if(holder.chem_temp < LIQUID_PLASMA_BP)
-		return
-	if(holder.my_atom)
-		var/atom/A = holder.my_atom
-		A.atmos_spawn_air("plasma=[volume];TEMP=[holder.chem_temp]")
-		holder.del_reagent(type)
-
-/datum/reagent/toxin/plasma/reaction_obj(obj/O, reac_volume)
-	if((!O) || (!reac_volume))
-		return 0
-	var/temp = holder ? holder.chem_temp : T20C
-	if(temp >= LIQUID_PLASMA_BP)
-		O.atmos_spawn_air("plasma=[reac_volume];TEMP=[temp]")
-
-/datum/reagent/toxin/plasma/reaction_turf(turf/open/T, reac_volume)
-	if(!istype(T))
-		return
-	var/temp = holder ? holder.chem_temp : T20C
-	if(temp >= LIQUID_PLASMA_BP)
-		T.atmos_spawn_air("plasma=[reac_volume];TEMP=[temp]")
-
 /datum/reagent/toxin/plasma/reaction_mob(mob/living/M, method=TOUCH, reac_volume)//Splashing people with plasma is stronger than fuel!
 	if(method == TOUCH || method == VAPOR)
 		M.adjust_fire_stacks(reac_volume / 5)
@@ -163,17 +141,6 @@
 	M.adjustOxyLoss(1*REM, 0)
 	..()
 	. = 1
-
-/datum/reagent/toxin/mindbreaker
-	name = "Mindbreaker Toxin"
-	description = "A powerful hallucinogen. Not a thing to be messed with. For some mental patients. it counteracts their symptoms and anchors them to reality."
-	color = "#B31008" // rgb: 139, 166, 233
-	toxpwr = 0
-	taste_description = "sourness"
-
-/datum/reagent/toxin/mindbreaker/on_mob_life(mob/living/carbon/M)
-	M.hallucination += 5
-	return ..()
 
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"

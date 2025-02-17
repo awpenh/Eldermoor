@@ -5,7 +5,6 @@
 	sight = 0
 	see_in_dark = 8
 	hud_possible = list(ANTAG_HUD)
-	pressure_resistance = 10
 
 	var/resize = 1 //Badminnery resize
 	var/lastattacker = null
@@ -28,12 +27,14 @@
 	var/resting = FALSE
 	var/wallpressed = FALSE
 
+	var/pixelshifted = FALSE
+	var/pixelshift_x = 0
+	var/pixelshift_y = 0
+
 	var/lying = 0			//number of degrees. DO NOT USE THIS IN CHECKS. CHECK FOR MOBILITY FLAGS INSTEAD!!
 	var/lying_prev = 0		//last value of lying on update_mobility
 
 	var/confused = 0	//Makes the mob move in random directions.
-
-	var/hallucination = 0 //Directly affects how long a mob will hallucinate for
 
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 	var/timeofdeath = 0
@@ -52,6 +53,7 @@
 
 	var/on_fire = 0 //The "Are we on fire?" var
 	var/fire_stacks = 0 //Tracks how many stacks of fire we have on, max is usually 20
+	var/divine_fire_stacks = 0 //Identical to fire stacks but has less properties like spreading. Should never be negative.
 
 	var/bloodcrawl = 0 //0 No blood crawling, BLOODCRAWL for bloodcrawling, BLOODCRAWL_EAT for crawling+mob devour
 	var/holder = null //The holder for blood crawling
@@ -108,7 +110,7 @@
 
 	var/can_be_held = FALSE	//whether this can be picked up and held.
 
-	var/ventcrawl_layer = PIPING_LAYER_DEFAULT
+	var/ventcrawl_layer = 2
 	var/losebreath = 0
 
 	var/slowed_by_drag = TRUE //Whether the mob is slowed down when dragging another prone mob
@@ -169,3 +171,8 @@
 	var/voice_pitch = 1
 
 	var/domhand = 0
+
+	///our blood drain for meathook, the less bloody the more we get
+	var/blood_drained = 0
+	///are we skinned?
+	var/skinned = FALSE

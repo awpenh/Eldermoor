@@ -73,24 +73,7 @@
 	I.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	flick_overlay(I, GLOB.clients, 6)
 
-/proc/ping_sound_through_walls(turf/T)
-	new /obj/effect/temp_visual/soundping(T)
 
-/obj/effect/temp_visual/soundping
-	plane = FULLSCREEN_PLANE
-	layer = FLASH_LAYER
-	icon = 'icons/effects/ore_visuals.dmi'
-	icon_state = "zz"
-	appearance_flags = 0 //to avoid having TILE_BOUND in the flags, so that the 480x480 icon states let you see it no matter where you are
-	duration = 6
-	pixel_x = -224
-	pixel_y = -218
-
-/*
-/obj/effect/temp_visual/soundping/Initialize()
-	. = ..()
-	animate(src, alpha = 0, time = duration, easing = EASE_IN)
-*/
 /mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel, pressure_affected = TRUE, sound/S, repeat, muffled)
 	if(!client || !can_hear())
 		return FALSE
@@ -133,27 +116,6 @@
 		var/distance = get_dist(T, turf_source)
 
 		S.volume -= (distance * (0.10 * S.volume)) //10% each step
-/*
-		if(pressure_affected)
-			//Atmosphere affects sound
-			var/pressure_factor = 1
-			var/datum/gas_mixture/hearer_env = T.return_air()
-			var/datum/gas_mixture/source_env = turf_source.return_air()
-
-			if(hearer_env && source_env)
-				var/pressure = min(hearer_env.return_pressure(), source_env.return_pressure())
-				if(pressure < ONE_ATMOSPHERE)
-					pressure_factor = max((pressure - SOUND_MINIMUM_PRESSURE)/(ONE_ATMOSPHERE - SOUND_MINIMUM_PRESSURE), 0)
-			else //space
-				pressure_factor = 0
-
-			if(distance <= 1)
-				pressure_factor = max(pressure_factor, 0.15) //touching the source of the sound
-
-			S.volume *= pressure_factor
-			//End Atmosphere affecting sound
-*/
-
 		if(S.volume <= 0)
 			return FALSE //No sound
 

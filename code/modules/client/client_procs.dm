@@ -53,37 +53,38 @@ GLOBAL_LIST_EMPTY(respawncounts)
 			completed_asset_jobs += asset_cache_job
 			return
 
-	var/mtl = CONFIG_GET(number/minute_topic_limit)
-	if (!holder && mtl)
-		var/minute = round(world.time, 600)
-		if (!topiclimiter)
-			topiclimiter = new(LIMITER_SIZE)
-		if (minute != topiclimiter[CURRENT_MINUTE])
-			topiclimiter[CURRENT_MINUTE] = minute
-			topiclimiter[MINUTE_COUNT] = 0
-		topiclimiter[MINUTE_COUNT] += 1
-		if (topiclimiter[MINUTE_COUNT] > mtl)
-			var/msg = "Your previous action was ignored because you've done too many in a minute."
-			if (minute != topiclimiter[ADMINSWARNED_AT]) //only one admin message per-minute. (if they spam the admins can just boot/ban them)
-				topiclimiter[ADMINSWARNED_AT] = minute
-				msg += " Administrators have been informed."
-				log_game("[key_name(src)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
-				message_admins("[ADMIN_LOOKUPFLW(usr)] [ADMIN_KICK(usr)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
-//			to_chat(src, "<span class='danger'>[msg]</span>")
-			return
+	if(!holder && href_list["window_id"] != "statbrowser")
+		var/mtl = CONFIG_GET(number/minute_topic_limit)
+		if (mtl)
+			var/minute = round(world.time, 1 MINUTES)
+			if (!topiclimiter)
+				topiclimiter = new(LIMITER_SIZE)
+			if (minute != topiclimiter[CURRENT_MINUTE])
+				topiclimiter[CURRENT_MINUTE] = minute
+				topiclimiter[MINUTE_COUNT] = 0
+			topiclimiter[MINUTE_COUNT] += 1
+			if (topiclimiter[MINUTE_COUNT] > mtl)
+				var/msg = "Your previous action was ignored because you've done too many in a minute."
+				if (minute != topiclimiter[ADMINSWARNED_AT]) //only one admin message per-minute. (if they spam the admins can just boot/ban them)
+					topiclimiter[ADMINSWARNED_AT] = minute
+					msg += " Administrators have been informed."
+					log_game("[key_name(src)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
+					message_admins("[ADMIN_LOOKUPFLW(usr)] [ADMIN_KICK(usr)] Has hit the per-minute topic limit of [mtl] topic calls in a given game minute")
+				to_chat(src, span_danger("[msg]"))
+				return
 
-	var/stl = CONFIG_GET(number/second_topic_limit)
-	if (!holder && stl)
-		var/second = round(world.time, 10)
-		if (!topiclimiter)
-			topiclimiter = new(LIMITER_SIZE)
-		if (second != topiclimiter[CURRENT_SECOND])
-			topiclimiter[CURRENT_SECOND] = second
-			topiclimiter[SECOND_COUNT] = 0
-		topiclimiter[SECOND_COUNT] += 1
-		if (topiclimiter[SECOND_COUNT] > stl)
-//			to_chat(src, "<span class='danger'>My previous action was ignored because you've done too many in a second</span>")
-			return
+		var/stl = CONFIG_GET(number/second_topic_limit)
+		if (stl)
+			var/second = round(world.time, 1 SECONDS)
+			if (!topiclimiter)
+				topiclimiter = new(LIMITER_SIZE)
+			if (second != topiclimiter[CURRENT_SECOND])
+				topiclimiter[CURRENT_SECOND] = second
+				topiclimiter[SECOND_COUNT] = 0
+			topiclimiter[SECOND_COUNT] += 1
+			if (topiclimiter[SECOND_COUNT] > stl)
+				to_chat(src, span_danger("Your previous action was ignored because you've done too many in a second"))
+				return
 
 	//Logs all hrefs, except chat pings
 	if(!(href_list["_src_"] == "chat" && href_list["proc"] == "ping" && LAZYLEN(href_list) == 2))
@@ -156,12 +157,25 @@ GLOBAL_LIST_EMPTY(respawncounts)
 	var/list/selections = GLOB.character_ckey_list.Copy()
 	if(!selections.len)
 		return
-	var/selection = input(src,"Which Character?") as null|anything in sortList(selections)
+	var/list/selection_w_title = list()
+	var/list/human_mobs = GLOB.human_list.Copy()
+	for(var/real_name in selections)
+		var/ckey =  GLOB.character_ckey_list[real_name]
+		var/mob/living/carbon/human/H
+		for(var/mob/mob in human_mobs)
+			if(mob?.real_name == real_name)
+				H = mob
+				break
+		if(QDELETED(H) || !istype(H))
+			selection_w_title[real_name] = ckey
+		else
+			selection_w_title["[real_name], [H.get_role_title()]"] = ckey
+	var/selection = input(src,"Which Character?") as null|anything in sortList(selection_w_title)
 	if(!selection)
 		return
 	if(commendedsomeone)
 		return
-	var/theykey = selections[selection]
+	var/theykey = selection_w_title[selection]
 	if(theykey == ckey)
 		to_chat(src,"You can't commend yourself.")
 		return
@@ -178,6 +192,11 @@ GLOBAL_LIST_EMPTY(respawncounts)
 		answer_schizohelp(locate(href_list["schizohelp"]))
 		return
 
+	if(href_list["delete_painting"])
+		if(!holder)
+			return
+		SSpaintings.del_player_painting(href_list["id"])
+		SSpaintings.update_paintings()
 	switch(href_list["_src_"])
 		if("holder")
 			hsrc = holder
@@ -203,7 +222,17 @@ GLOBAL_LIST_EMPTY(respawncounts)
 		if(QDELETED(real_src))
 			return
 
+	//fun fact: Topic() acts like a verb and is executed at the end of the tick like other verbs. So we have to queue it if the server is
+	//overloaded
+	if(hsrc && hsrc != holder && DEFAULT_TRY_QUEUE_VERB(VERB_CALLBACK(src, PROC_REF(_Topic), hsrc, href, href_list)))
+		return
+
 	..()	//redirect to hsrc.Topic()
+
+///dumb workaround because byond doesnt seem to recognize the Topic() typepath for /datum/proc/Topic() from the client Topic,
+///so we cant queue it without this
+/client/proc/_Topic(datum/hsrc, href, list/href_list)
+	return hsrc.Topic(href, href_list)
 
 /client/proc/is_content_unlocked()
 	if(!prefs.unlock_content)
@@ -272,13 +301,10 @@ GLOBAL_LIST_EMPTY(respawncounts)
 	///////////
 	//CONNECT//
 	///////////
-#if (PRELOAD_RSC == 0)
-GLOBAL_LIST_EMPTY(external_rsc_urls)
-#endif
 
 /client/New(TopicData)
 	var/tdata = TopicData //save this for later use
-//	chatOutput = new /datum/chatOutput(src)
+	chatOutput = new /datum/chatOutput(src)
 	TopicData = null							//Prevent calls to client.Topic from connect
 
 	if(connection != "seeker" && connection != "web")//Invalid connection type.
@@ -286,6 +312,9 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 	GLOB.clients += src
 	GLOB.directory[ckey] = src
+
+	spawn() // Goonchat does some non-instant checks in start()
+		chatOutput.start()
 
 	GLOB.ahelp_tickets.ClientLogin(src)
 	var/connecting_admin = FALSE //because de-admined admins connecting should be treated like admins.
@@ -367,9 +396,11 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		reconnecting = TRUE
 		player_details = GLOB.player_details[ckey]
 		player_details.byond_version = full_version
+		player_details.byond_build = byond_build
 	else
 		player_details = new(ckey)
 		player_details.byond_version = full_version
+		player_details.byond_build = byond_build
 		GLOB.player_details[ckey] = player_details
 
 
@@ -490,13 +521,6 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 	generate_clickcatcher()
 	apply_clickcatcher()
-
-	if(prefs.lastchangelog != GLOB.changelog_hash) //bolds the changelog button on the interface so we know there are updates.
-		//to_chat(src, "<span class='info'>I have unread updates in the changelog.</span>")
-		if(CONFIG_GET(flag/aggressive_changelog))
-			changelog()
-		else
-			winset(src, "infowindow.changelog", "font-style=bold")
 
 	if(prefs.toggles & TOGGLE_FULLSCREEN)
 		toggle_fullscreeny(TRUE)
@@ -918,6 +942,12 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		ip_intel = res.intel
 
 /client/Click(atom/object, atom/location, control, params)
+	if(click_intercept_time)
+		if(click_intercept_time >= world.time)
+			click_intercept_time = 0 //Reset and return. Next click should work, but not this one.
+			return
+		click_intercept_time = 0 //Just reset. Let's not keep re-checking forever.
+
 	var/ab = FALSE
 	var/list/L = params2list(params)
 
@@ -965,6 +995,11 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 //			to_chat(src, "<span class='danger'>My previous click was ignored because you've done too many in a second</span>")
 			return
 
+	//check if the server is overloaded and if it is then queue up the click for next tick
+	//yes having it call a wrapping proc on the subsystem is fucking stupid glad we agree unfortunately byond insists its reasonable
+	if(!QDELETED(object) && TRY_QUEUE_VERB(VERB_CALLBACK(object, TYPE_PROC_REF(/atom, _Click), location, control, params), VERB_HIGH_PRIORITY_QUEUE_THRESHOLD, SSinput, control))
+		return
+
 	if (prefs.hotkeys)
 		// If hotkey mode is enabled, then clicking the map will automatically
 		// unfocus the text bar. This removes the red color from the text bar
@@ -991,32 +1026,26 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	if(inactivity > duration)
 		return inactivity
 	return FALSE
-
-//send resources to the client. It's here in its own proc so we can move it around easiliy if need be
+/// Send resources to the client.
+/// Sends both game resources and browser assets.
 /client/proc/send_resources()
 #if (PRELOAD_RSC == 0)
 	var/static/next_external_rsc = 0
-	if(GLOB.external_rsc_urls && GLOB.external_rsc_urls.len)
-		next_external_rsc = WRAP(next_external_rsc+1, 1, GLOB.external_rsc_urls.len+1)
-		preload_rsc = GLOB.external_rsc_urls[next_external_rsc]
+	var/list/external_rsc_urls = CONFIG_GET(keyed_list/external_rsc_urls)
+	if(length(external_rsc_urls))
+		next_external_rsc = WRAP(next_external_rsc+1, 1, external_rsc_urls.len+1)
+		preload_rsc = external_rsc_urls[next_external_rsc]
 #endif
-	//get the common files
-	getFiles(
-		'html/search.js',
-		'html/panels.css',
-		'html/browser/common.css',
-		'html/browser/scannernew.css',
-		'html/browser/playeroptions.css',
-		)
-	spawn (10) //removing this spawn causes all clients to not get verbs.
+
+	spawn (10) //removing this spawn causes all clients to not get verbs. (this can't be addtimer because these assets may be needed before the mc inits)
+
+		//load info on what assets the client has
+		src << browse('code/modules/asset_cache/validate_assets.html', "window=asset_cache_browser")
+
 		//Precache the client with all other assets slowly, so as to not block other browse() calls
-		getFilesSlow(src, SSassets.preload, register_asset = FALSE)
-//		#if (PRELOAD_RSC == 0)
-//		for (var/name in GLOB.vox_sounds)
-//			var/file = GLOB.vox_sounds[name]
-//			Export("##action=load_rsc", file)
-//			stoplag()
-//		#endif
+		if (CONFIG_GET(flag/asset_simple_preload))
+			addtimer(CALLBACK(SSassets.transport, TYPE_PROC_REF(/datum/asset_transport, send_assets_slow), src, SSassets.transport.preload), 5 SECONDS)
+
 
 //Hook, override it to run code when dir changes
 //Like for /atoms, but clients are their own snowflake FUCK

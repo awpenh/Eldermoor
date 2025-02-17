@@ -25,7 +25,7 @@
 	var/mob_color //Change the mob's color
 	var/assignedrole
 	var/show_flavour = TRUE
-	var/banType = ROLE_LAVALAND
+	var/banType = ROLE_NECRO_SKELETON
 	var/ghost_usable = TRUE
 
 //ATTACK GHOST IGNORING PARENT RETURN VALUE
@@ -202,12 +202,6 @@
 
 /obj/effect/mob_spawn/human/corpse/damaged
 	brute_damage = 1000
-
-/obj/effect/mob_spawn/human/alive
-	icon = 'icons/obj/machines/sleeper.dmi'
-	icon_state = "sleeper"
-	death = FALSE
-	roundstart = FALSE //you could use these for alive fake humans on roundstart but this is more common scenario
 
 /obj/effect/mob_spawn/human/corpse/delayed
 	ghost_usable = FALSE //These are just not-yet-set corpses.

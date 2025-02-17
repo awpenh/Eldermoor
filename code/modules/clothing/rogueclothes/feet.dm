@@ -41,6 +41,13 @@
 	armor = list("blunt" = 20, "slash" = 20, "stab" = 20,  "piercing" = 15, "fire" = 0, "acid" = 0)
 	sellprice = 10
 
+/obj/item/clothing/shoes/roguetown/nobleboot/thighboots
+	name = "thigh boots"
+	icon_state = "thighboot"
+	icon = 'icons/roguetown/clothing/special/hand.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/hand.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/hand.dmi'
+
 /obj/item/clothing/shoes/roguetown/shortboots
 	name = "shortboots"
 	color = "#d5c2aa"
@@ -60,6 +67,15 @@
 	item_state = "ridingboots"
 	sellprice = 10
 
+/obj/item/clothing/shoes/roguetown/apothboots
+	name = "apothecary boots"
+	desc = "Boots designed for the toil of tincture gathering and mixing."
+	gender = PLURAL
+	icon_state = "apothboots"
+	item_state = "apothboots"
+	armor = list("blunt" = 15, "slash" = 15, "stab" = 15,  "piercing" = 5, "fire" = 0, "acid" = 0)
+	sellprice = 10
+
 ///obj/item/clothing/shoes/roguetown/ridingboots/Initialize()
 //	. = ..()
 //	AddComponent(/datum/component/squeak, list('sound/foley/spurs (1).ogg'sound/blank.ogg'=1), 50)
@@ -72,6 +88,8 @@
 	item_state = "simpleshoe"
 	resistance_flags = null
 	color = CLOTHING_OLD_LEATHER
+	salvage_amount = 1
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/simpleshoes/white
 	color = null
@@ -93,7 +111,7 @@
 	sellprice = 20
 
 /obj/item/clothing/shoes/roguetown/gladiator
-	name = "leather sandals"
+	name = "caligae"
 	desc = "Open design sandals made from sturdy leather. Can be typically seen worn by gladiators."
 	gender = PLURAL
 	icon_state = "gladiator"
@@ -159,6 +177,19 @@
 	armor_class = AC_MEDIUM
 	sellprice = 20
 
+/obj/item/clothing/shoes/roguetown/boots/armor/light/rust
+	name = "rusted light plate boots"
+	desc = "Rusted armored boots made from iron offering protection against both melee and ranged attacks. They smell stained of blood and urine."
+	icon = 'icons/roguetown/clothing/special/rust_armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/rust_armor.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/rust_armor.dmi'
+	icon_state = "rustboots"
+	item_state = "rustboots"
+	smeltresult = /obj/item/ingot/iron
+	sellprice = VALUE_IRON_ARMOR/2
+	armor = ARMOR_PLATE_BAD
+	max_integrity = INTEGRITY_STANDARD
+
 /obj/item/clothing/shoes/roguetown/boots/leather
 	name = "leather boots"
 	//dropshrink = 0.75
@@ -170,6 +201,27 @@
 	armor = list("blunt" = 20, "slash" = 20, "stab" = 20,  "piercing" = 10, "fire" = 0, "acid" = 0)
 	resistance_flags = FLAMMABLE
 	sellprice = 10
+	salvage_amount = 1
+	salvage_result = /obj/item/natural/hide/cured
+
+
+/obj/item/clothing/shoes/roguetown/boots/leather/advanced
+	name = "hardened leather boots"
+	desc = "Sturdy, durable, flexible. A marvel of the dark ages that exists solely to protect your toes."
+	max_integrity = 200
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 50, "slash" = 40, "stab" = 20, "piercing" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/boots/leather/masterwork
+	name = "masterwork leather boots"
+	desc = "These boots are a craftsmanship marvel. Made with the finest leather. Strong, nimible, reliable."
+	max_integrity = 300
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP) //we're adding chop here!
+	armor = list("blunt" = 80, "slash" = 60, "stab" = 40, "piercing" = 0,"fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/boots/leather/masterwork/Initialize()
+	. = ..()
+	filters += filter(type="drop_shadow", x=0, y=0, size=0.5, offset=1, color=rgb(218, 165, 32))
 
 /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 	name = "fur lined boots"

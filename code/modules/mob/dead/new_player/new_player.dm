@@ -1,5 +1,5 @@
 #define LINKIFY_READY(string, value) "<a href='byond://?src=[REF(src)];ready=[value]'>[string]</a>"
-GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
+GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.json"))
 
 /mob/dead/new_player
 	var/ready = 0
@@ -64,54 +64,10 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 	return
 
 /mob/dead/new_player/proc/new_player_panel()
-/*
-	var/output = "<center>"
-	if(SSticker.current_state <= GAME_STATE_PREGAME)
-		switch(ready)
-			if(PLAYER_NOT_READY)
-				output += "<p>[LINKIFY_READY("READY", PLAYER_READY_TO_PLAY)] | <b>UNREADY</b></p>"
-			if(PLAYER_READY_TO_PLAY)
-				output += "<p><b>READY</b> | [LINKIFY_READY("UNREADY", PLAYER_NOT_READY)]</p>"
-			if(PLAYER_READY_TO_OBSERVE)
-				output += "<p>[LINKIFY_READY("READY", PLAYER_READY_TO_PLAY)]</p>"
-				output += "<p>[LINKIFY_READY("UNREADY", PLAYER_NOT_READY)]</p>"
-	else
-//		output += "<p><a href='byond://?src=[REF(src)];manifest=1'>View the Crew Manifest</a></p>"
-//		output += "<p><a href='byond://?src=[REF(src)];manifest=1'>FOLK</a></p>"
-		output += "<p><a href='byond://?src=[REF(src)];late_join=1'>LATEJOIN</a></p>"
-	output += "<p><a href='byond://?src=[REF(src)];show_preferences=1'>CHARACTER</a></p>"
-
-//	output += "<p><a href='byond://?src=[REF(src)];show_options=1'>OPTIONS</a></p>"
-
-	output += "<p><a href='byond://?src=[REF(src)];show_keybinds=1'>KEYBINDS</a></p>"
-
-	if(!IsGuestKey(src.key))
-		if (SSdbcore.Connect())
-			var/isadmin = 0
-			if(src.client && src.client.holder)
-				isadmin = 1
-			var/datum/DBQuery/query_get_new_polls = SSdbcore.NewQuery("SELECT id FROM [format_table_name("poll_question")] WHERE [(isadmin ? "" : "adminonly = false AND")] Now() BETWEEN starttime AND endtime AND id NOT IN (SELECT pollid FROM [format_table_name("poll_vote")] WHERE ckey = \"[sanitizeSQL(ckey)]\") AND id NOT IN (SELECT pollid FROM [format_table_name("poll_textreply")] WHERE ckey = \"[sanitizeSQL(ckey)]\")")
-			var/rs = REF(src)
-			if(query_get_new_polls.Execute())
-				var/newpoll = 0
-				if(query_get_new_polls.NextRow())
-					newpoll = 1
-
-				if(newpoll)
-					output += "<p><b><a href='byond://?src=[rs];showpoll=1'>Show Player Polls</A> (NEW!)</b></p>"
-				else
-					output += "<p><a href='byond://?src=[rs];showpoll=1'>Show Player Polls</A></p>"
-			qdel(query_get_new_polls)
-			if(QDELETED(src))
-				return
-
-	output += "</center>"
-
-	//src << browse(output,"window=playersetup;size=210x240;can_close=0")
-	var/datum/browser/popup = new(src, "playersetup", "<div align='center'>LOBBY MENU</div>", 250, 200)
-	popup.set_window_options("can_close=0")
-	popup.set_content(output)
-	popup.open(FALSE)*/
+	if(!SSassets.initialized)
+		sleep(0.5 SECONDS)
+		new_player_panel()
+		return
 	if(client)
 		if(client.prefs)
 			client.prefs.ShowChoices(src, 4)
@@ -227,9 +183,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 					to_chat(usr, "<span class='notice'>Thou have been added to the queue to join the game. Your position in queue is [SSticker.queued_players.len].</span>")
 				return
 		LateChoices()
-
-	if(href_list["manifest"])
-		ViewManifest()
 
 	if(href_list["SelectedJob"])
 		if(!SSticker?.IsRoundInProgress())
@@ -411,7 +364,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 	if(latejoin && !job.special_check_latejoin(client))
 		return JOB_UNAVAILABLE_GENERIC
 	if(length(job.allowed_races) && !(client.prefs.pref_species.name in job.allowed_races))
-		return JOB_UNAVAILABLE_RACE
+		if(!client.triumph_ids.Find("race_all"))
+			return JOB_UNAVAILABLE_RACE
 /*	if(length(job.allowed_patrons) && !(client.prefs.selected_patron.type in job.allowed_patrons))
 		return JOB_UNAVAILABLE_PATRON */
 	if(job.plevel_req > client.patreonlevel())
@@ -474,7 +428,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 		Spl.Fade(TRUE)
 //			character.playsound_local(get_turf(character), 'sound/blank.ogg', 25)
 
-		character.update_parallax_teleport()
 
 	SSticker.minds += character.mind
 
@@ -501,10 +454,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 
 /mob/dead/new_player/proc/LateChoices()
 	var/list/dat = list("<div class='notice' style='font-style: normal; font-size: 14px; margin-bottom: 2px; padding-bottom: 0px'>Round Duration: [DisplayTimeText(world.time - SSticker.round_start_time, 1)]</div>")
-	if(SSshuttle.emergency)
-		switch(SSshuttle.emergency.mode)
-			if(SHUTTLE_ESCAPE)
-				dat += "<div class='notice red'>The last boat has left Roguetown.</div><br>"
 	for(var/datum/job/prioritized_job in SSjob.prioritized_jobs)
 		if(prioritized_job.current_positions >= prioritized_job.total_positions)
 			SSjob.prioritized_jobs -= prioritized_job
@@ -553,20 +502,22 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 				if (GARRISON)
 					cat_name = "Garrison"
 				if (SERFS)
-					cat_name = "Subjects"
+					cat_name = "Tradesmen"
 				if (CHURCHMEN)
 					cat_name = "Churchmen"
 				if (PEASANTS)
-					cat_name = "Peasants"
+					cat_name = "Peasantry"
 				if (APPRENTICES)
 					cat_name = "Apprentices"
+				if (YOUNGFOLK)
+					cat_name = "Young Folk"
 
 			dat += "<fieldset style='width: 185px; border: 2px solid [cat_color]; display: inline'>"
 			dat += "<legend align='center' style='font-weight: bold; color: [cat_color]'>[cat_name]</legend>"
 			var/datum/game_mode/chaosmode/C = SSticker.mode
 			if(istype(C))
 				if(C.skeletons)
-					dat += "<a class='job command' href='byond://?src=[REF(src)];SelectedJob=skeleton'>BECOME AN EVIL SKELETON</a>"
+					dat += "<a class='job command' href='byond://?src=[REF(src)];SelectedJob=Skeleton'>BECOME AN EVIL SKELETON</a>"
 					dat += "</fieldset><br>"
 					column_counter++
 					if(column_counter > 0 && (column_counter % 3 == 0))
@@ -654,12 +605,6 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 		new_character = null
 		qdel(src)
 
-/mob/dead/new_player/proc/ViewManifest()
-	var/dat = "<html><body>"
-	dat += "<h4>Crew Manifest</h4>"
-	dat += GLOB.data_core.get_manifest(OOC = 1)
-
-	src << browse(dat, "window=manifest;size=387x420;can_close=1")
 
 /mob/dead/new_player/Move()
 	return 0

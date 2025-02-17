@@ -182,7 +182,7 @@
 	hardness = 70
 
 
-/turf/closed/wall/mineral/rogue/tent/OnCrafted(dirin)
+/turf/closed/wall/mineral/rogue/tent/OnCrafted(dirin, mob/user)
 	dir = dirin
 	return ..()
 
@@ -204,7 +204,7 @@
 	explosion_block = 4
 	hardness = 7
 
-/turf/closed/wall/mineral/rogue/wooddark/OnCrafted(dirin)
+/turf/closed/wall/mineral/rogue/wooddark/OnCrafted(dirin, mob/user)
 	if(dirin == NORTH || dirin == SOUTH)
 		icon_state = "vertwooddark"
 	else
@@ -229,7 +229,9 @@
 	opacity = FALSE
 	explosion_block = 1
 
-/turf/closed/wall/mineral/rogue/wooddark/window/OnCrafted(dirin)
+/turf/closed/wall/mineral/rogue/wooddark/window/OnCrafted(dirin, mob/user)
+	SHOULD_CALL_PARENT(FALSE)
+	add_abstract_elastic_data("crafting", "[name]", 1)
 	return
 
 /turf/closed/wall/mineral/rogue/wooddark/window/CanPass(atom/movable/mover, turf/target)
@@ -346,7 +348,6 @@
 	density = TRUE
 	max_integrity = 200
 //	layer = EDGED_TURF_LAYER /ROGTODO make these have borders and smooth
-	temperature = TCMB
 	sheet_type = null
 	attacked_sound = list('sound/combat/hits/onvine/vinehit.ogg')
 	debris = list(/obj/item/grown/log/tree/stick = 1, /obj/item/natural/thorn = 2, /obj/item/natural/fibers = 1)
@@ -362,7 +363,7 @@
 		var/mob/living/L = user
 		user.changeNext_move(CLICK_CD_MELEE)
 		playsound(src, "plantcross", 80, FALSE, -1)
-		if(do_after(L, rand(5,10), target = src))
+		if(do_after(L, rand(5 DECISECONDS, 1 SECONDS), src))
 			if(!res && world.time > res_replenish)
 				res = rand(1,3)
 			if(res && prob(50))

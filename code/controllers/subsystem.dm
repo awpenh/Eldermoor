@@ -38,6 +38,8 @@
 
 	var/processing_flag = PROCESSING_DEFAULT
 
+	var/lazy_load = TRUE
+
 //Do not override
 ///datum/controller/subsystem/New()
 
@@ -118,6 +120,7 @@
 		Master.queue_priority_count += SS_priority
 
 	queue_next = queue_node
+
 	if (!queue_node)//we stopped at the end, add to tail
 		queue_prev = Master.queue_tail
 		if (Master.queue_tail)
@@ -220,3 +223,7 @@
 		if ("queued_priority") //editing this breaks things.
 			return 0
 	. = ..()
+
+
+/// Called after the config has been loaded or reloaded.
+/datum/controller/subsystem/proc/OnConfigLoad()

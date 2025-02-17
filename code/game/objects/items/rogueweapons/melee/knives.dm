@@ -26,6 +26,12 @@
 	sharpness = IS_SHARP
 	sellprice = 30
 
+	grid_height = 64
+	grid_width = 32
+
+/obj/item/rogueweapon/knife/Initialize()
+	. = ..()
+	AddElement(/datum/element/tipped_item)
 /obj/item/rogueweapon/knife/getonmobprop(tag)
 	. = ..()
 	if(tag)
@@ -117,15 +123,73 @@
 	wdefense = MEDIOCHRE_PARRY
 	wbalance = HARD_TO_DODGE
 	smeltresult = /obj/item/ingot/steel
-	sellprice = 30
+	sellprice = 6
 
+
+/obj/item/rogueweapon/knife/scissors
+	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/cut, /datum/intent/snip)
+	max_integrity = 100
+	name = "iron scissors"
+	desc = "Scissors made of iron that may be used to salvage usable materials from clothing."
+	icon_state = "iscissors"
+
+/datum/intent/snip // The salvaging intent! Used only for the scissors for now!
+	name = "snip"
+	icon_state = "insnip"
+	chargetime = 0
+	noaa = TRUE
+	candodge = FALSE
+	canparry = FALSE
+	misscost = 0
+	no_attack = TRUE
+	releasedrain = 0
+	blade_class = BCLASS_PUNCH
+
+/obj/item/rogueweapon/knife/scissors/attack_obj(obj/O, mob/living/user) //This is scissor action! We're putting this here not to lose sight of it!
+	if(user.used_intent.type == /datum/intent/snip && istype(O, /obj/item))
+		var/obj/item/item = O
+		if(item.sewrepair && item.salvage_result) // We can only salvage objects which can be sewn!
+			var/skill_level = user.mind.get_skill_level(/datum/skill/misc/sewing)
+			var/salvage_time = (7 SECONDS - (skill_level * 10))
+			if(!do_after(user, salvage_time, user))
+				return
+			if(item.fiber_salvage) //We're getting fiber as base if fiber is present on the item
+				new /obj/item/natural/fibers(get_turf(item))
+			if(istype(item, /obj/item/storage))
+				var/obj/item/storage/bag = item
+				bag.emptyStorage()
+			var/probability = max(0, 50 - (skill_level * 10))
+			if(prob(probability)) // We are dumb and we failed!
+				to_chat(user, span_warning("I ruined some of the materials due to my lack of skill..."))
+				playsound(item, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				qdel(item)
+				user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT)) //Getting exp for failing
+				return //We are returning early if the skill check fails!
+			item.salvage_amount -= item.torn_sleeve_number
+			for(var/i = 1; i <= item.salvage_amount; i++) // We are spawning salvage result for the salvage amount minus the torn sleves!
+				var/obj/item/Sr = new item.salvage_result(get_turf(item))
+				Sr.color = item.color
+			user.visible_message(span_notice("[user] salvages [item] into usable materials."))
+			playsound(item, 'sound/items/flint.ogg', 100, TRUE) //In my mind this sound was more fitting for a scissor
+			qdel(item)
+			user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT)) //We're getting experience for salvaging!
+			return
+	return ..()
+
+/obj/item/rogueweapon/knife/scissors/steel
+	force = 14
+	max_integrity = 150
+	name = "steel scissors"
+	desc = "Scissors made of solid steel that may be used to salvage usable materials from clothing, more durable and a tad more deadly than their iron conterpart."
+	icon_state = "sscissors"
+	smeltresult = /obj/item/ingot/steel
 
 //................ Cleaver ............... //
 /obj/item/rogueweapon/knife/cleaver
 	name = "cleaver"
 	desc = "A chef's tool turned armament, cleave off cumbersome flesh with rudimentary ease."
-	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'
-	righthand_file = 'modular/Neu_Food/icons/food_righthand.dmi'
+	lefthand_file = 'icons/roguetown/onmob/lefthand.dmi'
+	righthand_file = 'icons/roguetown/onmob/righthand.dmi'
 	icon_state = "cleav"
 	item_state = "cleav"
 	experimental_inhand = FALSE
@@ -174,7 +238,7 @@
 	desc = "Thin, sharp, pointed death."
 	icon_state = "idagger"
 	smeltresult = null
-	sellprice = 15
+	sellprice = 12
 
 //................ Steel Dagger ............... //
 /obj/item/rogueweapon/knife/dagger/steel
@@ -208,48 +272,19 @@
 	last_used = 0
 	is_silver = TRUE
 
-/obj/item/rogueweapon/knife/dagger/silver/pickup(mob/user)
-	. = ..()
-	var/mob/living/carbon/human/H = user
-	if(ishuman(H))
-		if(H.mind?.has_antag_datum(/datum/antagonist/vampirelord/lesser))
-			to_chat(H, "<span class='userdanger'>I can't pick up the silver, it is my BANE!</span>")
-			H.Knockdown(20)
-			H.adjustFireLoss(60)
-			H.Paralyze(20)
-			H.fire_act(1,5)
-		if(H.mind?.has_antag_datum(/datum/antagonist/vampirelord/))
-			var/datum/antagonist/vampirelord/V_lord = H.mind.has_antag_datum(/datum/antagonist/vampirelord/)
-			if(V_lord.vamplevel < 4 && !H.mind.has_antag_datum(/datum/antagonist/vampirelord/lesser))
-				to_chat(H, "<span class='userdanger'>I can't pick up the silver, it is my BANE!</span>")
-				H.Knockdown(10)
-				H.Paralyze(10)
-
-/obj/item/rogueweapon/knife/dagger/silver/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
-	. = ..()
-	if(ishuman(M))
-		var/datum/antagonist/vampirelord/V_lord = FALSE
-		var/mob/living/carbon/human/H = M
-		if(H.mind?.has_antag_datum(/datum/antagonist/vampirelord))
-			V_lord = H.mind.has_antag_datum(/datum/antagonist/vampirelord/)
-		if(H.mind?.has_antag_datum(/datum/antagonist/vampirelord/lesser))
-			H.Knockdown(20)
-			H.adjustFireLoss(60)
-			H.Paralyze(20)
-			H.fire_act(1,5)
-		if(V_lord)
-			if(V_lord.vamplevel < 4 && !H.mind.has_antag_datum(/datum/antagonist/vampirelord/lesser))
-				H.Knockdown(10)
-				H.Paralyze(10)
-
 //................ Profane Dagger ............... //
 /obj/item/rogueweapon/knife/dagger/steel/profane
-//	name = "profane dagger"
-	desc = "A profane dagger made of cursed black steel. Whispers emanate from the gem on its hilt."
+	// name = "profane dagger"
+	// desc = "A profane dagger made of cursed black steel. Whispers emanate from the gem on its hilt."
 	sellprice = 250
 	icon_state = "pdagger"
 	smeltresult = null
 	embedding = list("embed_chance" = 0) // Embedding the cursed dagger has the potential to cause duping issues. Keep it like this unless you want to do a lot of bug hunting.
+
+/obj/item/rogueweapon/knife/dagger/steel/profane/examine(mob/user)
+	. = ..()
+	if(HAS_TRAIT(user, TRAIT_ASSASSIN))
+		. += "profane dagger whispers, \"[span_danger("Here we are!")]\""
 
 /obj/item/rogueweapon/knife/dagger/steel/profane/pickup(mob/living/M)
 	. = ..()
@@ -265,7 +300,7 @@
 				"<span class='danger'>Free us...please...</span>",
 				"<span class='danger'>Necra...deliver...us...</span>")
 //			H.visible_message("profane dagger whispers, \"[message]\"")
-			to_chat(M, ">profane dagger whispers, \"[message]\"")
+			to_chat(M, "profane dagger whispers, \"[message]\"")
 		else
 			var/message = pick(
 				"<span class='danger'>Why...</span>",
@@ -280,9 +315,11 @@
 				"<span class='danger'>I thought you were...my friend...</span>",
 				"<span class='danger'>How long have I been in here...</span>")
 //			H.visible_message("profane dagger whispers, \"[message]\"")
-			to_chat(M, ">profane dagger whispers, \"[message]\"")
+			to_chat(M, "profane dagger whispers, \"[message]\"")
 
 /obj/item/rogueweapon/knife/dagger/steel/profane/pre_attack(mob/living/carbon/human/target, mob/living/user = usr, params)
+	if(!istype(target))
+		return FALSE
 	if(target.has_flaw(/datum/charflaw/hunted) || HAS_TRAIT(target, TRAIT_ZIZOID_HUNTED)) // Check to see if the dagger will do 20 damage or 14
 		force = 20
 	else
@@ -291,6 +328,8 @@
 
 /obj/item/rogueweapon/knife/dagger/steel/profane/afterattack(mob/living/carbon/human/target, mob/living/user = usr, proximity)
 	. = ..()
+	if(!ishuman(target))
+		return
 	if(target.stat == DEAD || (target.health < target.crit_threshold)) // Trigger soul steal if the target is either dead or in crit
 		if(target.has_flaw(/datum/charflaw/hunted) || HAS_TRAIT(target, TRAIT_ZIZOID_HUNTED)) // The profane dagger only thirsts for those who are hunted, by flaw or by zizoid curse.
 			if(target.client == null) //See if the target's soul has left their body
@@ -361,8 +400,8 @@
 	desc = "A tool favored by the wood-elves, easy to make, useful for skinning the flesh of beast and man alike."
 	icon_state = "stone_knife"
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
-	max_integrity = 15
-	max_blade_int = 15
+	max_integrity = 30
+	max_blade_int = 30
 	wdefense = TERRIBLE_PARRY
 	smeltresult = /obj/item/ash
 	sellprice = 5
@@ -374,14 +413,15 @@
 	name = "villager knife"
 	desc = "The loyal companion of simple peasants, able to cut hard bread and carve wood. A versatile kitchen utensil and tool."
 	icon_state = "villagernife"
+	smeltresult = null
 
 /obj/item/rogueweapon/knife/copper
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/thrust)
 	name = "copper dagger"
 	desc = "A dagger of an older design, the copper serves decent enough."
 	icon_state = "cdagger"
-	max_blade_int = 50
-	max_integrity = 50
+	max_blade_int = 75
+	max_integrity = 75
 	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
 	associated_skill = /datum/skill/combat/knives
 	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
@@ -389,3 +429,41 @@
 	sellprice = 10
 
 
+/obj/item/rogueweapon/knife/throwingknife
+	name = "iron tossblade"
+	desc = ""
+	item_state = "bone_dagger"
+	force = 12
+	throwforce = 25
+	throw_speed = 4
+	max_integrity = 50
+	wdefense = 1
+	icon_state = "throw_knifei"
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 25, "embedded_fall_chance" = 20)
+
+/obj/item/rogueweapon/knife/throwingknife/steel
+	name = "steel tossblade"
+	desc = ""
+	item_state = "bone_dagger"
+	force = 12
+	throwforce = 25
+	throw_speed = 4
+	max_integrity = 100
+	wdefense = 1
+	icon_state = "throw_knifes"
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 30, "embedded_fall_chance" = 15)
+
+/obj/item/rogueweapon/knife/throwingknife/psydon
+	name = "psydonian tossblade"
+	desc = "An unconventional method of delivering silver to a heretic; but one PSYDON smiles at, all the same. Doubles as an 'actual' knife in a pinch."
+	item_state = "bone_dagger"
+	force = 12
+	throwforce = 25
+	throw_speed = 4
+	max_integrity = 150
+	wdefense = 3
+	icon_state = "throw_knifes"
+	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
+	is_silver = TRUE
+	sellprice = 65
+	smeltresult = /obj/item/ingot/silver

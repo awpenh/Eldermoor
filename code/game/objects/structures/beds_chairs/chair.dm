@@ -36,7 +36,7 @@
 	var/mob/living/L = user
 
 	if(istype(L))
-		if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		if(!user.canUseTopic(src, BE_CLOSE))
 			return FALSE
 		else
 			return TRUE
@@ -72,12 +72,6 @@
 		deconstruct()
 	else
 		return ..()
-
-/obj/structure/chair/attack_tk(mob/user)
-	if(!anchored || has_buckled_mobs() || !isturf(user.loc))
-		..()
-	else
-		setDir(turn(dir,-90))
 
 /obj/structure/chair/proc/handle_rotation(direction)
 	handle_layer()
@@ -184,14 +178,6 @@
 
 /obj/structure/chair/comfy/lime
 	color = rgb(255,251,0)
-
-/obj/structure/chair/comfy/shuttle
-	name = "shuttle seat"
-	desc = ""
-	icon_state = "shuttle_chair"
-
-/obj/structure/chair/comfy/shuttle/GetArmrest()
-	return mutable_appearance('icons/obj/chairs.dmi', "shuttle_chair_armrest")
 
 /obj/structure/chair/office
 	anchored = FALSE

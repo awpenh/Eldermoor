@@ -7,6 +7,10 @@
 	resistance_flags = FLAMMABLE
 	sewrepair = TRUE
 	anvilrepair = null
+	sewrepair = TRUE
+	fiber_salvage = FALSE
+	grid_width = 32
+	grid_height = 64
 
 /obj/item/clothing/wrists/roguetown/bracers
 	name = "plate vambraces"
@@ -20,6 +24,7 @@
 	resistance_flags = FIRE_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing
 	sewrepair = FALSE
+	smeltresult = /obj/item/ingot/iron //no 1 to 1 conversion
 
 /obj/item/clothing/wrists/roguetown/bracers/leather
 	name = "leather bracers"
@@ -36,6 +41,26 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	anvilrepair = null
 	sewrepair = TRUE
+	salvage_amount = 1
+	salvage_result = /obj/item/natural/hide/cured
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/advanced
+	name = "hardened leather bracers"
+	desc = "Hardened leather braces that will keep your wrists safe from bludgeoning."
+	armor = list("blunt" = 60, "slash" = 40, "stab" = 20, "piercing" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST) //We're losing stab here
+	max_integrity = 250
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/masterwork
+	name = "masterwork leather bracers"
+	desc = "These bracers are a craftsmanship marvel. Made with the finest leather. Strong, nimible, reliable."
+	armor = list("blunt" = 80, "slash" = 60, "stab" = 40, "piercing" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST) //We're getting chop here
+	max_integrity = 300
+
+/obj/item/clothing/wrists/roguetown/bracers/leather/masterwork/Initialize()
+	. = ..()
+	filters += filter(type="drop_shadow", x=0, y=0, size=0.5, offset=1, color=rgb(218, 165, 32))
 
 /obj/item/clothing/wrists/roguetown/wrappings
 	name = "solar wrappings"
@@ -57,6 +82,7 @@
 	icon_state = "aasimarwrist"
 	item_state = "aasimarwrist"
 	armor = list("blunt" = 70, "slash" = 70, "stab" = 70,  "piercing" = 50, "fire" = 0, "acid" = 0) // Less protection than steel
+	smeltresult = /obj/item/ingot/bronze
 
 //copper bracers
 
@@ -73,3 +99,37 @@
 	resistance_flags = FIRE_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing
 	sewrepair = FALSE
+
+//Queensleeves
+/obj/item/clothing/wrists/roguetown/royalsleeves
+	name = "royal sleeves"
+	desc = "Sleeves befitting an elaborate gown."
+	slot_flags = ITEM_SLOT_WRISTS
+	icon_state = "royalsleeves"
+	item_state = "royalsleeves"
+	detail_tag = "_detail"
+	detail_color = CLOTHING_SOOT_BLACK
+
+/obj/item/clothing/wrists/roguetown/royalsleeves/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/wrists/roguetown/royalsleeves/lordcolor(primary,secondary)
+	detail_color = primary
+	update_icon()
+
+/obj/item/clothing/wrists/roguetown/royalsleeves/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/wrists/roguetown/royalsleeves/Destroy()
+	GLOB.lordcolor -= src
+	return ..()

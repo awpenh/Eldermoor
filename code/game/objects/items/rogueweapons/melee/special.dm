@@ -19,6 +19,9 @@
 	minstr = 5
 	blade_dulling = DULLING_BASHCHOP
 
+	grid_height = 96
+	grid_width = 32
+
 /datum/intent/lordbash
 	name = "bash"
 	blade_class = BCLASS_BLUNT
@@ -62,7 +65,7 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
 
-		if((HU.job != "King") && (HU.job != "Queen"))
+		if((HU.job != "Monarch"))
 			to_chat(user, "<span class='danger'>The rod doesn't obey me.</span>")
 			return
 

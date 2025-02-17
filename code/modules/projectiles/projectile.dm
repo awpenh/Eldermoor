@@ -103,7 +103,7 @@
 
 	var/woundclass = null
 	var/embedchance = 0
-	var/obj/item/dropped = null
+	var/obj/item/dropped = null //Holds reference to object drop/embed. DO NOT SET TO TYPEPATH
 	var/ammo_type
 
 	var/arcshot = FALSE
@@ -698,6 +698,3 @@
 		QDEL_IN(thing, duration)
 	if(cleanup)
 		cleanup_beam_segments()
-
-/obj/projectile/experience_pressure_difference()
-	return

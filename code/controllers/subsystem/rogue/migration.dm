@@ -209,7 +209,6 @@ SUBSYSTEM_DEF(migrants)
 	/// Fade effect
 	var/atom/movable/screen/splash/Spl = new(character.client, TRUE)
 	Spl.Fade(TRUE)
-	character.update_parallax_teleport()
 
 	var/mob/living/carbon/human/humanc
 	if(ishuman(character))
@@ -259,6 +258,9 @@ SUBSYSTEM_DEF(migrants)
 	if(role.advclass_cat_rolls)
 		SSrole_class_handler.setup_class_handler(character, role.advclass_cat_rolls)
 		hugboxify_for_class_selection(character)
+	else
+		if(GLOB.adventurer_hugbox_duration)
+			addtimer(CALLBACK(character, TYPE_PROC_REF(/mob/living/carbon/human, adv_hugboxing_start)), 1)
 
 /datum/controller/subsystem/migrants/proc/get_priority_players(list/players, role_type)
 	var/list/priority = list()
@@ -284,7 +286,8 @@ SUBSYSTEM_DEF(migrants)
 	if(is_migrant_banned(player.ckey, role.name))
 		return FALSE
 	if(role.allowed_races && !(prefs.pref_species.name in role.allowed_races))
-		return FALSE
+		if(!(player.triumph_ids.Find("race_all")))
+			return FALSE
 	if(role.allowed_sexes && !(prefs.gender in role.allowed_sexes))
 		return FALSE
 	if(role.allowed_ages && !(prefs.age in role.allowed_ages))

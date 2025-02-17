@@ -5,6 +5,7 @@
 	var/list/allowed_sexes
 	var/list/allowed_races = list(
 	"Humen",
+	"Rakshari",
 	"Elf",
 	"Half-Elf",
 	"Dwarf",
@@ -30,6 +31,7 @@
 	//What categories we are going to sort it in
 	var/list/category_tags = list(CTAG_DISABLED)
 	var/displays_adv_job = TRUE
+	var/apprentice_name //Must be set to give apprentices the correct title. Note that pilgrims cannot have apprentices.
 
 /datum/advclass/proc/equipme(mob/living/carbon/human/H)
 	// input sleeps....
@@ -49,6 +51,7 @@
 	if(TU)
 		if(horse)
 			new horse(TU)
+	H.mind?.apprentice_name = apprentice_name
 
 /*	for(var/trait in traits_applied)
 		ADD_TRAIT(H, trait, ADVENTURER_TRAIT) */
@@ -87,7 +90,8 @@
 		return FALSE
 
 	if(length(allowed_races) && !(H.dna.species.name in allowed_races))
-		return FALSE
+		if(!(H.client.triumph_ids.Find("race_all")))
+			return FALSE
 
 	if(length(allowed_ages) && !(H.age in allowed_ages))
 		return FALSE

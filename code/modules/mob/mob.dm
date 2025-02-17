@@ -114,27 +114,6 @@ GLOBAL_VAR_INIT(mobids, 1)
 				hud_list[hud] = I
 
 /**
- * Some kind of debug verb that gives atmosphere environment details
- */
-/mob/proc/Cell()
-	set category = "Admin"
-	set hidden = 1
-
-	if(!loc)
-		return 0
-
-	var/datum/gas_mixture/environment = loc.return_air()
-
-	var/t =	"<span class='notice'>Coordinates: [x],[y] \n</span>"
-	t +=	"<span class='danger'>Temperature: [environment.temperature] \n</span>"
-	for(var/id in environment.gases)
-		var/gas = environment.gases[id]
-		if(gas[MOLES])
-			t+="<span class='notice'>[gas[GAS_META][META_GAS_NAME]]: [gas[MOLES]] \n</span>"
-
-	to_chat(usr, t)
-
-/**
  * Show a message to this mob (visual or audible)
  */
 /mob/proc/show_message(msg, type, alt_msg, alt_type)//Message, type of message (1 or 2), alternative message, alt message type (1 or 2)
@@ -256,7 +235,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 	return
 
 ///Is the mob incapacitated
-/mob/proc/incapacitated(ignore_restraints = FALSE, ignore_grab = TRUE, check_immobilized = FALSE)
+/mob/proc/incapacitated(ignore_restraints = FALSE, ignore_grab = TRUE)
 	return
 
 /**
@@ -414,7 +393,9 @@ GLOBAL_VAR_INIT(mobids, 1)
 	set name = "Examine"
 	set category = "IC"
 	set hidden = 1
+	DEFAULT_QUEUE_OR_CALL_VERB(VERB_CALLBACK(src, PROC_REF(run_examinate), A))
 
+/mob/proc/run_examinate(atom/A)
 	if(isturf(A) && !(sight & SEE_TURFS) && !(A in view(client ? client.view : world.view, src)))
 		// shift-click catcher may issue examinate() calls for out-of-sight turfs
 		return
@@ -446,7 +427,16 @@ GLOBAL_VAR_INIT(mobids, 1)
  */
 /mob/verb/pointed(atom/A as mob|obj|turf in view())
 	set name = "Point To"
-	set hidden = 1
+	set category = "Object"
+
+	if(istype(A, /obj/effect/temp_visual/point))
+		return FALSE
+
+	DEFAULT_QUEUE_OR_CALL_VERB(VERB_CALLBACK(src, PROC_REF(_pointed), A))
+
+/// possibly delayed verb that finishes the pointing process starting in [/mob/verb/pointed()].
+/// either called immediately or in the tick after pointed() was called, as per the [DEFAULT_QUEUE_OR_CALL_VERB()] macro
+/mob/proc/_pointed(atom/A)
 	if(!src || !isturf(src.loc) || !(A in view(client.view, src)))
 		return FALSE
 	if(istype(A, /obj/effect/temp_visual/point))
@@ -498,6 +488,8 @@ GLOBAL_VAR_INIT(mobids, 1)
 	var/D = dir
 	if((spintime < 1)||(speed < 1)||!spintime||!speed)
 		return
+
+	flags_1 |= IS_SPINNING_1
 	while(spintime >= speed)
 		sleep(speed)
 		switch(D)
@@ -511,6 +503,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 				D = NORTH
 		setDir(D)
 		spintime -= speed
+	flags_1 &= ~IS_SPINNING_1
 
 ///Update the pulling hud icon
 /mob/proc/update_pull_hud_icon()
@@ -719,6 +712,8 @@ GLOBAL_VAR_INIT(mobids, 1)
 /mob/Stat()
 	..()
 	// && check_rights(R_ADMIN,0)
+	var/ticker_time = world.time - SSticker.round_start_time
+	var/time_left = SSticker.mode?.round_ends_at - ticker_time
 	if(client && client.holder)
 		if(statpanel("Status"))
 			if (client)
@@ -728,21 +723,21 @@ GLOBAL_VAR_INIT(mobids, 1)
 			if(cached)
 				stat(null, "Next Map: [cached.map_name]")
 			stat(null, "Round ID: [GLOB.rogue_round_id ? GLOB.rogue_round_id : "NULL"]")
-//			stat(null, "Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]")
 			stat(null, "Round Time: [gameTimestamp("hh:mm:ss", world.time - SSticker.round_start_time)] [world.time - SSticker.round_start_time]")
+			if(SSticker.mode?.roundvoteend)
+				stat("Round End: [DisplayTimeText(time_left)]")
 			stat(null, "Round TrueTime: [worldtime2text()] [world.time]")
 			stat(null, "TimeOfDay: [GLOB.tod]")
 			stat(null, "IC Time: [station_time_timestamp()] [station_time()]")
 			stat(null, "Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG:([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)")
-			if(SSshuttle.emergency)
-				var/ETA = SSshuttle.emergency.getModeStr()
-				if(ETA)
-					stat(null, "[ETA] [SSshuttle.emergency.getTimerStr()]")
+
 	if(client)
 		if(statpanel("RoundInfo"))
 			stat("Round ID: [GLOB.rogue_round_id]")
 			stat("Round Time: [gameTimestamp("hh:mm:ss", world.time - SSticker.round_start_time)] [world.time - SSticker.round_start_time]")
 			stat("TimeOfDay: [GLOB.tod]")
+			if(SSticker.mode?.roundvoteend)
+				stat("Round End: [DisplayTimeText(time_left)]")
 
 	if(client && client.holder && check_rights(R_ADMIN,0))
 		if(statpanel("MC"))

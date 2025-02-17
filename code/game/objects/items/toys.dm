@@ -237,10 +237,9 @@
 	. = ..()
 	var/dat = "You have:<BR>"
 	for(var/t in currenthand)
-		dat += "<A href='?src=[REF(src)];pick=[t]'>A [t].</A><BR>"
+		dat += "<A href='byond://?src=[REF(src)];pick=[t]'>A [t].</A><BR>"
 	dat += "Which card will you remove next?"
 	var/datum/browser/popup = new(user, "cardhand", "Hand of Cards", 400, 240)
-	popup.set_title_image(user.browse_rsc_icon(src.icon, src.icon_state))
 	popup.set_content(dat)
 	popup.open()
 
@@ -332,6 +331,8 @@
 		var/mob/living/carbon/human/cardUser = user
 		if(cardUser.is_holding(src))
 			cardUser.visible_message("<span class='notice'>[cardUser] checks [cardUser.p_their()] card.</span>", "<span class='notice'>The card reads: [cardname].</span>")
+		else if(HAS_TRAIT(user, TRAIT_BLACKLEG))
+			. += span_notice("Peeking under the card, you see the card reads: [cardname].")
 		else
 			. += "<span class='warning'>I need to have the card in your hand to check it!</span>"
 

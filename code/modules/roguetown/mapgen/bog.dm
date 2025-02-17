@@ -1,8 +1,8 @@
 
 /obj/effect/landmark/mapGenerator/rogue/bog
 	mapGeneratorType = /datum/mapGenerator/bog
-	endTurfX = 255
-	endTurfY = 255
+	endTurfX = 200
+	endTurfY = 200
 	startTurfX = 1
 	startTurfY = 1
 
@@ -11,12 +11,12 @@
 
 /datum/mapGeneratorModule/bog
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
-	allowed_turfs = list(/turf/open/floor/rogue/dirt)
+	allowed_turfs = list(/turf/open/floor/rogue/dirt, /turf/open/floor/rogue/grass)
 	spawnableAtoms = list(/obj/structure/flora/roguetree = 1,
 							/obj/structure/flora/roguegrass/bush_meagre = 7,
 							/obj/structure/flora/roguegrass/bush_meagre/bog = 4,
 							/obj/structure/flora/roguegrass/maneater = 1,
-							/obj/structure/flora/roguegrass/herb/random = 65,
+							/obj/structure/flora/roguegrass/herb/random = 20,
 							/obj/structure/flora/roguegrass = 23,
 							/obj/structure/chair/bench/ancientlog = 20,
 							/obj/item/natural/rock = 30,
@@ -26,8 +26,7 @@
 							/obj/structure/flora/roguegrass/maneater/real = 2,
 							/obj/structure/innocent_bush = 1,
 							)
-	spawnableTurfs = list(/turf/open/water/swamp = 5,
-	                     /turf/open/floor/rogue/dirt = 80)
+	spawnableTurfs = list(/turf/open/water/swamp = 5)
 	allowed_areas = list(/area/rogue/outdoors/bog)
 
 /datum/mapGeneratorModule/bogwater

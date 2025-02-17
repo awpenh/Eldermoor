@@ -39,7 +39,8 @@
 #define CANKNOCKDOWN	(1<<1)
 #define CANUNCONSCIOUS	(1<<2)
 #define CANPUSH			(1<<3)
-#define GODMODE			(1<<4)
+#define CANSLOWDOWN		(1<<4)
+#define GODMODE			(1<<5)
 
 //Health Defines
 #define HEALTH_THRESHOLD_CRIT 0
@@ -173,6 +174,7 @@
 #define TILL_INTENT			/datum/intent/till
 
 #define ROD_CAST			/datum/intent/cast
+#define ROD_AUTO			/datum/intent/auto
 #define ROD_REEL			/datum/intent/reel
 
 #define INTENT_SPLASH		/datum/intent/splash

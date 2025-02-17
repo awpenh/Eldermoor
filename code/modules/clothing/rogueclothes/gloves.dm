@@ -17,6 +17,9 @@
 	anvilrepair = null
 	smeltresult = /obj/item/ash
 	max_integrity = INTEGRITY_WORST
+	sewrepair = TRUE
+	fiber_salvage = FALSE
+	salvage_amount = 1
 
 
 //..................................................................................................................................
@@ -38,9 +41,28 @@
 	armor = ARMOR_PADDED_BAD
 	prevent_crits = CUT_AND_MINOR_CRITS
 	max_integrity = INTEGRITY_POOR
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/gloves/roguetown/leather/black
 	color = CLOTHING_SOOT_BLACK
+
+/obj/item/clothing/gloves/roguetown/leather/advanced
+	name = "hardened leather gloves"
+	desc = "Sturdy, durable, flexible. A marvel of the dark ages that exists solely to protect your fingers."
+	max_integrity = 200
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = list("blunt" = 50, "slash" = 40, "stab" = 20, "piercing" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/gloves/roguetown/leather/masterwork
+	name = "masterwork leather gloves"
+	desc = "These gloves are a craftsmanship marvel. Made with the finest leather. Strong, nimible, reliable."
+	max_integrity = 300
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP) //we're adding chop here!
+	armor = list("blunt" = 80, "slash" = 60, "stab" = 40, "piercing" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/gloves/roguetown/leather/masterwork/Initialize()
+	. = ..()
+	filters += filter(type="drop_shadow", x=0, y=0, size=0.5, offset=1, color=rgb(218, 165, 32))
 
 /obj/item/clothing/gloves/roguetown/leather/feld
 	name = "feldsher's gloves"
@@ -51,6 +73,11 @@
 	name = "physicker's gloves"
 	desc = "Improved grip for wielding disembowled organs."
 	icon_state = "surggloves"
+
+/obj/item/clothing/gloves/roguetown/leather/apothecary
+	name = "apothecary gloves"
+	desc = "Thick leather gloves for pulling thorny plants... or cracking skulls."
+	icon_state = "apothgloves"
 
 
 /obj/item/clothing/gloves/roguetown/fingerless
@@ -65,9 +92,12 @@
 	max_integrity = INTEGRITY_POOR
 
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves
-	desc = "Cloth gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
+	name = "silk gloves"
+	desc = "Silk gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
+	mob_overlay_icon = 'icons/roguetown/clothing/newclothes/onmob/onmobgloves.dmi'
+	sleeved = 'icons/roguetown/clothing/newclothes/onmob/onmobgloves.dmi'
 	icon_state = "shadowgloves"
-	//allowed_race = list("elf", "dark elf")
+	salvage_result = /obj/item/natural/silk
 
 
 /obj/item/clothing/gloves/roguetown/angle
@@ -81,6 +111,7 @@
 	armor = ARMOR_LEATHER
 	prevent_crits = ALL_EXCEPT_CHOP_AND_STAB
 	max_integrity = INTEGRITY_STANDARD
+	salvage_result = /obj/item/natural/fur
 
 /obj/item/clothing/gloves/roguetown/angle/grenzel
 	name = "grenzelhoft gloves"
@@ -116,6 +147,7 @@
 	armor = ARMOR_MAILLE
 	prevent_crits = ALL_EXCEPT_BLUNT
 	max_integrity = INTEGRITY_STRONGEST
+	sewrepair = FALSE
 
 /obj/item/clothing/gloves/roguetown/chain/iron
 	name = "iron chain gauntlets"
@@ -153,12 +185,28 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	sewrepair = FALSE
-	smeltresult = null
+	smeltresult = /obj/item/ingot/iron //no 1 to 1 conversion
 
 	armor_class = AC_HEAVY
 	armor = ARMOR_PLATE
 	prevent_crits = ALL_EXCEPT_STAB
 	max_integrity = INTEGRITY_STRONGEST
+
+	grid_width = 64
+	grid_height = 32
+
+/obj/item/clothing/gloves/roguetown/plate/rust
+	name = "rusted riveted gauntlets"
+	desc = "Riveted gauntlets made out of iron. They're covered in rust.. at least the glove liner is good still."
+	icon = 'icons/roguetown/clothing/special/rust_armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/rust_armor.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/rust_armor.dmi'
+	icon_state = "rustgloves"
+	item_state = "rustgloves"
+	smeltresult = /obj/item/ingot/iron
+	sellprice = VALUE_IRON_ARMOR/2
+	armor = ARMOR_PLATE_BAD
+	max_integrity = INTEGRITY_STANDARD
 
 /obj/item/clothing/gloves/roguetown/rare
 	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'

@@ -244,67 +244,12 @@
 	if(!T)
 		return FALSE
 
-	if(is_reserved_level(T.z))
-		for(var/A in SSshuttle.mobile)
-			var/obj/docking_port/mobile/M = A
-			if(M.launch_status == ENDGAME_TRANSIT)
-				for(var/place in M.shuttle_areas)
-					var/area/shuttle/shuttle_area = place
-					if(T in shuttle_area)
-						return TRUE
-
 	if(!is_centcom_level(T.z))//if not, don't bother
 		return FALSE
 
 	//Check for centcom itself
 	if(istype(T.loc, /area/centcom))
 		return TRUE
-
-	//Check for centcom shuttles
-	for(var/A in SSshuttle.mobile)
-		var/obj/docking_port/mobile/M = A
-		if(M.launch_status == ENDGAME_LAUNCHED)
-			for(var/place in M.shuttle_areas)
-				var/area/shuttle/shuttle_area = place
-				if(T in shuttle_area)
-					return TRUE
-
-/**
- * Is the atom in any of the centcom syndicate areas
- *
- * Either in the syndie base on centcom, or any of their shuttles
- *
- * Also used in gamemode code for win conditions
- */
-/atom/proc/onSyndieBase()
-	var/turf/T = get_turf(src)
-	if(!T)
-		return FALSE
-
-	if(!is_centcom_level(T.z))//if not, don't bother
-		return FALSE
-
-	if(istype(T.loc, /area/shuttle/syndicate) || istype(T.loc, /area/syndicate_mothership) || istype(T.loc, /area/shuttle/assault_pod))
-		return TRUE
-
-	return FALSE
-
-/**
- * Is the atom in an away mission
- *
- * Must be in the away mission z-level to return TRUE
- *
- * Also used in gamemode code for win conditions
- */
-/atom/proc/onAwayMission()
-	var/turf/T = get_turf(src)
-	if(!T)
-		return FALSE
-
-	if(is_away_level(T.z))
-		return TRUE
-
-	return FALSE
 
 /**
  * Ensure a list of atoms/reagents exists inside this atom
@@ -343,26 +288,6 @@
 ///Hook for multiz???
 /atom/proc/update_multiz(prune_on_fail = FALSE)
 	return FALSE
-
-///Take air from the passed in gas mixture datum
-/atom/proc/assume_air(datum/gas_mixture/giver)
-	qdel(giver)
-	return null
-
-///Remove air from this atom
-/atom/proc/remove_air(amount)
-	return null
-
-///Return the current air environment in this atom
-/atom/proc/return_air()
-	if(loc)
-		return loc.return_air()
-	else
-		return null
-
-///Return the air if we can analyze it
-/atom/proc/return_analyzable_air()
-	return null
 
 ///Check if this atoms eye is still alive (probably)
 /atom/proc/check_eye(mob/user)
@@ -588,20 +513,19 @@
 
 ///returns the mob's dna info as a list, to be inserted in an object's blood_DNA list
 /mob/living/proc/get_blood_dna_list()
-	if(get_blood_id() != /datum/reagent/blood)
-		return
-	return list("ANIMAL DNA" = "Y-")
+	var/datum/blood_type/blood = get_blood_type()
+	if(!isnull(blood))
+		return list("UNKNOWN DNA" = blood.type)
+	return null
 
 ///Get the mobs dna list
 /mob/living/carbon/get_blood_dna_list()
-	if(get_blood_id() != /datum/reagent/blood)
-		return
-	var/list/blood_dna = list()
-	if(dna)
-		blood_dna[dna.unique_enzymes] = dna.blood_type
-	else
-		blood_dna["UNKNOWN DNA"] = "X*"
-	return blood_dna
+	if(isnull(dna)) // Xenos
+		return ..()
+	var/datum/blood_type/blood = get_blood_type()
+	if(isnull(blood)) // Skeletons?
+		return null
+	return list("[dna.unique_enzymes]" = blood.type)
 
 ///to add a mob's dna info into an object's blood_dna list.
 /atom/proc/transfer_mob_blood_dna(mob/living/L)
@@ -643,14 +567,6 @@
 	SEND_SIGNAL(src, COMSIG_ATOM_EMAG_ACT, user)
 
 /**
- * Respond to a radioactive wave hitting this atom
- *
- * Default behaviour is to send COMSIG_ATOM_RAD_ACT and return
- */
-/atom/proc/rad_act(strength)
-	SEND_SIGNAL(src, COMSIG_ATOM_RAD_ACT, strength)
-
-/**
  * Respond to narsie eating our atom
  *
  * Default behaviour is to send COMSIG_ATOM_NARSIE_ACT and return
@@ -687,9 +603,9 @@
 	var/list/things = src_object.contents()
 	var/datum/progressbar/progress = new(user, things.len, src)
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(STR, TYPE_PROC_REF(/datum/component/storage, handle_mass_item_insertion), things, src_object, user, progress)))
+	while(do_after(user, 1 SECONDS, src, NONE, FALSE, CALLBACK(STR, TYPE_PROC_REF(/datum/component/storage, handle_mass_item_insertion), things, src_object, user, progress)))
 		stoplag(1)
-	qdel(progress)
+	progress.end_progress()
 	to_chat(user, "<span class='notice'>I dump as much of [src_object.parent]'s contents [STR.insert_preposition]to [src] as I can.</span>")
 	STR.orient2hud(user)
 	STR.update_icon()
@@ -1031,10 +947,6 @@
 /atom/proc/GenerateTag()
 	return
 
-///Connect this atom to a shuttle
-/atom/proc/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock, idnum, override=FALSE)
-	return
-
 /// Generic logging helper
 /atom/proc/log_message(message, message_type, color=null, log_globally=TRUE)
 	if(!log_globally)
@@ -1153,14 +1065,20 @@
 		update_filters()
 	return .
 
+/proc/cmp_filter_data_priority(list/A, list/B)
+	return A["priority"] - B["priority"]
+
 /atom/movable/proc/update_filters()
 	filters = null
-	sortTim(filter_data,associative = TRUE)
-	for(var/f in filter_data)
-		var/list/data = filter_data[f]
+	var/atom/atom_cast = src // filters only work with images or atoms.
+	atom_cast.filters = null
+	filter_data = sortTim(filter_data, GLOBAL_PROC_REF(cmp_filter_data_priority), TRUE)
+	for(var/filter_raw in filter_data)
+		var/list/data = filter_data[filter_raw]
 		var/list/arguments = data.Copy()
 		arguments -= "priority"
-		filters += filter(arglist(arguments))
+		atom_cast.filters += filter(arglist(arguments))
+	UNSETEMPTY(filter_data)
 
 /atom/movable/proc/get_filter(name)
 	if(filter_data && filter_data[name])

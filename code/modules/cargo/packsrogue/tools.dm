@@ -34,7 +34,7 @@
 	contains = /obj/item/sleepingbag
 
 /datum/supply_pack/rogue/tools/scroll
-	name = "Paper Scroll"
+	name = "Parchment Scroll"
 	cost = 2
 	contains = /obj/item/paper/scroll
 
@@ -79,7 +79,7 @@
 /datum/supply_pack/rogue/tools/hammer
 	name = "Hammer"
 	cost = 20
-	contains = /obj/item/rogueweapon/hammer
+	contains = /obj/item/rogueweapon/hammer/iron
 
 /datum/supply_pack/rogue/tools/shovel
 	name = "Shovel"
@@ -136,8 +136,8 @@
 /datum/supply_pack/rogue/food/cutlery
 	name = "Set of Cutlery"
 	cost = 10
-	contains = list(/obj/item/cooking/platter,
-	/obj/item/reagent_containers/glass/bowl,
+	contains = list(/obj/item/kitchen/platter/clay,
+	/obj/item/reagent_containers/glass/bowl/clay,
 	/obj/item/reagent_containers/glass/cup,
 	/obj/item/kitchen/fork,
 	/obj/item/kitchen/spoon)
@@ -154,8 +154,18 @@
 
 /datum/supply_pack/rogue/tools/bait
 	name = "Fishing Grub"
-	cost = 3
-	contains = /obj/item/natural/worms/grubs
+	cost = 6
+	contains = /obj/item/fishing/bait/deluxe
+
+/datum/supply_pack/rogue/tools/fishingline
+	name = "Premium Fishing line"
+	cost = 25
+	contains = /obj/item/fishing/reel/deluxe
+
+/datum/supply_pack/rogue/tools/fishinghook
+	name = "Premium Fishing hook"
+	cost = 25
+	contains = /obj/item/fishing/hook/deluxe
 
 /datum/supply_pack/rogue/tools/prarml
 	name = "Prosthetic Left Wooden Arm"
@@ -181,3 +191,18 @@
 	name = "Set of Surgical Tools"
 	cost = 100
 	contains = /obj/item/storage/backpack/rogue/satchel/surgbag
+
+/datum/supply_pack/rogue/tools/glassware_set
+	name = "Set of Glassware Cups"
+	cost = 34 // These glasses are really expensive
+	contains = list(/obj/item/reagent_containers/glass/cup/glassware, /obj/item/reagent_containers/glass/cup/glassware, /obj/item/reagent_containers/glass/cup/glassware)
+
+/datum/supply_pack/rogue/tools/glassware_set
+	name = "Set of Glassware Wine Glasses"
+	cost = 34 // These glasses are really expensive
+	contains = list(/obj/item/reagent_containers/glass/cup/glassware/wineglass, /obj/item/reagent_containers/glass/cup/glassware/wineglass, /obj/item/reagent_containers/glass/cup/glassware/wineglass)
+
+/datum/supply_pack/rogue/tools/glassware_set
+	name = "Set of Glassware Shot Glasses"
+	cost = 28 // These glasses are really expensive
+	contains = list(/obj/item/reagent_containers/glass/cup/glassware/shotglass, /obj/item/reagent_containers/glass/cup/glassware/shotglass, /obj/item/reagent_containers/glass/cup/glassware/shotglass,)

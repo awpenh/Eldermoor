@@ -94,6 +94,18 @@
 //		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	user.face_atom(src)
+
+	if(!user.get_active_held_item() && !user.cmode && src.givingto != user)
+		if(ishuman(src) && ishuman(user))
+			var/mob/living/carbon/human/target = src
+			var/datum/job/job = SSjob.GetJob(target.job)
+			if(length(user.mind?.apprentices) >= user.mind?.max_apprentices)
+				return
+			if((target.age == AGE_CHILD || job?.type == /datum/job/roguetown/vagrant) && target.mind && !target.mind.apprentice)
+				to_chat(user, span_notice("You offer apprenticeship to [target]."))
+				user.mind?.make_apprentice(target)
+				return
+
 	if(user.cmode)
 		if(user.rmb_intent)
 			user.rmb_intent.special_attack(user, src)
@@ -139,6 +151,8 @@
 	else if(!H.givingto && H.get_active_held_item()) //offer item
 		if(get_empty_held_indexes())
 			var/obj/item/I = H.get_active_held_item()
+			if(HAS_TRAIT(I, TRAIT_NODROP) || I.item_flags & ABSTRACT)
+				return
 			H.givingto = src
 			H.lastgibto = world.time
 			to_chat(src, span_notice("[H.name] offers [I] to me."))
@@ -335,12 +349,12 @@
 				var/jextra = FALSE
 				if(m_intent == MOVE_INTENT_RUN)
 					OffBalance(30)
-					jadded = 15
+					jadded = 60
 					jrange = 3
 					jextra = TRUE
 				else
 					OffBalance(20)
-					jadded = 10
+					jadded = 30
 					jrange = 2
 				if(ishuman(src))
 					var/mob/living/carbon/human/H = src
@@ -373,7 +387,7 @@
 					return
 				if(src.incapacitated())
 					return
-				if(!get_location_accessible(src, BODY_ZONE_PRECISE_MOUTH, grabs="other"))
+				if(is_mouth_covered())
 					to_chat(src, span_warning("My mouth is blocked."))
 					return
 				if(HAS_TRAIT(src, TRAIT_NO_BITE))
@@ -404,7 +418,7 @@
 						if(!(zone_selected in stealablezones))
 							to_chat(src, span_warning("What am I going to steal from there?"))
 							return
-						if(do_after(U, 2 SECONDS, target = V, progress = 0))
+						if(do_after(U, 2 SECONDS, V, progress = FALSE))
 							switch(U.zone_selected)
 								if("chest")
 									if (V.get_item_by_slot(SLOT_BACK_L))
@@ -456,9 +470,9 @@
 	if(!(interaction_flags_atom & INTERACT_ATOM_NO_FINGERPRINT_ATTACK_HAND))
 		add_fingerprint(user)
 	if(SEND_SIGNAL(src, COMSIG_ATOM_ATTACK_HAND, user) & COMPONENT_NO_ATTACK_HAND)
-		. = TRUE
+		. |= TRUE
 	if(interaction_flags_atom & INTERACT_ATOM_ATTACK_HAND)
-		. = _try_interact(user)
+		. |= _try_interact(user)
 
 /atom/proc/attack_right(mob/user)
 	. = FALSE
@@ -645,7 +659,7 @@
 	if(dextrous && !ismob(A))
 		..()
 	else
-		AttackingTarget()
+		AttackingTarget(A)
 
 
 

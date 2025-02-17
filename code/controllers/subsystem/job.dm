@@ -138,8 +138,9 @@ SUBSYSTEM_DEF(job)
 			JobDebug("FOC incompatible with antagonist role, Player: [player]")
 			continue
 		if(length(job.allowed_races) && !(player.client.prefs.pref_species.name in job.allowed_races))
-			JobDebug("FOC incompatible with species, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
-			continue
+			if(!(player.client.triumph_ids.Find("race_all")))
+				JobDebug("FOC incompatible with species, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
+				continue
 		if(length(job.allowed_patrons) && !(player.client.prefs.selected_patron.type in job.allowed_patrons))
 			JobDebug("FOC incompatible with patron, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
 			continue
@@ -421,8 +422,9 @@ SUBSYSTEM_DEF(job)
 					continue
 
 				if(length(job.allowed_races) && !(player.client.prefs.pref_species.name in job.allowed_races))
-					JobDebug("DO incompatible with species, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
-					continue
+					if(!(player.client.triumph_ids.Find("race_all")))
+						JobDebug("DO incompatible with species, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
+						continue
 
 				if(length(job.allowed_patrons) && !(player.client.prefs.selected_patron.type in job.allowed_patrons))
 					JobDebug("DO incompatible with patron, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
@@ -488,7 +490,7 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/do_required_jobs()
 	var/amt_picked = 0
-	var/list/require = list("King", "Merchant")
+	var/list/require = list("Monarch", "Merchant")
 	for(var/X in require)
 		var/datum/job/job = GetJob(X)
 		if(!job)
@@ -553,7 +555,7 @@ SUBSYSTEM_DEF(job)
 	return amt_picked
 
 /datum/controller/subsystem/job/proc/validate_required_jobs(list/required_jobs)
-	if(!required_jobs.len)
+	if(!required_jobs.len || SSticker.start_immediately == TRUE) //start_immediately triggers when the world is doing a test run or an admin hits start now, we don't need to check for king
 		return TRUE
 	for(var/required_group in required_jobs)
 		var/group_ok = TRUE
@@ -801,81 +803,11 @@ SUBSYSTEM_DEF(job)
 		destination.JoinPlayerHere(M, buckle)
 		return
 
-	//bad mojo
-	var/area/shuttle/arrival/A = GLOB.areas_by_type[/area/shuttle/arrival]
-	if(A)
-		//first check if we can find a chair
-		var/obj/structure/chair/C = locate() in A
-		if(C)
-			C.JoinPlayerHere(M, buckle)
-			return
-
-		//last hurrah
-		var/list/avail = list()
-		for(var/turf/T in A)
-			if(!is_blocked_turf(T, TRUE))
-				avail += T
-		if(avail.len)
-			destination = pick(avail)
-			destination.JoinPlayerHere(M, FALSE)
-			return
-
-	//pick an open spot on arrivals and dump em
-	var/list/arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))
-	if(arrivals_turfs.len)
-		for(var/turf/T in arrivals_turfs)
-			if(!is_blocked_turf(T, TRUE))
-				T.JoinPlayerHere(M, FALSE)
-				return
-		//last chance, pick ANY spot on arrivals and dump em
-		destination = arrivals_turfs[1]
-		destination.JoinPlayerHere(M, FALSE)
-	else
-		var/msg = "Unable to send mob [M] to late join!"
-		message_admins(msg)
-		CRASH(msg)
+	var/msg = "Unable to send mob [M] to late join!"
+	message_admins(msg)
+	CRASH(msg)
 
 
-///////////////////////////////////
-//Keeps track of all living heads//
-///////////////////////////////////
-/datum/controller/subsystem/job/proc/get_living_heads()
-	. = list()
-	for(var/i in GLOB.human_list)
-		var/mob/living/carbon/human/player = i
-		if(player.stat != DEAD && player.mind && (player.mind.assigned_role in GLOB.command_positions))
-			. |= player.mind
-
-
-////////////////////////////
-//Keeps track of all heads//
-////////////////////////////
-/datum/controller/subsystem/job/proc/get_all_heads()
-	. = list()
-	for(var/i in GLOB.mob_list)
-		var/mob/player = i
-		if(player.mind && (player.mind.assigned_role in GLOB.command_positions))
-			. |= player.mind
-
-//////////////////////////////////////////////
-//Keeps track of all living security members//
-//////////////////////////////////////////////
-/datum/controller/subsystem/job/proc/get_living_sec()
-	. = list()
-	for(var/i in GLOB.human_list)
-		var/mob/living/carbon/human/player = i
-		if(player.stat != DEAD && player.mind && (player.mind.assigned_role in GLOB.security_positions))
-			. |= player.mind
-
-////////////////////////////////////////
-//Keeps track of all  security members//
-////////////////////////////////////////
-/datum/controller/subsystem/job/proc/get_all_sec()
-	. = list()
-	for(var/i in GLOB.human_list)
-		var/mob/living/carbon/human/player = i
-		if(player.mind && (player.mind.assigned_role in GLOB.security_positions))
-			. |= player.mind
 
 /datum/controller/subsystem/job/proc/JobDebug(message)
 	log_job_debug(message)

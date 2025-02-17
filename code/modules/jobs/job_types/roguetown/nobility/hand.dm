@@ -19,8 +19,7 @@
 	bypass_lastclass = TRUE
 	whitelist_req = FALSE
 	give_bank_account = 120
-	min_pq = 2
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	min_pq = 8
 
 /*
 /datum/job/roguetown/hand/special_job_check(mob/dead/new_player/player)
@@ -35,11 +34,12 @@
 */
 
 /datum/outfit/job/roguetown/hand
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	shoes = /obj/item/clothing/shoes/roguetown/nobleboot/thighboots
 	belt = /obj/item/storage/belt/rogue/leather/steel
 
 /datum/job/roguetown/hand/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
+	SSfamilytree.AddRoyal(L, FAMILY_OMMER)
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
 		H.advsetup = 1
@@ -65,13 +65,14 @@
 	outfit = /datum/outfit/job/roguetown/hand/handclassic
 
 	category_tags = list(CTAG_HAND)
+	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
 
 //Classical hand start - same as before, nothing changed.
 /datum/outfit/job/roguetown/hand/handclassic/pre_equip(mob/living/carbon/human/H)
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/fancy
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(/obj/item/rogueweapon/knife/dagger/steel = 1, /obj/item/storage/keyring/hand = 1, /obj/item/paper/scroll/frumentarii/roundstart = 1)
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/hand
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/handjacket
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	beltr = /obj/item/rogueweapon/sword/rapier/dec
 	if(H.mind)
@@ -99,6 +100,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/spymaster
 
 	category_tags = list(CTAG_HAND)
+	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 
 //Spymaster start. More similar to the rogue adventurer - loses heavy armor and sword skills for more sneaky stuff.
 /datum/outfit/job/roguetown/hand/spymaster/pre_equip(mob/living/carbon/human/H)
@@ -113,7 +115,6 @@
 	else
 		cloak = /obj/item/clothing/cloak/raincloak/mortus //cool spymaster cloak
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		backr = /obj/item/storage/backpack/rogue/satchel/black
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/hand
 		pants = /obj/item/clothing/under/roguetown/tights/black
 	if(H.mind)
@@ -147,10 +148,11 @@
 	outfit = /datum/outfit/job/roguetown/hand/advisor
 
 	category_tags = list(CTAG_HAND)
+	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
 
 //Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors.
 /datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/fancy
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(/obj/item/rogueweapon/knife/dagger/steel = 1, /obj/item/storage/keyring/hand = 1, /obj/item/reagent_containers/glass/bottle/rogue/poison = 1, /obj/item/paper/scroll/frumentarii/roundstart = 1) //starts with a vial of poison, like all wizened evil advisors do!
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/hand

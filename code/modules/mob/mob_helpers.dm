@@ -162,7 +162,7 @@
 			facing_zone = BODY_ZONE_FACING_L_ARM
 	return facing_zone
 
-///Convert a PRECISE ZONE into the BODY_ZONE
+///Check whether a zone is a PRECISE ZONE
 /proc/check_subzone(zone)
 	if(!zone)
 		return FALSE
@@ -638,8 +638,8 @@
 			mmb_intent.chargedloop = ranged_ability.chargedloop
 			mmb_intent.update_chargeloop()
 
-	hud_used.quad_intents.switch_intent(input)
-	hud_used.give_intent.switch_intent(input)
+	hud_used.quad_intents?.switch_intent(input)
+	hud_used.give_intent?.switch_intent(input)
 	givingto = null
 
 /mob/verb/def_intent_change(input as num)
@@ -664,7 +664,7 @@
 	if(isliving(src))
 		L = src
 	var/client/client = L.client
-	if(L.IsSleeping())
+	if(L.IsSleeping() || L.surrendering)
 		if(cmode)
 			playsound_local(src, 'sound/misc/comboff.ogg', 100)
 			SSdroning.play_area_sound(get_area(src), client)
@@ -802,10 +802,6 @@
 		return B.eye_blind
 	return FALSE
 
-///Is the mob hallucinating?
-/mob/proc/hallucinating()
-	return FALSE
-
 
 // moved out of admins.dm because things other than admin procs were calling this.
 /**
@@ -858,7 +854,7 @@
 			continue
 		var/orbit_link
 		if (source && action == NOTIFY_ORBIT)
-			orbit_link = " <a href='?src=[REF(O)];follow=[REF(source)]'>(Orbit)</a>"
+			orbit_link = " <a href='byond://?src=[REF(O)];follow=[REF(source)]'>(Orbit)</a>"
 		to_chat(O, "<span class='ghostalert'>[message][(enter_link) ? " [enter_link]" : ""][orbit_link]</span>")
 		if(ghost_sound)
 			SEND_SOUND(O, sound(ghost_sound, volume = notify_volume))
@@ -933,7 +929,7 @@
 		var/datum/antagonist/A = M.mind.has_antag_datum(/datum/antagonist/)
 		if(A)
 			poll_message = "[poll_message] Status:[A.name]."
-	var/list/mob/dead/observer/candidates = pollCandidatesForMob(poll_message, ROLE_PAI, null, FALSE, 100, M)
+	var/list/mob/dead/observer/candidates = pollCandidatesForMob(poll_message, ROLE_ASPIRANT, null, FALSE, 100, M)
 
 	if(LAZYLEN(candidates))
 		var/mob/dead/observer/C = pick(candidates)
@@ -1049,4 +1045,12 @@
 		used_title = J.title
 		if((gender == FEMALE) && J.f_title)
 			used_title = J.f_title
+
+		if(J.title == "Monarch")
+			if(gender == FEMALE)
+				used_title = "Queen"
+			else
+				used_title = "King"
+	if(mind?.apprentice)
+		used_title = mind.our_apprentice_name
 	return used_title

@@ -34,7 +34,7 @@
 
 /turf/closed/proc/feel_turf(mob/living/user)
 	to_chat(user, span_notice("I start feeling around the [src]"))
-	if(!do_after(user, 1.5 SECONDS, target = src))
+	if(!do_after(user, 1.5 SECONDS, src))
 		return
 
 	for(var/obj/structure/lever/hidden/lever in contents)
@@ -187,7 +187,7 @@
 			if(user.m_intent != MOVE_INTENT_SNEAK)
 				playsound(user, climbsound, 100, TRUE)
 			user.visible_message("<span class='warning'>[user] starts to climb [src].</span>", "<span class='warning'>I start to climb [src]...</span>")
-			if(do_after(L, used_time, target = src))
+			if(do_after(L, used_time, src))
 				var/pulling = user.pulling
 				if(ismob(pulling))
 					user.pulling.forceMove(target)
@@ -213,11 +213,6 @@
 	user.forceMove(target)
 	to_chat(user, "<span class='warning'>I crawl up the wall.</span>")
 	. = ..()
-
-
-/turf/closed/AfterChange()
-	..()
-	SSair.high_pressure_delta -= src
 
 /turf/closed/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	return FALSE

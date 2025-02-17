@@ -118,6 +118,7 @@ SUBSYSTEM_DEF(death_arena)
 			qdel(carbon)
 		else
 			carbon.returntolobby()
+			qdel(carbon)
 	fighters = list()
 
 	fighting = FALSE
@@ -129,6 +130,7 @@ SUBSYSTEM_DEF(death_arena)
 	for(var/mob/living/carbon/carbon in fighters)
 		fighters -= carbon
 		carbon.returntolobby()
+		qdel(carbon)
 	fight_force_end = null
 	fighting = FALSE
 
@@ -182,6 +184,7 @@ SUBSYSTEM_DEF(death_arena)
 /obj/structure/table/wood/fine/altar/after_added_effects(obj/item/item, mob/user)
 	if(!istype(item, /obj/item/bodypart/head))
 		return
+	add_abstract_elastic_data("combat", "fight_revives", 1)
 	SSdeath_arena.process_fight_end(item, user)
 
 /obj/structure/underworld/ravox

@@ -5,6 +5,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
+		"Rakshari",
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
@@ -14,7 +15,8 @@
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/fisher
-	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
+	category_tags = list(CTAG_PILGRIM)
+	apprentice_name = "Fisher Apprentice"
 
 /datum/outfit/job/roguetown/adventurer/fisher/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -42,7 +44,7 @@
 		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light/striped
 		backl = /obj/item/storage/backpack/rogue/satchel
 		belt = /obj/item/storage/belt/rogue/leather
-		backr = /obj/item/fishingrod
+		backr = /obj/item/fishingrod/fisher
 		beltr = /obj/item/cooking/pan
 		beltl = /obj/item/flint
 		backpack_contents = list(/obj/item/rogueweapon/knife/villager = 1, /obj/item/natural/worms = 1, /obj/item/rogueweapon/shovel/small = 1)
@@ -54,7 +56,7 @@
 		neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 		head = /obj/item/clothing/head/roguetown/fisherhat
 		backl = /obj/item/storage/backpack/rogue/satchel
-		backr = /obj/item/fishingrod
+		backr = /obj/item/fishingrod/fisher
 		belt = /obj/item/storage/belt/rogue/leather
 		beltr = /obj/item/cooking/pan
 		beltl = /obj/item/flint

@@ -50,14 +50,12 @@
 	icon_state = "paper"
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY
-	throw_range = 1
+	throw_range = 2
 	throw_speed = 1
-	pressure_resistance = 0
 	slot_flags = ITEM_SLOT_HEAD
 	body_parts_covered = HEAD
 	resistance_flags = FLAMMABLE
 	max_integrity = 30
-	dog_fashion = /datum/dog_fashion/head
 	drop_sound = 'sound/foley/dropsound/paper_drop.ogg'
 	pickup_sound =  'sound/blank.ogg'
 	grind_results = list(/datum/reagent/cellulose = 3)
@@ -135,7 +133,7 @@
 /obj/item/paper/examine(mob/user)
 	. = ..()
 	if(!mailer)
-		. += "<a href='?src=[REF(src)];read=1'>Read</a> (<a href='?src=[REF(src)];Help=1'>Help</a>)"
+		. += "<a href='byond://?src=[REF(src)];read=1'>Read</a> (<a href='byond://?src=[REF(src)];Help=1'>Help</a>)"
 	else
 		. += "It's from [mailer], addressed to [mailedto].</a>"
 
@@ -159,7 +157,7 @@
 			body { background-image:url('book.png');background-repeat: repeat; }</style></head><body scroll=yes>"}
 		dat += info
 		dat += "<br>"
-		dat += "<a href='?src=[REF(src)];close=1' style='position:absolute;right:50px'>Close</a>"
+		dat += "<a href='byond://?src=[REF(src)];close=1' style='position:absolute;right:50px'>Close</a>"
 		dat += "</body></html>"
 		user << browse(dat, "window=reading;size=500x400;can_close=1;can_minimize=0;can_maximize=0;can_resize=1;titlebar=0;border=0")
 		onclose(user, "reading", src)
@@ -181,12 +179,14 @@
 /obj/item/paper/proc/format_browse(t, mob/user)
 	user << browse_rsc('html/book.png')
 	var/dat = {"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
-			<html><head><style type=\"text/css\">
+			<html><head>
+			<meta charset=\"UTF-8\">
+			<style type=\"text/css\">
 			body { background-image:url('book.png');background-repeat: repeat; }</style></head><body scroll=yes>"}
 	dat += "[t]<br>"
-	dat += "<a href='?src=[REF(src)];close=1' style='position:absolute;right:50px'>Close</a>"
+	dat += "<a href='byond://?src=[REF(src)];close=1' style='position:absolute;right:50px'>Close</a>"
 	dat += "</body></html>"
-	user << browse(dat, "window=reading;size=500x400;can_close=1;can_minimize=0;can_maximize=0;can_resize=1;titlebar=0;border=0")
+	user << browse(dat, "window=reading;size=500x400;can_close=1;can_minimize=0;can_maximize=0;can_resize=1;titlebar=1;border=0")
 
 /obj/item/paper/verb/rename()
 	set name = "Rename paper"
@@ -265,8 +265,8 @@
 /obj/item/paper/proc/updateinfolinks()
 	info_links = info
 	for(var/i in 1 to min(fields, 15))
-		addtofield(i, "<A href='?src=[REF(src)];write=[i]'>write</A> (<A href='?src=[REF(src)];help=1'>\[?\]</A>)", 1)
-	info_links = info_links + "<A href='?src=[REF(src)];write=end'>write</A> <A href='?src=[REF(src)];help=1'>\[?\]</A>"
+		addtofield(i, "<A href='byond://?src=[REF(src)];write=[i]'>write</A> (<A href='byond://?src=[REF(src)];help=1'>\[?\]</A>)", 1)
+	info_links = info_links + "<A href='byond://?src=[REF(src)];write=end'>write</A> <A href='byond://?src=[REF(src)];help=1'>\[?\]</A>"
 
 
 /obj/item/paper/proc/clearpaper()

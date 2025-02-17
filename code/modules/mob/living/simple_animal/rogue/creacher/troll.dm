@@ -2,9 +2,9 @@
 	icon = 'icons/roguetown/mob/monster/trolls.dmi'
 	name = "troll"
 	desc = "Elven legends say these monsters were servants of Dendor tasked to guard his realm; nowadays they are sometimes found in the company of orcs."
-	icon_state = "Troll2"
-	icon_living = "Troll2"
-	icon_dead = "Troll2d"
+	icon_state = "Troll"
+	icon_living = "Troll"
+	icon_dead = "Trolld"
 	pixel_x = -16
 
 	faction = list("orcs")
@@ -22,12 +22,12 @@
 	vision_range = 6
 	aggro_vision_range = 6
 
-	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/spider = 1,
-						/obj/item/alch/horn = 2)
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/spider = 1,
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/strange = 1,
+						/obj/item/alch/horn = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/strange = 1,
 						/obj/item/natural/hide = 2,
 						/obj/item/alch/horn = 2)
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/spider= 2,
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/strange= 2,
 						/obj/item/natural/hide = 3,
 						/obj/item/alch/horn = 2)
 
@@ -57,7 +57,7 @@
 	retreat_health = 0
 	food_max = 250
 	food = 0
-	dodgetime = 20
+	dodgetime = 50
 	aggressive = TRUE
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/troll
@@ -102,7 +102,7 @@
 	if(pulledby)
 		Retaliate()
 		GiveTarget(pulledby)
-	if(fire_stacks <= 0)
+	if(fire_stacks + divine_fire_stacks <= 0)
 		adjustHealth(-rand(20,35))
 
 
@@ -151,8 +151,8 @@
 /obj/effect/decal/remains/troll
 	name = "remains"
 	gender = PLURAL
-	icon_state = "mole_bones"
-	icon = 'icons/roguetown/mob/monster/mole.dmi' // mole bones is a placeholder
+	icon_state = "Trolld"
+
 
 // You know I had to. Hostile, killer cabbit. Strong. Fast. But not as durable.
 // The most foul, cruel and bad tempered feline-rodent you ever set eyes on.

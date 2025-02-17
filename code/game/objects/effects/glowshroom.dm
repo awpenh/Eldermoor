@@ -2,7 +2,7 @@
 
 /obj/structure/kneestingers
 	name = "kneestingers"
-	desc = ""
+	desc = "They're said to glow with Dendor's wrath."
 	anchored = TRUE
 	opacity = 0
 	density = FALSE
@@ -19,24 +19,6 @@
 	qdel(src)
 	new /obj/effect/hotspot(T)
 
-/obj/structure/kneestingers/CanPass(atom/movable/mover, turf/target)
-	if(isliving(mover) && mover.z == z)
-//		var/throwdir = get_dir(src, mover)
-		var/mob/living/L = mover
-
-		if(HAS_TRAIT(L, TRAIT_KNEESTINGER_IMMUNITY)) //Dendor kneestinger immunity
-			return TRUE
-
-		if(L.electrocute_act(30, src))
-			L.consider_ambush()
-			if(L.throwing)
-				L.throwing.finalize(FALSE)
-//			if(mover.loc != loc && L.stat == CONSCIOUS)
-//				L.throw_at(get_step(L, throwdir), 1, 1, L, spin = FALSE)
-			return FALSE
-	. = ..()
-
-
 /obj/structure/kneestingers/Crossed(AM as mob|obj)
 	if(isliving(AM))
 		var/mob/living/L = AM
@@ -46,6 +28,8 @@
 					L.emote("painscream")
 					L.update_sneak_invis(TRUE)
 					L.consider_ambush()
+					if(L.throwing)
+						L.throwing.finalize(FALSE)
 	. = ..()
 
 /obj/structure/kneestingers/attackby(obj/item/W, mob/user, params)
@@ -75,7 +59,7 @@
 	if(damage_type == BURN && damage_amount)
 		playsound(src.loc, 'sound/blank.ogg', 100, TRUE)
 
-/obj/structure/kneestingers/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+/obj/structure/kneestingers/temperature_expose(exposed_temperature, exposed_volume)
 	if(exposed_temperature > 300)
 		take_damage(5, BURN, 0, 0)
 
