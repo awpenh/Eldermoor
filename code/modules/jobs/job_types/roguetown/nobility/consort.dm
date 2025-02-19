@@ -7,12 +7,13 @@
 	spawn_positions = 1
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant)
+	allowed_sexes = list("male")
 	allowed_races = list(
 		"Humen",
 		"Elf",
 		"Half-Elf"
 	)
-	allowed_sexes = list(FEMALE)
+
 
 	tutorial = "Yours was a marriage of political convenience rather than love, yet you have remained the ruling monarch's good friend and confidant throughout your marriage. But your love and loyalty will be tested, for daggers are equally pointed at your throat."
 
