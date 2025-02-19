@@ -8,6 +8,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 1
+	allowed_sexes = list(MALE)
 
 	spells = list(
 		/obj/effect/proc_holder/spell/self/grant_title,
@@ -19,7 +20,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		"Elf",
 		"Half-Elf"
 	)
-	allowed_sexes = list(MALE)
+	
 	outfit = /datum/outfit/job/roguetown/lord
 	display_order = JDO_LORD
 	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error in their ways."
