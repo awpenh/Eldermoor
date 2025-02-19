@@ -7,7 +7,7 @@
 	spawn_positions = 1
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant)
-	allowed_sexes = list("Woman")
+	allowed_sexes = list("FEMALE")
 	allowed_races = list(
 		"Humen",
 		"Elf",
