@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	f_title = "Priestess"
+	f_title = "Priest"
 	allowed_races = list("Humen")
 	allowed_sexes = list(MALE)
 	tutorial = "You are a devoted follower of Astrata. The divine is all that matters in an immoral world. The Sun Queen and her pantheon rule over all, and you will preach their wisdom to Vanderlin. It is up to you to shephard the flock into a Ten-fearing future."

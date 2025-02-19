@@ -11,7 +11,7 @@
 
 	allowed_ages = list(AGE_CHILD)
 
-	tutorial = "One nite the Innkeeper took you in durring a harsh winter, you've been thankful ever since."
+	tutorial = "One nite the Innkeeper took you in during a harsh winter, you've been thankful ever since."
 
 	outfit = /datum/outfit/job/roguetown/innkeep_son
 	display_order = JDO_INNKEEP_CHILD

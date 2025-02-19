@@ -13,9 +13,9 @@
 		"Dwarf",
 		"Aasimar"
 	)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 
-	tutorial = "A recent arrival from Grenzelhoft, you are a member of the secretive lodges that have held to the service of Psydon since the Apotheosis War. You have been sent by your leader, the Holy Bishop, to assign the local Priest in combatting the increasing number of heretics and monsters infiltrating Vanderlin."
+	tutorial = "A rather demented job but one that must be done; The Inquisitor is typically a religious zealot or someone who finds striking pain into others fun. While typically they are Psydonians (Old Believers) It is not uncommon to see some that praise the Ten. Primarily hired to do the Church's dirty work and to keep heretics from amongst the men."
 	whitelist_req = FALSE
 
 	outfit = /datum/outfit/job/roguetown/inquisitor

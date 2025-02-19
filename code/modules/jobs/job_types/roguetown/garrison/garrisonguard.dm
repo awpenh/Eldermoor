@@ -9,12 +9,10 @@
 	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
-		"Elf",
 		"Half-Elf",
 		"Dwarf",
 		"Aasimar"
 	)
-	allowed_races = list("Humen", "Half-Elf", "Elf", "Dwarf", "Aasimar")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL)
 	tutorial = "You are a member of the City Watch. You've proven yourself worthy to the Captain and now you've got yourself a salary.. as long as you keep the peace that is."
 	display_order = JDO_CITYWATCHMEN

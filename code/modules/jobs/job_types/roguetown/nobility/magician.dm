@@ -1,5 +1,5 @@
 /datum/job/roguetown/magician
-	title = "Court Magician"
+	title = "Court Wizard"
 	flag = WIZARD
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -10,11 +10,10 @@
 		"Humen",
 		"Elf",
 		"Half-Elf",
-		"Dwarf",
 		"Aasimar"
 	)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	display_order = JDO_MAGICIAN
 	tutorial = "Dream interpreter, soothsayer, astrologer and valued courtier. A scholar of Noc, or a secret worshipper of Zizo. \
 	Indebted to the ruler for funding yils of mystical studies in these dark times, \

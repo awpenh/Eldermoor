@@ -21,8 +21,8 @@
 	flag = MINOR_NOBLE
 	department_flag = NOBLEMEN
 	apprentice_name = "Servant"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	min_pq = 1
 	give_bank_account = 60
 

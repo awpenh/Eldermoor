@@ -14,13 +14,9 @@
 	The nobility needs good men, and they only come in a pair of pairs."
 
 	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Aasimar"
+		"Humen"
 	)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 
 	outfit = /datum/outfit/job/roguetown/watchman
 	advclass_cat_rolls = list(CTAG_MENATARMS = 20)

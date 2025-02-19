@@ -16,7 +16,7 @@
 		"Aasimar",
 		"Half-Orc"
 	)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 
 	display_order = JDO_DUNGEONEER
 

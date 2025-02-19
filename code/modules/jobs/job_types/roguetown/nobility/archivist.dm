@@ -13,7 +13,6 @@
 		"Humen",
 		"Elf",
 		"Half-Elf",
-		"Dwarf",
 		"Aasimar"
 	)
 	spells = list(/obj/effect/proc_holder/spell/self/learnspell, /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)

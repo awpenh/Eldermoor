@@ -7,10 +7,9 @@
 	spawn_positions = 1
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/town_militia)
-	allowed_sexes = list(MALE, FEMALE) //same as town guard
+	allowed_sexes = list(MALE) //same as town guard
 	allowed_races = list(
 		"Humen",
-		"Elf",
 		"Half-Elf",
 		"Dwarf",
 		"Aasimar"

@@ -20,8 +20,8 @@
 	department_flag = PEASANTS
 	flag = CHEESEMAKER
 	display_order = JDO_CHEESEMAKER
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 
 /datum/outfit/job/roguetown/cheesemaker/pre_equip(mob/living/carbon/human/H)
 	..()
