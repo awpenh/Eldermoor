@@ -20,7 +20,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"City Watchmen",
 	"Men-at-arms",
 	//"Jailor",
-	"Dungeoneer",
+	"Dungeoneer"
 	//"Town Elder"
 	//"Forest Warden"
 	//"Forest Guard"
@@ -32,7 +32,7 @@ GLOBAL_LIST_INIT(church_positions, list(
 	"Gravetender",
 	"Inquisitor",
 	"Confessor",
-	"Church Guard",
+	"Church Guard"
 	//"Adept"
 	))
 
@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(serf_positions, list(
 	//"Artificer",
 	"Matron",
 	"Physicker",
-	"Scribe",
+	"Scribe"
 	))
 
 GLOBAL_LIST_INIT(peasant_positions, list(
@@ -66,7 +66,7 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Beggar",
 	"Adventurer",
 	"Pilgrim",
-	"Bandit",
+	"Bandit"
 ))
 
 GLOBAL_LIST_INIT(apprentices_positions, list(
@@ -80,7 +80,7 @@ GLOBAL_LIST_INIT(apprentices_positions, list(
 GLOBAL_LIST_INIT(youngfolk_positions, list(
 	"Innkeepers Son",
 	"Orphan",
-	"Churchling",
+	"Churchling"
 ))
 
 GLOBAL_LIST_INIT(allmig_positions, list(
