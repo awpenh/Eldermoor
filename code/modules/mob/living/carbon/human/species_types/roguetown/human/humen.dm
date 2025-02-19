@@ -134,5 +134,5 @@
 	switch(H.skin_tone)
 		if(SKIN_COLOR_ICECAP) //Anglish, just a placeholder for now for demonstration.
 			return strings("Anglish.json", "Anglish")
-			if(SKIN_COLOR_ARCTIC)
+		if(SKIN_COLOR_ARCTIC)
 			return strings("german_replacement.json", "german")
