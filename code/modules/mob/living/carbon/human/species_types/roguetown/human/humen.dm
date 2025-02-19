@@ -129,7 +129,7 @@
 
 /datum/species/human/northern/random_surname()
 	return " [pick(world.file2list("strings/rt/names/human/humnorlast.txt"))]"
-            
+
 /datum/species/human/northern/get_accent_list(mob/living/carbon/human/H)
 	switch(H.skin_tone)
 		if(SKIN_COLOR_ICECAP) //Anglish, just a placeholder for now for demonstration.
