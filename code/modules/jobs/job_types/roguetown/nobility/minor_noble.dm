@@ -1,4 +1,4 @@
-/datum/job/roguetown/minor_noble
+/* /datum/job/roguetown/minor_noble
 	title = "Noble"
 	tutorial = "The blood of a noble family runs through your veins. You are the living proof that the minor houses \
 	of Vanderlin still exist in spite of the Monarch. You have many mammons to your name, but with wealth comes \
