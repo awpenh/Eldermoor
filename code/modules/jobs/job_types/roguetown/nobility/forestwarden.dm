@@ -1,7 +1,7 @@
 /datum/job/roguetown/forestwarden
-	title = "Forest Warden"
+	title = "Gamekeeper"
 	flag = FORWARDEN
-	department_flag = GARRISON
+	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
