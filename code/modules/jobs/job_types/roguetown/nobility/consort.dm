@@ -1,5 +1,5 @@
 /datum/job/roguetown/consort
-	title = "Consort"
+	title = "Queen Consort"
 	flag = CONSORT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -12,6 +12,7 @@
 		"Elf",
 		"Half-Elf"
 	)
+	allowed_sexes = list(FEMALE)
 
 	tutorial = "Yours was a marriage of political convenience rather than love, yet you have remained the ruling monarch's good friend and confidant throughout your marriage. But your love and loyalty will be tested, for daggers are equally pointed at your throat."
 
