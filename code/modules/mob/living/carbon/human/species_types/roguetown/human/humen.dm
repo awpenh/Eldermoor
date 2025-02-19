@@ -134,3 +134,4 @@
 	switch(H.skin_tone)
 		if(SKIN_COLOR_ICECAP) //Anglish, just a placeholder for now for demonstration.
 			return strings("Anglish.json", "Anglish")
+			

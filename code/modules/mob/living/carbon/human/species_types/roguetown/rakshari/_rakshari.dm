@@ -74,3 +74,4 @@
 		"City Rakshari" = SKIN_COLOR_COASTAL_ELF, // - (White 4)
 		"Desert Rakshari" = SKIN_COLOR_WOOD_ELF, // - (Mediterranean 1)
 	))
+    
