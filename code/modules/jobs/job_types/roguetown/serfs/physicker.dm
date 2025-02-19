@@ -1,5 +1,5 @@
 /datum/job/roguetown/physicker
-	title = "Physicker"
+	title = "Physician"
 	tutorial =  "Those who fail their studies, or are exiled from the towns they take \
 				residence as feldshers in, often end up becoming wandering physickers. \
 				Capable doctors nonetheless, they journey from place to place offering \

@@ -11,7 +11,6 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Dark Elf",
 		"Aasimar"
 	)
 	tutorial = "Chores, exercise, prayer... and more chores. You are a humble acolyte at the temple in Vanderlin, not yet a trained guardian or an ordained priest. But who else would keep the fires lit and the floors clean?"

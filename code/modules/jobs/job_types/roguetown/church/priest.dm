@@ -8,13 +8,8 @@
 	spawn_positions = 1
 
 	f_title = "Priestess"
-	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Aasimar"
-	)
+	allowed_races = list("Humen")
+	allowed_sexes = list(MALE)
 	tutorial = "You are a devoted follower of Astrata. The divine is all that matters in an immoral world. The Sun Queen and her pantheon rule over all, and you will preach their wisdom to Vanderlin. It is up to you to shephard the flock into a Ten-fearing future."
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
