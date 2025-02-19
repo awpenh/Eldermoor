@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/obj/effect/proc_holder/spell/self/grant_title,
 		/obj/effect/proc_holder/spell/self/grant_nobility,
 	)
-	allowed_sexes = list("male")
+	allowed_sexes = list("Male")
 	allowed_races = list("Humen")
 	outfit = /datum/outfit/job/roguetown/lord
 	display_order = JDO_LORD
