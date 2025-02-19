@@ -16,9 +16,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	)
 
 	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf"
+		"Humen"
 	)
 	
 	outfit = /datum/outfit/job/roguetown/lord
