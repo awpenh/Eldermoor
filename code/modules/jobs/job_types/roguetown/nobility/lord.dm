@@ -14,7 +14,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/obj/effect/proc_holder/spell/self/grant_nobility,
 	)
 	allowed_sexes = list(
-		"MALE"
+		"Male"
 	)
 	allowed_races = list(
 		"Humen"

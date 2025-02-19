@@ -8,7 +8,7 @@
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant)
 	allowed_sexes = list(
-		"FEMALE"
+		"Female"
 	)
 	allowed_races = list(
 		"Humen",
