@@ -143,7 +143,7 @@
 		/datum/migrant_role/prisoner_guard = 2,
 		/datum/migrant_role/mig_prisoner = 4,
 	)
-	greet_text = "Nobody escape the rule of Vanderlin's monarchs. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."
+	greet_text = "Nobody escape the rule of Vanderlin's Kings. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."
 
 /datum/migrant_wave/prisoner_convoy_down
 	name = "The prisoners convoy"
@@ -156,7 +156,7 @@
 		/datum/migrant_role/prisoner_guard = 1,
 		/datum/migrant_role/mig_prisoner = 3,
 	)
-	greet_text = "Nobody escape the rule of Vanderlin's monarchs. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."
+	greet_text = "Nobody escape the rule of Vanderlin's Kings. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."
 
 /datum/migrant_wave/prisoner_convoy_down_two
 	name = "The prisoners convoy"
@@ -167,4 +167,4 @@
 		/datum/migrant_role/gaoler = 1,
 		/datum/migrant_role/mig_prisoner = 1,
 	)
-	greet_text = "Nobody escape the rule of Vanderlin's monarchs. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."
+	greet_text = "Nobody escape the rule of Vanderlin's Kings. Some have fled to the neighbouring kingdom, Heartfelt and got caught, they are now on their way back."

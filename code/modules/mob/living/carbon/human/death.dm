@@ -103,7 +103,7 @@
 			if(!istype(src, /mob/living/carbon/human/species/skeleton/death_arena) && get_triumphs() > 0)
 				adjust_triumphs(-1)
 
-		if(job == "Monarch")
+		if(job == "King")
 			for(var/mob/living/carbon/human/HU in GLOB.player_list)
 				if(!HU.stat)
 					if(is_in_roguetown(HU))
@@ -111,7 +111,7 @@
 
 		if(yeae)
 			if(mind)
-				if((mind.assigned_role == "Monarch"))
+				if((mind.assigned_role == "King"))
 					addomen(OMEN_NOLORD)			// Re-adding at Ook's request.
 				if(mind.assigned_role == "Priest")
 					addomen(OMEN_NOPRIEST)	// message changed to reflect only priest for now, change it if more roles added. (Priest dying causes Bad Omen)

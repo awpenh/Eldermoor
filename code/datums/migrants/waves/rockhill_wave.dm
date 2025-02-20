@@ -1,6 +1,6 @@
 /datum/migrant_role/rockhill/mayor
 	name = "Mayor of Rockhill"
-	greet_text = "You are the mayor of Rockhill, you've come to Vanderlin to discuss important matters with their Monarch."
+	greet_text = "You are the mayor of Rockhill, you've come to Vanderlin to discuss important matters with their King."
 	outfit = /datum/outfit/job/roguetown/rockhill/mayor
 	allowed_sexes = list(MALE,FEMALE)
 	allowed_races = list("Humen","Dwarf","Elf","Half-Elf")

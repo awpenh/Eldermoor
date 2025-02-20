@@ -100,7 +100,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 //	SSticker.rulermob = H
 
 /datum/job/roguetown/exlord //just used to change the lords title
-	title = "Ex-Monarch"
+	title = "Ex-King"
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"

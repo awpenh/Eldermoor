@@ -77,7 +77,7 @@ SUBSYSTEM_DEF(ticker)
 	var/end_state = "undefined"
 	var/job_change_locked = FALSE
 	var/list/royals_readied = list()
-	var/rulertype = "Monarch" // reports whether king or queen rules
+	var/rulertype = "King" // reports whether king or queen rules
 	var/rulermob = null // reports what the ruling mob is.
 	var/failedstarts = 0
 	var/list/manualmodes = list()
@@ -252,10 +252,10 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
-	var/list/required_jobs = list("Monarch")
+	var/list/required_jobs = list("King")
 #ifdef DEPLOY_TEST
 	required_jobs = list()
-	readied_jobs = list("Monarch")
+	readied_jobs = list("King")
 #endif
 #ifdef ROGUEWORLD
 	required_jobs = list()
@@ -272,8 +272,8 @@ SUBSYSTEM_DEF(ticker)
 							continue
 					readied_jobs.Add(V)
 
-	if(("Monarch" in readied_jobs) || start_immediately == TRUE) //start_immediately triggers when the world is doing a test run or an admin hits start now, we don't need to check for king
-		rulertype = "Monarch"
+	if(("King" in readied_jobs) || start_immediately == TRUE) //start_immediately triggers when the world is doing a test run or an admin hits start now, we don't need to check for king
+		rulertype = "King"
 	else
 		var/list/stuffy = list("Set a Ruler to 'high' in your class preferences to start the game!", "PLAY Ruler NOW!", "A Ruler is required to start.", "Pray for a Ruler.", "One day, there will be a Ruler.", "Just try playing Ruler.", "If you don't play Ruler, the game will never start.", "We need at least one Ruler to start the game.", "We're waiting for you to pick Ruler to start.", "Still no Ruler is readied..", "I'm going to lose my mind if we don't get a Ruler readied up.","No. The game will not start because there is no Ruler.","What's the point of Vanderlin without a Ruler?")
 		to_chat(world, "<span class='purple'>[pick(stuffy)]</span>")
@@ -521,11 +521,11 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/select_ruler()
 	switch(rulertype)
-		if("Monarch")
+		if("King")
 			for(var/mob/living/carbon/human/K in world)
 				if(istype(K, /mob/living/carbon/human/dummy))
 					continue
-				if(K.job == "Monarch")
+				if(K.job == "King")
 					rulermob = K
 					return
 

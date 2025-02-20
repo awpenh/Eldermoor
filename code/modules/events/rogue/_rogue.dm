@@ -39,7 +39,7 @@ GLOBAL_LIST_INIT(badomens, list())
 		if(OMEN_SKELETONSIEGE)
 			used = "Unwelcome visitors invade our lands!"
 		if(OMEN_NOLORD)
-			used = "The Monarch has been slain! Our town is at the mercy of invaders."
+			used = "The King has been slain! Our town is at the mercy of invaders."
 		if(OMEN_SUNSTEAL)
 			used = "The Sun is wounded! Astrata falls silent across the land!"
 		if(OMEN_ASCEND)

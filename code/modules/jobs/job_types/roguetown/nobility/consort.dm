@@ -11,7 +11,7 @@
 	allowed_races = list("Humen","Elf","Half-Elf")
 	allowed_sexes = list(FEMALE)
 
-	tutorial = "Yours was a marriage of political convenience rather than love, yet you have remained the ruling monarch's good friend and confidant throughout your marriage. But your love and loyalty will be tested, for daggers are equally pointed at your throat."
+	tutorial = "Yours was a marriage of political convenience rather than love, yet you have remained the ruling King's good friend and confidant throughout your marriage. But your love and loyalty will be tested, for daggers are equally pointed at your throat."
 
 	outfit = /datum/outfit/job/roguetown/consort
 	advclass_cat_rolls = list(CTAG_CONSORT = 20)
@@ -174,7 +174,7 @@
 
 /datum/advclass/consort/courtesan/night_spy
 	name = "Night-Mother's Spy Consort"
-	tutorial = "Raised by the guild to report on all the Monarch's action. Using your honeyed words and charm have brought you right to being a ruler's beloved consort."
+	tutorial = "Raised by the guild to report on all the King's action. Using your honeyed words and charm have brought you right to being a ruler's beloved consort."
 	outfit = /datum/outfit/job/roguetown/consort/courtesan/spy
 
 	category_tags = list(CTAG_CONSORT)

@@ -109,7 +109,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	var/lord_dead = FALSE
 	for(var/mob/living/carbon/human/H in GLOB.human_list)
 		if(H.mind)
-			if(H.job == "Monarch")
+			if(H.job == "King")
 				lord_found = TRUE
 				if(H.stat == DEAD)
 					lord_dead = TRUE
@@ -236,7 +236,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 /datum/game_mode/chaosmode/proc/pick_bandits()
 	//BANDITS
 	banditgoal = rand(200,400)
-	restricted_jobs = list("Monarch",
+	restricted_jobs = list("King",
 	"Consort",
 	"Prince",
 	"Princess",
@@ -399,7 +399,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	restricted_jobs = list()
 
 /datum/game_mode/chaosmode/proc/pick_maniac()
-	restricted_jobs = list("Monarch",
+	restricted_jobs = list("King",
 	"Consort")
 	antag_candidates = get_players_for_role(ROLE_VILLAIN)
 	var/datum/mind/villain = pick_n_take(antag_candidates)
@@ -421,7 +421,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 
 /datum/game_mode/chaosmode/proc/pick_cultist()
 	var/remaining = 3 // 1 heresiarch, 2 cultists
-	restricted_jobs = list("Monarch",
+	restricted_jobs = list("King",
 	"Bandit",
 	"Assasin",
 	"Consort",
@@ -475,7 +475,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 /datum/game_mode/chaosmode/proc/pick_lich()
 
 	restricted_jobs = list(
-	"Monarch",
+	"King",
 	"Consort",
 	"Dungeoneer",
 	"Inquisitor",
@@ -525,7 +525,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 /datum/game_mode/chaosmode/proc/pick_vampires()
 	var/vampsremaining = 3
 	restricted_jobs = list(
-	"Monarch",
+	"King",
 	"Consort",
 	"Dungeoneer",
 	"Inquisitor",
@@ -586,7 +586,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 /datum/game_mode/chaosmode/proc/pick_werewolves()
 	// Ideally we want adventurers/pilgrims/towners to roll it
 	restricted_jobs = list(
-	"Monarch",
+	"King",
 	"Consort",
 	"Dungeoneer",
 	"Inquisitor",

@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(noble_positions, list(
 	"Court Wizard",
 	"Archivist",
 	"Merchant",
-	"Court Physician",
+	"Feldsher",
 	"Gamekeeper",
 	"Apothecary"
 	//"Noble"

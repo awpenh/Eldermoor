@@ -244,13 +244,13 @@
 		var/datum/game_mode/chaosmode/C = SSticker.mode
 		if(C.check_for_lord)
 			if(!C.check_for_lord(forced = TRUE))
-				end_reason = pick("Without a Monarch, they were doomed to become slaves of Zizo.",
-								"Without a Monarch, they were doomed to be eaten by nite creachers.",
-								"Without a Monarch, they were doomed to become victims of Gehenna - their souls never reaching Necra's judgement.",
-								"Without a Monarch, the town would be snuffed out in the night like a finger to a dying, dancing candle.",
-								"Without a Monarch, the Lich made them his playthings - a new undead army would assail the lands.",
-								"Without a Monarch, some jealous rival reigned in tyranny - a despot, traded for a despot.",
-								"Without a Monarch, the town was left to rot, picked apart by carrion eaters.")
+				end_reason = pick("Without a King, they were doomed to become slaves of Zizo.",
+								"Without a King, they were doomed to be eaten by nite creachers.",
+								"Without a King, they were doomed to become victims of Gehenna - their souls never reaching Necra's judgement.",
+								"Without a King, the town would be snuffed out in the night like a finger to a dying, dancing candle.",
+								"Without a King, the Lich made them his playthings - a new undead army would assail the lands.",
+								"Without a King, some jealous rival reigned in tyranny - a despot, traded for a despot.",
+								"Without a King, the town was left to rot, picked apart by carrion eaters.")
 //		if(C.not_enough_players)
 //			end_reason = "The town was abandoned."
 

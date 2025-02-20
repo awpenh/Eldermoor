@@ -96,7 +96,7 @@
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Monarch")
+		if(HU.mind.assigned_role == "King")
 			continue
 		if(!HU.head)
 			continue
@@ -104,11 +104,11 @@
 			continue
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "Monarch" || HL.mind.assigned_role == "Consort")
+				if(HL.mind.assigned_role == "King" || HL.mind.assigned_role == "Consort")
 					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Monarch")
-				HL.job = "Ex-Monarch"
+			if(HL.job == "King")
+				HL.job = "Ex-King"
 				var/datum/job/J = SSjob.GetJobType(/datum/job/roguetown/lord)
 				J?.remove_spells(HL)
 			if(HL.job == "Consort")
@@ -117,11 +117,11 @@
 				J?.remove_spells(HL)
 		switch(HU.gender)
 			if("male")
-				HU.mind.assigned_role = "Monarch"
-				HU.job = "Monarch"
+				HU.mind.assigned_role = "King"
+				HU.job = "King"
 			if("female")
-				HU.mind.assigned_role = "Monarch"
-				HU.job = "Monarch"
+				HU.mind.assigned_role = "King"
+				HU.job = "King"
 		var/datum/job/J = SSjob.GetJobType(/datum/job/roguetown/lord)
 		J?.add_spells(HU)
 		SSticker.rulermob = HU

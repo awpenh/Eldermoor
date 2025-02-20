@@ -29,7 +29,7 @@ GLOBAL_LIST_INIT(rod_jobs, list(
 	"Servant",
 	"Steward",
 	"Consort",
-	"Monarch",
+	"King",
 	"Prince",
 	"Hand",
 	"Court Magician",
