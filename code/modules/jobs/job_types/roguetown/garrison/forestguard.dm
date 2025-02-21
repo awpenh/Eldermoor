@@ -1,12 +1,14 @@
 /datum/job/roguetown/forestguard
-	title = "Forest Guard"
+	title = "Tollman"
 	flag = FORGUARD
 	department_flag = GARRISON
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
+
+	f_title = "Tollwoman"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	allowed_races = list(
 		"Humen",
 		"Elf",

@@ -1,5 +1,5 @@
 /datum/job/roguetown/forestwarden
-	title = "Gamekeeper"
+	title = "Tollkeeper"
 	flag = FORWARDEN
 	department_flag = NOBLEMEN
 	faction = "Station"

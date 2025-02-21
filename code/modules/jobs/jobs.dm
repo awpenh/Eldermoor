@@ -9,7 +9,6 @@ GLOBAL_LIST_INIT(noble_positions, list(
 	"Archivist",
 	"Merchant",
 	"Feldsher",
-	"Gamekeeper",
 	"Apothecary"
 	//"Noble"
 	))
@@ -20,10 +19,10 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"City Watchmen",
 	"Men-at-arms",
 	//"Jailor",
-	"Dungeoneer"
-	//"Town Elder"
-	//"Forest Warden"
-	//"Forest Guard"
+	"Dungeoneer",
+	//"Town Elder",
+	"Tollkeeper",
+	"Tollguard"
 	))
 
 GLOBAL_LIST_INIT(church_positions, list(
