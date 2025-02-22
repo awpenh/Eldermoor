@@ -1,5 +1,5 @@
 /datum/job/roguetown/tollkeeper
-	title = "Tollkeeper"
+	title = "Toll Keeper"
 	flag = TOLKEEPER
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -14,7 +14,7 @@
 		"Dwarf",
 	)
 	tutorial = "You were not always a leader, but you earned your place through blood and coin.\
-	When the last Tollkeeper fell, it was your hand that held the line, your voice that gave the orders.\
+	When the last Toll Keeper fell, it was your hand that held the line, your voice that gave the orders.\
 	Now, the roads and the bogs are yours to command—every toll paid, every blade drawn, all under your watch.\
 	The king trusts you to keep the peace, to keep the gold flowing, and to ensure that those who refuse learn the cost of defiance.\
 	No one crosses without paying. No one leaves without permission."

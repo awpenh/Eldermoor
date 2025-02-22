@@ -1,12 +1,11 @@
 /datum/job/roguetown/tollguard
-	title = "Tollman"
+	title = "Toll Guard"
 	flag = TOLGUARD
 	department_flag = GARRISON
 	faction = "Station"
 	total_positions = 7
 	spawn_positions = 7
 
-	f_title = "Tollwoman"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	allowed_races = list(
@@ -15,7 +14,7 @@
 		"Half-Elf",
 		"Dwarf",
 	)
-	tutorial = "You were not always a Tollguard. Maybe you were a swindler, a poacher, or just someone desperate enough to take the offer.\
+	tutorial = "You were not always a Toll Guard. Maybe you were a swindler, a poacher, or just someone desperate enough to take the offer.\
 			The roads through the bogs are treacherous, not just from the beasts lurking beneath the muck, but from those who think they can pass without paying.\
 			It is a simple job—take the toll, keep the peace, and make sure the ones who refuse do not make it far.\
 			Some say you are no better than the outlaws you chase, but out here, gold makes the rules. \
@@ -52,7 +51,7 @@
 
 // Axes Maces and Swords
 /datum/advclass/tollguard/infantry
-	name = "Forest Infantry"
+	name = "Toll Guard Infantry"
 	tutorial = "You traded a cell for a sword. The roads need enforcers, and you get to be one. Take the toll, spill some blood if needed, and make sure the bog swallows the bodies."
 	outfit = /datum/outfit/job/roguetown/tollguard/infantry
 	category_tags = list(CTAG_TOLGARRISON)
@@ -91,7 +90,7 @@
 
 // Bows and Knives
 /datum/advclass/tollguard/ranger
-	name = "Forest Ranger"
+	name = "Toll Guard Ranger"
 	tutorial = "You know the swamps better than most. Whether you’re a poacher or just too quick to catch, now you're the one keeping watch—hunting those who think they can pass without paying."
 	outfit = /datum/outfit/job/roguetown/tollguard/ranger
 	category_tags = list(CTAG_TOLGARRISON)
@@ -129,8 +128,8 @@
 
 // Hand to Hand
 /datum/advclass/tollguard/brawler
-	name = "Forest Brawler"
-	tutorial = "Some fights land you in chains, others land you a job. Now you're here, breaking bones for the Tollguards. Pay up, or you make them pay instead."
+	name = "Toll Guard Brawler"
+	tutorial = "Some fights land you in chains, others land you a job. Now you're here, breaking bones for the Toll Guards. Pay up, or you make them pay instead."
 	outfit = /datum/outfit/job/roguetown/tollguard/brawler
 	category_tags = list(CTAG_TOLGARRISON)
 
