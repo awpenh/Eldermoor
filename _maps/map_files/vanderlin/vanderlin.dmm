@@ -14787,11 +14787,6 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
-"kmT" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass/maneater/real,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/rtfield)
 "kmY" = (
 /obj/structure/bars,
 /obj/structure/bars/passage/shutter/open{
@@ -84738,11 +84733,11 @@ tzO
 iUP
 vCx
 iUP
-tzO
-jAf
-tzO
+sEQ
+sEQ
+sEQ
 iUP
-sBG
+vCx
 iUP
 jAf
 nqj
@@ -85147,7 +85142,7 @@ sEQ
 sEQ
 sBG
 xSX
-kmT
+chp
 xSX
 jAf
 csy
