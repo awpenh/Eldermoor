@@ -129,7 +129,7 @@
 // Hand to Hand
 /datum/advclass/tollguard/brawler
 	name = "Toll Guard Brawler"
-	tutorial = "Some fights land you in chains, others land you a job. Now you're here, breaking bones for the Toll Guards. Pay up, or you make them pay instead."
+	tutorial = "Some fights land you in chains, others land you a job. Now you are here, breaking bones for the Toll Guards. Pay up, or you make them pay instead."
 	outfit = /datum/outfit/job/roguetown/tollguard/brawler
 	category_tags = list(CTAG_TOLGARRISON)
 
