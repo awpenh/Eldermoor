@@ -1,10 +1,10 @@
-/datum/job/roguetown/forestguard
+/datum/job/roguetown/tollguard
 	title = "Tollman"
-	flag = FORGUARD
+	flag = TOLGUARD
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 7
+	spawn_positions = 7
 
 	f_title = "Tollwoman"
 	allowed_sexes = list(MALE, FEMALE)
@@ -15,11 +15,12 @@
 		"Half-Elf",
 		"Dwarf",
 	)
-	tutorial = "You've been keeping the streets clean of neer-do-wells and taffers for most of your time in the garrison.\
-			You've been through the wringer - having been a soldier in the short-lived Goblin Wars. You've emerged through it, beaten to hell.\
-			Alive, but you wouldn't call it living. A fellow soldier had been given the title of Forest Warden for his valorant\
-			efforts,and he's plucked you from one dangerous position into another. Atleast with the battle-brothers by your side, you will never die alone."
-	display_order = JDO_FORGUARD
+	tutorial = "You were not always a Tollguard. Maybe you were a swindler, a poacher, or just someone desperate enough to take the offer.\
+			The roads through the bogs are treacherous, not just from the beasts lurking beneath the muck, but from those who think they can pass without paying.\
+			It is a simple job—take the toll, keep the peace, and make sure the ones who refuse do not make it far.\
+			Some say you are no better than the outlaws you chase, but out here, gold makes the rules. \
+			And as long as the coin keeps flowing, you don not ask questions."
+	display_order = JDO_TOLGUARD
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	selection_color = "#0d6929"
@@ -27,10 +28,10 @@
 	min_pq = 5
 	cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 
-	outfit = /datum/outfit/job/roguetown/forestguard
-	advclass_cat_rolls = list(CTAG_FORGARRISON = 20)
+	outfit = /datum/outfit/job/roguetown/tollguard
+	advclass_cat_rolls = list(CTAG_TOLGARRISON = 20)
 
-/datum/outfit/job/roguetown/forestguard/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/tollguard/pre_equip(mob/living/carbon/human/H)
 	..()
 	cloak = /obj/item/clothing/cloak/raincloak/green
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
@@ -41,7 +42,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
 
-/datum/job/roguetown/forestguard/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/tollguard/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(L)
 		var/mob/living/carbon/human/H = L
@@ -50,13 +51,13 @@
 		H.become_blind("advsetup")
 
 // Axes Maces and Swords
-/datum/advclass/forestguard/infantry
+/datum/advclass/tollguard/infantry
 	name = "Forest Infantry"
-	tutorial = "In the goblin wars you were deployed to the front lines, you caved in thier skulls and chopped thier legs off."
-	outfit = /datum/outfit/job/roguetown/forestguard/infantry
-	category_tags = list(CTAG_FORGARRISON)
+	tutorial = "You traded a cell for a sword. The roads need enforcers, and you get to be one. Take the toll, spill some blood if needed, and make sure the bog swallows the bodies."
+	outfit = /datum/outfit/job/roguetown/tollguard/infantry
+	category_tags = list(CTAG_TOLGARRISON)
 
-/datum/outfit/job/roguetown/forestguard/infantry/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/tollguard/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather/advanced
@@ -89,13 +90,13 @@
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 // Bows and Knives
-/datum/advclass/forestguard/ranger
+/datum/advclass/tollguard/ranger
 	name = "Forest Ranger"
-	tutorial = "In the goblin wars you were always one of the fastest aswell as one of the weakest in the platoon. Your trusty bow has served you well."
-	outfit = /datum/outfit/job/roguetown/forestguard/ranger
-	category_tags = list(CTAG_FORGARRISON)
+	tutorial = "You know the swamps better than most. Whether you’re a poacher or just too quick to catch, now you're the one keeping watch—hunting those who think they can pass without paying."
+	outfit = /datum/outfit/job/roguetown/tollguard/ranger
+	category_tags = list(CTAG_TOLGARRISON)
 
-/datum/outfit/job/roguetown/forestguard/ranger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/tollguard/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/advanced
 	head = /obj/item/clothing/head/roguetown/roguehood/green
@@ -127,13 +128,13 @@
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 // Hand to Hand
-/datum/advclass/forestguard/brawler
+/datum/advclass/tollguard/brawler
 	name = "Forest Brawler"
-	tutorial = "In the goblin wars you took an oath to never wield a weapon, you just enjoy getting your hands dirty too much..."
-	outfit = /datum/outfit/job/roguetown/forestguard/brawler
-	category_tags = list(CTAG_FORGARRISON)
+	tutorial = "Some fights land you in chains, others land you a job. Now you're here, breaking bones for the Tollguards. Pay up, or you make them pay instead."
+	outfit = /datum/outfit/job/roguetown/tollguard/brawler
+	category_tags = list(CTAG_TOLGARRISON)
 
-/datum/outfit/job/roguetown/forestguard/brawler/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/tollguard/brawler/pre_equip(mob/living/carbon/human/H)
 	..()
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/advanced
 	head = /obj/item/clothing/head/roguetown/roguehood/green

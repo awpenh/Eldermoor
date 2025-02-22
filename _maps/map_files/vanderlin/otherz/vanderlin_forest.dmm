@@ -78,6 +78,11 @@
 /obj/effect/spawner/roguemap/stump,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
+"dv" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/adventurerlate,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "dK" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -90,8 +95,9 @@
 /area/rogue/outdoors/woods)
 "dW" = (
 /obj/structure/fluff/traveltile{
-	aportalgoesto = "vanderlin-forest_town-town";
-	aportalid = "vanderlin-forest_town-forest"
+	aportalgoesto = "forest-bog";
+	aportalid = "bog-forest";
+	name = "To the Bog"
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
@@ -633,7 +639,7 @@
 /area/rogue/outdoors/woods)
 "zg" = (
 /obj/structure/fluff/signage{
-	name = "Vanderlin - East"
+	name = "Eldermoor - East"
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
@@ -950,6 +956,12 @@
 /obj/structure/bed/rogue/hay,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors)
+"OL" = (
+/obj/structure/fluff/signage{
+	name = "Eldermoor - East"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "Pc" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -1048,6 +1060,15 @@
 	dir = 1
 	},
 /area/rogue/outdoors/woods)
+"Sp" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 8
+	},
+/obj/effect/landmark/start/adventurerlate{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "Sr" = (
 /obj/structure/fluff/railing/border{
 	dir = 2
@@ -1083,7 +1104,7 @@
 /area/rogue/outdoors/woods)
 "TG" = (
 /obj/structure/fluff/signage{
-	name = "Vanderlin - East"
+	name = "Eldermoor - East"
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
@@ -1139,6 +1160,15 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
+"WG" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 4
+	},
+/obj/effect/landmark/start/adventurerlate{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "WL" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1
@@ -8172,11 +8202,11 @@ tR
 Wh
 Wh
 Nn
-yl
+dv
 Nn
 Nn
 fA
-fA
+WG
 Nn
 Wh
 Wh
@@ -8579,7 +8609,7 @@ Nn
 yl
 Nn
 Nn
-Sf
+Sp
 Sf
 Nn
 jU
@@ -9183,8 +9213,8 @@ UR
 UR
 UR
 fT
-wV
-wV
+Qd
+Qd
 UR
 fT
 wV
@@ -9384,10 +9414,10 @@ UR
 UR
 wV
 UR
-wV
-wV
-UR
-wV
+zg
+Qd
+Qd
+Qd
 UR
 UR
 UR
@@ -9588,8 +9618,8 @@ UR
 UR
 UR
 UR
-wV
-wV
+Qd
+Qd
 UR
 Xk
 Xk
@@ -9790,8 +9820,8 @@ wV
 wV
 wV
 wV
-UR
-wV
+Qd
+Qd
 tR
 UR
 wV
@@ -9992,9 +10022,9 @@ wV
 wV
 Xk
 tR
-wV
-wV
-wV
+Qd
+Qd
+Qd
 UR
 wV
 UR
@@ -10195,9 +10225,9 @@ tR
 tR
 Xk
 tR
-UR
-wV
-UR
+Qd
+Qd
+Qd
 wV
 wV
 Xk
@@ -10398,8 +10428,8 @@ Xk
 Xk
 tR
 wV
-UR
-UR
+Qd
+Qd
 tR
 tR
 Xk
@@ -10601,8 +10631,8 @@ Xk
 UR
 wV
 UR
-UR
-wV
+Qd
+Qd
 tR
 Xk
 UR
@@ -10804,8 +10834,8 @@ wV
 Xk
 Xk
 tR
-UR
-Xk
+Qd
+Qd
 Xk
 tR
 UR
@@ -11007,9 +11037,9 @@ tR
 Xk
 UR
 UR
-UR
-tR
-wV
+Qd
+Qd
+Qd
 wV
 UR
 wV
@@ -11210,9 +11240,9 @@ UR
 UR
 UR
 UR
-UR
-UR
-Xk
+Qd
+Qd
+tB
 tR
 wV
 UR
@@ -11413,8 +11443,8 @@ UR
 UR
 tR
 tR
-Xk
-tR
+Qd
+Qd
 tR
 tR
 wV
@@ -11615,9 +11645,9 @@ wV
 wV
 UR
 wV
-tR
-Xk
-tR
+wV
+Qd
+Qd
 tR
 tR
 UR
@@ -11819,9 +11849,9 @@ UR
 wV
 wV
 wV
-wV
+Qd
 tR
-wV
+Qd
 wV
 wV
 UR
@@ -11895,7 +11925,7 @@ UR
 UR
 Xk
 Xk
-wV
+zg
 Qd
 wV
 tR
@@ -12021,9 +12051,9 @@ UR
 wV
 wV
 UR
-wV
-wV
-wV
+Qd
+Qd
+Qd
 wV
 Xk
 Xk
@@ -17756,7 +17786,7 @@ Wh
 Wh
 Wh
 wV
-zg
+wV
 cA
 cA
 RF
@@ -17958,7 +17988,7 @@ Wh
 Wh
 UR
 tR
-Qd
+OL
 cA
 Qd
 RF
@@ -34058,7 +34088,7 @@ tR
 tR
 wV
 wV
-zg
+wV
 wV
 wV
 wV
@@ -34259,7 +34289,7 @@ tR
 tR
 wV
 wV
-UR
+TG
 wV
 wV
 Qd

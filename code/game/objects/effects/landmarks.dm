@@ -154,12 +154,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Men-at-arms"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/forestwarden
-	name = "Forest Warden"
+/obj/effect/landmark/start/tollkeeper
+	name = "Tollkeeper"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/forestguard
-	name = "Forest Guard"
+/obj/effect/landmark/start/tollguard
+	name = "Tollguard"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/villager

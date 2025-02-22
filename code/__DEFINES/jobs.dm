@@ -114,8 +114,8 @@
 #define JAILOR	    (1<<2)
 #define DUNGEONEER	(1<<3)
 #define MAYOR       (1<<4)
-#define FORWARDEN   (1<<5)
-#define FORGUARD    (1<<6)
+#define TOLKEEPER   (1<<5)
+#define TOLGUARD    (1<<6)
 
 #define CHURCHMEN		(1<<2)
 
@@ -202,8 +202,8 @@
 #define JDO_DUNGEONEER 9
 #define JDO_JAILOR 9.1
 #define JDO_SQUIRE 10
-#define JDO_FORWARDEN 11
-#define JDO_FORGUARD 11.1
+#define JDO_TOLKEEPER 11
+#define JDO_TOLGUARD 11.1
 
 #define JDO_PRIEST 12
 #define JDO_CLERIC 13

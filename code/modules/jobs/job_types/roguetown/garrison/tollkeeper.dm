@@ -1,6 +1,6 @@
-/datum/job/roguetown/forestwarden
+/datum/job/roguetown/tollkeeper
 	title = "Tollkeeper"
-	flag = FORWARDEN
+	flag = TOLKEEPER
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 1
@@ -13,19 +13,21 @@
 		"Half-Elf",
 		"Dwarf",
 	)
-	tutorial = "You were born in the forest. Alone, you've always felt home in the woods. In your tenure with the garrison, you've cleaved through the wildlife -\
-	and for your service in the short-lived Goblin War, the king has granted you nobility. In turn, you've been entrusted to keep his lands clear of the foul\
-	creechers that taint his land. Alone, you will die in these woods."
-	display_order = JDO_FORWARDEN
+	tutorial = "You were not always a leader, but you earned your place through blood and coin.\
+	When the last Tollkeeper fell, it was your hand that held the line, your voice that gave the orders.\
+	Now, the roads and the bogs are yours to command—every toll paid, every blade drawn, all under your watch.\
+	The king trusts you to keep the peace, to keep the gold flowing, and to ensure that those who refuse learn the cost of defiance.\
+	No one crosses without paying. No one leaves without permission."
+	display_order = JDO_TOLKEEPER
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	selection_color = "#0d6929"
-	outfit = /datum/outfit/job/roguetown/forestwarden
+	outfit = /datum/outfit/job/roguetown/tollkeeper
 	give_bank_account = 45
 	min_pq = 5
 	cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 
-/datum/outfit/job/roguetown/forestwarden/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/tollkeeper/pre_equip(mob/living/carbon/human/H)
 	..()
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/splint
