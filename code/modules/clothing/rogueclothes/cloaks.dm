@@ -322,6 +322,12 @@
 		return
 	picked = TRUE
 
+/obj/item/clothing/cloak/stabard/toll
+	name = "bogman tabard"
+	desc = "A tabard colored in a glorius green of the mighty protectors of the BOG." // THE BOG DESERVES A BETTER DESCRIPTION!
+	color = CLOTHING_FOREST_GREEN
+	detail_color = CLOTHING_BOG_GREEN
+
 /obj/item/clothing/cloak/stabard/guard
 	desc = "A tabard with the lord's heraldic colors. This one is worn typically by guards."
 	color = CLOTHING_BLOOD_RED

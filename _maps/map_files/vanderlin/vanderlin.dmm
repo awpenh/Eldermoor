@@ -28744,13 +28744,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
-"tvv" = (
-/obj/structure/chair/bench/ancientlog{
-	pixel_x = -16;
-	pixel_y = 0
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/rtfield)
 "tvE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/chest/crate,
@@ -112871,7 +112864,7 @@ qau
 jAf
 jAf
 awp
-tvv
+gpL
 sEQ
 eDT
 sEQ
@@ -113174,7 +113167,7 @@ jAf
 chp
 bof
 sEQ
-gpL
+sEQ
 jxE
 jxE
 jxE
@@ -133188,7 +133181,7 @@ qGb
 qGb
 qGb
 qGb
-xGr
+qGb
 wJY
 dIq
 dIq
@@ -134406,7 +134399,7 @@ dIq
 dIq
 dIq
 wJY
-xGr
+qGb
 qGb
 qGb
 qGb
