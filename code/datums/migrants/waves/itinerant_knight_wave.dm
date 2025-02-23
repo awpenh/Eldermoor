@@ -3,6 +3,7 @@
 	greet_text = "You are an itinerant Knight, you have embarked alongside your squire on a voyage to fullfil your knightly vows."
 	outfit = /datum/outfit/job/roguetown/itinerant_knight
 	allowed_races = list("Humen", "Dwarf", "Elf", "Aasimar")
+	allowed_sexes = list(MALE)
 	grant_lit_torch = TRUE
 	advjob_examine = FALSE
 /datum/outfit/job/roguetown/itinerant_knight/pre_equip(mob/living/carbon/human/H)

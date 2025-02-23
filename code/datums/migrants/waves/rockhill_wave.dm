@@ -2,7 +2,7 @@
 	name = "Mayor of Rockhill"
 	greet_text = "You are the mayor of Rockhill, you've come to Vanderlin to discuss important matters with their King."
 	outfit = /datum/outfit/job/roguetown/rockhill/mayor
-	allowed_sexes = list(MALE,FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list("Humen","Dwarf","Elf","Half-Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
@@ -20,19 +20,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	beltl = /obj/item/rogueweapon/sword/long
-	if(H.gender == FEMALE)
-		head = /obj/item/clothing/head/roguetown/courtierhat
-		neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-		cloak = /obj/item/clothing/cloak/raincloak/furcloak
-		beltr = /obj/item/rogueweapon/sword/rapier
-		id = /obj/item/clothing/ring/silver
-		shoes = /obj/item/clothing/shoes/roguetown/nobleboot
-		backr = /obj/item/storage/backpack/rogue/satchel
-		backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/rich = 1, /obj/item/flashlight/flare/torch/lantern = 1)
-		if(prob(66))
-			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/dress/alt
-		else
-			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/dress
+
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
@@ -128,7 +116,7 @@
 /datum/migrant_role/rockhill/sergeant_at_arms
 	name = "Serjeant at arms"
 	greet_text = "The mayor of rockhill has conscripted you and your mens to go see the rulers of Vanderlin."
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Dwarf",
@@ -187,6 +175,7 @@
 	greet_text = "Your serjeant-at-arms has been conscripted by the mayor of rockhill to guard them as they visit the rulers of Vanderlin. Ensure they live."
 	outfit = /datum/outfit/job/roguetown/footman_bannerman
 	allowed_races = list("Humen","Dwarf","Aasimar","Elf","Half-Elf")
+	allowed_sexes = list(MALE)
 	grant_lit_torch = TRUE
 	advjob_examine = FALSE
 

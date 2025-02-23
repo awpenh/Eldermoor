@@ -5,12 +5,14 @@
 	outfit = /datum/outfit/job/roguetown/inquisitor
 	show_wanderer_examine = FALSE
 	allowed_races = list("Humen","Dwarf")
+	allowed_sexes = list(MALE)
 
 /datum/migrant_role/crusader
 	name = "Crusaders"
 	greet_text = "Crusader of the True faith, you came from Grenzelhoft under the command of the Inquisitor, obey them as he lead you to smite the heatens."
 	outfit = /datum/outfit/job/roguetown/adventurer/crusader
 	allowed_races = list("Humen","Dwarf")
+	allowed_sexes = list(MALE)
 
 /datum/migrant_wave/crusade
 	name = "The Holy Crusade"
