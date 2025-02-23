@@ -91,7 +91,7 @@
 // Bows and Knives
 /datum/advclass/tollguard/ranger
 	name = "Toll Guard Ranger"
-	tutorial = "You know the swamps better than most. Whether you’re a poacher or just too quick to catch, now you're the one keeping watch—hunting those who think they can pass without paying."
+	tutorial = "You know the swamps better than most. Whether you’re a poacher or just too quick to catch, now you are the one keeping watch—hunting those who think they can pass without paying."
 	outfit = /datum/outfit/job/roguetown/tollguard/ranger
 	category_tags = list(CTAG_TOLGARRISON)
 
@@ -129,7 +129,7 @@
 // Hand to Hand
 /datum/advclass/tollguard/brawler
 	name = "Toll Guard Brawler"
-	tutorial = "Some fights land you in chains, others land you a job. Now you're here, breaking bones for the Toll Guards. Pay up, or you make them pay instead."
+	tutorial = "Some fights land you in chains, others land you a job. Now you are here, breaking bones for the Toll Guards. Pay up, or you make them pay instead."
 	outfit = /datum/outfit/job/roguetown/tollguard/brawler
 	category_tags = list(CTAG_TOLGARRISON)
 
