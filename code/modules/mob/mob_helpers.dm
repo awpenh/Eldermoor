@@ -1046,6 +1046,9 @@
 		if((gender == FEMALE) && J.f_title)
 			used_title = J.f_title
 
+		if((gender == MALE) && J.m_title)
+			used_title = J.m_title
+
 		if(J.title == "King")
 			if(gender == FEMALE)
 				used_title = "Queen"

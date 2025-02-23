@@ -83,6 +83,7 @@
 	var/list/jobstats_f
 
 	var/f_title = null
+	var/m_title = null
 
 	var/job_greet_text = TRUE
 	var/tutorial = null

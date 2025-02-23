@@ -6,6 +6,8 @@
 	total_positions = 7
 	spawn_positions = 7
 
+	f_title = "Tollwoman"
+	m_title = "Tollman"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	allowed_races = list(

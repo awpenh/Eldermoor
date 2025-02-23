@@ -163,6 +163,8 @@
 				used_title = J.title
 				if(H.gender == FEMALE && J.f_title)
 					used_title = J.f_title
+				if(H.gender == MALE && J.m_title)
+					used_title = J.m_title
 			if(!used_title)
 				used_title = "Unknown"
 			M.known_people[H.real_name]["FJOB"] = used_title

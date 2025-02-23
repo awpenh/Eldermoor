@@ -339,6 +339,8 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		var/used_title = J.title
 		if(user.gender == FEMALE && J.f_title)
 			used_title = J.f_title
+		if(user.gender == MALE && J.m_title)
+			used_title = J.m_title
 		if(used_title != "King")
 			return
 	else

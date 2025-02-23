@@ -964,6 +964,8 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			var/used_name = "[job.title]"
 			if(gender == FEMALE && job.f_title)
 				used_name = "[job.f_title]"
+			if(gender == MALE && job.m_title)
+				used_name = "[job.m_title]"
 			lastJob = job
 			if(is_role_banned(user.ckey, job.title))
 				HTML += "[used_name]</td> <td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"
