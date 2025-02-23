@@ -455,8 +455,8 @@
 			cost = 2,
 			max_purchases = 4
 		),
-		"Valorian Cloak (2)" = list(
-			list(type = /obj/item/clothing/cloak/cape/inquisitor, count = 1),
+		"Daywalker Cloak (2)" = list(
+			list(type = /obj/item/clothing/cloak/cape/daywalker, count = 1),
 			cost = 2,
 			max_purchases = 1
 		),

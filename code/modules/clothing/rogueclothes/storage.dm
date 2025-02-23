@@ -66,6 +66,16 @@
 		/obj/item/key/mercenary,
 	)
 
+//Daywalker's belt starts with bullets.______qdel_list_wrapper(list/L)
+/obj/item/storage/belt/rogue/leather/daywalker
+	populate_contents = list(
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+		/obj/item/ammo_casing/caseless/rogue/bullet,
+	)
 /obj/item/storage/belt/rogue/leather/mercenary/shalal
 	name = "shalal belt"
 	icon_state = "shalal"
@@ -206,6 +216,12 @@
 		/obj/item/ammo_casing/caseless/rogue/bullet,
 		/obj/item/ammo_casing/caseless/rogue/bullet,
 		/obj/item/ammo_casing/caseless/rogue/bullet,
+	)
+
+/obj/item/storage/belt/rogue/pouch/gunpowder
+	populate_contents = list(
+		/obj/item/reagent_containers/powder/blastpowder,
+		/obj/item/reagent_containers/powder/blastpowder,
 	)
 
 //Poison darts pouch

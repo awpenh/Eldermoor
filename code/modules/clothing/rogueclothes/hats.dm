@@ -1411,6 +1411,16 @@
 
 	prevent_crits = MINOR_CRITICALS
 
+//............... Daywalkers Hood ............... //
+/obj/item/clothing/head/roguetown/roguehood/daywalker
+	name = "daywalker's hood"
+	desc = "My cure is mostly effective."
+	icon_state = "surghood"
+	item_state = "surghood"
+	color = null
+
+	prevent_crits = MINOR_CRITICALS
+
 //............... Feldshers Cage ............... //
 /obj/item/clothing/head/roguetown/helmet/feld
 	name = "feldsher's cage"

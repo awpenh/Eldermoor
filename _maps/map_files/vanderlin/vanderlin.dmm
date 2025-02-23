@@ -11011,7 +11011,6 @@
 "hnR" = (
 /obj/structure/bed/rogue/wool,
 /obj/item/bedsheet/rogue/cloth,
-/mob/living/carbon/human/species/skeleton/npc/ambush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter/bog)
 "hob" = (
@@ -12057,7 +12056,6 @@
 /area/rogue/indoors/town/tavern)
 "hWt" = (
 /obj/item/chair/stool/bar/rogue,
-/mob/living/carbon/human/species/skeleton/npc/peasant,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter/bog)
 "hWZ" = (
@@ -23484,7 +23482,6 @@
 /obj/structure/chair/wood/rogue{
 	dir = 4
 	},
-/obj/effect/landmark/start/adventurerlate,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/bog)
 "pWu" = (
@@ -25063,13 +25060,6 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
-"qZV" = (
-/obj/structure/chair/wood/rogue{
-	dir = 8
-	},
-/obj/effect/landmark/start/adventurerlate,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/bog)
 "qZY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -25809,10 +25799,6 @@
 /obj/item/clothing/cloak/apron/cook,
 /turf/open/floor/rogue/ruinedwood/spiralfade,
 /area/rogue/under/town/basement)
-"rDq" = (
-/mob/living/carbon/human/species/skeleton/npc/peasant,
-/turf/open/floor/rogue/woodturned/nosmooth,
-/area/rogue/indoors/shelter/bog)
 "rDr" = (
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/under/town/basement)
@@ -108145,7 +108131,7 @@ qGb
 sbU
 dER
 rxF
-qZV
+rxF
 hdO
 fkM
 sbU
@@ -114107,7 +114093,7 @@ jZh
 dsx
 sbU
 osp
-rDq
+ptx
 ptx
 ptx
 lHh
@@ -114119,7 +114105,7 @@ fnr
 bfD
 qGb
 sbU
-rDq
+ptx
 rls
 rls
 lHh
@@ -117748,7 +117734,7 @@ lHh
 lHh
 lHh
 lHh
-rDq
+ptx
 ptx
 sbU
 qGb
@@ -118037,7 +118023,7 @@ ptx
 lHh
 sbU
 lHh
-rDq
+ptx
 azx
 sbU
 bEB
@@ -121670,7 +121656,7 @@ fnr
 bfD
 sbU
 ptx
-rDq
+ptx
 oQd
 qdj
 ptx
