@@ -14,15 +14,15 @@
 	practice of this was justified through religious doctrines venerating strength and dominance as divine virtues \
 	As they attached themselves to Zybantine Rakshari integrated more sophisticated forms of servitude, including indentured contracts and debt bondage. \
 	\
-	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK.\
+	THIS IS A HYPER DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK.\
 	"
 
 	skin_tone_wording = "Tribal Identity"
 	use_skintones = 1
 	default_color = "FFFFFF"
 	default_features = list("mcolor" = "FFF",, "wings" = "None")
-	specstats = list("strength" = -2, "perception" = 2, "intelligence" = 0, "constitution" = -2, "endurance" = 0, "speed" = 2, "fortune" = 0)
-	specstats_f = list("strength" = -2, "perception" = 2, "intelligence" = 0, "constitution" = -2, "endurance" = 0, "speed" = 2, "fortune" = 0)
+	specstats = list("strength" = -1, "perception" = 2, "intelligence" = 0, "constitution" = -1, "endurance" = 0, "speed" = 1, "fortune" = 0)
+	specstats_f = list("strength" = -2, "perception" = 3, "intelligence" = 1, "constitution" = -2, "endurance" = 0, "speed" = 2, "fortune" = 0)
 
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/rakshari.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/rakshari.dmi'

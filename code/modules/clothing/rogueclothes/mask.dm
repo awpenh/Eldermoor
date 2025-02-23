@@ -161,6 +161,22 @@
 		return
 	qdel(src)
 
+/obj/item/clothing/mask/rogue/facemask/daywalker
+	clothing_flags = NONE //they're used to this being stuck on their face
+
+/obj/item/clothing/mask/rogue/facemask/daywalker/Initialize()
+	. = ..()
+	name = "daywalker mask"
+	desc = "We were sinners, but the mask is our blessing—our new face. Not a burden, but a mark of those who walk in light to purge the dark."
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	flags_inv = HIDEFACIALHAIR //so prisoners can actually be identified
+
+/obj/item/clothing/mask/rogue/facemask/daywalker/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(QDELETED(src))
+		return
+	qdel(src)
+
 /obj/item/clothing/mask/rogue/facemask/steel
 	name = "steel mask"
 	icon_state = "smask"

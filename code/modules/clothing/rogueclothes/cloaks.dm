@@ -322,6 +322,12 @@
 		return
 	picked = TRUE
 
+/obj/item/clothing/cloak/stabard/toll
+	name = "bogman tabard"
+	desc = "A tabard colored in a glorius green of the mighty protectors of the BOG." // THE BOG DESERVES A BETTER DESCRIPTION!
+	color = CLOTHING_FOREST_GREEN
+	detail_color = CLOTHING_BOG_GREEN
+
 /obj/item/clothing/cloak/stabard/guard
 	desc = "A tabard with the lord's heraldic colors. This one is worn typically by guards."
 	color = CLOTHING_BLOOD_RED
@@ -1118,14 +1124,16 @@
 	alternate_worn_layer = TABARD_LAYER
 	body_parts_covered = CHEST|GROIN
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
-//.............inquisitor cloaks......... (For inquisitors..)
+
+//.............inquisitor cloak......... (For inquisitors..)
 /obj/item/clothing/cloak/cape/puritan
 	icon_state = "puritan_cape"
 	allowed_race = list("human", "tiefling", "elf", "dwarf", "aasimar")
 
-/obj/item/clothing/cloak/cape/inquisitor
-	name = "Inquisitors Cloak"
-	desc = "A time honored cloak Valorian design, used by founding clans of the Valorian Lodge"
+//.............daywalker cloak......... (For le daywalker..)
+/obj/item/clothing/cloak/cape/daywalker
+	name = "Daywalker's Cloak"
+	desc = "A sacred cloak of the Daywalkers, woven for the hunt. Marked with the Psycross, it binds the oath—light by day, vengeance by night."
 	icon_state = "inquisitor_cloak"
 	icon = 'icons/roguetown/clothing/cloaks.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
