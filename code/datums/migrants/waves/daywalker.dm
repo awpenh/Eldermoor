@@ -2,12 +2,13 @@
 	name = "Daywalker"
 	greet_text = "Some knaves are always trying to wade upstream. Once, you were a scourge upon the land—a thief, a killer, a shadow in the night. But the undead took everything from you. The Templars found you broken and offered redemption through steel and fire. Now, you hunt the restless dead as a daywalker, sworn to the light. The oath binds you, and so does the mask—you shall never remove it, lest you forget the monster you once were."
 	outfit = /datum/outfit/job/roguetown/daywalker
+	allowed_sexes = list(MALE)
 	allowed_races = list("Humen", "Half-Elf")
 	grant_lit_torch = TRUE
 
 /datum/outfit/job/roguetown/daywalker/pre_equip(mob/living/carbon/human/H)
 	..()
-	wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
+	wrists = /obj/item/clothing/neck/roguetown/psycross/silver/
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
@@ -26,8 +27,8 @@
 	H.virginity = TRUE
 
 	if(H.mind)
-		if(H.patron != /datum/patron/divine/astrata)
-			H.set_patron(/datum/patron/divine/astrata)
+		if(H.patron != /datum/patron/psydon)
+			H.set_patron(/datum/patron/psydon)
 
 		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
@@ -45,14 +46,27 @@
 		H.change_stat("strength", 1)
 		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 2)
+		if(!H.has_language(/datum/language/oldpsydonic))
+			H.grant_language(/datum/language/oldpsydonic)
+		var/prev_real_name = H.real_name
+		var/prev_name = H.name
+		var/honorary = "Vigilant"
+		H.real_name = "[honorary] [prev_real_name]"
+		H.name = "[honorary] [prev_name]"
+
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim //ARE YOU A FUCKING VAMPIRE?
+	H.verbs |= /mob/living/carbon/human/proc/faith_test //ARE YOU A FUCKING HERETIC?!
+	to_chat(H,span_info("\
+		-I can speak Old Psydonic with ,m before my speech.\n\
+		-The High Inquisitor has sent you to purge the darkness festering in this town. With the light at your back and the oath upon your soul, make the Vigil proud.")
+		)
 	H.cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
 
 /datum/migrant_wave/daywalker
-	name = "Astrata's Daywalker"
+	name = "Psydon's Daywalker"
 	max_spawns = 1
 	shared_wave_type = /datum/migrant_wave/daywalker
 	weight = 7

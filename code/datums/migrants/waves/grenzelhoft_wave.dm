@@ -159,7 +159,7 @@
 /datum/migrant_role/grenzelhoft/grenzelhoft_men_at_arms
 	name = "Grenzelhoft Men-at-Arms"
 	greet_text = "You and your fellows are men at arms from Grenzelhoft, except your local liege has been sent to the Isle of Enigma, obey the Ritter and make sure the nobles goes home."
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Dwarf"

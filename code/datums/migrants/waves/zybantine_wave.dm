@@ -194,7 +194,7 @@
 /datum/migrant_role/zybantine_guard
 	name = "Zybantine soldier"
 	greet_text = "You are a slave soldier from the Ziggurat sent as an escort to the emirs on a foreign land, do not fail them."
-	allowed_sexes = list(MALE,FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list("Humen",
 		"Elf",
 		"Half-Elf",
@@ -249,7 +249,7 @@
 /datum/migrant_role/qatil
 	name = "Qatil"
 	greet_text = "You are the Amirah's confident and most loyal protector, you shan't let them die in these wretched lands."
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(FEMALE)
 	allowed_races = list(
 		"Humen",
 		"Elf",

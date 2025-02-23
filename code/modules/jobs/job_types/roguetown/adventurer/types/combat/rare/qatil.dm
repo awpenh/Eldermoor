@@ -1,7 +1,7 @@
 /datum/advclass/adventurer/qatil
 	name = "Qatil"
-	tutorial = "Hailing from Zybantine lands, you are a killer for hire that is trained both in murdering unseen and seen with your trusty knife."
-	allowed_sexes = list(MALE, FEMALE)
+	tutorial = "In the Zybantine lands, men wage war, but women strike from the shadows. Trained in both silent kills and open combat, you make death an art."
+	allowed_sexes = list(FEMALE)
 	allowed_races = list(
 		"Humen",
 		"Elf",
