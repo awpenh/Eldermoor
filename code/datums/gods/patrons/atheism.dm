@@ -10,8 +10,8 @@
 
 	profane_words = list()
 	confess_lines = list(
-		"No gods, no masters—only my own will!"
-		"A man chooses; a slave obeys. I will not kneel!"
+		"No gods, no masters—only my own will!",
+		"A man chooses; a slave obeys. I will not kneel!",
 		"The old ways will crumble! I reject their rule!"
 	)
 
