@@ -1,18 +1,18 @@
 /datum/patron/godless
 	name = "Godless"
-	domain = "Abandonment of the Gods"
-	desc = "Worship of the gods is foolish! Gods exist but you refuse to worship them due to your own hubris."
-	flaws = "Stubborn, Unrelenting, Misguided"
-	worshippers = "Egomaniacs, Heretics, the Ignorant"
-	sins = "Idolatry, Worship, Blind Faith"
-	boons = "None, you godless heathen."
+	domain = "Defiance of the Divine"
+	desc = "The gods exist, yet you refuse to kneel. Whether out of unshakable will, belief in mortal strength, or rejection of divine rule, you walk a path free from worship."
+	flaws = "Unwavering, Resolute, Defiant"
+	worshippers = "Seekers of Freedom, The Faithless, Those Who Reject Fate"
+	sins = "Idolatry, Devotion, Surrender to the Divine"
+	boons = "None—your strength is your own."
 	associated_faith = /datum/faith/godless
 
 	profane_words = list()
 	confess_lines = list(
-		"No Gods, No Masters! There is only ME!",
-		"A man chooses, a slave obeys - I will be free from the Gods!",
-		"The old ways WILL CRUMBLE, the gods are UNJUST!"
+		"No gods, no masters—only my own will!"
+		"A man chooses; a slave obeys. I will not kneel!"
+		"The old ways will crumble! I reject their rule!"
 	)
 
 /datum/patron/godless/can_pray(mob/living/follower)

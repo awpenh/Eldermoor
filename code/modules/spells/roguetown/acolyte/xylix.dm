@@ -19,7 +19,7 @@
 	var/forced_speak = input(user, "What should they say?", "Vicious Mimicry")
 	if(!forced_speak)
 		return FALSE
-	var/list/bannedwords = list("zizo","graggar","matthios","baotha","inhumen","heresy")
+	var/list/bannedwords = list("zizo","graggar","matthios","baotha","Azriel","inhumen","heresy")
 	forced_speak = sanitize_hear_message(forced_speak)
 	for(var/T in bannedwords)  //astrata smites naughty xylixans
 		if(findtext(forced_speak, T))
