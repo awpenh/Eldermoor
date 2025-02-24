@@ -51,7 +51,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 			H.virginity = FALSE
-		if(/datum/patron/inhumen/baotha, /datum/patron/inhumen/graggar, /datum/patron/inhumen/zizo, /datum/patron/inhumen/matthios, /datum/patron/inhumen/graggar_zizo, /datum/patron/godless)
+		if(/datum/patron/inhumen/baotha, /datum/patron/inhumen/graggar, /datum/patron/inhumen/zizo, /datum/patron/inhumen/matthios, /datum/patron/inhumen/graggar_zizo, /datum/patron/inhumen/azriel, /datum/patron/godless)
 			head = /obj/item/clothing/head/roguetown/jester
 			if(H.mind)
 				H.change_stat("fortune", -20)
