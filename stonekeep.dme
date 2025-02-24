@@ -1318,8 +1318,6 @@
 #include "code\modules\jobs\job_types\roguetown\church\monk.dm"
 #include "code\modules\jobs\job_types\roguetown\church\priest.dm"
 #include "code\modules\jobs\job_types\roguetown\church\templar.dm"
-#include "code\modules\jobs\job_types\roguetown\garrison\dungeoneer.dm"
-#include "code\modules\jobs\job_types\roguetown\garrison\tollguard.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\tollkeeper.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\garrisonguard.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\jailor.dm"
