@@ -17,8 +17,8 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	wrist = /obj/item/clothing/wrists/roguetown/bracers
-	ring = /obj/item/clothing/ring/gold/dorpel
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	id = /obj/item/clothing/ring/gold/dorpel
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltr = /obj/item/flashlight/flare/torch/lantern
