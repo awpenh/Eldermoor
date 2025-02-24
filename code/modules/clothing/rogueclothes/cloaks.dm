@@ -975,7 +975,7 @@
 	sleevetype = "shirt"
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar")
+	allowed_race = list("human", "halfelf", "tiefling", "aasimar")
 	sellprice = 50
 	nodismemsleeves = TRUE
 
