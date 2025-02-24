@@ -11,17 +11,18 @@
 	name = "Tiefling"
 	id = "tiefling"
 	desc = "<b>Tiefling</b><br> \
-	Tieflings; also known as Infernal-Spawn, Hell-Bloods, Surface-Devils, and perhaps most humourously, thief-lings.\
-	Tieflings cannot reproduce with mortals, and thus are spawn of either devils, demons, or other tieflings. \
-	Their treatment ranges from shunning to distrust, depending on the region. Shopkeeps and merchants always keep a wary eye out when \
-	a tiefling passes by. The resentment feed into itself, leading to higher rates of tiefling ire and thievery against other species. \
-	Many tieflings resign to seeking a solitary and nomadic life, huddled in groups outside the watchful eyes of others. \
-	They also tend to be extremely perceptive and paranoid, as luck is rarely on their side. \
-	Oddly positioned scales, hollow bones, and other varying oddities that may appear in a tiefling's biology \
-	make them considerably fragile. If to make matters worse, their hellish progenitors have left them a destiny of misfortune, \
-	though perhaps their immunity to fire opens new opportunities... \
-	A tiefling may develop any number of hellish features, a wide range of horns, potential hooves, odd spines and spikes, or scales. \
-	It is not uncommon for a tiefling to be generally unpleasant to look at in the eye of the commonfolk. \
+	Tieflings; also known as Infernal-Spawn, Hell-Bloods, Surface-Devils, and, mockingly, thief-lings.\
+	Forged by the Demon Princes themselves, tieflings were shaped as their emissaries, molded in the image of their creators and cast onto the mortal realm. \
+	They cannot reproduce with mortals, ensuring their blood remains untainted—each tiefling is a legacy of demonic will. \
+	Their mere presence invites suspicion; merchants clutch their coin purses, city guards keep a watchful eye, and whispers follow them in every shadowed alley. \
+	This distrust festers into a cycle—scorn breeds resentment, and resentment fuels the very misdeeds they are accused of. \
+	Many tieflings live on the fringes of society, forming elusive, nomadic groups that dwell beyond prying eyes. \
+	Sharp senses and keen paranoia define them, for luck rarely graces those burdened with infernal lineage. \
+	Their bodies bear the strange remnants of their origins—hollow bones, misplaced scales, jagged spines—making them more fragile than they appear. \
+	To make matters worse, their creators wove misfortune into their very essence, ensuring hardship follows them like a specter. \
+	Yet, their fireproof nature hints at the possibilities left behind by their infernal forebears… \
+	Tieflings may manifest any number of demonic traits—twisted horns, cloven hooves, ridged spines, or patches of scale. \
+	To common folk, their appearance is unsettling, a living reminder of the Demon Princes' will—and a scapegoat for their fears. \
 	\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK."
 
