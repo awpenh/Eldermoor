@@ -234,6 +234,7 @@ GLOBAL_LIST_EMPTY(rousman_ambush_objects)
 			headdy.icon = 'icons/roguetown/mob/monster/rousman.dmi'
 			headdy.icon_state = "[src.dna.species.id]_head"
 			headdy.sellprice = rand(7,20)
+	src.grant_language(/datum/language/beast)
 	var/obj/item/organ/eyes/eyes = src.getorganslot(ORGAN_SLOT_EYES)
 	if(eyes)
 		eyes.Remove(src,1)

@@ -151,7 +151,7 @@
 			headdy.icon = 'icons/roguetown/mob/monster/Orc.dmi'
 			headdy.icon_state = "[src.dna.species.id]_head"
 			headdy.sellprice = rand(15,40)
-	src.grant_language(/datum/language/common)
+	src.grant_language(/datum/language/orcish)
 	var/obj/item/organ/eyes/eyes = src.getorganslot(ORGAN_SLOT_EYES)
 	if(eyes)
 		eyes.Remove(src,1)
