@@ -79,21 +79,6 @@
 		"BAOTHA'S WHISPERS CALM MY MIND!",
 	)
 
-/datum/patron/inhumen/azriel
-	name = "Azriel"
-	domain = "Demon Prince, Lord of Gifts, Deals, and Hollow Promises"
-	desc = "A cunning trickster and master of temptation, Azriel offers gifts that always come with a hidden cost. He whispers sweet bargains to the desperate, turning greed into chains and promises into shackles. His generosity is limitless, but his price is never fair."
-	flaws = "Deception, Manipulation, Merciless Bargaining"
-	worshippers = "Merchants, Tieflings, Thieves, Bargain-Makers, the Desperate"
-	sins = "Rejecting a Gift, Breaking a Deal, Giving Without Gain"
-	boons = "Azriel's gift courses through me—fire bends but does not burn, its heat whispers instead of sears."
-	added_traits = list(TRAIT_NOFIRE)
-	confess_lines = list(
-		"EVERY GIFT HAS A PRICE! AZRIEL GIVES, AZRIEL TAKES!",
-		"A DEAL STRUCK IN AZRIEL'S NAME IS A DEAL SEALED IN FATE!",
-		"ASK, AND AZRIEL SHALL PROVIDE… FOR A COST!"
-	)
-
 /// Maniac Patron
 /datum/patron/inhumen/graggar_zizo
 	name = "Graggazo"
