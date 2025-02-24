@@ -66,19 +66,20 @@
 	return TRUE
 
 /datum/species/human/northern/get_skin_list()
-	return sortList(list(
-		"Ice Cap" = SKIN_COLOR_ICECAP, // - (Pale)
-		"Arctic" = SKIN_COLOR_ARCTIC, // - (White 1)
-		"Tundra" = SKIN_COLOR_TUNDRA, // - (White 2)
-		"Continental" = SKIN_COLOR_CONTINENTAL, // - (White 3)
-		"Temperate" = SKIN_COLOR_TEMPERATE, // - (White 4)
-		"Coastal" = SKIN_COLOR_COASTAL, // - (Latin)
-		"Subtropical" = SKIN_COLOR_SUBTROPICAL, // - (Mediterranean)
-		"Tropical Dry" = SKIN_COLOR_TROPICALDRY, // - (Mediterranean 2)
-		"Tropical Wet" = SKIN_COLOR_TROPICALWET, // - (Latin 2)
-		"Desert" = SKIN_COLOR_DESERT, //  - (Middle-east)
-		"Crimson Lands" = SKIN_COLOR_CRIMSONLANDS, // - (Black)
-	))
+    return sortList(list(
+        "Grenzelhoft" = SKIN_COLOR_GRENZELHOFT, // - (Pale)
+        "Otavian" = SKIN_COLOR_OTAVIAN, // - (White 1)
+        "Hammerhold" = SKIN_COLOR_HAMMERHOLD, // - (White 2)
+        "Albian" = SKIN_COLOR_ALBIAN, // - (White 3)
+        "Avar" = SKIN_COLOR_AVAR, // - (White 4)
+        "Saludian" = SKIN_COLOR_SALUDIAN, // - (Latin)
+        "Attikoi" = SKIN_COLOR_ATTIKOI, // - (Mediterranean)
+        "Akonian" = SKIN_COLOR_AKONIAN, // - (Mediterranean 2)
+        "Rhasennian" = SKIN_COLOR_RHASENNIAN, // - (Latin 2)
+        "Mourish" = SKIN_COLOR_MOURISH, //  - (Middle-east)
+        "Saerasen" = SKIN_COLOR_SAERASEN, // - (Black)
+        "Nubien" = SKIN_COLOR_NUBIEN, // - (Very Black)
+    ))
 
 /datum/species/human/northern/get_hairc_list()
 	return sortList(list(
@@ -132,7 +133,7 @@
 
 /datum/species/human/northern/get_accent_list(mob/living/carbon/human/H)
 	switch(H.skin_tone)
-		if(SKIN_COLOR_ICECAP) //Anglish, just a placeholder for now for demonstration.
+		if(SKIN_COLOR_HAMMERHOLD) //Anglish, just a placeholder for now for demonstration.
 			return strings("Anglish.json", "Anglish")
-		if(SKIN_COLOR_ARCTIC)
+		if(SKIN_COLOR_GRENZELHOFT)
 			return strings("german_replacement.json", "german")

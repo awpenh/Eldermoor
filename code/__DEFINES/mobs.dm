@@ -440,17 +440,18 @@
 #define SKIN_COLOR_CRIMSON_ELF "4e3729" //Black 2
 
 //HUMEN SKIN TONES
-#define SKIN_COLOR_ICECAP "fff0e9" //Pale as SHIT!!
-#define SKIN_COLOR_ARCTIC "ffe0d1" //White 1
-#define SKIN_COLOR_TUNDRA "fcccb3" //White 2
-#define SKIN_COLOR_CONTINENTAL "edc6b3" //White 3
-#define SKIN_COLOR_TEMPERATE "e2b9a3" //White 4
-#define SKIN_COLOR_COASTAL "d9a284" //Tan
-#define SKIN_COLOR_SUBTROPICAL "c9a893" //Mediterranean 1
-#define SKIN_COLOR_TROPICALDRY "ba9882" //Mediterranean 2
-#define SKIN_COLOR_TROPICALWET "ac8369" //Latin
-#define SKIN_COLOR_DESERT "9c6f52" //Middle-east
-#define SKIN_COLOR_CRIMSONLANDS "4e3729" //Black
+#define SKIN_COLOR_GRENZELHOFT "fff0e9" //Pale as SHIT!!
+#define SKIN_COLOR_OTAVIAN "ffe0d1" //White 1
+#define SKIN_COLOR_HAMMERHOLD "fcccb3" //White 2
+#define SKIN_COLOR_ALBIAN "edc6b3" //White 3
+#define SKIN_COLOR_AVAR "e2b9a3" //White 4
+#define SKIN_COLOR_SALUDIAN "d9a284" //Tan
+#define SKIN_COLOR_ATTIKOI "c9a893" //Mediterranean 1
+#define SKIN_COLOR_AKONIAN "ba9882" //Mediterranean 2
+#define SKIN_COLOR_RHASENNIAN "ac8369" //Latin
+#define SKIN_COLOR_MOURISH "9c6f52" //Middle-east
+#define SKIN_COLOR_SAERASEN "4e3729" //Black
+#define SKIN_COLOR_NUBIEN "36261c" // Very Black
 
 //AASIMAR SKIN TONES
 #define SKIN_COLOR_PLANETAR "474a4c" //Grey
@@ -478,17 +479,18 @@
 //TIEFLING SKIN TONES
 #define SKIN_COLOR_CRIMSON_LAND "cd2042" //Bright red
 #define SKIN_COLOR_ZANGUINE "862E3F" //Dark violet
-#define SKIN_COLOR_SUNSTAINED "99401B" //Dark orange
+#define SKIN_COLOR_VORRAKIANS "99401B" //Dark orange
 #define SKIN_COLOR_SUNDERED "D25E31" //Orange
 #define SKIN_COLOR_ARCANA "702845" //Dark violet
-#define SKIN_COLOR_FLAYER "450e47" //Purple!
-#define SKIN_COLOR_ZARCONUM "BA6A92" //Pink!
+#define SKIN_COLOR_PRYDIANS "450e47" //Purple!
+#define SKIN_COLOR_ZARESKIANS "BA6A92" //Pink!
 #define SKIN_COLOR_ABYSS "41577C" //Navy blue
 #define SKIN_COLOR_ASH "A0AFC9" //Pale blue
-#define SKIN_COLOR_CASTILLIAN	"cc5757" //Pale red
-#define SKIN_COLOR_ASTURIAS	"a23737" //Clay red
-#define SKIN_COLOR_VAQUERO	"a74a4a" //Earthly red
-#define SKIN_COLOR_ARLENNETH "9197C5" //Lavendar blue
+#define SKIN_COLOR_CASTILLIAN "cc5757" //Pale red
+#define SKIN_COLOR_ASTURIAS "a23737" //Clay red
+#define SKIN_COLOR_VAQUERO "a74a4a" //Earthly red
+#define SKIN_COLOR_AZRELIANS "9197C5" //Lavendar blue
+#define SKIN_COLOR_MYSTERIOUS "ff0000" // Super Red
 
 //SPECIAL SKIN TONES
 #define SKIN_COLOR_ROT "878f79" //Sickly green
