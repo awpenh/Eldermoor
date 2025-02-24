@@ -26,8 +26,8 @@
 	flaws = "Deception, Manipulation, Merciless Bargaining"
 	worshippers = "Merchants, Tieflings, Thieves, Bargain-Makers, the Desperate"
 	sins = "Rejecting a Gift, Breaking a Deal, Giving Without Gain"
-	boons = "Hell's gift courses through me—fire bends but does not burn, its heat whispers instead of sears."
-	added_traits = list(TRAIT_NOFIRE)
+	boons = "Azriel's gift reveals the true worth of all things—nothing is beyond appraisal, and no deal is beyond my grasp."
+	added_traits = list(TRAIT_SEEPRICES)
 	confess_lines = list(
 		"EVERY GIFT HAS A PRICE! AZRIEL GIVES, AZRIEL TAKES!",
 		"A DEAL STRUCK IN AZRIEL'S NAME IS A DEAL SEALED IN FATE!",
@@ -41,8 +41,8 @@
 	flaws = "Arrogance, Hubris, Contempt for Weakness"
 	worshippers = "Tieflings, Conquerors, Duelists, Orators, the Ambitious"
 	sins = "Bowing in submission, Admitting weakness, Letting an insult go unpunished"
-	boons = "Hell's gift courses through me—fire bends but does not burn, its heat whispers instead of sears."
-	added_traits = list(TRAIT_NOFIRE)
+	boons = "Pryda's majesty is above all filth—foulness and decay hold no sway over me, for such things are beneath my notice."
+	added_traits = list(TRAIT_NOSTINK)
 	confess_lines = list(
 		"PRYDA'S LIGHT DOES NOT HUMBLE—IT GLORIFIES!",
 		"TO KNEEL IS TO DIE! TO STAND IS TO RULE!",
@@ -56,7 +56,7 @@
 	flaws = "Uncontrollable Wrath, Recklessness, Bloodlust"
 	worshippers = "Tieflings, Berserkers, Warriors, Gladiators, the Vengeful"
 	sins = "Walking away from a fight, Showing mercy, Holding back in battle"
-	boons = "Hell's gift courses through me—fire bends but does not burn, its heat whispers instead of sears."
+	boons = "Vorrak's wrath shields me—the flames hunger, yet dare not feast upon my flesh. Heat bows before rage."
 	added_traits = list(TRAIT_NOFIRE)
 	confess_lines = list(
 		"BLOOD CALLS FOR BLOOD! LET IT FLOW!",
@@ -71,8 +71,8 @@
 	flaws = "Insatiable Greed, Obsession, Paranoia"
 	worshippers = "Tieflings, Merchants, Smugglers, Crime Lords, Hoarders, the Power-Hungry"
 	sins = "Sharing without gain, Refusing a chance to profit, Wasting wealth or power"
-	boons = "Hell's gift courses through me—fire bends but does not burn, its heat whispers instead of sears."
-	added_traits = list(TRAIT_NOFIRE)
+	boons = "Zaresk's hunger knows no bounds—filth and decay are but flavors, and nothing is ever truly inedible."
+	added_traits = list(TRAIT_NASTY_EATER)
 	confess_lines = list(
 		"MORE! ALWAYS MORE!",
 		"GOLD IS POWER, POWER IS CONTROL—ZARESK DEMANDS BOTH!",
