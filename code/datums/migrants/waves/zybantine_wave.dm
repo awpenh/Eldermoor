@@ -1,6 +1,6 @@
 /datum/migrant_role/zybantine/emir
 	name = "Zybantine Emir"
-	greet_text = "An Emir hailing from the Zybantu Ziggurat, here on business for the Mercator's Guild to the Isle of the Enigma."
+	greet_text = "An Emir hailing from the Zybantu Ziggurat, here on business for the Mercator's Guild to the Isle of the Albia."
 	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
@@ -68,7 +68,7 @@
 
 /datum/migrant_role/zybantine/amirah
 	name = "Zybantine Amirah"
-	greet_text = "An Amirah hailing from the Zybantu Ziggurat, here on business for the Mercator's Guild to the Isle of the Enigma."
+	greet_text = "An Amirah hailing from the Zybantu Ziggurat, here on business for the Mercator's Guild to the Isle of the Albia."
 	allowed_sexes = list(FEMALE)
 	allowed_races = list(
 		"Humen",

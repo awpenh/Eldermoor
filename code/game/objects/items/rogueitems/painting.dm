@@ -55,7 +55,7 @@
 	deployed_structure = /obj/structure/fluff/walldeco/painting/queen
 
 /obj/structure/fluff/walldeco/painting/queen
-	desc = "A portrait of Queen Samantha I of Enigma. Her late husband would be so proud of what she has accomplished in his realm."
+	desc = "A portrait of Queen Samantha I of Albia. Her late husband would be so proud of what she has accomplished in his realm."
 	icon_state = "queenpainting_deployed"
 	stolen_painting = /obj/item/rogue/painting/queen
 

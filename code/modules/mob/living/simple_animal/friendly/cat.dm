@@ -97,7 +97,7 @@
 
 /mob/living/simple_animal/pet/cat/rogue/cabbit
 	name = "cabbit"
-	desc = "A cabbit, a particular favorite of Enigma's fauna, as pets and meals." // Do NOT eat the cabbit!!!!!!
+	desc = "A cabbit, a particular favorite of Albia's fauna, as pets and meals." // Do NOT eat the cabbit!!!!!!
 	icon = 'icons/roguetown/mob/cabbit.dmi'
 	icon_state = "cabbit"
 	icon_living = "cabbit"

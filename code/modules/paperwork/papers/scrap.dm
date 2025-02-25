@@ -5,7 +5,7 @@
 	info = "Establish a diplomatic alliance with the King of Vanderlin to strengthen the relationship between Heartfelt and Vanderlin."
 
 /obj/item/paper/heartfelt/goal2
-	info = "Explore the mysteries of isle of Enigma, uncovering its secrets and hidden treasures."
+	info = "Explore the mysteries of isle of Albia, uncovering its secrets and hidden treasures."
 
 /obj/item/paper/heartfelt/goal1
 	info = "Negotiate trade agreements with merchants in Vanderlin to facilitate the exchange of goods and resources between the two realms."
