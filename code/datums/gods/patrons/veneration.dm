@@ -1,7 +1,5 @@
 /datum/patron/veneration
 	name = null
-	associated_faith = /datum/faith/veneration
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/divine/can_pray(mob/living/follower)
 	//you can pray anywhere inside a church
