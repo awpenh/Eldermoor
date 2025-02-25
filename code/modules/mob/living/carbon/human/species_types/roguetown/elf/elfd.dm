@@ -24,7 +24,7 @@
 	In his vision, there is no place for the petty divisions of the past; only power determines one’s place.\
 	Where cunning and ambition rule, gender holds no weight, and all who seek power may take it if they are strong enough.\
 	Though they once sought to rival the elves in magic, they now seek to reclaim their legacy through conquest and domination.\
-	To the rest of Psydonia, a dark elf is a symbol of cunning and cold ambition,\
+	A dark elf is a symbol of cunning and cold ambition,\
 	a survivor of a people who refuse to die, waiting for the day they rise once more.\
 	\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK."
