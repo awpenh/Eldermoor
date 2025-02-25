@@ -134,7 +134,7 @@
 #define TAILOR		(1<<4)
 #define ARTIFICER	(1<<5)
 #define MATRON 		(1<<6)
-#define PHYSICKER	(1<<7)
+#define PHYSICIAN	(1<<7)
 #define SCRIBE		(1<<8)
 
 #define PEASANTS		(1<<4)
@@ -192,7 +192,7 @@
 #define JDO_WAPP 5
 
 #define JDO_FELDSHER 6
-#define JDO_PHYSICKER 6.1
+#define JDO_PHYSICIAN 6.1
 
 #define JDO_CAPTAIN 7
 #define JDO_VET 7.1

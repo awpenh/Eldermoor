@@ -46,21 +46,44 @@
 		H.change_stat("speed", 1)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/random
-		head = /obj/item/clothing/head/roguetown/hatfur
+		if(prob(25))
+			head = /obj/item/clothing/head/roguetown/hatfur
+		else if(prob(25))
+			head = /obj/item/clothing/head/roguetown/fancyhat
+		else
+			head = /obj/item/clothing/head/roguetown/courtierhat
 		cloak = /obj/item/clothing/cloak/raincloak/furcloak
 		backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 		beltr = /obj/item/rogueweapon/knife/dagger/steel/special
 		beltl = /obj/item/ammo_holder/quiver/arrows
+		if(prob(20))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/random
+		else if(prob(20))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gown
+		else if(prob(20))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gown/fallgown
+		else if(prob(20))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gown/wintergown
+		else
+			shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gown/summergown
 		backpack_contents = list(/obj/item/reagent_containers/glass/bottle/rogue/wine = 1, /obj/item/reagent_containers/glass/cup/silver = 1)
 	if(H.gender == MALE)
 		H.change_stat("constitution", 1)
 		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		pants = /obj/item/clothing/under/roguetown/tights/black
-		shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
+		if(prob(25))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/fancy
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/winterjacket
+		else if (prob(25))
+			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat
+		else
+			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
 		cloak = /obj/item/clothing/cloak/raincloak/furcloak
-		head = /obj/item/clothing/head/roguetown/fancyhat
+		if(prob(50))
+			head = /obj/item/clothing/head/roguetown/fancyhat
+		else
+			head = /obj/item/clothing/head/roguetown/courtierhat
 		backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 		beltr = /obj/item/rogueweapon/sword/rapier/dec
 		beltl = /obj/item/ammo_holder/quiver/arrows

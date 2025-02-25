@@ -1403,7 +1403,7 @@
 
 //............... Physicians Hood ............... //
 /obj/item/clothing/head/roguetown/roguehood/phys
-	name = "physicker's hood"
+	name = "physician's hood"
 	desc = "My cure is mostly effective."
 	icon_state = "surghood"
 	item_state = "surghood"

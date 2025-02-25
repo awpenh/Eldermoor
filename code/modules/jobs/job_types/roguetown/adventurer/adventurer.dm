@@ -11,7 +11,7 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	total_positions = 14
 	spawn_positions = 14
 	allowed_races = ALL_PLAYER_RACES_BY_NAME
-	tutorial = "Hero of nothing, adventurer by trade. Whatever led you to this fate is up to the wind to decide, and you've never fancied yourself for much other than the thrill. Someday your pride is going to catch up to you, and you're going to find out why most men don't end up in the annals of history."
+	tutorial = "A hero of nothing, an adventurer by trade. Whatever led you here is lost to the wind, but the road ahead is yours to carve. A world once stagnant now stirs with new opportunities, and for now, the thrill is enough. Someday, your pride may catch up to you—but until then, history is still waiting to be written."
 
 
 	outfit = null

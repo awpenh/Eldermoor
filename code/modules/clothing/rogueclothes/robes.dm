@@ -133,7 +133,7 @@
 	item_state = "feldrobe"
 
 /obj/item/clothing/suit/roguetown/shirt/robe/phys
-	name = "physicker's robe"
+	name = "physician's robe"
 	desc = "Part robe, part butcher's apron."
 	icon_state = "surgrobe"
 	item_state = "surgrobe"

@@ -241,7 +241,7 @@
 	sewrepair = TRUE
 
 /obj/item/clothing/mask/rogue/phys
-	name = "physicker's mask"
+	name = "physician's mask"
 	desc = "Packed with herbs to conceal the rot."
 	icon_state = "surgmask"
 	item_state = "surgmask"
