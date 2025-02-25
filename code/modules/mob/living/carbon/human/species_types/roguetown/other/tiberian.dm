@@ -1,6 +1,6 @@
 	/*==============*
 	*				*
-	*	Tiefling	*
+	*	Tiberian	*
 	*				*
 	*===============*/
 
@@ -8,20 +8,20 @@
 	race = /datum/species/tieberian
 
 /datum/species/tieberian
-	name = "Tiefling"
-	id = "tiefling"
-	desc = "<b>Tiefling</b><br> \
-	Tieflings; also known as Infernal-Spawn, Hell-Bloods, Surface-Devils, and, mockingly, thief-lings.\
-	Forged by the Demon Princes themselves, tieflings were shaped as their emissaries, molded in the image of their creators and cast onto the mortal realm. \
-	They cannot reproduce with mortals, ensuring their blood remains untainted—each tiefling is a legacy of demonic will. \
+	name = "Tiberian"
+	id = "tiberian"
+	desc = "<b>Tiberian</b><br> \
+	Tiberians; also known as Infernal-Spawn, Hell-Bloods, Surface-Devils, and, mockingly, thief-lings.\
+	Forged by the Demon Princes themselves, tiberians were shaped as their emissaries, molded in the image of their creators and cast onto the mortal realm. \
+	They cannot reproduce with mortals, ensuring their blood remains untainted—each tiberian is a legacy of demonic will. \
 	Their mere presence invites suspicion; merchants clutch their coin purses, city guards keep a watchful eye, and whispers follow them in every shadowed alley. \
 	This distrust festers into a cycle—scorn breeds resentment, and resentment fuels the very misdeeds they are accused of. \
-	Many tieflings live on the fringes of society, forming elusive, nomadic groups that dwell beyond prying eyes. \
+	Many tiberians live on the fringes of society, forming elusive, nomadic groups that dwell beyond prying eyes. \
 	Sharp senses and keen paranoia define them, for luck rarely graces those burdened with infernal lineage. \
 	Their bodies bear the strange remnants of their origins—hollow bones, misplaced scales, jagged spines—making them more fragile than they appear. \
 	To make matters worse, their creators wove misfortune into their very essence, ensuring hardship follows them like a specter. \
 	Yet, their fireproof nature hints at the possibilities left behind by their infernal forebears… \
-	Tieflings may manifest any number of demonic traits—twisted horns, cloven hooves, ridged spines, or patches of scale. \
+	Tiberians may manifest any number of demonic traits—twisted horns, cloven hooves, ridged spines, or patches of scale. \
 	To common folk, their appearance is unsettling, a living reminder of the Demon Princes' will—and a scapegoat for their fears. \
 	\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK."
@@ -115,19 +115,18 @@
 /datum/species/tieberian/get_skin_list()
 	return sortList(list(
 		"Crimson Land" = SKIN_COLOR_CRIMSON_LAND, // - (Bright red)
-		"Vorrakians" = SKIN_COLOR_VORRAKIANS, // - (Dark orange)
+		"Sun Stained" = SKIN_COLOR_SUNSTAINED, // - (Dark orange)
 		"Sundered" = SKIN_COLOR_SUNDERED, //  - (Orange)
 		"Zarkana" = SKIN_COLOR_ARCANA, // - (Dark violet)
-		"Zareskians" = SKIN_COLOR_ZARESKIANS, // - (Pink)
-		"Pyrdians" = SKIN_COLOR_PRYDIANS, // - (Purple)
+		"Zarconum" = SKIN_COLOR_ZARCONUM, // - (Pink)
+		"Flayer" = SKIN_COLOR_FLAYER, // - (Purple)
 		"Abyssium" = SKIN_COLOR_ABYSS, // - (Navy blue)
 		"Castillian" = SKIN_COLOR_CASTILLIAN, // - (Pale red)
 		"Asturias" = SKIN_COLOR_ASTURIAS, // - (Clay red)
 		"Vaquero" = SKIN_COLOR_VAQUERO, // - (Earthly red)
 		"Zanguine" = SKIN_COLOR_ZANGUINE, // - (Dark violet)
 		"Ash" = SKIN_COLOR_ASH, // - (Pale blue)
-		"Azrelians" = SKIN_COLOR_AZRELIANS, // - (Lavender blue)
-		"Mysterious" = SKIN_COLOR_MYSTERIOUS, // (Super Red)
+		"Arlenneth" = SKIN_COLOR_ARLENNETH, // - (Lavender blue)
 	))
 
 /datum/species/tieberian/get_hairc_list()
