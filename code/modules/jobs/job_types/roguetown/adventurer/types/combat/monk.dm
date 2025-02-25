@@ -31,8 +31,8 @@
 	backr = /obj/item/rogueweapon/polearm/woodstaff
 
 	if(H.mind)
-		if(H.patron != /datum/patron/divine/ravox)
-			H.set_patron(/datum/patron/divine/ravox)
+		if(H.patron != /datum/patron/veneration/mathuin)
+			H.set_patron(/datum/patron/veneration/mathuin)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)

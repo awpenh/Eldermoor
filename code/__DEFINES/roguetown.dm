@@ -3,9 +3,9 @@
 
 #define ALL_PLAYER_RACES_BY_NAME		list("Humen", "Rakshari", "Half-Elf", "Dark Elf", "Elf", "Dwarf","Tiberian", "Half-Orc", "Anakim")
 
-#define ALL_TEMPLE_PATRONS 		list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/necra, /datum/patron/divine/ravox, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora)
-#define ALL_CLERIC_PATRONS 		list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/necra, /datum/patron/divine/ravox, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora)
-#define ALL_TEMPLAR_PATRONS 	list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/eora, /datum/patron/divine/necra, /datum/patron/divine/ravox, /datum/patron/divine/pestra, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/malum)
+#define ALL_TEMPLE_PATRONS 		list(/datum/patron/veneration/cephas, /datum/patron/divine/noc, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/divine/eora)
+#define ALL_CLERIC_PATRONS 		list(/datum/patron/veneration/cephas, /datum/patron/divine/noc, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/divine/eora)
+#define ALL_TEMPLAR_PATRONS 	list(/datum/patron/veneration/cephas, /datum/patron/divine/noc, /datum/patron/divine/eora, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/mikros, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/toma)
 
 GLOBAL_LIST_INIT(curse_names, list())
 

@@ -34,8 +34,8 @@
 /datum/outfit/job/roguetown/adventurer/swashbuckler/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
-		if(H.patron != /datum/patron/divine/abyssor)
-			H.set_patron(/datum/patron/divine/abyssor)
+		if(H.patron != /datum/patron/veneration/cana)
+			H.set_patron(/datum/patron/veneration/cana)
 
 		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)

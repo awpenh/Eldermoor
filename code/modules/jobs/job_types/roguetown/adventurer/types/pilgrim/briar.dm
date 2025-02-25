@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/briar
 	category_tags = list(CTAG_PILGRIM)
 	tutorial = "Stoic gardeners or flesh-eating predators, all can follow Dendors path. <br>His Briars scorn civilized living, many embracing their animal nature, being fickle and temperamental."
-//	allowed_patrons = list(/datum/patron/divine/dendor)		this doesn't work so long its a subclass type. Besides its preferable to forceswitch as it does to make selection less clunky.
+//	allowed_patrons = list(/datum/patron/veneration/yaakov)		this doesn't work so long its a subclass type. Besides its preferable to forceswitch as it does to make selection less clunky.
 	cmode_music = 'sound/music/cmode/combat_dendor.ogg'
 	maximum_possible_slots = 4	// to be lowered to 2? once testing is done
 
@@ -28,8 +28,8 @@
 	H.change_stat("intelligence", -1)
 
 	if(H.mind)
-		if(H.patron != /datum/patron/divine/dendor)
-			H.set_patron(/datum/patron/divine/dendor)
+		if(H.patron != /datum/patron/veneration/yaakov)
+			H.set_patron(/datum/patron/veneration/yaakov)
 
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
@@ -159,7 +159,7 @@
 	alpha = 155
 	anchored = TRUE
 /obj/item/blessing_of_dendor_growing/attack_hand(mob/living/carbon/human/user)
-	if(user.patron.type == /datum/patron/divine/dendor)
+	if(user.patron.type == /datum/patron/veneration/yaakov)
 		icon_state = "dendor_grow_end"
 		if(HAS_TRAIT(user, TRAIT_BLESSED))
 			to_chat(user, span_info("Dendor will not grant more powers, but he still approves of the sacrifice, judging by the signs..."))
@@ -191,7 +191,7 @@
 	alpha = 155
 	anchored = TRUE
 /obj/item/blessing_of_dendor_stinging/attack_hand(mob/living/carbon/human/user)
-	if(user.patron.type == /datum/patron/divine/dendor)
+	if(user.patron.type == /datum/patron/veneration/yaakov)
 		icon_state = "dendor_sting_end"
 		if(HAS_TRAIT(user, TRAIT_BLESSED))
 			to_chat(user, span_info("Dendor will not grant more powers, but he still approves of the sacrifice, judging by the signs..."))
@@ -223,7 +223,7 @@
 	alpha = 155
 	anchored = TRUE
 /obj/item/blessing_of_dendor_devouring/attack_hand(mob/living/carbon/human/user)
-	if(user.patron.type == /datum/patron/divine/dendor)
+	if(user.patron.type == /datum/patron/veneration/yaakov)
 		icon_state = "dendor_consume_end"
 		if(HAS_TRAIT(user, TRAIT_BLESSED))
 			to_chat(user, span_info("Dendor will not grant more powers, but he still approves of the sacrifice, judging by the signs..."))

@@ -48,25 +48,25 @@
 	beltl = /obj/item/storage/keyring/priest
 	neck = /obj/item/clothing/neck/roguetown/psycross/silver
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/veneration/cephas)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-		if(/datum/patron/divine/necra) //Necra acolytes are now gravetenders
+		if(/datum/patron/veneration/labbeus) //Necra acolytes are now gravetenders
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
 		if(/datum/patron/divine/eora)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 		if(/datum/patron/divine/noc)
 			neck = /obj/item/clothing/neck/roguetown/psycross/noc
-		if(/datum/patron/divine/pestra)
+		if(/datum/patron/veneration/mikros)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/veneration/yaakov)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
-		if(/datum/patron/divine/abyssor)
+		if(/datum/patron/veneration/cana)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
-		if(/datum/patron/divine/ravox)
+		if(/datum/patron/veneration/mathuin)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
-		if(/datum/patron/divine/xylix)
+		if(/datum/patron/veneration/julias)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
-		if(/datum/patron/divine/malum)
+		if(/datum/patron/veneration/toma)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/malum
 
 	H.change_stat("perception", 1)

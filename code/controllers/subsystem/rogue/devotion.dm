@@ -30,12 +30,12 @@
 	holder_mob = holder
 	holder.cleric = src
 	patron = god
-	if(patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/divine/necra)
+	if(patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/veneration/labbeus)
 		ADD_TRAIT(holder_mob, TRAIT_DEATHSIGHT, "devotion")
 
 /datum/devotion/cleric_holder/Destroy(force)
 	. = ..()
-	if(patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/divine/necra)
+	if(patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/veneration/labbeus)
 		REMOVE_TRAIT(holder_mob, TRAIT_DEATHSIGHT, "devotion")
 	holder_mob?.cleric = null
 	holder_mob = null

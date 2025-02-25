@@ -20,31 +20,31 @@
 		if(/datum/patron/psydon)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 			wrists = /obj/item/clothing/neck/roguetown/psycross/g
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/veneration/cephas)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 		if(/datum/patron/divine/noc)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
 			wrists = /obj/item/clothing/neck/roguetown/psycross/noc
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/veneration/yaakov)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
-		if(/datum/patron/divine/abyssor)
+		if(/datum/patron/veneration/cana)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/veneration/labbeus)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/necra
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
-		if(/datum/patron/divine/ravox)
+		if(/datum/patron/veneration/mathuin)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
-		if(/datum/patron/divine/xylix)
+		if(/datum/patron/veneration/julias)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
-		if(/datum/patron/divine/pestra)
+		if(/datum/patron/veneration/mikros)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/pestrahelm
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
-		if(/datum/patron/divine/malum)
+		if(/datum/patron/veneration/toma)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/malum
 		if(/datum/patron/divine/eora)

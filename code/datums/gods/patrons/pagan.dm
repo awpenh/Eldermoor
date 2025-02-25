@@ -82,17 +82,6 @@
 		"NECRA GRANTS ME MY PEACE!",
 	)
 
-/datum/patron/pagan/xylix
-	name = "Xylix"
-	domain = "God of Trickery, Freedom and Inspiration"
-	desc = "The Mad-God, gifted man wanderlust and a thousand tricks."
-	worshippers = "Cheats, Frauds, Silver-Tongued devils and Roguish Types"
-	confess_lines = list(
-		"THE MAD-GOD ALWAYS COMES OUT ON TOP!",
-		"JULIAS IS AN ARBITRARY TOOL!",
-		"XYLIX IS MY ONLY MUSE!",
-	)
-
 /datum/patron/pagan/pestra
 	name = "Pestra"
 	domain = "Goddess of Decay, Disease and Medicine"

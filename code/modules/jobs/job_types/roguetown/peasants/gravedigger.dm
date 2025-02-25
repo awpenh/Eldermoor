@@ -18,7 +18,7 @@
 		"Half-Orc"
 	)
 	tutorial = "As a servant of Necra, you embody the sanctity of her domain, ensuring the dead rest peacefully within the earth. You are the bane of grave robbers and necromancers, and your holy magic brings undead back into Necra's embrace: the only rightful place for lost souls."
-	allowed_patrons = list(/datum/patron/divine/necra)
+	allowed_patrons = list(/datum/patron/veneration/labbeus)
 
 	outfit = /datum/outfit/job/roguetown/undertaker
 	display_order = JDO_GRAVETENDER
@@ -28,7 +28,7 @@
 	cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
 
 /datum/outfit/job/roguetown/undertaker
-	allowed_patrons = list(/datum/patron/divine/necra)
+	allowed_patrons = list(/datum/patron/veneration/labbeus)
 
 /datum/outfit/job/roguetown/undertaker/pre_equip(mob/living/carbon/human/H)
 	..()
