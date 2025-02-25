@@ -47,7 +47,7 @@
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
 			cloak = /obj/item/clothing/cloak/stabard/templar/necra
 			neck = /obj/item/clothing/neck/roguetown/gorget
-		if(/datum/patron/divine/eora)
+		if(/datum/patron/veneration/nazar)
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 			cloak = /obj/item/clothing/cloak/stabard/templar/eora
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron

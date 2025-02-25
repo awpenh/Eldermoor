@@ -47,7 +47,7 @@
 		if(/datum/patron/veneration/toma)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/malum
-		if(/datum/patron/divine/eora)
+		if(/datum/patron/veneration/nazar)
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 			H.virginity = FALSE

@@ -50,7 +50,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
 			H.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
-		if(/datum/patron/divine/eora)
+		if(/datum/patron/veneration/nazar)
 			head = /obj/item/clothing/head/roguetown/padded/operavisage
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 			shoes = /obj/item/clothing/shoes/roguetown/sandals

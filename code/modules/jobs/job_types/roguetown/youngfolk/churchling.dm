@@ -52,7 +52,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 		if(/datum/patron/veneration/labbeus) //Necra acolytes are now gravetenders
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
-		if(/datum/patron/divine/eora)
+		if(/datum/patron/veneration/nazar)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 		if(/datum/patron/veneration/eosten)
 			neck = /obj/item/clothing/neck/roguetown/psycross/noc
