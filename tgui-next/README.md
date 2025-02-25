@@ -13,7 +13,7 @@ every other SS13 codebase), tgui should be fairly easy to pick up.
 
 People come to tgui from different backgrounds and with different
 learning styles. Whether you prefer a more theoretical or a practical
-approach, we hope you’ll find this section helpful.
+approach, we hope you'll find this section helpful.
 
 ### Practical tutorial
 

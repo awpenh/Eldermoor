@@ -452,7 +452,7 @@
 #define SKIN_COLOR_DESERT "9c6f52" //Middle-east
 #define SKIN_COLOR_CRIMSONLANDS "4e3729" //Black
 
-//AASIMAR SKIN TONES
+//ANAKIM SKIN TONES
 #define SKIN_COLOR_PLANETAR "474a4c" //Grey
 #define SKIN_COLOR_DEVA "b6f1f2" //Sky blue
 #define SKIN_COLOR_SOLAR "daeaeb" //WHITE
@@ -475,7 +475,7 @@
 #define SKIN_COLOR_MUSHROOM_MINDED "897489" //Mid purple
 #define SKIN_COLOR_CAVE_ATTUNED "5f5f70" // Dark purple
 
-//TIEFLING SKIN TONES
+//TIBERIAN SKIN TONES
 #define SKIN_COLOR_CRIMSON_LAND "cd2042" //Bright red
 #define SKIN_COLOR_ZANGUINE "862E3F" //Dark violet
 #define SKIN_COLOR_SUNSTAINED "99401B" //Dark orange

@@ -5,7 +5,7 @@
 <p><strong>&quot;  Isle of Enigma - The Isle on which the game takes place. The center of the world.  &quot;</strong></p>
 <p><br></p>
 
-<p>  Petty Kingdom of Vanderlin - A canyon settlement between Rockhill and Heartfelt. Reaping the boons of both, this is a place of trade and prosperity. Built over the Tomb of Matthios, it attracts adventurers from all over the world to delve within and see fortune.  </p>
+<p>  High Kingdom of Eldermoor - A weathered kingdom nestled within the canyon between Rockhill and Heartfelt, its glory long faded yet stubbornly clinging to relevance. Once a beacon of trade and prosperity, it now thrives on relics of the past rather than forging a future. Built atop the Tomb of Matthios, it lures adventurers and treasure seekers from across the world—not with promises of wealth, but with the desperate hope that fortune still lingers beneath the dust of a dying realm.  </p>
 <p>  Town of Rockhill - A once bustling trade center, colloquially known as Roguetown, now degraded due to neglect and troubled fortune, run by the Mayor. </p>
 <p>  Kingdom of Heartfelt - The prosperous head of technological progress within Enigma, experiencing disaster as their automaton constructions turn against them and ravage their lands.  </p>
 <p>  Mire of the Bogswamp - A fertile and jungle-like area of the isle, overgrown and suffering an invasion of beespiders.  </p>
@@ -20,7 +20,8 @@
 <p>  Dwarven Federations - Scattered confederacies around Psydonia, the largest being to the West of Zybantu in the frigid mountains. Homeplace of the Dwarves. </p>
 <p>  Psy Forests -  Ancestral forests scattered around Psydonia, great and terrible trees. Ancient homes of the elves. The largest of which is North of Zybantu and the Crimsonlands. </p>
 <p>  The Barrows - Former boreal forest of the snow elves, now a deadland of ruin and decay following the ascension of Zizo. </p>
-<p>  Subterra - A vast cave system underground with its own unique biosphere, once an ancient empire, now home of the dark elven culture conquered by Zizo. </p>
+<p>  Nyxora - Once a land where the dark elves were united, now a land of rebirth and ambition. Scarred by catastrophe yet reforged by Zizo, it stands as the heart of dark elven culture, where only power and cunning shape destiny. </p>
+<p>  Shodom & Comorrah - Once the twin jewels of the dark elven empire, Shodom is now a cursed ruin where unfathomable dark magics fester, while Comorrah thrives as a lawless underworld where criminals rule and nobles serve. </p>
 <p><br></p>
 
 
@@ -28,6 +29,7 @@
 <p><br></p>
 
 <p> Zizo's Ascension - Necromancer snow elf Zizo sacrificed his entire people for his own apotheosis. </p>
+<p> Xylix's Ascension and the Fall of the Dark Elves - Once the mighty emperor of the dark elves, Xylix defied mortality and ascended to godhood, but his triumph came at a terrible cost; the raw surge of unchecked magic ravaged the land, shattered his empire, and left his people in ruin, forcing them to claw their way back from the ashes under Zizo's rule. </p>
 <p> Heartfelt's Hubris - Automaton servants created by Heartfelt's artificers go haywire, ravaging parts of their home city and surrounding lands as they engage in endless conquest for biomass to fuel themselves. </p>
 <p> Astrata's Coment - Striking Malum's Anvil, a strange comet landed. In its center, a rusted capsule containing a divine shard of Astrata's light. The first artificer to touch the shard could not handle the pure divinity, falling to ash. It was successfully contained within Vanderlin, now serving to light the way of travelers. </p>
 <p> Matthios' Unearthing - A dwarf miner within Vanderlin dug deeply, striking solid bricks. A tomb was unearthed, the fabled tomb of the ascended Matthios... brimming with His power and riches, but of equal danger. Adventurers talent from across the lands further boost Vanderlin's influence and power. </p>
@@ -86,71 +88,100 @@
 <p><br></p>
 <p>&quot;  Deities of The Mortal Races  &quot;</p>
 <p><br></p>
-<p> THE DEAD GOD </p>
+<p> THE ONE TRUE GOD </p>
 <p><i>   Founder of Psydonia - The Great Hero </i></p>
-<p>  Worshipped primarily by the Grenzelhoft Sect of the Pantheon, few know His true nature and feats. He is considered the father of The Ten, though the exact nature of his widely-accepted death is subject to heavy debate. Some followers of Psydon hold heavy grudges against Necra and The Ten for their roles in his butchery.  </p>
+<p>  Worshipped primarily by the **Grenzelhoft**, his true nature and deeds remain shrouded in mystery. \
+    To the followers of the **Pantheon**, he is the father of **The Ten**, though the details of his death—if he truly died—are heavily disputed. \
+    While Pantheon worshippers believe he perished, leaving his children to inherit his divine duties, the **Psydonites** hold an unshaken faith: \
+    Psydon never died in that fateful battle. They do not reject **The Ten**, but see them only as servants of **Psydon’s divine will**, not as equals. \
+    To them, Psydon remains supreme, the **undisputed godhead above all.** </p>
+<p><br></p>
+
+<p>&quot;   THE PANTHEON - CHILDREN OF PSYDON  &quot; </p>
+<p>  The gods of the Pantheon were not crafted, but born of Psydon's divine essence, each shaped by his will to govern the mortal world. \
+    First came **Astrata and Noc**, twin aspects of order and knowledge. Then came **Malum, Abyssor, and Dendor**, masters of creation and the natural world. \
+    **Eora followed**, the heart of divinity, with **Pestra and Ravox** to maintain the balance of life and war. \
+    **Necra was last**—an outsider among them, distant but undeniable in her power. And finally, **Xylix**, who ascended from mortality through trickery and defiance. \
+    Whether **Psydon is truly dead or simply beyond mortal reach** remains debated, but to the Psydonites, his supremacy is unquestioned. \
+    His children are honored, their domains respected, but it is **Psydon who remains the godhead above all.** </p>
 <p><br></p>
 
 <p>&quot;   ASTRATA  &quot; </p>
 <p><i>   Goddess of Order - The Sun Queen </i></p>
-<p>  Leader of the divine Pantheon and ancient steward of the mortal races. Prideful to a fault, She demands absolute obedience from her mortal followers, bringing cleansing to Psydonia and everlasting order to the world of mortals. </p>
-<p>  Astatan Priests are known to call upon purifying flames, steel the resolve of their allies and even call upon the wrath of the sun herself against those who would fall against order.</p>
-<p>  Astrata's doctrine shows mercy only in the form of justice swiftly delivered by the blade's edge. To this end, despite the Pantheon's distance in recent times, She still grants many blessings and boons to her worshippers and will gladly punish those who break her law. She despises chaos, diabolism, betrayal, and sloth. </p>
+<p>  The radiant leader of the Pantheon and steward of the mortal races, Astrata demands absolute obedience in her pursuit of everlasting order. \
+    Prideful to a fault, she offers mercy only through swift and unwavering justice. Her priests wield the power of purifying flames, \
+    steel the resolve of their allies, and call upon the sun’s wrath against those who threaten her divine law. \
+    Though the Pantheon has grown distant in recent times, she still blesses the faithful and punishes the unruly. \
+    She despises chaos, diabolism, betrayal, and sloth.</p>
 <p><br></p>
 
-<p>&quot;   NOC &quot; </p>
+<p>&quot;   NOC  &quot; </p>
 <p><i>   God of Knowledge - The Moon Prince </i></p>
-<p>  Crafted twin of Astrata. Noc is the God of All Knowledge, spending most of his time learning the many secrets of his father's creation. </p>
-<p>  The Faithful of Noc tend to be those of scholars and take much pride in learning and teaching. He looks poorly upon those who would shame the studies and remain ignorant of the world. Those who walk the moonlit path to transmute the Unknown into Knowledge, seek enlightenment in the unseen. Resentment is to be harnessed and transformed into a thirst for knowledge. </p>
+<p>  Crafted twin of Astrata, Noc is the god of all knowledge, ever seeking the hidden truths of existence. \
+    He watches over scholars and those who unravel the unknown, rewarding curiosity and wisdom. \
+    To him, ignorance is the greatest sin, and resentment must be transformed into a thirst for enlightenment. \
+    His faithful walk the moonlit path, seeking the unseen and transmuting mystery into understanding. \
+    Those who deny knowledge or stagnate in willful blindness earn his scorn.</p>
 <p><br></p>
 
 <p>&quot;   NECRA  &quot; </p>
-<p><i>   Goddess of Death and Decay - The Mother of the Ten </i></p>
-<p>  Once a mortal, partner of Psydon, Necra broke apart His body as He fell to grant herself divinity and shape The Ten to ensure world prosperity.  </p>
-<p>  Necra watches over the underworld, guiding souls to their proper resting places. Through time, She developed a close relationship with Her son Ravox, spending much of her eternity socializing. With His influence, her underworld was shaped to offer Herself entertainment and spirits a chance to prove themselves.  </p>
+<p><i>   Goddess of Death and Dominion - The Veiled Judge </i></p>
+<p>  Born of Psydon yet always apart from her kin, Necra’s understanding of death made her an outsider among the Pantheon. \
+    Where others saw death as an end, she saw it as an eternal duty—an unbroken cycle that must be **maintained, not mourned**. \
+    She rules the underworld with an impartial hand, not as a keeper of peace, but as one who ensures that all souls meet their rightful fate. \
+    While she does not revel in suffering, she also does not soothe it, and those who defy the balance of life and death find no mercy in her gaze. \
+    To Necra, all things must serve their purpose—even in death.</p>
 <p><br></p>
 
 <p>&quot;   DENDOR  &quot; </p>
 <p><i>   God of Nature and Beasts </i></p>
-<p>  One of the primordial Gods of Psydonia, grew mad with time as nature fell to industry.   </p>
-<p>  Dendor in His beastly form wishes only for a return to the natural order of life, of predators and prey, hunters and the hunted. He and His followers are stark defenders of nature, saboteurs of industry and hold a very uneasy and often violent relationship with the dwarves. </p>
+<p>  One of the primordial gods of Psydonia, Dendor grew mad as nature fell to industry. \
+    He seeks a return to the primal order—predators and prey, hunter and hunted. \
+    His followers are protectors of the wild, saboteurs of industry, and enemies of progress, \
+    their violent clashes with the dwarves a lasting stain on both peoples. \
+    To Dendor, civilization is the great plague, and only through its ruin can balance be restored.</p>
 <p><br></p>
 
 <p>&quot;   ABYSSOR  &quot; </p>
 <p><i>   God of Seas and Storms </i></p>
-<p>  Closely aligned with Dendor, Abyssor's concerns are of the natural environment and the preserved sanctity of the seas' bounty. </p>
-<p>  He harbours similar resentment of mortals and their treatment of His domain, though rather than driven mad with frustration Abyssor began crafting horrors of the deep to deliver vengeance. </p>
+<p>  Abyssor, aligned with Dendor, holds dominion over the seas and their fury. \
+    Where Dendor's madness drives destruction, Abyssor crafts horrors from the depths to exact vengeance upon those who defile his waters. \
+    His wrath is cold and relentless, his storms reminders that mortals are not masters of the sea but its trespassers.</p>
 <p><br></p>
 
-<p>&quot;   MALUM &quot; </p>
+<p>&quot;   MALUM  &quot; </p>
 <p><i>   God of Toil, Innovation, and Creation </i></p>
-<p>  Malum is a tenacious god who looks to the mortal races, especially that of the dwarves, with pride in their work. The All-Father of Flame and Industry, He smiles upon those who earn the sweat upon their brow, those who work honest days until their muscles are sore, and those who bear the burden of wishing to refine their craft even beyond. Malumites call upon their God’s will to soothe metal and summon bounties of resources from Psydonia itself.  </p>
-<p>  Malumites tend to show great love for craftsmanship and hard labor. Something that Malum rewards by soothing their soreness and whispering ideas into their minds. Malum loathes those who are slothlike and lazy, personally ensuring that any half-assed machine is sure to fail. He finds those who take credit for others' work infuriating.</p>
+<p>  Malum, the All-Father of Flame and Industry, watches over those who forge, build, and labor. \
+    He revels in craftsmanship and honest toil, whispering ideas into the minds of those who seek to refine their craft. \
+    His blessings grant endurance to the weary, but his wrath ensures that lazy hands and stolen work always fail.</p>
 <p><br></p>
 
-<p>&quot;   RAVOX &quot; </p>
+<p>&quot;   RAVOX  &quot; </p>
 <p><i>  God of Warfare, Justice, and Bravery </i></p>
-<p>  The favoured of Necra, Ravox's charisma and sheer will to do right inspire all across the lands of Psydonia. Those who take upon themselves the task of asserting justice find His blessings in their training and physical aptitude. </p>
-<p>  Ravox values the worthiness of duels and art of battle. He cares not who fights, but for the worthiness of their cause and the passion in their hearts. His body is steel; His heart is justice. </p>
+<p>  The favored of Necra, Ravox embodies the honor of battle and the virtue of justice. \
+    He does not care for conquest, only for the worthiness of a cause and the strength of a warrior’s heart. \
+    His blessings fall upon those who fight with conviction, guiding their blades and hardening their spirits.</p>
 <p><br></p>
 
-<p>&quot;   EORA &quot;</p>
+<p>&quot;   EORA  &quot; </p>
 <p><i>   Goddess of Love, Family, and Art </i></p>
-<p>  Eora embodies the heart of Psydon, in a quite literal sense. She sees kindness in all, occasionally to Her own detriment. She granted pity to Graggar, offering him a sliver of Psydon's heart only to be promptly betrayed. In this, She has an unwilling hand in the creation of orcs and goblins, the only children She truly hates.  </p>
-<p>  Eora values bonds, family, and expressions of love or passion. Despite her betrayal, She continues to preach pity and mercy.  </p>
+<p>  Eora, the heart of Psydon, sees kindness in all, though her mercy once led to ruin. \
+    Despite her grief, she remains the goddess of love, family, and expression, \
+    ever preaching that kindness must endure, no matter the cost.</p>
 <p><br></p>
 
-<p>&quot;   PESTRA &quot;</p>
+<p>&quot;   PESTRA  &quot; </p>
 <p><i>   Goddess of Disease, Alchemy, and Medicine </i></p>
-<p>  The Serpent of Medicine, Pestra, guards the sanctity of the cycle of life. Life gives way to rot, rot gives way to soil, soil gives way to more life. Life is defined by transformation and connection.  </p>
-<p>  She cares greatly that the natural order is maintained, Her followers preaching that natural calamities of life should be understood and adapted to rather than resisted. She grants her followers the knowledge of the inner-workings of Psydon's body, through which they may delay the cycle of life and death- but never to break it. </p>
+<p>  The Serpent of Medicine, Pestra, guards the sanctity of life's cycle—birth, decay, and renewal. \
+    Those who seek to unnaturally extend life or cheat death entirely are those who earn her wrath.</p>
 <p><br></p>
 
-<p>&quot;   XYLIX &quot; </p>
-<p><i>  Diety of Trickery, Freedom, and Inspiration  </i></p>
-<p>  Xylix was formed from the silver tongue of Psydon, and holds no fear in its use. None have strict accounts of Their appearance, as They often walk amongst mortals for their own amusement.  </p>
-<p>  Xylix detests boredom. The art of theatre was created as an appeal to Their desires. Followers of Xylix will often create drama for its own sake, whether through petty lies or elaborate trickery.   </p>
-<p>  For Xylixians, a boring life is not one worth living. </p>
+<p>&quot;   XYLIX  &quot; </p>
+<p><i>   God of Trickery, Freedom, and Inspiration </i></p>
+<p>  Xylix was no god at birth, but a **dark elf who ascended** through deception, wit, and sheer defiance of fate. \
+    They are a being of ever-changing faces and whispered lies, delighting in the art of chaos and performance. \
+    No one can say when they last spoke the truth, nor when they last walked among mortals, for they never truly left. \
+    Where laughter and mischief thrive, there Xylix lingers, ensuring that life remains a grand, unpredictable stage.</p>
 <p><br></p>
 
 
@@ -166,7 +197,7 @@
 <p><br></p>
 
 <p>&quot;  Dark Elf:   &quot;</p>
-<p>  A society conquered by Zizo inhabiting the Subterra, dark elves lead harsh lives in a matriarchal society. Dark elves are considered strong only due to the cruelty of their culture. Weaklings and men are considered disposable and executed for a number of reasons.  </p>
+<p>  Residing in the land of Nyxora, the dark elves live under Zizo's rule, their shattered empire reforged in his image. Their society is built on ruthless ambition, where only the strong rise and the weak are cast aside. In this world, strength and cunning define worth—loyalty is currency, and failure is death. Tradition once bound them, but under Zizo's law, power alone decides one's fate.  </p>
 <p><br></p>
 
 <p>&quot;  Dwarf:   &quot;</p>
@@ -174,15 +205,15 @@
 <p><br></p>
 
 <p>&quot;  Orcs & Goblins: (graggarspawn)    &quot;</p>
-<p>  Creations of sentient life by Gragger’s daemonic influence, crude mockery of the mortal species. Matured quickly by an uncaring world, the civilized ones have made impressionable leaps of technological and cultural progress that centralize warfare and have cemented their place as mortal beings. Tusked fangs, cut-throat cunningness, aggression, and usually pigmented green skin. </p>
+<p>  Creations of sentient life by Gragger's daemonic influence, crude mockery of the mortal species. Matured quickly by an uncaring world, the civilized ones have made impressionable leaps of technological and cultural progress that centralize warfare and have cemented their place as mortal beings. Tusked fangs, cut-throat cunningness, aggression, and usually pigmented green skin. </p>
 <p><br></p>
 
-<p>&quot;  Aasimar:    &quot;</p>
-<p>  Offspring crafted using mysterious means by The Ten to serve as servants of any trade. Not many of their kind exist, but mortals perceiving creations of The Ten themselves are often stricken by awe.  </p>
+<p>&quot;  Anakim:    &quot;</p>
+<p>  When humanity stood on the brink of destruction, 10,000 divine warriors, the Anakim, descended on winged saiga—a holy legion that turned the tide and shaped the world. Though their deeds became legend, these celestial beings chose to remain among mortals. They could not reproduce among themselves, but their bloodline mixed with humanity, fading over generations. Now, they are believed to be long dead, lost to war and time. Yet, in rare moments, a human rises above the rest—a hero with the blood of gods still burning in their veins.  </p>
 <p><br></p>
 
-<p>&quot;  Tiefling:   &quot;</p>
-<p>  Offspring of demons and mortals, or other tieflings. Their infernal ancestry and hellish appearances lead to treatment of suspicion and hostility. Relationships between tieflings and other species are rocky, at best. </p>
+<p>&quot;  Tiberian:   &quot;</p>
+<p>  Created by the demon princes as a way to influence the mortal realm, many have either moved towards mortal customs or fiercley hang onto their demonic heritage. Their infernal ancestry and hellish appearances lead to treatment of suspicion and hostility. Relationships between tiberians and other species are rocky, at best. </p>
 <p><br></p>"
 
 

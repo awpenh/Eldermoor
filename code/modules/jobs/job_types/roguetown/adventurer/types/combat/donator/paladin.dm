@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
-		"Aasimar"
+		"Anakim"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/paladin
 	maximum_possible_slots = 1

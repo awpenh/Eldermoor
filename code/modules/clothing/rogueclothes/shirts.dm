@@ -103,7 +103,7 @@
 /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
 	name = "formal silks"
 	icon_state = "puritan_shirt"
-	allowed_race = list("human", "tiefling", "elf", "dwarf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "dwarf", "anakim")
 	salvage_result = /obj/item/natural/silk
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
@@ -475,7 +475,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("human", "tiefling", "aasimar", "elf")
+	allowed_race = list("human", "tiberian", "anakim", "elf")
 	color = null
 	sellprice = 100
 
@@ -545,7 +545,7 @@
 	icon = 'icons/roguetown/clothing/shirts_gown.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts_gown.dmi'
 	name = "spring gown"
-	desc = "A delicate gown that captures the essence of the season’s renewal."
+	desc = "A delicate gown that captures the essence of the season's renewal."
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "springgown"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts_gown.dmi'

@@ -11,7 +11,7 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Aasimar"
+		"Anakim"
 	)
 
 	tutorial = "You came to Vanderlin either to seek knowledge or riches."

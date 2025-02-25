@@ -5,7 +5,7 @@
 	allowed_races = list(
 		"Humen",
 		"Dwarf",
-		"Aasimar",
+		"Anakim",
 		"Half-Elf",
 		"Elf")
 	grant_lit_torch = TRUE
@@ -65,7 +65,7 @@
 	allowed_sexes = list(MALE)
 	allowed_races = list("Humen",
 		"Dwarf",
-		"Aasimar",
+		"Anakim",
 		"Half-Elf",
 		"Elf")
 	grant_lit_torch = TRUE
@@ -115,7 +115,7 @@
 	greet_text = "You were apart of an expedition sent by the King of Vanderlin to Kingsfield, you and your serjeant-at-arms have returned upon fullfiling your task."
 	outfit = /datum/outfit/job/roguetown/crossbow_bannerman
 	allowed_sexes = list(MALE)
-	allowed_races = list("Humen","Dwarf","Aasimar", "Half-Elf", "Elf")
+	allowed_races = list("Humen","Dwarf","Anakim", "Half-Elf", "Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 
@@ -165,7 +165,7 @@
 	greet_text = "You were apart of an expedition sent by the King of Vanderlin to Kingsfield, you and your serjeant-at-arms have returned upon fullfiling your task."
 	outfit = /datum/outfit/job/roguetown/footman_bannerman
 	allowed_sexes = list(MALE)
-	allowed_races = list("Humen","Dwarf","Aasimar","Half-Elf","Elf")
+	allowed_races = list("Humen","Dwarf","Anakim","Half-Elf","Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 
@@ -206,7 +206,7 @@
 	greet_text = "You were apart of an expedition sent by the King of Vanderlin to Kingsfield, you and your serjeant-at-arms have returned upon fullfiling your task."
 	outfit = /datum/outfit/job/roguetown/pikeman_bannerman
 	allowed_sexes = list(MALE)
-	allowed_races = list("Humen","Dwarf","Aasimar","Half-Elf","Elf")
+	allowed_races = list("Humen","Dwarf","Anakim","Half-Elf","Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 

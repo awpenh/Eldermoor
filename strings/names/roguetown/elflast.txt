@@ -34,8 +34,8 @@ Amaryll
 Amaryllis
 Aquilaen
 Aranel
-Arazorwyn 
-Aredhel 
+Arazorwyn
+Aredhel
 Arwen
 Axil
 Axilea
@@ -56,8 +56,8 @@ Blythe
 Blythswana
 Bonna
 Bonnalurie
-Braern 
-Braerindra 
+Braern
+Braerindra
 Briareth
 
 
@@ -73,7 +73,7 @@ Chasianna
 Chathanglas
 Cheyrth
 Chichlandra
-Chin’nesstre
+Chin'nesstre
 Chomylla
 Círdan
 Ciyradyl
@@ -148,7 +148,7 @@ Fhaertala
 Filaurel
 Filauria
 Fildaerae
-Finduilas 
+Finduilas
 Filvendor
 Fingolfin
 Finrod
@@ -191,7 +191,7 @@ Herbalar
 Holcene
 Holone
 Horith
-Hubyr 
+Hubyr
 Hycis
 Hyacinth
 
@@ -328,7 +328,7 @@ Pleufan
 Purtham
 Pyrder
 Quaela
-Quaeth 
+Quaeth
 Quamara
 Raegel
 Raejiisa
@@ -355,7 +355,7 @@ Shalheira
 Shandalar
 Shanyrria
 Sharaera
-Sharian 
+Sharian
 Sheedra
 Shiera
 Shyael
@@ -366,7 +366,7 @@ Sinnafain
 Soliania
 Soora
 Sorsasta
-Sudryl 
+Sudryl
 Susklahava
 Sylmae
 Symrustar
@@ -401,7 +401,7 @@ Toross
 Travaran
 Triandal
 Tsarra
-Turgon 
+Turgon
 Tyria
 Urmicca
 Usunaar

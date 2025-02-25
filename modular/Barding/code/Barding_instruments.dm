@@ -282,7 +282,7 @@
 
 /obj/item/rogue/instrument/guitar
 	name = "guitar"
-	desc = "A corrupted lute, a heritage instrument of Tiefling pedigree."
+	desc = "A corrupted lute, a heritage instrument of Tiberian pedigree."
 	possible_item_intents = list(/datum/intent/mace/strike/wood)
 	icon_state = "guitar"
 	item_state = "guitar"
@@ -349,7 +349,7 @@
 
 /obj/item/rogue/instrument/drum
 	name = "drum"
-	desc = "The adopted instrument of Aasimar, used for signaling and rhythmic marches alike."
+	desc = "The adopted instrument of Anakim, used for signaling and rhythmic marches alike."
 	icon_state = "drum"
 	item_state = "drum"
 	song_list = list(
@@ -390,7 +390,7 @@
 	icon_state = "vtalisman"
 	song_list = list("Harpy's Call (Feminine)" = 'sound/instruments/vocalsf (1).ogg',
 	"Necra's Lullaby (Feminine)" = 'sound/instruments/vocalsf (2).ogg',
-	"Death Touched Aasimar (Feminine)" = 'sound/instruments/vocalsf (3).ogg',
+	"Death Touched Anakim (Feminine)" = 'sound/instruments/vocalsf (3).ogg',
 	"Our Mother, Our Divine (Feminine)" = 'sound/instruments/vocalsf (4).ogg',
 	"Wed, Forever More (Feminine)" = 'sound/instruments/vocalsf (5).ogg',
 	"Paper Boats (Feminine + Vocals)" = 'sound/instruments/vocalsf (6).ogg',

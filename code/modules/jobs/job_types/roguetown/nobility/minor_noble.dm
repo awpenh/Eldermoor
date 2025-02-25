@@ -9,10 +9,10 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
 		"Half-Orc",
-		"Aasimar",
+		"Anakim",
 		"Rakshari"
 	)
 	outfit = /datum/outfit/job/roguetown/noble

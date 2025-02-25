@@ -8,9 +8,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/zybantine_migration/emir
@@ -76,9 +76,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/zybantine_migration/amirah
@@ -199,9 +199,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/zybantine_migration/zybantine_guard
@@ -254,7 +254,7 @@
 		"Humen",
 		"Elf",
 		"Half-Elf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
 		"Half-Orc"
 	)

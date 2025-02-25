@@ -5,7 +5,7 @@
 	allowed_races = list(
 		"Humen",
 		"Half-Elf",
-		"Aasimar"
+		"Anakim"
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman
 	category_tags = list(CTAG_MERCENARY)

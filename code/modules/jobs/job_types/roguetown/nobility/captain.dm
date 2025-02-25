@@ -9,7 +9,7 @@
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard)
 	allowed_races = list(
 		"Humen",
-		"Aasimar",
+		"Anakim",
 		"Dwarf"
 	)
 	allowed_sexes = list(MALE)

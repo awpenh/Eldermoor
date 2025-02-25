@@ -1,6 +1,6 @@
 	/*==============*
 	*				*
-	*	Aasimar		*
+	*	Anakim		*
 	*				*
 	*===============*/
 
@@ -8,24 +8,26 @@
 //	( + Bleed Resist )
 //	( - Hunger )
 
-/mob/living/carbon/human/species/aasimar
-	race = /datum/species/aasimar
+/mob/living/carbon/human/species/anakim
+	race = /datum/species/anakim
 
-/datum/species/aasimar
-	name = "Aasimar"
-	id = "aasimar"
-	desc = "<b>Aasimar</b><br> \
-	Immortal offspring sculpted by one of the gods for use in servitude. \
-	Aasimar roaming alone on Psydonia often are those abandoned after serving their purpose. \
-	This species is often revered due to their celestial origin, but face great solitude \
-	as not many of their kind exist. Many an aasimar will detest the reverance in which they are greeted with,\
-	for their greatest failure or unuse that lead to their discarding is not subject for celebration. \
-	An aasimar may be crafted with any number of materials. \
-	Many resemble sculptures of stones or ceramic in skin, but their insides are just as mortal as \
-	any other. "
+/datum/species/anakim
+	name = "Anakim"
+	id = "anakim"
+	desc = "<b>Anakim</b><br> \
+	Created by divine hands, the Anakimwere sculpted as powerful, immortal warriors, each as strong as five men. \
+	10,000 descended upon Psydonia in humanity’s darkest hour, their arrival shaping the fate of the world. \
+	Yet, the gods’ will is debated—were they sent by the Pantheon or Psydon? None can say. \
+	Now, fewer than 100 remain, their existence thought to be myth, their kind believed long gone. \
+	Those that roam are often those discarded, abandoned after serving their purpose, condemned to walk alone. \
+	Revered for their celestial origin yet burdened by solitude, many detest the awe they inspire, \
+	for it only reminds them of their failure or obsolescence. \
+	Their forms vary—some are hewn from stone, others smooth as ceramic, but within, they bleed as mortals do. \
+	Though Anakimmay have faded from history, their legacy endures; their bloodline runs through the veins of great figures, \
+	human champions unknowingly carrying the remnants of gods."
 
 	skin_tone_wording = "Crafted With"
-	nutrition_mod = 2 // 200% higher hunger rate. Hungry, hungry aasimar
+	nutrition_mod = 2 // 200% higher hunger rate. Hungry, hungry anakim
 	pain_mod = 0.9 // 10% less pain from wounds
 	bleed_mod = 0.8 // 20% less bleed rate from injuries
 
@@ -70,25 +72,25 @@
 		/datum/body_marking/tonage,
 	)
 
-/datum/species/aasimar/check_roundstart_eligible()
+/datum/species/anakim/check_roundstart_eligible()
 	return TRUE
 
-/datum/species/aasimar/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+/datum/species/anakim/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	C.grant_language(/datum/language/common)
 
-/datum/species/aasimar/after_creation(mob/living/carbon/C)
+/datum/species/anakim/after_creation(mob/living/carbon/C)
 	..()
 	C.grant_language(/datum/language/celestial)
 	to_chat(C, "<span class='info'>I can speak Celestial with ,c before my speech.</span>")
 
-/datum/species/aasimar/on_species_loss(mob/living/carbon/C)
+/datum/species/anakim/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 	C.remove_language(/datum/language/celestial)
 
-/datum/species/aasimar/handle_speech(datum/source, list/speech_args)
+/datum/species/anakim/handle_speech(datum/source, list/speech_args)
 	. = ..()
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message)
@@ -108,10 +110,10 @@
 
 	speech_args[SPEECH_MESSAGE] = trim(message)
 
-/datum/species/aasimar/qualifies_for_rank(rank, list/features)
+/datum/species/anakim/qualifies_for_rank(rank, list/features)
 	return TRUE
 
-/datum/species/aasimar/get_skin_list()
+/datum/species/anakim/get_skin_list()
 	return sortList(list(
 		"Planetar" = SKIN_COLOR_PLANETAR, // - (Gold)
 		"Deva"	   = SKIN_COLOR_DEVA, // - (Sky blue)
@@ -124,7 +126,7 @@
 		"Abyssal" = SKIN_COLOR_ABYSSAL, // - (Deep blue)
 	))
 
-/datum/species/aasimar/get_hairc_list()
+/datum/species/anakim/get_hairc_list()
 	return sortList(list(
 	"black - oil" = "181a1d",
 	"black - cave" = "201616",
@@ -145,7 +147,7 @@
 	"red - maroon" = "612929"
 	))
 
-/datum/species/aasimar/random_name(gender,unique,lastname)
+/datum/species/anakim/random_name(gender,unique,lastname)
 
 	var/randname
 	if(unique)
@@ -166,14 +168,14 @@
 			randname = pick( world.file2list("strings/rt/names/other/aasf.txt") )
 	return randname
 
-/datum/species/aasimar/random_surname()
+/datum/species/anakim/random_surname()
 	return
 
-/datum/species/aasimar/get_accent_list()
+/datum/species/anakim/get_accent_list()
 	return strings("proper_replacement.json", "proper")
 
 /* Patron requirement was reactivated; why?
-Here's why! Aasimar (IN MY OPINION) does not fit the tone or setting of this code.
+Here's why! Anakim (IN MY OPINION) does not fit the tone or setting of this code.
 They are wildly better than any other race and there's no reason to not choose them.
 Hunger doesn't even kill, it just causes issues.
 So what's the point of keeping them enabled when they give you more benefits then negatives? */

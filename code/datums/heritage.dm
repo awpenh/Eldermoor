@@ -259,7 +259,7 @@
 	if(istype(dad_species, /datum/species/dwarf/mountain) || istype(mom_species, /datum/species/dwarf/mountain))
 		mix_text += "dwarf+"
 	if(istype(dad_species, /datum/species/tieberian) || istype(mom_species, /datum/species/tieberian))
-		mix_text += "tiefling+"
+		mix_text += "tiberian+"
 	if(istype(dad_species, /datum/species/rakshari	) || istype(mom_species, /datum/species/rakshari	))
 		mix_text += "rakshari+"
 

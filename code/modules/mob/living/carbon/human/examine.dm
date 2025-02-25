@@ -3,7 +3,7 @@
 		return
 	if(!isdarkelf(user) && isdarkelf(src))
 		user.add_stress(/datum/stressevent/delf)
-	if(!istiefling(user) && istiefling(src))
+	if(!istiberian(user) && istiberian(src))
 		user.add_stress(/datum/stressevent/tieb)
 	if(user.has_flaw(/datum/charflaw/paranoid) && (STASTR - user.STASTR) > 1)
 		user.add_stress(/datum/stressevent/parastr)

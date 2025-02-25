@@ -147,7 +147,7 @@
 
 /obj/item/rogueweapon/shield/tower
 	name = "tower shield"
-	desc = "A gigantic, iron reinforced shield that covers the entire body, a design-copy of the Aasimar shields of an era gone by."
+	desc = "A gigantic, iron reinforced shield that covers the entire body, a design-copy of the Anakim shields of an era gone by."
 	icon_state = "shield_tower"
 	force = 15
 	throwforce = 10
@@ -179,7 +179,7 @@
 
 /obj/item/rogueweapon/shield/tower/hoplite
 	name = "ancient shield"
-	desc = "A gigantic, bronze reinforced shield that covers the entire body. An aasimar relic from an era long past."
+	desc = "A gigantic, bronze reinforced shield that covers the entire body. An anakim relic from an era long past."
 	icon_state = "boeotian"
 	possible_item_intents = list(/datum/intent/shield/bash/metal, /datum/intent/shield/block/metal)
 	force = 20

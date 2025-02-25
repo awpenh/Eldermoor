@@ -10,9 +10,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc")
 
 
@@ -62,9 +62,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc")
 
 /datum/outfit/job/roguetown/mig_prisoner/pre_equip(mob/living/carbon/human/H)
@@ -95,7 +95,7 @@
 	name = "Guard"
 	greet_text = "You are apart of a convoy returning prisoners to Vanderlin. Obey the gaoler and ensure the prisoners get back to the dungeons."
 	outfit = /datum/outfit/job/roguetown/mig_guard
-	allowed_races = list("Humen","Dwarf","Aasimar")
+	allowed_races = list("Humen","Dwarf","Anakim")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 

@@ -127,8 +127,8 @@
 /obj/item/clothing/shoes/roguetown/hoplite
 	name = "ancient sandals"
 	desc = "Worn sandals lined with bronze, ready to march ever onwards."
-	icon_state = "aasimarfeet"
-	item_state = "aasimarfeet"
+	icon_state = "anakimfeet"
+	item_state = "anakimfeet"
 	sellprice = 20
 
 /obj/item/clothing/shoes/roguetown/shalal

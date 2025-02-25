@@ -5,9 +5,9 @@
 	"Elf",
 	"Dark Elf",
 	"Half-Elf",
-	"Tiefling",
+	"Tiberian",
 	"Dwarf",
-	"Aasimar",
+	"Anakim",
 	"Half-Orc"
 
 	)

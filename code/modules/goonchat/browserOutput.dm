@@ -58,7 +58,7 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 	var/datum/asset/stuff = get_asset_datum(/datum/asset/group/goonchat)
 	stuff.send(owner)
 
-	owner << browse(file('code/modules/goonchat/browserassets/html/browserOutput.html'), "window=browseroutput")
+	//owner << browse('file(code/modules/goonchat/browserassets/html/browserOutput.html'), "window=browseroutput")
 
 	if (load_attempts < 5) //To a max of 5 load attempts
 		spawn(20 SECONDS)

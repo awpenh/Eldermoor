@@ -8,7 +8,7 @@
 		"Humen",
 		"Elf",
 		"Dwarf",
-		"Aasimar",
+		"Anakim",
 		"Half-Elf",
 	)
 	allowed_patrons = ALL_TEMPLAR_PATRONS
