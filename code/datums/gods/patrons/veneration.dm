@@ -59,10 +59,13 @@
 	domain = "Saint of Creation, Nature and Abundance."
 	desc = "Considered to be in some way ancient, Ya'akov has a unique perspective which he shares with his followers. His teachings promote communion with and stewardship over nature as a way of finding The One and All.  "
 	worshippers = "Farmers, Hunters and Druids"
+	sins = "Deforestation, Overhunting, Disrespecting Nature"
+	boons = "You are immune to kneestingers."
 	added_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
+	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
-	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
-	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
+	t2 = /obj/effect/proc_holder/spell/self/beastsense
+	t3 = /obj/effect/proc_holder/spell/targeted/beasttame
 
 /datum/patron/veneration/julias
 	name = "Julias"
