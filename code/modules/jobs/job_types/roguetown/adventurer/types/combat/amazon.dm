@@ -23,6 +23,7 @@
 	H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 	H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.mind?.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/barbrage)
 	neck = /obj/item/storage/belt/rogue/pouch/pdarts
 	backl = /obj/item/rogueweapon/polearm/spear
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
@@ -32,7 +33,8 @@
 	shoes = /obj/item/clothing/shoes/roguetown/gladiator
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/amazon_chainkini
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
+	head = /obj/item/clothing/head/roguetown/helmet/horned
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", -1)
 	H.change_stat("endurance", 2)

@@ -449,7 +449,7 @@
 	sellprice = 15
 
 /obj/item/clothing/neck/roguetown/phys
-	name = "physicker's collar"
+	name = "physician's collar"
 	desc = "Fits snug."
 	icon_state = "surgcollar"
 	item_state = "surgcollar"

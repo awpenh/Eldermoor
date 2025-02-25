@@ -6,7 +6,7 @@
 	total_positions = -1
 	spawn_positions = 20
 	allowed_races = ALL_PLAYER_RACES_BY_NAME
-	tutorial = "Pilgrims begin far outside of the town and must reach it in order to ply their various trades. Sometimes, they build their own settlements and enjoy the terrible nature."
+	tutorial = "Pilgrims arrive from distant lands, seeking a fresh start in a world stirring with renewal. Some find their place in the town, while others forge new settlements, carving hope from the untamed wilds"
 
 	outfit = null
 	outfit_female = null

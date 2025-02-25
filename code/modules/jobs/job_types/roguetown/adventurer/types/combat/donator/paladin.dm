@@ -1,7 +1,7 @@
 /datum/advclass/combat/paladin
 	name = "Paladin"
 	tutorial = "Paladins are former noblemen and clerics who have dedicated themselves to great combat prowess. Often, they were promised redemption for past sins if they crusaded in the name of the gods."
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Anakim"
@@ -59,7 +59,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver
 
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	armor = /obj/item/clothing/suit/roguetown/armor/cuirass
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/platelegs
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor

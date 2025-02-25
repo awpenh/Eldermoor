@@ -70,7 +70,7 @@
 	icon_state = "feldgloves"
 
 /obj/item/clothing/gloves/roguetown/leather/phys
-	name = "physicker's gloves"
+	name = "physician's gloves"
 	desc = "Improved grip for wielding disembowled organs."
 	icon_state = "surggloves"
 

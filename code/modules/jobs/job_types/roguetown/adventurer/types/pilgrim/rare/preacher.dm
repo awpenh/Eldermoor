@@ -1,7 +1,7 @@
 /datum/advclass/pilgrim/rare/preacher
 	name = "Preacher"
 	tutorial = "A devout follower of Psydon, you came to this land with nothing more than the clothes on your back and the faith in your heart. Sway these nonbelievers to the right path!"
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Dwarf"

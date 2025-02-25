@@ -1,11 +1,11 @@
-/datum/job/roguetown/physicker
+/datum/job/roguetown/physician
 	title = "Physician"
 	tutorial =  "Those who fail their studies, or are exiled from the towns they take \
-				residence as feldshers in, often end up becoming wandering physickers. \
+				residence as feldshers in, often end up becoming wandering physicians. \
 				Capable doctors nonetheless, they journey from place to place offering \
 				their services."
 	faction = "Station"
-	flag = PHYSICKER
+	flag = PHYSICIAN
 	department_flag = SERFS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
@@ -18,19 +18,19 @@
 		"Anakim",
 		"Half-Orc"
 	)
-	display_order = JDO_PHYSICKER
+	display_order = JDO_PHYSICIAN
 	total_positions = 2
 	spawn_positions = 2
-	outfit = /datum/outfit/job/roguetown/physicker
+	outfit = /datum/outfit/job/roguetown/physician
 
-/datum/outfit/job/roguetown/physicker/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/physician/pre_equip(mob/living/carbon/human/H)
 	..()
 	mask = /obj/item/clothing/mask/rogue/phys
 	head = /obj/item/clothing/head/roguetown/roguehood/phys
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	backr = /obj/item/storage/backpack/rogue/satchel
-	backpack_contents =list(/obj/item/storage/keyring/physicker = 1)
+	backpack_contents =list(/obj/item/storage/keyring/physician = 1)
 	pants = /obj/item/clothing/under/roguetown/tights/random
 	gloves = /obj/item/clothing/gloves/roguetown/leather/phys
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/phys

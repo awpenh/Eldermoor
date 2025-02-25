@@ -7,7 +7,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	allowed_races = ALL_PLAYER_RACES_BY_NAME
-	tutorial = "You've lived in this shithole for effectively all your life. You are not an explorer, nor exactly a warrior in many cases. You're just some average poor bastard who thinks they'll be something someday."
+	tutorial = "You've spent your life in this backwater, watching the world slowly claw its way out of ruin. You're no great explorer, nor a warrior of legend—just another poor soul trying to make something of yourself in a world that, for once, seems to be getting better."
 	advclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null

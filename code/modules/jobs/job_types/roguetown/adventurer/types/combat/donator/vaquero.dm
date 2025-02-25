@@ -20,7 +20,7 @@
 /datum/outfit/job/roguetown/adventurer/vaquero/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.mind?.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 	H.mind?.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE) // Makes sense enough for an animal tamer
 	H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -36,15 +36,16 @@
 	H.mind?.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	head = /obj/item/clothing/head/roguetown/bardhat
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	pants = /obj/item/clothing/under/roguetown/tights/random
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 	belt = /obj/item/storage/belt/rogue/leather
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket
 	cloak = /obj/item/clothing/cloak/half/red
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/sword/rapier
 	beltr = /obj/item/rogueweapon/whip
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/coif/cloth
 	H.change_stat("strength", 1)
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

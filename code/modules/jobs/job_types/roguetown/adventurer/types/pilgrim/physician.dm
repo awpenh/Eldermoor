@@ -1,7 +1,7 @@
-/datum/advclass/pilgrim/physicker
-	name = "Physicker"
+/datum/advclass/pilgrim/physician
+	name = "Physician"
 	tutorial =  "Those who fail their studies, or are exiled from the towns they take \
-				residence as feldshers in, often end up becoming wandering physickers. \
+				residence as feldshers in, often end up becoming wandering physicians. \
 				Capable doctors nonetheless, they journey from place to place offering \
 				their services."
 	allowed_sexes = list(MALE, FEMALE)
@@ -16,12 +16,12 @@
 		"Anakim",
 		"Half-Orc"
 	)
-	outfit = /datum/outfit/job/roguetown/adventurer/physicker
+	outfit = /datum/outfit/job/roguetown/adventurer/physician
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	maximum_possible_slots = 2
-	apprentice_name = "Physicker Apprentice"
+	apprentice_name = "Physician Apprentice"
 
-/datum/outfit/job/roguetown/adventurer/physicker/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/adventurer/physician/pre_equip(mob/living/carbon/human/H)
 	..()
 	mask = /obj/item/clothing/mask/rogue/phys
 	head = /obj/item/clothing/head/roguetown/roguehood/phys

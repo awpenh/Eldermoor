@@ -448,7 +448,7 @@
 
 /obj/item/key/doctor
 	name = "doctor's key"
-	desc = "This key is used by the Physickers."
+	desc = "This key is used by the Physicians."
 	icon_state = "birdkey"
 	lockid = "doctor"
 
