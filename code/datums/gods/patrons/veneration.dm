@@ -1,6 +1,5 @@
 /datum/patron/veneration
 	name = null
-	associated_faith = /datum/faith/veneration
 
 /datum/patron/veneration/cephas
 	name = "Cephas"
