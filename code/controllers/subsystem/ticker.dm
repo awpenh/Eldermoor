@@ -140,6 +140,26 @@ SUBSYSTEM_DEF(ticker)
 					continue
 				music += S
 
+	// Filter out invalid sound files
+	for(var/S in music)
+		var/list/L = splittext(S,".")
+		if(L.len >= 2)
+			var/ext = lowertext(L[L.len]) //pick the real extension, no 'honk.ogg.exe' nonsense here
+			if(byond_sound_formats[ext])
+				continue
+		music -= S
+
+	// If no valid music files, load from ROUND_START_MUSIC_LIST
+	if(isemptylist(music))
+		music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
+		login_music = pick(music)
+	else
+		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
+
+	// Pick a random music file from the config/title_music/sounds directory
+	var/list/title_music_files = flist("[global.config.directory]/title_music/sounds/")
+	login_music = "[global.config.directory]/title_music/sounds/[pick(title_music_files)]"
+
 /datum/controller/subsystem/ticker/fire()
 	if(reboot_anyway)
 		if(world.time > reboot_anyway)
