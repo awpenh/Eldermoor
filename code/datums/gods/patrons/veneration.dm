@@ -1,7 +1,6 @@
 /datum/patron/veneration
 	name = null
 	associated_faith = /datum/faith/veneration
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/veneration/cephas
 	name = "Cephas"
@@ -80,7 +79,7 @@
 	domain = "Saint of Seas, Drowning and Suffering"
 	desc = "One of the Saints who dedicated themselves to preaching in foreign lands, Cana was flayed and drowned in saltwater. His followers often practice ritualistic flaying and consider flesh to hold the essence of The One and All."
 	worshippers = "Flaggelants, Sailors, Fishermen"
-		sins = "Cowardice, Cruelty, Stagnation"
+	sins = "Cowardice, Cruelty, Stagnation"
 	added_traits = list(TRAIT_LEECHIMMUNE)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/invoked/projectile/swordfish

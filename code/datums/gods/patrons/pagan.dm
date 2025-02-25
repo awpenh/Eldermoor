@@ -1,7 +1,6 @@
 /datum/patron/pagan
 	name = null
 	associated_faith = /datum/faith/paganism
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/pagan/astrata
 	name = "Astrata"
