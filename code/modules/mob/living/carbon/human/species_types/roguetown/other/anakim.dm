@@ -15,7 +15,7 @@
 	name = "Anakim"
 	id = "anakim"
 	desc = "<b>Anakim</b><br> \
-	Created by divine hands, the Anakimwere sculpted as powerful, immortal warriors, each as strong as five men. \
+	Created by divine hands, the Anakim were sculpted as powerful, immortal warriors, each as strong as five men. \
 	10,000 descended upon Psydonia in humanity’s darkest hour, their arrival shaping the fate of the world. \
 	Yet, the gods’ will is debated—were they sent by the Pantheon or Psydon? None can say. \
 	Now, fewer than 100 remain, their existence thought to be myth, their kind believed long gone. \
