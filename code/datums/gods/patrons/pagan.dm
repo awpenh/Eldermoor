@@ -3,18 +3,6 @@
 	associated_faith = /datum/faith/paganism
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
-/datum/patron/pagan/psydon
-	name = "Psydon"
-	domain = "Supposed God of Ontological Reality"
-	desc = "Pagans claim Psydon as the progenitor of the Nine. He is supposed to have created humen in his image to live in Psydonia."
-	worshippers = "Heretics and the Enlightened"
-	associated_faith = /datum/faith/paganism
-	confess_lines = list(
-		"PSYDON IS THE CREATOR!",
-		"THE SAINTS ARE FALSE IDOLS!",
-		"PSYDON IS MY SHEPHERD!",
-	)
-
 /datum/patron/pagan/astrata
 	name = "Astrata"
 	domain = "Goddess of the Sun, Day, and Order"
