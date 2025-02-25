@@ -51,7 +51,7 @@
 	greet_text = "You are the squire of an evil knight, they have taken you under their custody as you were the only one who didn't object to their dubious ethics."
 	outfit = /datum/outfit/job/roguetown/dark_itinerant_squire
 	antag_datum = /datum/antagonist/zizocultist
-	allowed_races = list("tiefling","Half-Orc","Dark Elf")
+	allowed_races = list("tiberian","Half-Orc","Dark Elf")
 	grant_lit_torch = TRUE
 
 /datum/outfit/job/roguetown/dark_itinerant_squire/pre_equip(mob/living/carbon/human/H)

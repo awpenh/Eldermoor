@@ -8,8 +8,8 @@
 		"Humen",
 		"Elf",
 		"Half-Elf",
-		"Tiefling",
-		"Aasimar",
+		"Tiberian",
+		"Anakim",
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/swashbuckler

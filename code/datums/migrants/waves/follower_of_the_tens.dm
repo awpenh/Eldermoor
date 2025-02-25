@@ -9,7 +9,7 @@
 		"Half-Elf",
 		"Dwarf",
 		"Dark Elf",
-		"Aasimar"
+		"Anakim"
 	)
 
 /datum/migrant_wave/acolytes

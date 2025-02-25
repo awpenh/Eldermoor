@@ -220,7 +220,7 @@
 	)
 
 /obj/item/recipe_book/underworld
-	name = "The Smuggler’s Guide: A Treatise on Elixirs of the Guild"
+	name = "The Smuggler's Guide: A Treatise on Elixirs of the Guild"
 	desc = "Penned by Thorne Ashveil, Thieves Guild's Alchemist, Second Generation"
 	icon_state ="book4_0"
 	base_icon_state = "book4"
@@ -242,7 +242,7 @@
 	)
 
 /obj/item/recipe_book/engineering
-	name = "The Engineer’s Primer: Machines, Mechanisms, and Marvels"
+	name = "The Engineer's Primer: Machines, Mechanisms, and Marvels"
 	desc = "Penned by Liora Brasslock, Chief Engineer, Second Generation"
 	icon_state ="book2_0"
 	base_icon_state = "book2"
@@ -252,7 +252,7 @@
 	)
 
 /obj/item/recipe_book/masonry
-	name = "The Stonebinder’s Manual: Foundations of Craft and Fortitude"
+	name = "The Stonebinder's Manual: Foundations of Craft and Fortitude"
 	desc = "Penned by Garrin Ironvein, Master Mason, Third Generation"
 	icon_state ="book_0"
 	base_icon_state = "book"

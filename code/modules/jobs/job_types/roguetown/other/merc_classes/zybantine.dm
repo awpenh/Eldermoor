@@ -8,9 +8,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/zybantine

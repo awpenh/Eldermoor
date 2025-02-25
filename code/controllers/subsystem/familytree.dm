@@ -60,7 +60,7 @@ SUBSYSTEM_DEF(familytree)
 		/datum/species/human/halfelf,
 		/datum/species/dwarf/mountain,
 		/datum/species/tieberian,
-		/datum/species/aasimar,
+		/datum/species/anakim,
 		/datum/species/rakshari,
 		/datum/species/halforc
 		)
@@ -240,7 +240,7 @@ SUBSYSTEM_DEF(familytree)
 				eligable_house.addToHouse(H, FAMILY_FATHER)
 				return
 	//None of the above added the person to a family. This means we must add them to a entirely new house.
-	if(our_species != /datum/species/aasimar)
+	if(our_species != /datum/species/anakim)
 		testing("FAMTREE_NEWFAM")
 		families += new /datum/heritage(H)
 

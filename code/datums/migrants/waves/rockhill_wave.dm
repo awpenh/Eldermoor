@@ -48,7 +48,7 @@
 	name = "Knight of Rockhill"
 	greet_text = "You are a Knight of Rockhill, the notable of said town has taken the journey to your liege, you are to ensure their safety."
 	outfit = /datum/outfit/job/roguetown/rockhill/knight
-	allowed_races = list("Humen","Dwarf","Elf","Half-Elf","Aasimar")
+	allowed_races = list("Humen","Dwarf","Elf","Half-Elf","Anakim")
 	grant_lit_torch = TRUE
 	advjob_examine = FALSE
 /datum/outfit/job/roguetown/rockhill/knight/pre_equip(mob/living/carbon/human/H)
@@ -120,7 +120,7 @@
 	allowed_races = list(
 		"Humen",
 		"Dwarf",
-		"Aasimar",
+		"Anakim",
 		"Elf",
 		"Half-Elf")
 	grant_lit_torch = TRUE
@@ -174,7 +174,7 @@
 	name = "Guardsmen of Rockhill"
 	greet_text = "Your serjeant-at-arms has been conscripted by the mayor of rockhill to guard them as they visit the rulers of Vanderlin. Ensure they live."
 	outfit = /datum/outfit/job/roguetown/footman_bannerman
-	allowed_races = list("Humen","Dwarf","Aasimar","Elf","Half-Elf")
+	allowed_races = list("Humen","Dwarf","Anakim","Elf","Half-Elf")
 	allowed_sexes = list(MALE)
 	grant_lit_torch = TRUE
 	advjob_examine = FALSE

@@ -12,9 +12,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	tutorial = "You are the Matron of the orphanage, an old strict lady whom oversee the 'wellbeing' of the orphans, you show them your tricks and you'll make them just as good as you one day."

@@ -8,9 +8,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc")
 	grant_lit_torch = TRUE
 

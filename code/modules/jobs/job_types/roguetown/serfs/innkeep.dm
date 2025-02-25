@@ -11,9 +11,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar"
+		"Anakim"
 	)
 
 	tutorial = "Liquor, lodging, and lavish meals... your business is the beating heart of Vanderlin. You're the one who provides the the hardworking townsfolk with a place to eat and drink their sorrows away, and accommodations for weary travelers passing through."

@@ -180,7 +180,7 @@
 	name = "nun's habit"
 	desc = "Habits worn by nuns of the pantheon's faith."
 	icon_state = "nun"
-	allowed_race = list("human", "tiefling", "elf", "dwarf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "dwarf", "anakim")
 
 /obj/item/clothing/head/roguetown/fancyhat
 	name = "fancy hat"
@@ -1529,10 +1529,10 @@
 	icon = 'icons/roguetown/clothing/head.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
-	icon_state = "aasimarhead"
+	icon_state = "anakimhead"
 	worn_x_dimension = 64
 	worn_y_dimension = 64
-	allowed_race = list("aasimar")
+	allowed_race = list("anakim")
 	flags_inv = HIDEEARS
 	clothing_flags = CANT_SLEEP_IN
 	body_parts_covered = HEAD|EARS|HAIR

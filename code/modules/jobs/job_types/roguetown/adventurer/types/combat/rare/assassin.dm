@@ -7,7 +7,7 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/assassin
@@ -71,7 +71,7 @@
 					backr = /obj/item/rogue/instrument/accord
 				if(H.dna.species.id == "elf")
 					backr = /obj/item/rogue/instrument/harp
-				if(H.dna.species.id == "tiefling")
+				if(H.dna.species.id == "tiberian")
 					backr = /obj/item/rogue/instrument/guitar
 		if("Beggar") //The sole "town" disguise available.
 			H.job = "Beggar"

@@ -17,7 +17,7 @@
 		"Humen",
 		"Elf",
 		"Half-Elf",
-		"Aasimar"
+		"Anakim"
 	)
 	allowed_sexes = list(MALE, FEMALE)
 

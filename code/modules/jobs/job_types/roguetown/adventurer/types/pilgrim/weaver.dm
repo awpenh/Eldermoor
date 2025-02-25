@@ -5,8 +5,8 @@
 	"Elf",
 	"Half-Elf",
 	"Dwarf",
-	"Tiefling",
-	"Aasimar"
+	"Tiberian",
+	"Anakim"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/seamstress
 	category_tags = list(CTAG_DISABLED)

@@ -9,9 +9,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar"
+		"Anakim"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/gravedigger
 	min_pq = 0

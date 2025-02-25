@@ -145,7 +145,7 @@
 	name = "padded dress"
 	desc = "Favored by the female nobility, to maintain both vitality and good taste while out hunting."
 	icon_state = "armordress"
-	allowed_race = list("human", "tiefling", "elf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "anakim")
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	sellprice = VALUE_PADDED_DRESS
@@ -917,15 +917,15 @@
 	allowed_race = list("human")
 	allowed_sex = list(MALE)
 
-// Aasimar hoplite armor, a very rare armor indeed
+// Anakim hoplite armor, a very rare armor indeed
 /obj/item/clothing/suit/roguetown/armor/rare/hoplite
 	name = "ancient plate armor"
 	desc = "A battered set of bronze plate armor. Intricate runes and carvings once adorned the pieces, but most have faded with age."
 	icon = 'icons/roguetown/clothing/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/armor.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
-	icon_state = "aasimarplate"
-	allowed_race = list("aasimar")
+	icon_state = "anakimplate"
+	allowed_race = list("anakim")
 	smeltresult = /obj/item/ingot/bronze
 	sellprice = VALUE_SNOWFLAKE_STEEL+BONUS_VALUE_MODEST // It has great value to historical collectors
 

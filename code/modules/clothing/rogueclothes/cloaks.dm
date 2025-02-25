@@ -612,7 +612,7 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
-	allowed_race = list("human", "tiefling", "elf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "anakim")
 	detail_tag = "_det"
 	detail_color = CLOTHING_PLUM_PURPLE
 
@@ -668,7 +668,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
-	allowed_race = list("human", "tiefling", "elf", "aasimar", "dwarf", "halforc")
+	allowed_race = list("human", "tiberian", "elf", "anakim", "dwarf", "halforc")
 	detail_tag = "_detail"
 	detail_color = CLOTHING_SOOT_BLACK
 
@@ -905,7 +905,7 @@
 /obj/item/clothing/cloak/cape/archivist
 	icon_state = "puritan_cape"
 	color = CLOTHING_SOOT_BLACK
-	allowed_race = list("human", "tiefling", "elf", "dwarf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "dwarf", "anakim")
 
 /obj/item/clothing/cloak/cape/rogue
 	name = "cape"
@@ -920,7 +920,7 @@
 	sleevetype = "shirt"
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar")
+	allowed_race = list("human", "tiberian", "anakim")
 	nodismemsleeves = TRUE
 
 
@@ -948,7 +948,7 @@
 	sleevetype = "shirt"
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar")
+	allowed_race = list("human", "tiberian", "anakim")
 	sellprice = 50
 	nodismemsleeves = TRUE
 
@@ -960,7 +960,7 @@
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	body_parts_covered = CHEST|GROIN|VITALS
 	allowed_sex = list(MALE, FEMALE)
-	// allowed_race = list("human", "tiefling", "elf", "aasimar", "dwarf")
+	// allowed_race = list("human", "tiberian", "elf", "anakim", "dwarf")
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	nodismemsleeves = TRUE
 	boobed = FALSE
@@ -975,7 +975,7 @@
 	sleevetype = "shirt"
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "halfelf", "tiefling", "aasimar")
+	allowed_race = list("human", "halfelf", "tiberian", "anakim")
 	sellprice = 50
 	nodismemsleeves = TRUE
 
@@ -996,7 +996,7 @@
 	toggle_icon_state = FALSE
 	color = CLOTHING_SOOT_BLACK
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("human", "tiefling", "elf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "anakim")
 
 /obj/item/clothing/cloak/half/ComponentInitialize()
 	. = ..()
@@ -1128,7 +1128,7 @@
 //.............inquisitor cloak......... (For inquisitors..)
 /obj/item/clothing/cloak/cape/puritan
 	icon_state = "puritan_cape"
-	allowed_race = list("human", "tiefling", "elf", "dwarf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "dwarf", "anakim")
 
 //.............daywalker cloak......... (For le daywalker..)
 /obj/item/clothing/cloak/cape/daywalker
@@ -1222,4 +1222,4 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
-	allowed_race = list("human", "tiefling", "elf", "aasimar")
+	allowed_race = list("human", "tiberian", "elf", "anakim")

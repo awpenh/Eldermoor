@@ -79,7 +79,7 @@
 	allowed_races = list(
 		"Human",
 		"Dwarf",
-		"Aasimar",
+		"Anakim",
 		"Half-Elf",
 		"Elf"
 	)
@@ -131,7 +131,7 @@
 	greet_text = "You have come to Eldermoor in service of your liege lord, seeking to aid in his claim to the throne."
 	outfit = /datum/outfit/job/roguetown/crossbow_supporter
 	allowed_sexes = list(MALE)
-	allowed_races = list("Human","Dwarf","Aasimar","Half-Elf","Elf")
+	allowed_races = list("Human","Dwarf","Anakim","Half-Elf","Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 
@@ -183,7 +183,7 @@
 	greet_text = "You have come to Eldermoor in service of your liege lord, seeking to aid in his claim to the throne."
 	outfit = /datum/outfit/job/roguetown/footman_supporter
 	allowed_sexes = list(MALE)
-	allowed_races = list("Human","Dwarf","Aasimar","Half-Elf","Elf")
+	allowed_races = list("Human","Dwarf","Anakim","Half-Elf","Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 
@@ -225,7 +225,7 @@
 	greet_text = "You have come to Eldermoor in service of your liege lord, seeking to aid in his claim to the throne."
 	outfit = /datum/outfit/job/roguetown/pikeman_supporter
 	allowed_sexes = list(MALE)
-	allowed_races = list("Human","Dwarf","Aasimar","Half-Elf","Elf")
+	allowed_races = list("Human","Dwarf","Anakim","Half-Elf","Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 

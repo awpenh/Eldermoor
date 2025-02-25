@@ -95,7 +95,7 @@
 // Bows and Knives
 /datum/advclass/tollguard/ranger
 	name = "Toll Guard Ranger"
-	tutorial = "You know the swamps better than most. Whether you’re a poacher or just too quick to catch, now you are the one keeping watch—hunting those who think they can pass without paying."
+	tutorial = "You know the swamps better than most. Whether you're a poacher or just too quick to catch, now you are the one keeping watch—hunting those who think they can pass without paying."
 	outfit = /datum/outfit/job/roguetown/tollguard/ranger
 	category_tags = list(CTAG_TOLGARRISON)
 

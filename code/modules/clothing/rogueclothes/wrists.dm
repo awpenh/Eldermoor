@@ -75,12 +75,12 @@
 	icon_state = "nocwrappings"
 	item_state = "nocwrappings"
 
-//Aasimar hoplite bracers
+//Anakim hoplite bracers
 /obj/item/clothing/wrists/roguetown/bracers/hoplite
 	name = "ancient bracers"
 	desc = "Stalwart bronze bracers, from an age long past."
-	icon_state = "aasimarwrist"
-	item_state = "aasimarwrist"
+	icon_state = "anakimwrist"
+	item_state = "anakimwrist"
 	armor = list("blunt" = 70, "slash" = 70, "stab" = 70,  "piercing" = 50, "fire" = 0, "acid" = 0) // Less protection than steel
 	smeltresult = /obj/item/ingot/bronze
 

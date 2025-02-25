@@ -12,9 +12,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar",
+		"Anakim",
 		"Half-Orc"
 	)
 	allowed_ages = list(AGE_CHILD, AGE_ADULT, AGE_IMMORTAL)

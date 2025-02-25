@@ -20,7 +20,7 @@
 /datum/patron/divine/astrata
 	name = "Astrata"
 	domain = "Goddess of Order, the Sun Queen"
-	desc = "Crafted from the head of Psydon, twin of Noc. She gifted mankind the Sun, protecting Psydonia from all forces which may seek it harm: from both outside and within."
+	desc = "Made to enforce law and dominion, Astrata is the radiant force of order. She set the Sun in the sky, illuminating the righteous and burning away the wicked. Stern and unwavering, she ensures the world remains bound to structure and discipline."
 	flaws = "Tyrannical, Ill-Tempered, Uncompromising"
 	worshippers = "Nobles, Zealots, Commoners"
 	sins = "Betrayal, Sloth, Witchcraft"
@@ -39,7 +39,7 @@
 /datum/patron/divine/noc
 	name = "Noc"
 	domain = "God of Knowledge, the Moon Prince"
-	desc = "Crafted from the helmet of Psydon, twin of Astrata. He gifted mankind divine wisdom."
+	desc = "Made to be the keeper of wisdom and unseen truths, Noc is the silent observer of all things hidden. He hung the Moon in the sky as a guide for those who seek knowledge in the dark. He grants insight to those who pursue it, though he cares little for how they wield it."
 	flaws = "Cynical, Isolationist, Unfiltered Honesty"
 	worshippers = "Magic Practitioners, Scholars, Scribes"
 	sins = "Suppressing Truth, Burning Books, Censorship"
@@ -58,7 +58,7 @@
 /datum/patron/divine/dendor
 	name = "Dendor"
 	domain = "God of Nature and Beasts"
-	desc = "Crafted from the bones of Psydon as the embodiment of the natural world. Driven mad with time."
+	desc = "Made to shape the land and govern all living things, Dendor was once the guardian of balance. But as mortals carved cities into the wilderness, his domain withered. Now, driven mad by time, he seeks to tear down civilization and restore the world to its primal state."
 	flaws = "Madness, Rebelliousness, Disorderliness"
 	worshippers = "Druids, Beasts, Madmen"
 	sins = "Deforestation, Overhunting, Disrespecting Nature"
@@ -77,7 +77,7 @@
 /datum/patron/divine/abyssor
 	name = "Abyssor"
 	domain = "God of Seas and Storms"
-	desc = "Crafted from the blood of Psydon as sovereign of the waters. Enraged by ignorance of Him from followers of The Ten."
+	desc = "Made to command the waters, Abyssor is the sovereign of the sea, both its bounty and its wrath. He shaped the great tides and the horrors of the deep, and for a time, all feared him. But as mortals turned from him, he grew bitter, his storms now driven by anger at being forgotten."
 	flaws= "Reckless, Stubborn, Destructive"
 	worshippers = "Sailors of the Sea and Sky, Horrid Sea-Creachers, Fog Islanders"
 	sins = "Fear, Hubris, Forgetfulness"
@@ -95,8 +95,8 @@
 
 /datum/patron/divine/necra
 	name = "Necra"
-	domain = "Mother Goddess of Death and Decay"
-	desc = "The Veiled Lady, once close partner to Psydon. She created the Nine others from his corpse, guiding them from the Underworld."
+	domain = "Goddess of Death and Decay"
+	desc = "Made to shepherd the dead, Necra does not see death as an end, but as a necessity. She tends the underworld with neither malice nor mercy, ensuring that all souls find their rightful place. Where others mourn, she remains impassive—for all things must eventually serve their purpose beyond life."
 	flaws = "Unchanging, Apathetic, Easy to Bore"
 	worshippers = "Orderlies, Gravetenders, Mourners"
 	sins = "Heretical Magic, Untimely Death, Disturbance of Rest"
@@ -115,7 +115,7 @@
 /datum/patron/divine/ravox
 	name = "Ravox"
 	domain = "God of Warfare, Justice, and Bravery"
-	desc = "Crafted from the the blade of Psydon, a champion of all who seek righteousness for themselves and others."
+	desc = "Made to embody righteous battle, Ravox is the force of war given purpose. He does not fight for conquest, but for justice—for the struggle itself. He blesses those who fight with honor and strikes down those who raise their blades in cruelty."
 	flaws = "Carelessness, Aggression, Pride"
 	worshippers = "Warriors, Sellswords, Guardsmen"
 	sins = "Cowardice, Cruelty, Stagnation"
@@ -134,7 +134,7 @@
 /datum/patron/divine/xylix
 	name = "Xylix"
 	domain = "Diety of Trickery, Freedom, and Inspiration"
-	desc = "Crafted from the silver tongue of Psydon. Xylix is a force of change and deceit, yet allows little known of their gender let alone presence."
+	desc = "Unlike the others, Xylix was not made but **ascended**—once a dark elf, now a god. They embody change, deception, and rebellion, weaving chaos where others seek control. No truth is sacred, no rule unbreakable, for Xylix believes the world should be an ever-changing stage."
 	flaws = "Petulance, Deception, Gambling-Prone"
 	worshippers = "Cheats, Performers, The Hopeless"
 	sins = "Boredom, Predictability, Routine"
@@ -159,7 +159,7 @@
 /datum/patron/divine/pestra
 	name = "Pestra"
 	domain = "Goddess of Disease, Alchemy, and Medicine"
-	desc = "Crafted from Psydon's intestines left behind. She slithered out, bringing forth the cycle of life and decay."
+	desc = "Made to oversee the cycle of life and decay, Pestra weaves sickness and healing in equal measure. She cares little for mortal suffering—only that the balance remains. Those who understand this truth find her gifts of alchemy and medicine, while those who resist it fall to her plagues."
 	flaws = "Drunkenness, Crudeness, Irresponsibility"
 	worshippers = "The Ill and Infirm, Alchemists, Physicians"
 	sins = "´Curing´ Abnormalities, Refusing to Help Unfortunates, Groveling"
@@ -178,7 +178,7 @@
 /datum/patron/divine/malum
 	name = "Malum"
 	domain = "God of Toil, Innovation, and Creation"
-	desc = "Crafted from the hands of Psydon. He would later use his own to construct wonderous inventions."
+	desc = "Made to be the god of labor and craftsmanship, Malum values those who build and shape the world. He rewards those who work tirelessly and punishes those who take shortcuts, ensuring that only through effort does true creation emerge."
 	flaws = "Obsessive, Exacting, Overbearing"
 	worshippers = "Smiths, Miners, Sculptors"
 	sins = "Cheating, Shoddy Work, Suicide"
@@ -197,7 +197,7 @@
 /datum/patron/divine/eora
 	name = "Eora"
 	domain = "Goddess of Love, Family, and Art"
-	desc = "Crafted from the heart of Psydon, a spreader of love and beauty, and strengthener of bonds."
+	desc = "Made with Psydon's heart, Eora was shaped to embody love, kindness, and the bonds that hold the world together. She fosters connection and inspires beauty, believing in the goodness of all things, even when that belief is tested. Though her kindness has been betrayed before, she refuses to abandon love—for without it, life itself is hollow."
 	flaws= "Naivete, Impulsiveness, Ignorance"
 	worshippers = "Mothers, Artists, Married Couples"
 	sins = "Sadism, Abandonment, Ruining Beauty"

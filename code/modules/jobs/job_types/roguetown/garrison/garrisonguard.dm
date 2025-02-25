@@ -11,7 +11,7 @@
 		"Humen",
 		"Half-Elf",
 		"Dwarf",
-		"Aasimar"
+		"Anakim"
 	)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL)
 	tutorial = "You are a member of the City Watch. You've proven yourself worthy to the Captain and now you've got yourself a salary.. as long as you keep the peace that is."

@@ -7,7 +7,7 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Aasimar"
+		"Anakim"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/monk
 	min_pq = 0

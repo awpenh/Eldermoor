@@ -13,18 +13,23 @@
 	name = "Dark Elf"
 	id = "elf"
 	desc = "<b>Dark Elf</b><br>\
-	Conquered by Zizo, these elves hail from an underground expanse of \
-	newly-reborn empires. They lead harsh, matriarchal lives under the watchful guide of Zizo, \
-	the vast majority hoping to one day achieve such power and domination for themselves. \
-	Zizo's spawn, the last snow elves, integrated themselves- whether gleefully or resentfully- within the dark elf culture \
-	their grandmother had carved through conquest. \
-	To most in Psydonia, a dark elf is nothing more than a servant of Zizo waiting to betray for power, \
-	leading most dark elves to remain within their safe underground strongholds. Those who breach the surface \
-	rarely receive fair treatment. \
+	Once a proud and mighty civilization, the dark elves bent magic to their will, shaping both their forms and their fate.\
+	Their greatest mages wove enchantments to darken their skin, shielding themselves from the relentless elements of their homeland,\
+	and their empire stood as a rival to the high elves in power and influence.\
+	But greatness came at a price—when their emperor, Xylix, ascended to godhood, the aftermath shattered their world.\
+	Reality twisted, the land withered, and the very foundation of their society crumbled under the weight of unchecked magic.\
+	From this ruin, only one force could lead them to salvation: Zizo.\
+	A conqueror, a god in the making, he reforged their broken people under his rule, not as they once were, but as they must become.\
+	Under the new laws of Zizo, strength and ambition are the only truths—loyalty is currency, and weakness is death.\
+	In his vision, there is no place for the petty divisions of the past; only power determines one’s place.\
+	Where cunning and ambition rule, gender holds no weight, and all who seek power may take it if they are strong enough.\
+	Though they once sought to rival the elves in magic, they now seek to reclaim their legacy through conquest and domination.\
+	A dark elf is a symbol of cunning and cold ambition,\
+	a survivor of a people who refuse to die, waiting for the day they rise once more.\
 	\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK."
 
-	skin_tone_wording = "Parent House"
+	skin_tone_wording = "Home City"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -89,15 +94,15 @@
 
 /datum/species/elf/dark/get_skin_list()
 	return sortList(list(
-		"Maggot" = SKIN_COLOR_MAGGOT, // - (Pale blue)
-		"Cocoon" = SKIN_COLOR_COCOON, // - (Pale purple)
-		"Ashen" = SKIN_COLOR_ASHEN, // - (Pale grey)
-		"Spider Venom" = SKIN_COLOR_SPIDER_VENOM, // - (Deep grey)
-		"Jackpoison" = SKIN_COLOR_JACKPOISON, // - (Grey-purple)
-		"Homunculus" = SKIN_COLOR_HOMUNCULUS, // - (Grey-blue)
-		"Arachnid Ichor" = SKIN_COLOR_ARACHNID_ICHOR, // - (Black-blue)
-		"Zizo Descendant" = SKIN_COLOR_SNOW_ELF, // - (Pale white)
-		"Gloomhaven" = SKIN_COLOR_GLOOMHAVEN, // - (Pink)
+		"Shodom" = SKIN_COLOR_MAGGOT, // - (Pale blue)
+		"Comorrah" = SKIN_COLOR_COCOON, // - (Pale purple)
+		"Gloomhaven" = SKIN_COLOR_ASHEN, // - (Pale grey)
+		"Darkpila" = SKIN_COLOR_SPIDER_VENOM, // - (Deep grey)
+		"Sshanntynlan" = SKIN_COLOR_JACKPOISON, // - (Grey-purple)
+		"Llurth Drei" = SKIN_COLOR_HOMUNCULUS, // - (Grey-blue)
+		"Tafravma" = SKIN_COLOR_ARACHNID_ICHOR, // - (Black-blue)
+		"Snow Elf" = SKIN_COLOR_SNOW_ELF, // - (Pale white)
+		"Yuethindrynn" = SKIN_COLOR_GLOOMHAVEN, // - (Pink)
 	))
 
 /datum/species/elf/dark/get_hairc_list()

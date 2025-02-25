@@ -7,9 +7,9 @@
 		"Elf",
 		"Half-Elf",
 		"Dwarf",
-		"Tiefling",
+		"Tiberian",
 		"Dark Elf",
-		"Aasimar")
+		"Anakim")
 	grant_lit_torch = TRUE
 
 /datum/outfit/job/roguetown/deprived/pre_equip(mob/living/carbon/human/H)

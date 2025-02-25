@@ -2,7 +2,7 @@
 	name = "Immortal Bulwark"
 	tutorial = "You have marched and fought in formations since the ancient war that nearly destroyed Psydonia. There are few in the world who can match your expertise in a shield wall, but all you have ever known is battle and obedience..."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list("Aasimar")
+	allowed_races = list("Anakim")
 	outfit = /datum/outfit/job/roguetown/adventurer/hoplite
 	maximum_possible_slots = 1
 	pickprob = 15 // Same as the other very rare classes
