@@ -23,7 +23,7 @@
 	Revered for their celestial origin yet burdened by solitude, many detest the awe they inspire, \
 	for it only reminds them of their failure or obsolescence. \
 	Their forms vary—some are hewn from stone, others smooth as ceramic, but within, they bleed as mortals do. \
-	Though Anakimmay have faded from history, their legacy endures; their bloodline runs through the veins of great figures, \
+	Though Anakim may have faded from history, their legacy endures; their bloodline runs through the veins of great figures, \
 	human champions unknowingly carrying the remnants of gods."
 
 	skin_tone_wording = "Crafted With"
