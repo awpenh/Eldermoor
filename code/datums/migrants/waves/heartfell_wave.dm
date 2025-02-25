@@ -207,7 +207,7 @@
 	grant_lit_torch = TRUE
 
 /datum/outfit/job/roguetown/heartfelt/magos
-	allowed_patrons = list(/datum/patron/divine/noc)
+	allowed_patrons = list(/datum/patron/veneration/eosten)
 /datum/outfit/job/roguetown/heartfelt/magos/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/talkstone

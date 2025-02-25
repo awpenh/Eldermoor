@@ -38,8 +38,8 @@
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	backpack_contents = list(/obj/item/scrying = 1, /obj/item/reagent_containers/glass/bottle/rogue/killersice = 1)
 	if(H.mind)
-		if(!(H.patron == /datum/patron/divine/noc || /datum/patron/inhumen/zizo))
-			H.set_patron(/datum/patron/divine/noc)
+		if(!(H.patron == /datum/patron/veneration/eosten || /datum/patron/inhumen/zizo))
+			H.set_patron(/datum/patron/veneration/eosten)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 6, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/magic/arcane, pick(6,5), TRUE)

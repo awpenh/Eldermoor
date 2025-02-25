@@ -30,8 +30,8 @@
 	beltl = /obj/item/reagent_containers/glass/bottle/rogue/manapot
 	r_hand = /obj/item/rogueweapon/polearm/woodstaff
 	if(H.mind)
-		if(H.patron != /datum/patron/divine/noc)
-			H.set_patron(/datum/patron/divine/noc)
+		if(H.patron != /datum/patron/veneration/eosten)
+			H.set_patron(/datum/patron/veneration/eosten)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)

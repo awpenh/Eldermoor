@@ -34,7 +34,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
 			cloak = /obj/item/clothing/cloak/stabard/templar/astrata
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/veneration/eosten)
 			neck = /obj/item/clothing/neck/roguetown/psycross/noc
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
 			cloak = /obj/item/clothing/cloak/stabard/templar/noc

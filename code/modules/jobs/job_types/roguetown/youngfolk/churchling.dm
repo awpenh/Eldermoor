@@ -54,7 +54,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
 		if(/datum/patron/divine/eora)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/veneration/eosten)
 			neck = /obj/item/clothing/neck/roguetown/psycross/noc
 		if(/datum/patron/veneration/mikros)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/pestra

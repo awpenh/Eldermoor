@@ -23,7 +23,7 @@
 		if(/datum/patron/veneration/cephas)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/veneration/eosten)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
 			wrists = /obj/item/clothing/neck/roguetown/psycross/noc
 		if(/datum/patron/veneration/yaakov)
