@@ -140,31 +140,6 @@ SUBSYSTEM_DEF(ticker)
 					continue
 				music += S
 
-for(var/S in music)
-    var/list/L = splittext(S,".")
-    if(L.len >= 2)
-        var/ext = lowertext(L[L.len]) //pick the real extension, no 'honk.ogg.exe' nonsense here
-        if(byond_sound_formats[ext])
-            continue
-    music -= S
-
-if(isemptylist(music))
-    music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
-    login_music = pick(music)
-else
-    login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
-
-// Pick a random music file from the config/title_music/sounds directory
-var/list/title_music_files = flist("[global.config.directory]/title_music/sounds/")
-login_music = "[global.config.directory]/title_music/sounds/[pick(title_music_files)]"
-
-	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
-	if(CONFIG_GET(flag/randomize_shift_time))
-		gametime_offset = rand(0, 23) HOURS
-	else if(CONFIG_GET(flag/shift_time_realtime))
-		gametime_offset = world.timeofday
-	return ..()
-
 /datum/controller/subsystem/ticker/fire()
 	if(reboot_anyway)
 		if(world.time > reboot_anyway)
