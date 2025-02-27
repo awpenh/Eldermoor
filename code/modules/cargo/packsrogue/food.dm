@@ -103,12 +103,12 @@
 	contains = /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine
 
 /datum/supply_pack/rogue/food/winevalorred
-	name = "Valorian Red Wine"
+	name = "RhasennianRed Wine"
 	cost = 50
 	contains = /obj/item/reagent_containers/glass/bottle/rogue/redwine
 
 /datum/supply_pack/rogue/food/winevalorwhite
-	name = "Valorian White Wine"
+	name = "RhasennianWhite Wine"
 	cost = 35
 	contains = /obj/item/reagent_containers/glass/bottle/rogue/whitewine
 

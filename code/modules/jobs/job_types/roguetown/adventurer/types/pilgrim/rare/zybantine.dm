@@ -37,6 +37,15 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	neck = /obj/item/clothing/neck/roguetown/shalal/emir
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(H.gender == FEMALE)
 //		armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/silk_coat
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/black
