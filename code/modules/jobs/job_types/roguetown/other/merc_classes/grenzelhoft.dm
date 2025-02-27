@@ -27,10 +27,13 @@
 		H.mind?.adjust_skillrank(/datum/skill/combat/shields, pick(0,0,1), TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-
-	if(H.gender == FEMALE)
-		H.underwear = "Femleotard"
-		H.underwear_color = CLOTHING_SOOT_BLACK
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
+	if(isdwarfmountain(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Platinum"]
 		H.update_body()
 
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor

@@ -7,12 +7,13 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 
 	desc = "<b>Rakshari</b><br>\
-	Their origins trace back to nomadic desert tribes, whose survival in the harsh sands cultivated a culture steeped in resilience, cunning, and adaptability. \
-	Over centuries, the Rakshari united under the banners of powerful Zybantine  merchant-kings and warlords, transforming their scattered clans into a dominant slaver force across the region., \
-	For centuries, they raided weaker settlements and rival caravans, \
-	capturing slaves to fuel their expanding cities and economies, \
-	practice of this was justified through religious doctrines venerating strength and dominance as divine virtues \
-	As they attached themselves to Zybantine Rakshari integrated more sophisticated forms of servitude, including indentured contracts and debt bondage. \
+	The Rakshari trace their origins to nomadic desert tribes, hardened by the unforgiving sands, where survival bred resilience, cunning, and adaptability. \
+	Once mere wanderers, they united under powerful Zybantine merchant-kings and warlords, transforming into a dominant slaver force that shaped the region's economy and warfare. \
+	For centuries, they raided weaker settlements and rival caravans, capturing slaves to expand their cities, justifying their actions through religious doctrines that venerated strength and subjugation as divine order. \
+	As they entrenched themselves within Zybantine society, the Rakshari refined their practices, introducing indentured servitude and debt bondage, ensuring even their own hosts were not immune to chains. \
+	However, their ambitions grew too bold. In a failed bid to carve out an independent state where they could enslave even the Zybantines, the Rakshari waged war against their own patrons. \
+	They envisioned a society where only the strong ruled, and all others served, yet their rebellion ended in catastrophe. Crushed by Zybantine armies and betrayed by their own, their people were nearly eradicated. \
+	Now, the few Rakshari who remain are hunted relentlessly, ghosts of a lost empire, wandering the land as outcasts, forever haunted by the ashes of their failed dominion. \
 	\
 	THIS IS A HYPER DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK.\
 	"

@@ -111,7 +111,7 @@
 		if(icon_state == "seggs")
 			playsound(get_turf(user), 'sound/foley/dropsound/food_drop.ogg', 40, TRUE, -1)
 			if(do_after(user, short_cooktime, src))
-				name = "valorian omelette"
+				name = "rhasennianomelette"
 				desc = "Fried cackleberries on a bed of half-melted cheese, a dish from distant lands."
 				list_reagents = list(/datum/reagent/consumable/nutriment = EGG_NUTRITION+EGG_NUTRITION+CHEESE_NUTRITION+1)
 				tastes = list("fried cackleberries" = 1, "cheese" = 1)

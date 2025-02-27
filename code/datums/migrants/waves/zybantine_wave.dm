@@ -4,14 +4,7 @@
 	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
-		"Rakshari",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiberian",
-		"Dark Elf",
-		"Anakim",
-		"Half-Orc"
+		"Rakshari"
 	)
 	outfit = /datum/outfit/job/roguetown/zybantine_migration/emir
 	grant_lit_torch = TRUE
@@ -33,6 +26,15 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	neck = /obj/item/clothing/neck/roguetown/shalal/emir
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(H.gender == FEMALE)
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/silk_coat
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/black
@@ -72,14 +74,7 @@
 	allowed_sexes = list(FEMALE)
 	allowed_races = list(
 		"Humen",
-		"Rakshari",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Tiberian",
-		"Dark Elf",
-		"Anakim",
-		"Half-Orc"
+		"Rakshari"
 	)
 	outfit = /datum/outfit/job/roguetown/zybantine_migration/amirah
 	grant_lit_torch = TRUE
@@ -102,6 +97,14 @@
 	neck = /obj/item/clothing/neck/roguetown/shalal/emir
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich = 1, /obj/item/reagent_containers/glass/bottle/rogue/wine = 1)
 
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -181,6 +184,15 @@
 	head = /obj/item/clothing/head/roguetown/rare/zybanplate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(!H.has_language(/datum/language/zybantine))
 		H.grant_language(/datum/language/zybantine)
 		to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")
@@ -222,6 +234,15 @@
 	neck = /obj/item/clothing/neck/roguetown/keffiyeh/red
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor)
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(!H.has_language(/datum/language/zybantine))
 		H.grant_language(/datum/language/zybantine)
 		to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")
@@ -292,6 +313,15 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	head = /obj/item/clothing/neck/roguetown/keffiyeh/red
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor, /obj/item/lockpick)
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(!H.has_language(/datum/language/zybantine))
 		H.grant_language(/datum/language/zybantine)
 		to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")

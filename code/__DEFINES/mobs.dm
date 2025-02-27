@@ -446,8 +446,8 @@
 #define SKIN_COLOR_ALBIAN "edc6b3" //White 3
 #define SKIN_COLOR_AVAR "e2b9a3" //White 4
 #define SKIN_COLOR_SALUDIAN "d9a284" //Tan
-#define SKIN_COLOR_ATTIKOI "c9a893" //Mediterranean 1
-#define SKIN_COLOR_AKONIAN "ba9882" //Mediterranean 2
+#define SKIN_COLOR_ZYBANTINE "c9a893" //Mediterranean 1
+#define SKIN_COLOR_GIZAN "ba9882" //Mediterranean 2
 #define SKIN_COLOR_RHASENNIAN "ac8369" //Latin
 #define SKIN_COLOR_MOURISH "9c6f52" //Middle-east
 #define SKIN_COLOR_SAERASEN "4e3729" //Black

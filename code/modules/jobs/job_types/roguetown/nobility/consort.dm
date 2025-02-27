@@ -91,6 +91,18 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/consort/courtesan
 	name = "Courtesan Consort"
@@ -131,6 +143,18 @@
 	H.change_stat("fortune", 3)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/consort/lowborn
 	name = "Lowborn Consort"
@@ -194,6 +218,18 @@
 	to_chat(H, "<span class='info'>I can gesture in thieves' cant with ,t before my speech.</span>")
 	ADD_TRAIT(H, TRAIT_THIEVESGUILD, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /obj/effect/proc_holder/spell/self/convertrole/servant
 	name = "Recruit Servant"

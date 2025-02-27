@@ -24,6 +24,11 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
+	confess_lines = list(
+	"CEPHAS GUIDES CIVILIZATION!",
+	"LIGHT AND TRUTH SHALL PREVAIL!",
+	"I BUILD A BRIGHTER FUTURE!"
+)
 
 /datum/patron/veneration/eosten
 	name = "Eosten"
@@ -37,6 +42,11 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/invisibility
 	t2 = /obj/effect/proc_holder/spell/invoked/blindness
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/moondagger
+	confess_lines = list(
+	"EOSTEN HOLDS THE SECRETS!",
+	"KNOWLEDGE MUST NEVER BE LOST!",
+	"I SEEK THE TRUTH, NO MATTER THE COST!"
+)
 
 /datum/patron/veneration/patras
 	name = "Patras"
@@ -44,6 +54,11 @@
 	desc = "Although Cephas now guides the church, Patras was the one to establish it when The One and All delivered a new covenant. His followers believe that the essence of divinity can be found in building consensus and obeying the common law. "
 	worshippers = "Guards, Stewards, Vigilantes"
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
+	confess_lines = list(
+	"PATRAS BRINGS ORDER!",
+	"DUTY AND LAW ABOVE ALL!",
+	"I STAND FOR JUSTICE AND UNITY!"
+)
 
 /datum/patron/veneration/nazar
 	name = "Nazar"
@@ -53,6 +68,11 @@
 	sins = "Rudeness, Abandonment, Unpoliteness"
 	added_traits = list(TRAIT_EXTEROCEPTION)
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
+	confess_lines = list(
+	"NAZAR TEACHES HONOR!",
+	"CHARITY AND LOYALTY ARE MY CREED!",
+	"I WALK THE PATH OF COURTLINESS!"
+)
 
 /datum/patron/veneration/mikros
 	name = "Mikros"
@@ -65,6 +85,11 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/attach_bodypart
 	t3 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot
+	confess_lines = list(
+	"MIKROS HEALS THE WEAK!",
+	"COMPASSION IS MY CALLING!",
+	"MEDICINE AND MERCY SHALL NEVER FAIL!"
+)
 
 /datum/patron/veneration/yaakov
 	name = "Ya'Akov"
@@ -78,6 +103,11 @@
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/self/beastsense
 	t3 = /obj/effect/proc_holder/spell/targeted/beasttame
+	confess_lines = list(
+	"YA’AKOV NOURISHES THE LAND!",
+	"NATURE IS OUR SACRED CHARGE!",
+	"I TREAD IN HARMONY WITH CREATION!"
+)
 
 /datum/patron/veneration/julias
 	name = "Julias"
@@ -86,6 +116,11 @@
 	worshippers = "Hands, Rogues and Beggars"
 	t1 = /obj/effect/proc_holder/spell/invoked/blindness
 	t2 = /obj/effect/proc_holder/spell/invoked/invisibility
+	confess_lines = list(
+	"JULIAS WALKS IN SHADOW!",
+	"SECRECY IS FREEDOM!",
+	"I OWE NOTHING TO KINGS AND LAWS!"
+)
 
 /datum/patron/veneration/cana
 	name = "Cana"
@@ -98,6 +133,12 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/projectile/swordfish
 	t2 = /obj/effect/proc_holder/spell/self/summon_trident
 	t3 = /obj/effect/proc_holder/spell/invoked/ocean_embrace
+	confess_lines = list(
+	"CANA SUFFERS FOR US!",
+	"THE SEA CLAIMS ALL IN THE END!",
+	"I EMBRACE THE TIDE OF PAIN!"
+)
+
 
 /datum/patron/veneration/mathuin
 	name = "Mathuin"
@@ -109,6 +150,11 @@
 	t1 = /obj/effect/proc_holder/spell/self/call_to_arms
 	t2 = /obj/effect/proc_holder/spell/self/divine_strike
 	t3 = /obj/effect/proc_holder/spell/invoked/persistence
+	confess_lines = list(
+	"MATHUIN HONORS STRENGTH!",
+	"MY BODY IS A TEMPLE OF PERFECTION!",
+	"I STRIVE FOR GLORY IN ALL THINGS!"
+)
 
 /datum/patron/veneration/toma
 	name = "Toma"
@@ -122,6 +168,11 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/vigorouscraft
 	t2 = /obj/effect/proc_holder/spell/invoked/hammerfall
 	t3 = /obj/effect/proc_holder/spell/invoked/heatmetal
+	confess_lines = list(
+	"TOMA FORGES GREATNESS!",
+	"LABOR IS ITS OWN REWARD!",
+	"MY WORK STANDS ETERNAL!"
+)
 
 /datum/patron/veneration/labbeus
 	name = "Labbeus"
@@ -133,3 +184,8 @@
 	t1 = /obj/effect/proc_holder/spell/targeted/burialrite
 	t2 = /obj/effect/proc_holder/spell/targeted/soulspeak
 	t3 = /obj/effect/proc_holder/spell/targeted/churn
+	confess_lines = list(
+	"LABBEUS DEALS IN LIFE AND DEATH!",
+	"ALL THINGS HAVE A PRICE!",
+	"I HONOR THE SACRED TRANSACTION!"
+)

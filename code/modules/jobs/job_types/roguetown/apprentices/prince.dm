@@ -40,6 +40,7 @@
 		Q.invisibility = INVISIBILITY_MAXIMUM
 		Q.become_blind("advsetup")
 
+
 /datum/advclass/heir
 	displays_adv_job = FALSE
 
@@ -80,6 +81,18 @@
 		H.change_stat("fortune", 1)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
@@ -123,6 +136,18 @@
 		H.change_stat("intelligence", 2)
 		H.change_stat("fortune", 1)
 		H.change_stat("speed", 1)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/heir/inbred
 	name = "Inbred Wastrel"
@@ -168,3 +193,16 @@
 		H.change_stat("constitution", -2)
 		H.change_stat("endurance", -2)
 		H.change_stat("fortune", -2) //They already can't run, no need to do speed and torture their move speed.
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()

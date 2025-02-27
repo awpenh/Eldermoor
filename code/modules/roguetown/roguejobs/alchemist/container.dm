@@ -141,11 +141,11 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/redwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine = 70)
-	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
+	desc = "A bottle with the RhasennianMerchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
 
 /obj/item/reagent_containers/glass/bottle/rogue/whitewine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/whitewine = 70)
-	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
+	desc = "A bottle with the RhasennianMerchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfred
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfred = 70)

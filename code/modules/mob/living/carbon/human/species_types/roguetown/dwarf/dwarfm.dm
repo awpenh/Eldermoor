@@ -144,7 +144,6 @@
 	return " [pick(world.file2list("strings/rt/names/dwarf/dwarmlast.txt"))]"
 
 
-
 /*------------------\
 | Poison Resistance |
 \------------------*/

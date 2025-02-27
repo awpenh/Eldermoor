@@ -47,6 +47,15 @@
 	head = /obj/item/clothing/head/roguetown/rare/zybanplate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
+
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GIZAN
+	)
+
+	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 	if(!H.has_language(/datum/language/zybantine))
 		H.grant_language(/datum/language/zybantine)
 		to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")

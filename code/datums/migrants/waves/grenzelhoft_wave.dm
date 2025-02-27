@@ -26,6 +26,14 @@
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
+	if(isdwarfmountain(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Platinum"]
+		H.update_body()
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -81,6 +89,14 @@
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
+	if(isdwarfmountain(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Platinum"]
+		H.update_body()
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
@@ -149,6 +165,10 @@
 	head = /obj/item/clothing/head/roguetown/rare/grenzelplate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
 	if(!H.has_language(/datum/language/oldpsydonic))
 		H.grant_language(/datum/language/oldpsydonic)
 		to_chat(H, "<span class='info'>I can speak Old Psydonic with ,m before my speech.</span>")
@@ -200,6 +220,14 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/cuirass/grenzelhoft
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/sword/long/greatsword/zwei
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
+	if(isdwarfmountain(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Platinum"]
+		H.update_body()
 	if(!H.has_language(/datum/language/oldpsydonic))
 		H.grant_language(/datum/language/oldpsydonic)
 		to_chat(H, "<span class='info'>I can speak Old Psydonic with ,m before my speech.</span>")

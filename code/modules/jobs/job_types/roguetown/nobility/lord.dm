@@ -97,6 +97,19 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
+
 //	SSticker.rulermob = H
 
 /datum/job/roguetown/exlord //just used to change the lords title

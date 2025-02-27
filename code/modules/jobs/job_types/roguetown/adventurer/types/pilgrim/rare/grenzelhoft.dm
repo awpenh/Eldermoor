@@ -30,6 +30,14 @@
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
+	if(isdwarfmountain(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Platinum"]
+		H.update_body()
 	if(H.gender == FEMALE)
 		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/dress/alt
 		beltl = /obj/item/rogueweapon/sword/rapier/dec

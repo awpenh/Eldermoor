@@ -93,6 +93,18 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/hand/spymaster
 	name = "Spymaster"
@@ -141,6 +153,18 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()
 
 /datum/advclass/hand/advisor
 	name = "Advisor"
@@ -179,3 +203,15 @@
 
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
+	var/static/list/canonical_heritage_check_list = list(
+	SKIN_COLOR_AMBER_STAINED,
+	SKIN_COLOR_ARID_BIRTHED,
+	SKIN_COLOR_JOSHUA_ALIGNED,
+	SKIN_COLOR_SOLAR_HUE,
+	SKIN_COLOR_TIMBER_GRONN,
+	SKIN_COLOR_WALNUT_STINE
+	)
+
+	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
+		H.skin_tone = pick(canonical_heritage_check_list)
+		H.update_body()

@@ -257,6 +257,10 @@
 	cloak = /obj/item/clothing/cloak/half/vet
 	H.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
 	backpack_contents = list(/obj/item/rogueweapon/knife/dagger/steel/special = 1)
+	if(ishumannorthern(H))
+		var/list/skin_slop = H.dna.species.get_skin_list()
+		H.skin_tone = skin_slop["Grenzelhoft"]
+		H.update_body()
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
