@@ -28,8 +28,8 @@
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich)
 
 	var/static/list/canonical_heritage_check_list = list(
-	SKIN_COLOR_ATTIKOI,
-	SKIN_COLOR_AKONIAN
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -98,8 +98,8 @@
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/veryrich = 1, /obj/item/reagent_containers/glass/bottle/rogue/wine = 1)
 
 	var/static/list/canonical_heritage_check_list = list(
-	SKIN_COLOR_ATTIKOI,
-	SKIN_COLOR_AKONIAN
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -186,8 +186,8 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 
 	var/static/list/canonical_heritage_check_list = list(
-	SKIN_COLOR_ATTIKOI,
-	SKIN_COLOR_AKONIAN
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -236,8 +236,8 @@
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor)
 
 	var/static/list/canonical_heritage_check_list = list(
-	SKIN_COLOR_ATTIKOI,
-	SKIN_COLOR_AKONIAN
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -315,8 +315,8 @@
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor, /obj/item/lockpick)
 
 	var/static/list/canonical_heritage_check_list = list(
-	SKIN_COLOR_ATTIKOI,
-	SKIN_COLOR_AKONIAN
+	SKIN_COLOR_ZYBANTINE,
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
