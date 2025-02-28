@@ -433,7 +433,7 @@
 #define SKIN_COLOR_MOUNTAIN_ELF "edc6b3" //White 3
 #define SKIN_COLOR_COASTAL_ELF "e2b9a3" //White 4
 #define SKIN_COLOR_WOOD_ELF "c9a893" //Mediterranean 1
-#define SKIN_COLOR_SEA_ELF "ba9882" //Mediterranean 2
+#define SKIN_COLOR_SEA_ELF "997d6b" //Mediterranean 2
 #define SKIN_COLOR_JUNGLE_ELF "ac8369" //Latin 2
 #define SKIN_COLOR_SAVANNAH_ELF "9c6f52" //Middle-east
 #define SKIN_COLOR_SAND_ELF "5d4c41" //Black 1
@@ -447,7 +447,7 @@
 #define SKIN_COLOR_AVAR "e2b9a3" //White 4
 #define SKIN_COLOR_SALUDIAN "d9a284" //Tan
 #define SKIN_COLOR_ZYBANTINE "c9a893" //Mediterranean 1
-#define SKIN_COLOR_GIZAN "ba9882" //Mediterranean 2
+#define SKIN_COLOR_GYZAN "997d6b" //Mediterranean 2
 #define SKIN_COLOR_RHASENNIAN "ac8369" //Latin
 #define SKIN_COLOR_MOURISH "9c6f52" //Middle-east
 #define SKIN_COLOR_SAERASEN "4e3729" //Black

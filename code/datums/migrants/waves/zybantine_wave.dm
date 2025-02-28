@@ -29,7 +29,7 @@
 
 	var/static/list/canonical_heritage_check_list = list(
 	SKIN_COLOR_ZYBANTINE,
-	SKIN_COLOR_GIZAN
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -99,7 +99,7 @@
 
 	var/static/list/canonical_heritage_check_list = list(
 	SKIN_COLOR_ZYBANTINE,
-	SKIN_COLOR_GIZAN
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -187,7 +187,7 @@
 
 	var/static/list/canonical_heritage_check_list = list(
 	SKIN_COLOR_ZYBANTINE,
-	SKIN_COLOR_GIZAN
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -237,7 +237,7 @@
 
 	var/static/list/canonical_heritage_check_list = list(
 	SKIN_COLOR_ZYBANTINE,
-	SKIN_COLOR_GIZAN
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))
@@ -316,7 +316,7 @@
 
 	var/static/list/canonical_heritage_check_list = list(
 	SKIN_COLOR_ZYBANTINE,
-	SKIN_COLOR_GIZAN
+	SKIN_COLOR_GYZAN
 	)
 
 	if(ishumannorthern(H) && !(H.skin_tone in canonical_heritage_check_list))

@@ -74,7 +74,7 @@
         "Avar" = SKIN_COLOR_AVAR, // - (White 4)
         "Saludian" = SKIN_COLOR_SALUDIAN, // - (Latin)
         "Zybantine" = SKIN_COLOR_ZYBANTINE, // - (Mediterranean)
-        "Gizan" = SKIN_COLOR_GIZAN, // - (Mediterranean 2)
+        "Gyzan" = SKIN_COLOR_GYZAN, // - (Mediterranean 2)
         "Rhasennian" = SKIN_COLOR_RHASENNIAN, // - (Latin 2)
         "Mourish" = SKIN_COLOR_MOURISH, //  - (Middle-east)
         "Saerasen" = SKIN_COLOR_SAERASEN, // - (Black)
