@@ -1,4 +1,4 @@
-// Malum's Anvil Areas
+// Toma's Anvil Areas
 
 /area/rogue/under/mountains/anvil
 	name = "toma's anvil generic under (don't use)"
@@ -16,7 +16,7 @@
 
 /area/rogue/under/mountains/anvil/lower
 	name = "toma's anvil under lower caves"
-	icon_state = "lowercavemalum"
+	icon_state = "lowercavetoma"
 	first_time_text = "TOMA'S ANVIL"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,
