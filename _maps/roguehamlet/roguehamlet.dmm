@@ -2255,7 +2255,7 @@
 "cBj" = (
 /obj/structure/fluff/statue/femalestatue{
 	density = 1;
-	desc = "Some say its depicting Eora after a bath.";
+	desc = "Some say its depicting Baotha after a bath.";
 	icon_state = "12";
 	pixel_y = 3
 	},
@@ -4295,10 +4295,10 @@
 /area/rogue)
 "eBG" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/abyssor,
+/obj/item/book/rogue/cana,
 /obj/item/book/rogue/godofdreamsandnightmares,
-/obj/item/book/rogue/noc,
-/obj/item/book/rogue/xylix,
+/obj/item/book/rogue/eosten,
+/obj/item/book/rogue/julius,
 /obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/bookofpriests,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -8730,7 +8730,7 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/spider)
 "jhJ" = (
-/obj/structure/nocdevice{
+/obj/structure/eostendevice{
 	pixel_y = 1
 	},
 /turf/open/floor/rogue/ruinedwood/chevron,
@@ -10017,9 +10017,9 @@
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
 /area/rogue/indoors/town/church)
 "kwb" = (
-/obj/item/book/rogue/abyssor,
+/obj/item/book/rogue/cana,
 /obj/structure/bookcase,
-/obj/item/book/rogue/noc,
+/obj/item/book/rogue/eosten,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
 "kwe" = (
@@ -15081,7 +15081,7 @@
 /area/rogue/under/town/basement)
 "pwX" = (
 /obj/structure/bookcase/random/reference,
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/secret/julius,
 /obj/item/book/rogue/law,
 /turf/open/floor/rogue/tile{
 	icon_state = "chess"
@@ -19142,7 +19142,7 @@
 	},
 /obj/structure/bookcase,
 /obj/item/book/rogue/secret/ledger,
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/secret/julius,
 /obj/item/book/rogue/law,
 /obj/item/book/rogue/bibble,
 /turf/open/floor/carpet/royalblack,

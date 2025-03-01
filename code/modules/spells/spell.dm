@@ -247,7 +247,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 	if(!ignore_cockblock && HAS_TRAIT(user, TRAIT_SPELLBLOCK))
 		return FALSE
 
-	if(HAS_TRAIT(user, TRAIT_NOC_CURSE))
+	if(HAS_TRAIT(user, TRAIT_EOSTEN_CURSE))
 		to_chat(user, span_warning("My magicka has left me..."))
 		return FALSE
 

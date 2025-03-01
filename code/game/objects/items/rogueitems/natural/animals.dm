@@ -3,7 +3,7 @@
 /obj/item/natural/hide
 	name = "hide"
 	icon_state = "hide"
-	desc = "Hide from one of Dendor's creachers."
+	desc = "Hide from one of Yaakov's creachers."
 	dropshrink = 0.90
 	force = 0
 	throwforce = 0
@@ -34,7 +34,7 @@
 /obj/item/natural/cured/essence
 	name = "essence of wilderness"
 	icon_state = "wessence"
-	desc = "A mystical essence embued with the power of Dendor. Merely holding it transports one's mind to ancient times."
+	desc = "A mystical essence embued with the power of Yaakov. Merely holding it transports one's mind to ancient times."
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_SMALL
 	sellprice = 20
@@ -42,7 +42,7 @@
 /obj/item/natural/fur // a piece of skin with animal hair on it. Could be called a fur but its untanned and also encompasses rat skins and goat skins so pelt is more suitable at least to my ears.
 	name = "fur"
 	icon_state = "wool1"
-	desc = "pelt from one of Dendor's creachers."
+	desc = "pelt from one of Yaakov's creachers."
 	dropshrink = 0.90
 	force = 0
 	throwforce = 0

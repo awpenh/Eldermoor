@@ -310,60 +310,60 @@
 
 /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 	name = "amulet of Lythios"
-	desc = "Blessed be everything the light of the sun touches, for it is protected by his grace."
+	desc = "Blessed be everything the light of psydon touches, for it is protected by his guardianship."
 	icon_state = "astrata"
 	resistance_flags = FIRE_PROOF
 
 // Only non-refactored psycross because Noc likes vamps. Neeeerd!
-/obj/item/clothing/neck/roguetown/psycross/noc
-	name = "amulet of Noc"
+/obj/item/clothing/neck/roguetown/psycross/eosten
+	name = "amulet of Eosten"
 	desc = "Diligence, study, pursuit of truth and wisdom. Let nothing deter you from it."
 	icon_state = "noc"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor
-	name = "amulet of Dendor"
+/obj/item/clothing/neck/roguetown/psycross/silver/yaakov
+	name = "amulet of Yaakov"
 	desc = "Nature is a body of which we are but its entrails."
 	icon_state = "dendor"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/abyssor
-	name = "amulet of Abyssor"
+/obj/item/clothing/neck/roguetown/psycross/silver/cana
+	name = "amulet of Cana"
 	desc = "Oceanshaper and guardian of the seas, make them remember his name."
 	icon_state = "abyssor"
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 	name = "amulet of Labbeus"
-	desc = "Where, grave, thy victory? I triumph still while the Veiled Lady abides by me."
-	icon_state = "labbeus"
+	desc = "Where, grave, thy victory? I triumph still while the Reaper abides by me."
+	icon_state = "necra"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/ravox
-	name = "amulet of Ravox"
+/obj/item/clothing/neck/roguetown/psycross/silver/mathuin
+	name = "amulet of Mathuin"
 	desc = "Struggle. Challenge. And rise to struggle again. That is the sword of he who yet lives to fight again."
 	icon_state = "ravox"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/xylix
-	name = "amulet of Xylix"
+/obj/item/clothing/neck/roguetown/psycross/silver/julius
+	name = "amulet of Julius"
 	desc = "Be not fooled, and be not afraid to."
 	icon_state = "xylix"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/eora
-	name = "amulet of Eora"
+/obj/item/clothing/neck/roguetown/psycross/silver/nazar
+	name = "amulet of nazar"
 	desc = "And I love thee because thou art love."
 	icon_state = "eora"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/holy/eora
-	name = "Eora's love potion"
-	desc = "Eora's blessing is upon thy, use me on someone else and you shall be soulbond."
+/obj/item/clothing/neck/roguetown/psycross/silver/holy/baotha
+	name = "Baotha's love potion"
+	desc = "Baotha's blessing is upon thy, use me on someone else and you shall be soulbond."
 	icon_state = "eora"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/holy/eora/attack(mob/living/love_target, mob/user)
+/obj/item/clothing/neck/roguetown/psycross/silver/holy/baotha/attack(mob/living/love_target, mob/user)
 	if(!isliving(love_target) || love_target.stat == DEAD)
 		to_chat(user, span_warning("The love potion only works on living things, sicko!"))
 		return ..()
@@ -385,21 +385,21 @@
 	love_target.apply_status_effect(/datum/status_effect/in_love, user)
 	qdel(src)
 
-/obj/item/clothing/neck/roguetown/psycross/silver/pestra
-	name = "amulet of Pestra"
+/obj/item/clothing/neck/roguetown/psycross/silver/mikros
+	name = "amulet of Mikros"
 	desc = "When pure, alcohol is best used as a cleanser of wounds and a cleanser of the palate."
 	icon_state = "pestra"
 	resistance_flags = FIRE_PROOF
 
 
-/obj/item/clothing/neck/roguetown/psycross/silver/malum
-	name = "amulet of Malum"
+/obj/item/clothing/neck/roguetown/psycross/silver/toma
+	name = "amulet of Toma"
 	desc = "Blessed be our works, made in His name."
 	icon_state = "malum"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/malum_steel
-	name = "amulet of Malum"
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel
+	name = "amulet of Toman"
 	desc = "Let the tools that guide thee be thy hands."
 	icon_state = "malum_alt"
 	resistance_flags = FIRE_PROOF

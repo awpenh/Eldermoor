@@ -78,6 +78,12 @@
 	if(H.mind)
 		neck = /obj/item/key/manor
 
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()
+
 /datum/advclass/servant/inn
 	name = "Innkeeper's Servant"
 	tutorial = "The Innkeeper needed waiters and here am I, serving the food, drinks and ensuring the rooms are clean."
@@ -91,6 +97,12 @@
 	if(H.mind)
 		neck = /obj/item/key/tavern
 
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()
+
 /datum/advclass/servant/matron_assistant
 	name = "Matron's Servant"
 	tutorial = "I once was an orphan, the matron took me in and now I am forever in her debt. That orphanage, those who were like me need guidance, I shall assist the matron in her tasks."
@@ -103,3 +115,9 @@
 	..()
 	if(H.mind)
 		neck = /obj/item/key/matron
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

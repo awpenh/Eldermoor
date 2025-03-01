@@ -111,7 +111,7 @@
 		return ..()
 	if(quantity == 1)
 		if(HAS_TRAIT(user, TRAIT_BLACKLEG))
-			var/outcome = alert(user, "What will you rig the next coin flip to?","XYLIX","Heads","Tails","Play fair")
+			var/outcome = alert(user, "What will you rig the next coin flip to?","JULIUS","Heads","Tails","Play fair")
 			if(QDELETED(src) || !user.is_holding(src))
 				return
 			switch(outcome)

@@ -46,7 +46,7 @@
 
 /obj/item/fishing/reel/deluxe
 	name = "deluxe fishing line"
-	desc = "Extremely sought after by seasoned fisherman, this fishing line was blessed by Abyssorians in their underwater temples. A perfect fishing line, if not for the cost."
+	desc = "Extremely sought after by seasoned fisherman, this fishing line was blessed by Canans in their underwater temples. A perfect fishing line, if not for the cost."
 	icon_state = "deluxereel"
 	linehealth = 14
 	hookmod = 3
@@ -156,7 +156,7 @@
 
 /obj/item/fishing/bait/deluxe
 	name = "enchanted bait"
-	desc = "A ball of unknown ingredients, formulated by Abyssorian priests." //waiting for more fishing content
+	desc = "A ball of unknown ingredients, formulated by Canans priests." //waiting for more fishing content
 	icon_state = "deluxebait"
 	raritymod = list("gold" = 1, "ultra" = 1, "rare"= 1, "com"= -3)
 	sizemod = list("tiny" = -2, "small" = -2, "normal" = -1, "large" = 1, "prize" = 1)

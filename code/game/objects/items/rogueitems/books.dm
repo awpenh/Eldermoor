@@ -261,7 +261,7 @@
 	base_icon_state = "book5"
 	bookfile = "knowledge.json"
 
-/obj/item/book/rogue/secret/xylix
+/obj/item/book/rogue/secret/julius
 	name = "Book of Gold"
 	desc = "{<font color='red'><blink>An ominous book with untold powers.</blink></font>}"
 	icon_state ="xylix_0"
@@ -270,7 +270,7 @@
 	base_icon_state = "pellbookmimic"
 	bookfile = "xylix.json"
 
-/obj/item/book/rogue/xylix/attack_self(mob/user)
+/obj/item/book/rogue/julius/attack_self(mob/user)
 	user.update_inv_hands()
 	to_chat(user, "<span class='notice'>You feel laughter echo in your head.</span>")
 
@@ -305,7 +305,7 @@
 
 /obj/item/book/rogue/robber
 	name = "Reading for Robbers"
-	desc = "By Flavius of Dendor"
+	desc = "By Flavius of Yaakov"
 	icon_state ="basic_book_0"
 	base_icon_state = "basic_book"
 	bookfile = "tales4.json"
@@ -331,7 +331,7 @@
 	base_icon_state = "book8"
 	bookfile = "tales7.json"
 
-/obj/item/book/rogue/abyssor
+/obj/item/book/rogue/cana
 	name = "A Tale of Those Who Live At Sea"
 	desc = "By Bellum Aegir"
 	icon_state ="book2_0"
@@ -345,7 +345,7 @@
 	base_icon_state = "book6"
 	bookfile = "tales9.json"
 
-/obj/item/book/rogue/noc
+/obj/item/book/rogue/eosten
 	name = "Dreamseeker"
 	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Labbeus."
 	icon_state ="book6_0"
@@ -594,7 +594,7 @@
 		// Prompt user to populate manuscript fields
 		var/newtitle = dd_limittext(sanitize_hear_message(input(user, "Enter the title of the manuscript:") as text|null), MAX_CHARTER_LEN)
 		var/newauthor = dd_limittext(sanitize_hear_message(input(user, "Enter the author's name:") as text|null), MAX_CHARTER_LEN)
-		var/newcategory = input(user, "Select the category of the manuscript:") in list("Apocrypha & Grimoires", "Myths & Tales", "Legends & Accounts", "Thesis", "Eoratica")
+		var/newcategory = input(user, "Select the category of the manuscript:") in list("Apocrypha & Grimoires", "Myths & Tales", "Legends & Accounts", "Thesis", "Erotica")
 		var/newicon = book_icons[input(user, "Choose a book style", "Book Style") as anything in book_icons]
 
 		if (newtitle && newauthor && newcategory)

@@ -24,32 +24,32 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/lythios
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 		if(/datum/patron/veneration/eosten)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
-			wrists = /obj/item/clothing/neck/roguetown/psycross/noc
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/eosten
+			wrists = /obj/item/clothing/neck/roguetown/psycross/eosten
 		if(/datum/patron/veneration/yaakov)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/yaakovhelm
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/yaakov
 		if(/datum/patron/veneration/cana)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/cana
 		if(/datum/patron/veneration/labbeus)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/labbeus
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 		if(/datum/patron/veneration/mathuin)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
 		if(/datum/patron/veneration/julias)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/julius
 		if(/datum/patron/veneration/mikros)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/pestrahelm
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/mikroshelm
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
 		if(/datum/patron/veneration/toma)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/malum
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/tomahelm
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/toma
 		if(/datum/patron/veneration/nazar)
-			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
+			head = /obj/item/clothing/head/roguetown/helmet/sallet/nazar
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/nazar
 			H.virginity = FALSE
 		if(/datum/patron/inhumen/baotha, /datum/patron/inhumen/graggar, /datum/patron/inhumen/zizo, /datum/patron/inhumen/matthios, /datum/patron/inhumen/graggar_zizo, /datum/patron/godless, /datum/patron/demons/azriel, /datum/patron/demons/pryda, /datum/patron/demons/vorrak, /datum/patron/demons/zaresk)
 			head = /obj/item/clothing/head/roguetown/jester

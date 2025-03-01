@@ -34,9 +34,9 @@
 	icon_state = "astratarobe"
 	sleeved = null
 
-/obj/item/clothing/suit/roguetown/shirt/robe/noc
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten
 	name = "moon robe"
-	desc = "The cloth of a follower of Noc."
+	desc = "The cloth of a follower of Eosten."
 	icon_state = "nocrobe"
 	sleeved = null
 
@@ -46,19 +46,19 @@
 	icon_state = "warlock"
 	sleeved = null
 
-/obj/item/clothing/suit/roguetown/shirt/robe/dendor
+/obj/item/clothing/suit/roguetown/shirt/robe/yaakov
 	name = "briar robe"
 	desc = "Nature nurtures us and we, in turn, will nurture it back in the end."
 	icon_state = "dendorrobe"
 
-/obj/item/clothing/suit/roguetown/shirt/robe/eora
-	name = "eoran robe"
-	desc = "Holy robes, intended for use by followers of Eora"
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar
+	name = "nazar robe"
+	desc = "Holy robes, intended for use by followers of Nazar"
 	icon_state = "eorarobes"
 
-/obj/item/clothing/suit/roguetown/shirt/robe/eora/alt
-	name = "eoran straps"
-	desc = "Sanctified, form fitting straps. Used by more radical followers of the Eoran Church"
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar/alt
+	name = "nazar straps"
+	desc = "Sanctified, form fitting straps. Used by more radical followers of the Nazaran Church"
 	icon_state = "eorastraps"
 
 /obj/item/clothing/suit/roguetown/shirt/robe/labbeus

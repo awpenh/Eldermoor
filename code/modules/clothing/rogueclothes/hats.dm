@@ -340,9 +340,9 @@
 \------------*/
 
 //................ Moon Hood ............... //		- Basic Noc Acolyte
-/obj/item/clothing/head/roguetown/roguehood/nochood
+/obj/item/clothing/head/roguetown/roguehood/eostenhood
 	name = "moon hood"
-	desc = "The face of the Moon Prince. Worn by the faitful of Noc."
+	desc = "The face of the Moon Saint. Worn by the faitful of Eosten."
 	icon_state = "nochood"
 	flags_inv = HIDEEARS|HIDEHAIR
 	default_hidden = HIDEEARS|HIDEHAIR
@@ -385,7 +385,7 @@
 //................ Opera Visage ............... //	- Basic Eora Acolyte
 /obj/item/clothing/head/roguetown/padded/operavisage
 	name = "opera visage"
-	desc = "A painted wooden opera mask worn by the faithful of Eora, usually during their rituals."
+	desc = "A painted wooden opera mask worn by the faithful of Nazar, usually during their rituals."
 	icon_state = "eoramask"
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
@@ -396,9 +396,9 @@
 	salvage_result = /obj/item/natural/silk
 
 //................ Opera Hood ............... //	- The "upgraded" headwear for Eoran acolytes
-/obj/item/clothing/head/roguetown/roguehood/eora
+/obj/item/clothing/head/roguetown/roguehood/nazar
 	name = "opera hood"
-	desc = "A silver opera mask worn by the faithful of Eora, usually during their rituals. Comes with a hood that can be pulled up for warmth."
+	desc = "A silver opera mask worn by the faithful of Nazar, usually during their rituals. Comes with a hood that can be pulled up for warmth."
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	icon_state = "eorahood"
 	bloody_icon = 'icons/effects/blood64x64.dmi'
@@ -564,7 +564,7 @@
 
 /obj/item/clothing/head/roguetown/crown/sparrowcrown
 	name = "champions circlet"
-	desc = "Winner of tournaments, bask in Ravox's glory."
+	desc = "Winner of tournaments, bask in Mathuin's glory."
 	icon_state = "sparrowcrown"
 	sellprice = VALUE_GOLD_ITEM
 
@@ -1017,9 +1017,9 @@
 	icon_state = "astratahelm"
 
 //............... Noc Helmet ............... //
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
-	name = "noc helmet"
-	desc = "A sleek and rounded heavy helmet with a maille neck cover. Its unique craft is said to allow holy warriors of Noc additional insight before battle."
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/eosten
+	name = "eosten helmet"
+	desc = "A sleek and rounded heavy helmet with a maille neck cover. Its unique craft is said to allow holy warriors of Eosten additional insight before battle."
 	icon_state = "nochelm"
 
 //............... Necra Helmet ............... //
@@ -1029,40 +1029,40 @@
 	icon_state = "necrahelm"
 
 //............... Dendor Helmet ............... //	This one seems a bit out of place
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
-	name = "dendor helmet"
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/yaakovhelm
+	name = "yaakov helmet"
 	desc = "A great helmet with twisted metalwork that imitates the twisting of bark, or the horns of a beast."
 	icon_state = "dendorhelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	prevent_crits = ALL_EXCEPT_BLUNT
 
 //............... Eora Helmet ............... //
-/obj/item/clothing/head/roguetown/helmet/sallet/eoran
-	name = "eora helmet"
-	desc = "A standard helmet forged in the style typical of Eoran worshippers, a simple yet practical protective piece of equipment. Upon it lays several laurels of flowers and other colorful ornaments, followed by several symbols and standards of the user's chapter, accomplishments or even punishment"
+/obj/item/clothing/head/roguetown/helmet/sallet/nazar
+	name = "nazar helmet"
+	desc = "A standard helmet forged in the style typical of Nazar worshippers, a simple yet practical protective piece of equipment. Upon it lays several laurels of flowers and other colorful ornaments, followed by several symbols and standards of the user's chapter, accomplishments or even punishment"
 	icon_state = "eorahelm"
 	item_state = "eorahelm"
 
 
 //............... Pestra Helmet ............... //
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/pestrahelm
-	name = "pestran helmet"
-	desc = "A great helmet made of coarse, tainted steel. It is modeled after a plagued carrion, a blessed abomination of Pestra."
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/mikroshelm
+	name = "mikrosian helmet"
+	desc = "A great helmet made of coarse, tainted steel. It is modeled after a plagued carrion, a blessed abomination of Mikros."
 	icon_state = "pestrahelm"
 	item_state = "pestrahelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 //................ Malum Helmet ............. //
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm
-	name = "malumite helmet"
-	desc = "A great helmet of sturdy dark steel. Its chiseled countenance reminds the viewer of Malum's stern gaze."
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/tomahelm
+	name = "toman helmet"
+	desc = "A great helmet of sturdy dark steel. Its chiseled countenance reminds the viewer of Toma's stern gaze."
 	icon_state = "malumhelm"
 	item_state = "malumhelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/ravox
-	name = "ravoxian helmet"
-	desc = "Headwear commonly worn by Templars in service to Ravox. It resembles an heavily adorned visored sallet."
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/mathuin
+	name = "mathuinian helmet"
+	desc = "Headwear commonly worn by Templars in service to Mathuin. It resembles an heavily adorned visored sallet."
 	icon_state = "ravoxhelm"
 	item_state = "ravoxhelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR

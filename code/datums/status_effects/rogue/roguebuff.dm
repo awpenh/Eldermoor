@@ -306,13 +306,13 @@
 \---------------*/
 
 // ---------------------- DIVINE KNOWLEDGE ( NOC ) ----------------------------
-/datum/status_effect/buff/noc
-	id = "nocbuff"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/nocbuff
+/datum/status_effect/buff/eosten
+	id = "eostenbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/eostenbuff
 	effectedstats = list("intelligence" = 3)
 	duration = 240 MINUTES
 
-/atom/movable/screen/alert/status_effect/buff/nocbuff
+/atom/movable/screen/alert/status_effect/buff/eostenbuff
 	name = "Divine Knowledge"
 	desc = span_nicegreen("Divine knowledge flows through me.")
 	icon_state = "intelligence"
@@ -320,23 +320,23 @@
 
 
 // ---------------------- DIVINE POWER ( RAVOX ) ----------------------------
-/datum/status_effect/buff/ravox
-	id = "ravoxbuff"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/ravoxbuff
+/datum/status_effect/buff/mathuin
+	id = "mathuinbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/mathuinbuff
 	effectedstats = list("constitution" = 1,"endurance" = 1,"strength" = 1)
 	duration = 240 MINUTES
 
-/atom/movable/screen/alert/status_effect/buff/ravoxbuff
+/atom/movable/screen/alert/status_effect/buff/mathuinbuff
 	name = "Divine Power"
 	desc = span_nicegreen("Divine power flows through me.")
 	icon_state = "ravox"
 
 
 /*-----------------\
-|  Dendor Miracles |
+|  Yaakov Miracles |
 \-----------------*/
 
-// ---------------------- EYES OF THE BEAST ( DENDOR ) ----------------------------
+// ---------------------- EYES OF THE BEAST ( YAAKOV ) ----------------------------
 /datum/status_effect/buff/beastsense
 	id = "beastsense"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/beastsense
@@ -375,7 +375,7 @@
 
 
 
-// ---------------------- TROLL SHAPE ( DENDOR ) ----------------------------
+// ---------------------- TROLL SHAPE ( YAAKOV ) ----------------------------
 /datum/status_effect/buff/trollshape
 	id = "trollshape"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/trollshape
@@ -384,7 +384,7 @@
 
 /atom/movable/screen/alert/status_effect/buff/trollshape
 	name = "Troll Shape"
-	desc = span_nicegreen("I AM STRONG! DENDORS ENEMIES WILL DIE!")
+	desc = span_nicegreen("I AM STRONG! YAAKOVS ENEMIES WILL DIE!")
 	icon_state = "trollshape"
 /datum/status_effect/buff/trollshape/on_apply()
 	. = ..()
@@ -400,7 +400,7 @@
 		var/mob/living/carbon/human/C = owner
 		C.emote("pain", forced = TRUE)
 		playsound(get_turf(C), 'sound/gore/flesh_eat_03.ogg', 100, TRUE)
-		to_chat(C, span_warning("Dendors transformation fades, flesh shrinking back. My body aches..."))
+		to_chat(C, span_warning("Yaakovs transformation fades, flesh shrinking back. My body aches..."))
 		C.adjustBruteLoss(10)
 		C.apply_status_effect(/datum/status_effect/debuff/barbfalter)
 		C.resize = (1/1.2)
@@ -450,11 +450,11 @@
 	icon_state = "call_to_arms"
 
 /*-----------------\
-|   Malum Miracles |
+|   Toma Miracles |
 \-----------------*/
 
 /datum/status_effect/buff/craft_buff
-	id = "crafting_buff_malum"
+	id = "crafting_buff_toma"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/craft_buff
 	duration = 2.5 MINUTES
 	effectedstats = list(STATKEY_INT = 2)
@@ -534,13 +534,13 @@
 	name = "Inspiring"
 
 // TIER 5 - MASTER
-/datum/status_effect/bardicbuff/ravox
+/datum/status_effect/bardicbuff/mathuin
 	name = "Empowering (+1 STR, +1 PER)"
 	id = "bardbuff_str"
 	effectedstats = list("strength" = 1, "perception" = 1)
-	alert_type = /atom/movable/screen/alert/status_effect/bardbuff/ravox
+	alert_type = /atom/movable/screen/alert/status_effect/bardbuff/mathuin
 
-/atom/movable/screen/alert/status_effect/bardbuff/ravox
+/atom/movable/screen/alert/status_effect/bardbuff/mathuin
 	name = "Empowering"
 
 // TIER 6 - LEGENDARY

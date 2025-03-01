@@ -79,7 +79,7 @@
 			"Drum" = /obj/item/rogue/instrument/drum,
 			"Hurdy-Gurdy" = /obj/item/rogue/instrument/hurdygurdy,
 			"Viola" = /obj/item/rogue/instrument/viola)
-		var/instrument_choice = input(M, "Choose your instrument.", "XYLIX") as anything in instruments
+		var/instrument_choice = input(M, "Choose your instrument.", "JULIUS") as anything in instruments
 		var/spawn_instrument = instruments[instrument_choice]
 		if(!spawn_instrument)
 			spawn_instrument = /obj/item/rogue/instrument/lute

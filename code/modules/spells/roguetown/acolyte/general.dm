@@ -93,7 +93,7 @@
 					situational_bonus = rand(1, 25)
 			if(/datum/patron/veneration/mikros)
 				target.visible_message(span_info("An aura of clinical care encompasses [target]!"), span_notice("I'm sewn back together by sacred medicine!"))
-				// pestra always heals a little more toxin damage and restores a bit more blood
+				// mikros always heals a little more toxin damage and restores a bit more blood
 				target.adjustToxLoss(-situational_bonus)
 				target.blood_volume += BLOOD_VOLUME_SURVIVE/2
 			if(/datum/patron/veneration/toma)
@@ -215,7 +215,7 @@
 		return ..()
 	return FALSE
 
-// RAVOX
+// mathuin
 
 /obj/effect/proc_holder/spell/self/barbrage
 	name = "Rage"
@@ -232,7 +232,7 @@
 	user.apply_status_effect(/datum/status_effect/buff/barbrage)
 	return TRUE
 
-// XYLIX
+// julius
 
 /obj/effect/proc_holder/spell/invoked/mockery
 	name = "Vicious Mockery"

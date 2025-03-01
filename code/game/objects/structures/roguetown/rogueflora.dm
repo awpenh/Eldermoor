@@ -102,7 +102,7 @@
 
 /obj/structure/flora/roguetree/wise
 	name = "wise tree"
-	desc = "Dendor's favored."
+	desc = "Yaakov's favored."
 	icon_state = "mystical"
 	var/activated = 0
 

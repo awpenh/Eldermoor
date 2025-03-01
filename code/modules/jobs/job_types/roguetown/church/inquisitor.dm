@@ -260,19 +260,19 @@
 						held_confession.bad_type = "A FOLLOWER OF THE FORBIDDEN ONE"
 						held_confession.antag = "worshiper of " + antag_type
 					if("Verewolf")
-						held_confession.bad_type = "A BEARER OF DENDOR'S CURSE"
+						held_confession.bad_type = "A BEARER OF YAAKOV'S CURSE"
 						held_confession.antag = antag_type
 					if("Lesser Verewolf")
-						held_confession.bad_type = "A BEARER OF DENDOR'S CURSE"
+						held_confession.bad_type = "A BEARER OF YAAKOV'S CURSE"
 						held_confession.antag = antag_type
 					if("Vampire")
-						held_confession.bad_type = "A SCION OF KAINE"
+						held_confession.bad_type = "A SCION OF MORYN"
 						held_confession.antag = antag_type
 					if("Lesser Vampire")
-						held_confession.bad_type = "A SCION OF KAINE"
+						held_confession.bad_type = "A SCION OF MORYN"
 						held_confession.antag = antag_type
 					if("Vampire Lord")
-						held_confession.bad_type = "THE BLOOD-LORD OF ENIGMA"
+						held_confession.bad_type = "THE BLOOD-LORD OF ALBIA"
 						held_confession.antag = antag_type
 					if("Vampire Spawn")
 						held_confession.bad_type = "AN UNDERLING OF THE BLOOD-LORD"

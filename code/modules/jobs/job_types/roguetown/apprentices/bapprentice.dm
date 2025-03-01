@@ -53,4 +53,10 @@
 		backr = /obj/item/storage/backpack/rogue/satchel
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
-	ADD_TRAIT(H, TRAIT_MALUMFIRE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_TOMAFIRE, TRAIT_GENERIC)
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

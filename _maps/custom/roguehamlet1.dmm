@@ -14546,7 +14546,7 @@
 	first_time_text = "PLAGUE DISTRICT"
 	})
 "pwX" = (
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/secret/julius,
 /turf/open/floor/rogue/tile{
 	icon_state = "chess"
 	},
@@ -18534,7 +18534,7 @@
 /obj/structure/bookcase,
 /obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/secret/ledger,
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/secret/julius,
 /obj/item/book/rogue/law,
 /obj/item/book/rogue/bibble,
 /turf/open/floor/carpet/royalblack,

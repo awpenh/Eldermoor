@@ -11,7 +11,7 @@
 	info = "Negotiate trade agreements with merchants in Vanderlin to facilitate the exchange of goods and resources between the two realms."
 
 /obj/item/paper/heartfelt/goal4
-	info = "Our lands have long been forsaken by Dendor, Our fields are failing and the famine is causing unrest in our realm. Seek royal largesse"
+	info = "Our lands have long been forsaken by Yaakov, Our fields are failing and the famine is causing unrest in our realm. Seek royal largesse"
 
 /obj/item/paper/heartfelt/random/Initialize()
 	..()

@@ -30,7 +30,6 @@
 
 	can_have_apprentices = FALSE
 
-
 /datum/job/roguetown/prince/after_spawn(mob/living/H, mob/M, latejoin)
 	. = ..()
 	SSfamilytree.AddRoyal(H, FAMILY_PROGENY)
@@ -94,6 +93,12 @@
 		H.skin_tone = pick(canonical_heritage_check_list)
 		H.update_body()
 
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()
+
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
 	tutorial = "Life has been kind to you; you've an entire keep at your disposal, servants to wait on you, and a whole retinue of guards to guard you. You've nothing to prove; just live the good life and you'll be a lord someday, too. A lack of ambition translates into a lacking skillset beyond schooling, though, and your breaks from boredom consist of being a damsel or court gossip."
@@ -148,6 +153,12 @@
 	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
 		H.skin_tone = pick(canonical_heritage_check_list)
 		H.update_body()
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()
 
 /datum/advclass/heir/inbred
 	name = "Inbred Wastrel"
@@ -206,3 +217,9 @@
 	if(ishalfelf(H) && !(H.skin_tone in canonical_heritage_check_list))
 		H.skin_tone = pick(canonical_heritage_check_list)
 		H.update_body()
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

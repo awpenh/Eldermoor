@@ -347,10 +347,10 @@
 	hammers_per_item = 7
 	craftdiff = 3
 
-/datum/artificer_recipe/psycross/noc
-	name = "Noc Psycross"
+/datum/artificer_recipe/psycross/eosten
+	name = "Eosten Psycross"
 	required_item = /obj/item/natural/wood/plank
-	created_item = /obj/item/clothing/neck/roguetown/psycross/noc
+	created_item = /obj/item/clothing/neck/roguetown/psycross/eosten
 	hammers_per_item = 5
 	craftdiff = 1
 
@@ -361,17 +361,17 @@
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/dendor
-	name = "Dendor Psycross"
+/datum/artificer_recipe/psycross/yaakov
+	name = "Yaakov Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/yaakov
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/abyssor
-	name = "Abyssor Psycross"
+/datum/artificer_recipe/psycross/cana
+	name = "Cana Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/cana
 	hammers_per_item = 5
 	craftdiff = 2
 
@@ -382,45 +382,45 @@
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/ravox
-	name = "Ravox Psycross"
+/datum/artificer_recipe/psycross/mathuin
+	name = "Mathuin Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/xylix
-	name = "Xylix Psycross"
+/datum/artificer_recipe/psycross/julius
+	name = "Julius Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/julius
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/eora
-	name = "Eora Psycross"
+/datum/artificer_recipe/psycross/nazar
+	name = "Nazar Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/eora
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/nazar
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/pestra
-	name = "Pestra Psycross"
+/datum/artificer_recipe/psycross/mikros
+	name = "Mikros Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/malum/silver
-	name = "Malum silver Psycross"
+/datum/artificer_recipe/psycross/toma/silver
+	name = "Toman silver Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/malum
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/toma
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/malum_steel/steel
-	name = "Malum steel Psycross"
+/datum/artificer_recipe/psycross/toma_steel/steel
+	name = "Toman steel Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/malum_steel
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/toma_steel
 	additional_items = list(/obj/item/ingot/steel = 1)
 	hammers_per_item = 7
 	craftdiff = 3

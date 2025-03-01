@@ -48,8 +48,8 @@
 
 // Divine patron trait bonuses:
 #define TRAIT_SOUL_EXAMINE				"Blessing of Labbeus"  //can check bodies to see if they have departed
-#define TRAIT_ROT_EATER					"Blessing of Pestra" //can eat rotten food
-#define TRAIT_KNEESTINGER_IMMUNITY		"Blessing of Dendor" //Can move through kneestingers.
+#define TRAIT_ROT_EATER					"Blessing of Mikros" //can eat rotten food
+#define TRAIT_KNEESTINGER_IMMUNITY		"Blessing of Yaakov" //Can move through kneestingers.
 #define TRAIT_LEECHIMMUNE				"Unleechable" //leeches drain very little blood
 #define TRAIT_SHARPER_BLADES			"Sharper Blades" //Weapons lose less blade integrity
 #define TRAIT_BETTER_SLEEP				"Better Sleep" //Recover more energy (blue bar) when sleeping
@@ -85,7 +85,7 @@
 
 // JOB RELATED TRAITS
 
-#define TRAIT_MALUMFIRE "Professional Smith"
+#define TRAIT_TOMAFIRE "Professional Smith"
 #define TRAIT_CRATEMOVER "Crate Mover"
 
 // PATRON CURSE TRAITS
@@ -93,12 +93,12 @@
 #define TRAIT_ATHEISM_CURSE "Curse of Atheism"
 #define TRAIT_PSYDON_CURSE "Psydon's Curse"
 #define TRAIT_LYTHIOS_CURSE "lythios's Curse"
-#define TRAIT_NOC_CURSE "Noc's Curse"
-#define TRAIT_RAVOX_CURSE "Ravox's Curse"
+#define TRAIT_EOSTEN_CURSE "Eosten's Curse"
+#define TRAIT_MATHUIN_CURSE "Mathuin's Curse"
 #define TRAIT_LABBEUS_CURSE "Labbeus's Curse"
-#define TRAIT_XYLIX_CURSE "Xylix's Curse"
-#define TRAIT_PESTRA_CURSE "Pestra's Curse"
-#define TRAIT_EORA_CURSE "Eora's Curse"
+#define TRAIT_JULIUS_CURSE "Julius's Curse"
+#define TRAIT_MIKROS_CURSE "Mikros's Curse"
+#define TRAIT_NAZAR_CURSE "Nazar's Curse"
 #define TRAIT_ZIZO_CURSE "Zizo's Curse"
 #define TRAIT_GRAGGAR_CURSE "Graggar's Curse"
 #define TRAIT_MATTHIOS_CURSE "Matthios' Curse"
@@ -140,7 +140,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_CYCLOPS_RIGHT = span_warning("My right eye has been poked out..."),
 	TRAIT_LEECHIMMUNE = "Leeches are reluctant to drain my blood.",
 	TRAIT_ASSASSIN = "My soul has been tainted by Graggar, god of murder.",
-	TRAIT_BARDIC_TRAINING = "Xylixian inspiration grants my songs boons and ailments.",
+	TRAIT_BARDIC_TRAINING = "Juliusian inspiration grants my songs boons and ailments.",
 	TRAIT_GRAVEROBBER = "Labbeus favors my grim deeds, I can unearth graves without being cursed by her.",
 	TRAIT_MISSING_NOSE = span_warning("I struggle to breathe."),
 	TRAIT_DISFIGURED = span_warning("No one can recognize me..."),
@@ -149,7 +149,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_ANTISCRYING = "I am immune to most forms of magical divination.",
 	TRAIT_SHOCKIMMUNE = "I am immune to electrical shocks.",
 	TRAIT_INTRAINING = "I'm going to be a knight someday! I can use training dummies more effectively than others.",
-	TRAIT_MALUMFIRE = "My hands are blessed by Malum to forge items of superb quality.",
+	TRAIT_TOMAFIRE = "My hands are blessed by Toma to forge items of superb quality.",
 	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the Undermaiden's attention, a tiny voice whispering 'Someone has died,' in my ear."),
 	TRAIT_CABAL = span_purple("In secret, I have studied the ways of Her ascension, and know of others of the Cabal."),
 	TRAIT_LEGENDARY_ALCHEMIST = span_info("An expert in the art of finding herbs in the wild."),

@@ -53,21 +53,25 @@
 		if(/datum/patron/veneration/labbeus) //labbeus acolytes are now gravetenders
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 		if(/datum/patron/veneration/nazar)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/nazar
 		if(/datum/patron/veneration/eosten)
-			neck = /obj/item/clothing/neck/roguetown/psycross/noc
+			neck = /obj/item/clothing/neck/roguetown/psycross/eosten
 		if(/datum/patron/veneration/mikros)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
 		if(/datum/patron/veneration/yaakov)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/yaakov
 		if(/datum/patron/veneration/cana)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/cana
 		if(/datum/patron/veneration/mathuin)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
 		if(/datum/patron/veneration/julias)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/julius
 		if(/datum/patron/veneration/toma)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/malum
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/toma
+		if(/datum/patron/psydon)
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver
+		if(/datum/patron/veneration/patras)
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver
 
 	H.change_stat("perception", 1)
 	H.change_stat("speed", 2)
@@ -75,3 +79,9 @@
 	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(H, H.patron)
 	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

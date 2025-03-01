@@ -15,7 +15,7 @@
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	allowed_sexes = list(MALE)
 	display_order = JDO_MAGICIAN
-	tutorial = "Dream interpreter, soothsayer, astrologer and valued courtier. A scholar of Noc, or a secret worshipper of Zizo. \
+	tutorial = "Dream interpreter, soothsayer, astrologer and valued courtier. A scholar of Eosten, or a secret worshipper of Zizo. \
 	Indebted to the ruler for funding yils of mystical studies in these dark times, \
 	only wisdom and arcane knowledge amassed during a long life will allow a mage to unlock their full potential."
 	outfit = /datum/outfit/job/roguetown/magician

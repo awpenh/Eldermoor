@@ -7,7 +7,7 @@
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
 	no_early_release = TRUE
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/malum)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/toma)
 	invocation = "Through ash and flame! Legere librum!"
 	invocation_type = "shout"
 	miracle = TRUE
@@ -49,9 +49,9 @@
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
 	no_early_release = TRUE
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/malum)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/toma)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "Let the weight of Malum's hammer fall!"
+	invocation = "Let the weight of Toma's hammer fall!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
@@ -187,9 +187,9 @@
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
 	no_early_release = TRUE
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/malum)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/toma)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "Metal bends to the heat of Malum's forge!"
+	invocation = "Metal bends to the heat of Toma's forge!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = FALSE
@@ -228,7 +228,7 @@
 		target.visible_message("<font color='yellow'>After [user]'s incantation, [target] melts into an ingot.</font>")
 		itemtospawn = new target.smeltresult(get_turf(target))
 	else if(target_loc == user)
-		user.visible_message("<font color='yellow'>[user] channels Malum's power to smelt [target] [user.p_theyre()] holding.</font>")
+		user.visible_message("<font color='yellow'>[user] channels Toma's power to smelt [target] [user.p_theyre()] holding.</font>")
 		itemtospawn = new target.smeltresult(get_turf(target))
 	else
 		return FALSE

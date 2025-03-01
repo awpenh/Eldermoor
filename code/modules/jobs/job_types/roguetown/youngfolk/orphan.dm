@@ -54,3 +54,9 @@
 	H.change_stat("intelligence", round(rand(-4,4)))
 	H.change_stat("constitution", -1)
 	H.change_stat("endurance", -1)
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

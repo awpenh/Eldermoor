@@ -1,7 +1,7 @@
 /datum/advclass/pilgrim/blacksmith
 	name = "Blacksmith"
 	tutorial = "Hardy worksmen that are at home in the forge, dedicating their lives \
-	to ceaselessly toil in dedication to Malum."
+	to ceaselessly toil in dedication to Toma."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
@@ -62,7 +62,7 @@
 		H.change_stat("endurance", 1)
 		H.change_stat("constitution", 1)
 		H.change_stat("speed", -1)
-		ADD_TRAIT(H, TRAIT_MALUMFIRE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_TOMAFIRE, TRAIT_GENERIC)
 
 	if(H.gender == MALE)
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather

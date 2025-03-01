@@ -259,7 +259,7 @@
 //................ Cutlass ............... //
 /obj/item/rogueweapon/sword/sabre/cutlass
 	name = "cutlass"
-	desc = "Both tool and weapon of war, favored by Abyssor cultists and sailors for seafaring battle."
+	desc = "Both tool and weapon of war, favored by Cana cultists and sailors for seafaring battle."
 	icon_state = "cutlass"
 	minstr = 6
 	wbalance = HARD_TO_DODGE
@@ -321,7 +321,7 @@
 /obj/item/rogueweapon/sword/scimitar/falchion
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/axe/chop)
 	name = "falchion"
-	desc = "Broad blade, excellent steel, a design inspired by Malum the dwarves claim."
+	desc = "Broad blade, excellent steel, a design inspired by Toma the dwarves claim."
 	icon_state = "falchion_old"
 	swingsound = BLADEWOOSH_HUGE
 	wbalance = EASY_TO_DODGE

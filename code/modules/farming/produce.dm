@@ -150,7 +150,7 @@
 /obj/item/reagent_containers/food/snacks/produce/jacksberry
 	seed = /obj/item/neuFarm/seed/berryrogue
 	name = "jacksberries"
-	desc = "Common berries found throughout Albia. A traveler's repast, or Dendor's wrath."
+	desc = "Common berries found throughout Albia. A traveler's repast, or Yaakov's wrath."
 	icon_state = "berries"
 	tastes = list("berry" = 1)
 	bitesize = 5
@@ -406,7 +406,7 @@
 /obj/item/reagent_containers/food/snacks/produce/poppy
 	seed = /obj/item/neuFarm/seed/sunflower
 	name = "poppy"
-	desc = "For their crimson beauty and the sedating effect of their crushed seeds, these flowers are considered a symbol of Eora."
+	desc = "For their crimson beauty and the sedating effect of their crushed seeds, these flowers are considered a symbol of Nazar."
 	icon_state = "poppy"
 	seed = /obj/item/neuFarm/seed/poppy
 	throwforce = 0

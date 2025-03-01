@@ -300,7 +300,7 @@
 		"hunger",
 		"lust",
 		"labbeus",
-		"noc",
+		"eosten",
 		"psydon",
 		"zizo"
 		)

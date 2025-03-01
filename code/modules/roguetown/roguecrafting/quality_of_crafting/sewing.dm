@@ -267,12 +267,12 @@
 	output = /obj/item/clothing/wrists/roguetown/wrappings
 	craftdiff = 2
 
-/datum/repeatable_crafting_recipe/sewing/nocwrappings
+/datum/repeatable_crafting_recipe/sewing/eostenwrappings
 	name = "moon wrappings"
 	requirements = list(
 		/obj/item/natural/cloth = 2
 	)
-	output = /obj/item/clothing/wrists/roguetown/nocwrappings
+	output = /obj/item/clothing/wrists/roguetown/eostenwrappings
 	craftdiff = 2
 
 /datum/repeatable_crafting_recipe/sewing/Bluskirt
@@ -362,44 +362,44 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/dendortemplar
-	name = "dendorian surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/dendor
+/datum/repeatable_crafting_recipe/sewing/yaakovtemplar
+	name = "yaakovian surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/yaakov
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/noctemplar
+/datum/repeatable_crafting_recipe/sewing/eostentemplar
 	name = "lunar surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/noc
+	output = /obj/item/clothing/cloak/stabard/templar/eosten
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/abyssortemplar
-	name = "abyssal surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/abyssor
+/datum/repeatable_crafting_recipe/sewing/canatemplar
+	name = "canan surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/cana
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/malumtemplar
-	name = "malumite surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/malum
+/datum/repeatable_crafting_recipe/sewing/tomatemplar
+	name = "toman surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/toma
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/eoratemplar
-	name = "eoran surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/eora
+/datum/repeatable_crafting_recipe/sewing/nazartemplar
+	name = "nazar surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/nazar
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/pestratemplar
-	name = "pestran surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/pestra
+/datum/repeatable_crafting_recipe/sewing/mikrostemplar
+	name = "mikrosian surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/mikros
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
@@ -549,9 +549,9 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/weaving/nochood
-	name = "hood (moon/Noc)"
-	output = /obj/item/clothing/head/roguetown/roguehood/nochood
+/datum/repeatable_crafting_recipe/sewing/weaving/eostenhood
+	name = "hood (moon/Eosten)"
+	output = /obj/item/clothing/head/roguetown/roguehood/eostenhood
 	requirements = list(/obj/item/natural/cloth = 2,
 				/obj/item/natural/silk = 1)
 	craftdiff = 3
@@ -563,8 +563,8 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/weaving/eoramask
-	name = "mask (Eora)"
+/datum/repeatable_crafting_recipe/sewing/weaving/nazarmask
+	name = "mask (Nazar)"
 	output = /obj/item/clothing/head/roguetown/padded/operavisage
 	requirements = list(/obj/item/ingot/silver = 1,
 				/obj/item/natural/silk = 4)
@@ -639,16 +639,16 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
 
-/datum/repeatable_crafting_recipe/sewing/weaving/eorarobe
-	name = "robes (Eora)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/eora
+/datum/repeatable_crafting_recipe/sewing/weaving/nazarrobe
+	name = "robes (Nazar)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/nazar
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
 
-/datum/repeatable_crafting_recipe/sewing/weaving/dendorrobe
-	name = "robes (Dendor)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
+/datum/repeatable_crafting_recipe/sewing/weaving/yaakovrobe
+	name = "robes (Yaakov)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/yaakov
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
@@ -660,9 +660,9 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
 
-/datum/repeatable_crafting_recipe/sewing/weaving/nocrobe
-	name = "robes (Noc)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/noc
+/datum/repeatable_crafting_recipe/sewing/weaving/eostenrobe
+	name = "robes (Eosten)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/eosten
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
@@ -695,9 +695,9 @@
 	craftdiff = 5
 	sellprice = 60
 
-/datum/repeatable_crafting_recipe/sewing/weaving/eorastraps
-	name = "straps (eora)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/eora/alt
+/datum/repeatable_crafting_recipe/sewing/weaving/nazarstraps
+	name = "straps (nazar)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/nazar/alt
 	requirements = list(/obj/item/ingot/gold = 1,
 				/obj/item/natural/silk = 5,
 				)

@@ -3,7 +3,7 @@
 	desc = "Grants you and all allies nearby a buff to their strength, endurance, and constitution."
 	overlay_state = "call_to_arms"
 	charge_max = 5 MINUTES
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/ravox)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/mathuin)
 	invocation = "MAY THE FIGHT BE BLOODY!"
 	invocation_type = "shout"
 	sound = 'sound/magic/timestop.ogg'
@@ -33,9 +33,9 @@
 	charging_slowdown = 2
 	chargedloop = null
 	associated_skill = /datum/skill/magic/holy
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/ravox)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/mathuin)
 	sound = 'sound/magic/timestop.ogg'
-	invocation = "Ravox guides my strike against the unjust!"
+	invocation = "Mathuin guides my strike against the unjust!"
 	invocation_type = "shout"
 	antimagic_allowed = TRUE
 	miracle = TRUE
@@ -82,7 +82,7 @@
 	if(!isliving(target))
 		return
 	var/mob/living/living_target = target
-	living_target.apply_status_effect(/datum/status_effect/debuff/ravox_burden)
+	living_target.apply_status_effect(/datum/status_effect/debuff/mathuin_burden)
 	living_target.visible_message(span_warning("The strike from [user]'s weapon causes [living_target] to go stiff!"), vision_distance = COMBAT_MESSAGE_RANGE)
 	qdel(src)
 
@@ -93,7 +93,7 @@
 		return
 	if(!istype(M.used_intent, INTENT_HARM))
 		return
-	H.apply_status_effect(/datum/status_effect/debuff/ravox_burden)
+	H.apply_status_effect(/datum/status_effect/debuff/mathuin_burden)
 	H.visible_message(span_warning("The strike from [M]'s fist causes [H] to go stiff!"), vision_distance = COMBAT_MESSAGE_RANGE)
 	qdel(src)
 
@@ -102,20 +102,20 @@
 	desc = "Your next attack deals additional damage and slows your target."
 	icon_state = "stressvg"
 
-/datum/status_effect/debuff/ravox_burden
-	id = "ravox_burden"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/ravox_burden
+/datum/status_effect/debuff/mathuin_burden
+	id = "mathuin_burden"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/mathuin_burden
 	effectedstats = list(STATKEY_SPD = -2, STATKEY_END = -3)
 	duration = 12 SECONDS
 
-/datum/status_effect/debuff/ravox_burden/on_apply()
+/datum/status_effect/debuff/mathuin_burden/on_apply()
 	if(owner.mob_biotypes & MOB_UNDEAD)
 		effectedstats[STATKEY_SPD] -= 1
 		effectedstats[STATKEY_END] -= 1
 	. = ..()
 
-/atom/movable/screen/alert/status_effect/debuff/ravox_burden
-	name = "Ravox's Burden"
+/atom/movable/screen/alert/status_effect/debuff/mathuin_burden
+	name = "Mathuin's Burden"
 	desc = "My arms and legs are restrained by divine chains!\n"
 	icon_state = "restrained"
 
@@ -127,9 +127,9 @@
 	chargetime = 0
 	range = 7
 	warnie = "sydwarning"
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/ravox)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/mathuin)
 	sound = 'sound/magic/timestop.ogg'
-	invocation = "Ravox deems your persistence worthy!"
+	invocation = "Mathuin deems your persistence worthy!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
@@ -153,7 +153,7 @@
 				phy.pain_mod *= 1.5
 				addtimer(VARSET_CALLBACK(phy, bleed_mod, phy.bleed_mod /= 1.5), 19 SECONDS)
 				addtimer(VARSET_CALLBACK(phy, pain_mod, phy.pain_mod /= 1.5), 19 SECONDS)
-				human_target.visible_message(span_danger("[target]'s wounds become inflammed as their vitality is sapped away!"), span_userdanger("Ravox inflammes my wounds and weakens my body!"))
+				human_target.visible_message(span_danger("[target]'s wounds become inflammed as their vitality is sapped away!"), span_userdanger("Mathuin inflammes my wounds and weakens my body!"))
 				return ..()
 			return FALSE
 
@@ -162,7 +162,7 @@
 		for(var/obj/effect/decal/cleanable/blood/O in oview(5, target))
 			situational_bonus = min(situational_bonus + 0.015, 1)
 		if(situational_bonus > 0.25)
-			to_chat(user, "Channeling Ravox's power is easier in these conditions!")
+			to_chat(user, "Channeling Mathuin's power is easier in these conditions!")
 
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target

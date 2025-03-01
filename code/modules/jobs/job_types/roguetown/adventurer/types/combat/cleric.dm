@@ -38,9 +38,9 @@
 			cloak = /obj/item/clothing/cloak/stabard/templar/lythios
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
 		if(/datum/patron/veneration/yaakov)	// good helmet but no money
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/yaakovhelm
 			neck = /obj/item/clothing/neck/roguetown/coif
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/yaakov
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak
 			beltr = /obj/item/rogueweapon/knife/stone
 		if(/datum/patron/veneration/labbeus)
@@ -48,32 +48,32 @@
 			cloak = /obj/item/clothing/cloak/stabard/templar/labbeus
 			neck = /obj/item/clothing/neck/roguetown/gorget
 		if(/datum/patron/veneration/nazar)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
-			cloak = /obj/item/clothing/cloak/stabard/templar/eora
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/nazar
+			cloak = /obj/item/clothing/cloak/stabard/templar/nazar
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 			H.virginity = FALSE
 		if(/datum/patron/veneration/mathuin)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
-			cloak =  /obj/item/clothing/cloak/stabard/templar/ravox
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
+			cloak =  /obj/item/clothing/cloak/stabard/templar/mathuin
 			neck = /obj/item/clothing/neck/roguetown/gorget
 		if(/datum/patron/veneration/eosten)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/noc
-			cloak = /obj/item/clothing/cloak/stabard/templar/noc
+			wrists = /obj/item/clothing/neck/roguetown/psycross/eosten
+			cloak = /obj/item/clothing/cloak/stabard/templar/eosten
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
 		if(/datum/patron/veneration/mikros)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
-			cloak = /obj/item/clothing/cloak/stabard/templar/pestra
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
+			cloak = /obj/item/clothing/cloak/stabard/templar/mikros
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 		if(/datum/patron/veneration/cana)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/cana
 			cloak = /obj/item/clothing/cloak/tabard/crusader
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 		if(/datum/patron/veneration/toma)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/malum
-			cloak = /obj/item/clothing/cloak/stabard/templar/malum
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/toma
+			cloak = /obj/item/clothing/cloak/stabard/templar/toma
 			neck = /obj/item/clothing/neck/roguetown/gorget
 		if(/datum/patron/veneration/julias)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/xylix
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/julius
 			cloak = /obj/item/clothing/cloak/tabard/crusader
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 		else // Failsafe

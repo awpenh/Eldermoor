@@ -1,8 +1,8 @@
 /datum/job/roguetown/templar
-	title = "Church Guard"
+	title = "Templar"
 	department_flag = CHURCHMEN
 	faction = "Station"
-	tutorial = "Church Guards are warriors who have forsaken wealth and title in lieu of service to the church, due to either zealotry or a past shame. They guard the church and its priest, while keeping a watchful eye against heresy and nite-creechers. Within troubled dreams, they wonder if the blood they shed makes them holy or stained."
+	tutorial = "Templars are warriors who have forsaken wealth and title in lieu of service to the church, due to either zealotry or a past shame. They guard the church and its priest, while keeping a watchful eye against heresy and nite-creechers. Within troubled dreams, they wonder if the blood they shed makes them holy or stained."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
@@ -35,14 +35,14 @@
 			cloak = /obj/item/clothing/cloak/stabard/templar/lythios
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/veneration/eosten)
-			neck = /obj/item/clothing/neck/roguetown/psycross/noc
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
-			cloak = /obj/item/clothing/cloak/stabard/templar/noc
+			neck = /obj/item/clothing/neck/roguetown/psycross/eosten
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/eosten
+			cloak = /obj/item/clothing/cloak/stabard/templar/eosten
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/veneration/yaakov)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/dendor
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
-			cloak = /obj/item/clothing/cloak/stabard/templar/dendor
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/yaakov
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/yaakovhelm
+			cloak = /obj/item/clothing/cloak/stabard/templar/yaakov
 			H.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/veneration/labbeus)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
@@ -50,31 +50,38 @@
 			cloak = /obj/item/clothing/cloak/stabard/templar/labbeus
 			H.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
 		if(/datum/patron/veneration/mikros)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/pestrahelm
-			cloak = /obj/item/clothing/cloak/stabard/templar/pestra
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/mikroshelm
+			cloak = /obj/item/clothing/cloak/stabard/templar/mikros
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/veneration/nazar)
-			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora
+			head = /obj/item/clothing/head/roguetown/helmet/sallet/nazar
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/nazar
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
-			cloak = /obj/item/clothing/cloak/stabard/templar/eora
+			cloak = /obj/item/clothing/cloak/stabard/templar/nazar
 			H.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
 			H.virginity = FALSE
 		if(/datum/patron/veneration/mathuin)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/ravox
-			cloak = /obj/item/clothing/cloak/stabard/templar/ravox
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/mathuin
+			cloak = /obj/item/clothing/cloak/stabard/templar/mathuin
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/veneration/toma)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/malum
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm
-			cloak = /obj/item/clothing/cloak/stabard/templar/malum
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/toma
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/tomahelm
+			cloak = /obj/item/clothing/cloak/stabard/templar/toma
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/veneration/cana)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/cana
+			cloak = /obj/item/clothing/cloak/stabard/templar/cana
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 			H.mind?.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
+		if(/datum/patron/veneration/patras)
+			head = /obj/item/clothing/head/roguetown/helmet/visored/hounskull
+			wrists = /obj/item/clothing/wrists/roguetown/bracers
+		if(/datum/patron/psydon)
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver
 
 
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk

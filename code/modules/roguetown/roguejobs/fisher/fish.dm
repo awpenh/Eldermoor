@@ -108,7 +108,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10)
 	tastes = list("fish" = 1)
 	name = "cooked fish"
-	desc = "Abyssor's bounty, make sure to eat the eyes!"
+	desc = "Cana's bounty, make sure to eat the eyes!"
 	icon_state = "carpcooked"
 	foodtype = MEAT
 	dropshrink = 0.6

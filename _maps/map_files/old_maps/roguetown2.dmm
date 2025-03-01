@@ -134,7 +134,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
 "aF" = (
-/obj/item/book/rogue/xylix,
+/obj/item/book/rogue/julius,
 /turf/open/water/cleanshallow,
 /area/rogue/under/cave)
 "aG" = (
