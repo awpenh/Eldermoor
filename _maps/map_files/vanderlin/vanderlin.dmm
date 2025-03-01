@@ -5575,8 +5575,8 @@
 "dIp" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
-/obj/item/clothing/suit/roguetown/shirt/robe/yaakov,
+/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
+/obj/item/clothing/suit/roguetown/shirt/robe/dendor,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
 "dIq" = (
@@ -9825,7 +9825,7 @@
 /area/rogue/outdoors/town)
 "gxM" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
+/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
 /obj/item/clothing/head/roguetown/padded/briarthorns,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
@@ -12586,6 +12586,14 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/under/town/sewer)
+"isx" = (
+/obj/structure/bars/pipe{
+	dir = 9;
+	pixel_x = 10;
+	pixel_y = -9
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/manor)
 "isD" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/natural/cloth,
@@ -15009,7 +15017,7 @@
 	icon_state = "pipe"
 	},
 /obj/structure/bookcase,
-/obj/item/book/rogue/cana,
+/obj/item/book/rogue/abyssor,
 /obj/item/book/rogue/bookofpriests,
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/carpet/purple,
@@ -21343,6 +21351,17 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/orphanage)
+"ovy" = (
+/obj/structure/bars/pipe{
+	dir = 4;
+	layer = 2.81;
+	pixel_x = -9
+	},
+/obj/structure/bars/pipe{
+	dir = 1
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/manor)
 "ovK" = (
 /obj/structure/bed/rogue/shit,
 /obj/structure/fluff/walldeco/chains,
@@ -23828,6 +23847,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/rogue/ruinedwood/darker,
 /area/rogue/outdoors/river)
+"qlD" = (
+/obj/structure/bars/pipe{
+	dir = 10;
+	icon_state = "pipe";
+	pixel_x = 1;
+	pixel_y = 17
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/manor)
 "qlE" = (
 /obj/structure/rack/rogue,
 /obj/item/storage/roguebag{
@@ -27959,6 +27987,19 @@
 /obj/structure/flora/roguegrass/bush_meagre,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods_safe)
+"sWB" = (
+/obj/structure/bars/pipe{
+	dir = 4;
+	layer = 2.81;
+	pixel_x = -9
+	},
+/obj/structure/bars/pipe{
+	icon_state = "pipe";
+	dir = 1;
+	pixel_y = -8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/manor)
 "sWJ" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/fluff/walldeco/church/line{
@@ -33047,7 +33088,7 @@
 /obj/structure/rack/rogue,
 /obj/item/clothing/neck/roguetown/psycross/silver/nazar,
 /obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
-/obj/item/clothing/neck/roguetown/psycross/silver/mikros,
+/obj/item/clothing/neck/roguetown/psycross/silver/pestra,
 /obj/item/clothing/neck/roguetown/psycross/silver/julius,
 /obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/churchmarble,
@@ -311434,9 +311475,9 @@ viu
 pYm
 lMF
 duE
+qlD
 cGL
-cGL
-cGL
+isx
 duE
 cGL
 cwe
@@ -311736,9 +311777,9 @@ phh
 phh
 phh
 gOl
+ovy
 bpI
-bpI
-bpI
+sWB
 gOl
 cGL
 phh
