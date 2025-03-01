@@ -261,7 +261,7 @@
 	allowed_races = list("Humen")
 	grant_lit_torch = TRUE
 /datum/outfit/job/roguetown/heartfelt/prior
-	allowed_patrons = list(/datum/patron/veneration/cephas)
+	allowed_patrons = list(/datum/patron/veneration/lythius)
 /datum/outfit/job/roguetown/heartfelt/prior/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.virginity = TRUE

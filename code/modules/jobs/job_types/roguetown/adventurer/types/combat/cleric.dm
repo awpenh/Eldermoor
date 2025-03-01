@@ -33,7 +33,7 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/cephas)
+		if(/datum/patron/veneration/lythius)
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 			cloak = /obj/item/clothing/cloak/stabard/templar/astrata
 			neck = /obj/item/clothing/neck/roguetown/chaincoif

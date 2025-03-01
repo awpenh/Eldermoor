@@ -36,7 +36,7 @@
 	backl = /obj/item/rogueweapon/polearm/woodstaff/quarterstaff
 	backpack_contents = list(/obj/item/needle)
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/cephas)
+		if(/datum/patron/veneration/lythius)
 			head = /obj/item/clothing/head/roguetown/roguehood/astrata
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings

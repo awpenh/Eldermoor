@@ -10,7 +10,7 @@
 	associated_faith = /datum/faith/psydon
 	confess_lines = list(
 		"THERE IS ONLY ONE GOD!",
-		"THE PANTHEON ARE FALSE!",
+		"HIS LIGHT GUIDES ME!",
 		"PSYDON IS AND HAS ALWAYS BEEN!",
 	)
 

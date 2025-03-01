@@ -20,7 +20,7 @@
 		if(/datum/patron/psydon)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 			wrists = /obj/item/clothing/neck/roguetown/psycross/g
-		if(/datum/patron/veneration/cephas)
+		if(/datum/patron/veneration/lythius)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 		if(/datum/patron/veneration/eosten)
