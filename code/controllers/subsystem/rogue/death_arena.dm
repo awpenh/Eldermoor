@@ -80,9 +80,9 @@ SUBSYSTEM_DEF(death_arena)
 
 	first_skeleton.forceMove(get_turf(first_spawn))
 	second_skeleton.forceMove(get_turf(second_spawn))
-	var/necramessage = span_boldannounce("DECAPITATE YOUR OPPONENT AND BRING IT TO THE ALTAR ABOVE.")
-	to_chat(first_skeleton,necramessage)
-	to_chat(second_skeleton,necramessage)
+	var/labbeusmessage = span_boldannounce("DECAPITATE YOUR OPPONENT AND BRING IT TO THE ALTAR ABOVE.")
+	to_chat(first_skeleton,labbeusmessage)
+	to_chat(second_skeleton,labbeusmessage)
 
 	qdel(first)
 	qdel(second)
@@ -189,7 +189,7 @@ SUBSYSTEM_DEF(death_arena)
 
 /obj/structure/underworld/ravox
 	name = "Ravox"
-	desc = "Ravox, God of Warfare, Justice, and Bravery. He finds solice in his friendship with Necra and his retreat to the Underworld. Upon your gaze, he gives you a respectful nod. Damn, he's cool.."
+	desc = "Ravox, God of Warfare, Justice, and Bravery. He finds solice in his friendship with Labbeus and his retreat to the Underworld. Upon your gaze, he gives you a respectful nod. Damn, he's cool.."
 	icon = 'icons/roguetown/underworld/ravox.dmi'
 	icon_state = "ravox"
 	layer = ABOVE_MOB_LAYER
@@ -200,9 +200,9 @@ SUBSYSTEM_DEF(death_arena)
 	resistance_flags = INDESTRUCTIBLE
 
 
-/obj/structure/underworld/necra
-	name = "Necra"
-	desc = "The Undermaiden herself, in her true form. The most ancient of living gods. She observes your battles gleefully, gratitude in her eyes to be relieved from the arduousness of eternity. Her close friend and confidant, Ravox, sits by her side. The two must have worked hard to restructure the underworld like this. They seem pleased with their work."
+/obj/structure/underworld/labbeus
+	name = "Labbeus"
+	desc = "The Undermaiden himself, in his true form. The most strange of living saints. He observes your battles gleefully, gratitude in his eyes to be relieved from the arduousness of eternity. His close friend and confidant, Mathuin, sits by her side. The two must have worked hard to restructure the underworld like this. They seem pleased with their work."
 	icon = 'icons/roguetown/underworld/necra.dmi'
 	icon_state = "necra"
 	layer = ABOVE_MOB_LAYER
@@ -212,6 +212,6 @@ SUBSYSTEM_DEF(death_arena)
 	max_integrity = 1000000000
 	resistance_flags = INDESTRUCTIBLE
 
-/obj/structure/underworld/necra/Initialize()
+/obj/structure/underworld/labbeus/Initialize()
 	. = ..()
 	set_light(5, 4, 30, l_color = LIGHT_COLOR_BLUE)

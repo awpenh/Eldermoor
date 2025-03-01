@@ -185,7 +185,7 @@
 
 /obj/effect/proc_holder/spell/invoked/ocean_embrace
 	name = "Ocean's Embrace"
-	overlay_state = "astrata"
+	overlay_state = "lythios"
 	releasedrain = 30
 	chargedrain = 0
 	chargetime = 0

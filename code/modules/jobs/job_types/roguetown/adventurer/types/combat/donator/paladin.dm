@@ -20,9 +20,9 @@
 		if(/datum/patron/psydon)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 			wrists = /obj/item/clothing/neck/roguetown/psycross/g
-		if(/datum/patron/veneration/lythius)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
+		if(/datum/patron/veneration/lythios)
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/lythios
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 		if(/datum/patron/veneration/eosten)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/noc
 			wrists = /obj/item/clothing/neck/roguetown/psycross/noc
@@ -33,8 +33,8 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
 		if(/datum/patron/veneration/labbeus)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/necra
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/labbeus
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 		if(/datum/patron/veneration/mathuin)
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket // Placeholder
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/ravox

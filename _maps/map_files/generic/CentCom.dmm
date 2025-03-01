@@ -1254,8 +1254,8 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/woods_safe)
 "dJ" = (
-/obj/structure/fluff/walldeco/sparrowflag,
-/turf/closed/wall/mineral/rogue/stone/window,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods_safe)
 "dK" = (
 /obj/structure/mineral_door/bars,
@@ -1648,6 +1648,11 @@
 /obj/item/reagent_containers/glass/cup/skull,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue)
+"jk" = (
+/obj/item/grown/log/tree/stick,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods_safe)
 "jl" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/water/swamp,
@@ -2129,6 +2134,11 @@
 "pW" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
+"qb" = (
+/obj/structure/flora/roguegrass,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods_safe)
 "qj" = (
 /obj/structure/vampire/necromanticbook{
 	pixel_x = -16;
@@ -2197,6 +2207,10 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
 /turf/open/floor/rogue/ruinedwood/darker,
 /area/rogue/indoors/bandit_lair)
+"qS" = (
+/obj/structure/fluff/statue/gargoyle/moss,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods_safe)
 "qZ" = (
 /obj/structure/table/wood{
 	icon_state = "largetable"
@@ -3456,7 +3470,7 @@
 	dir = 10;
 	icon_state = "largetable"
 	},
-/obj/item/clothing/suit/roguetown/shirt/robe/necra,
+/obj/item/clothing/suit/roguetown/shirt/robe/labbeus,
 /turf/open/floor/rogue/wood,
 /area/rogue)
 "Jo" = (
@@ -3701,6 +3715,11 @@
 	},
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/indoors/vampire_manor)
+"MW" = (
+/obj/item/natural/stone,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods_safe)
 "MZ" = (
 /obj/structure/fluff/railing/fence{
 	dir = 8
@@ -3862,6 +3881,10 @@
 /obj/item/clothing/neck/roguetown/chaincoif,
 /turf/open/floor/rogue/carpet,
 /area/rogue)
+"PV" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods_safe)
 "PY" = (
 /obj/item/needle/thorn,
 /obj/item/needle/thorn,
@@ -4239,11 +4262,11 @@
 	},
 /obj/item/clothing/neck/roguetown/psycross/silver/ravox,
 /obj/item/clothing/neck/roguetown/psycross/noc,
-/obj/item/clothing/neck/roguetown/psycross/silver/necra,
+/obj/item/clothing/neck/roguetown/psycross/silver/labbeus,
 /obj/item/clothing/neck/roguetown/psycross/g,
 /obj/item/clothing/neck/roguetown/psycross/silver/eora,
 /obj/item/clothing/neck/roguetown/psycross/silver/dendor,
-/obj/item/clothing/neck/roguetown/psycross/silver/astrata,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
 /obj/item/clothing/neck/roguetown/shalal,
 /obj/item/clothing/neck/roguetown/horus,
 /turf/open/floor/rogue/wood,
@@ -4496,6 +4519,10 @@
 "WB" = (
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/indoors/bandit_lair)
+"WC" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods_safe)
 "WE" = (
 /obj/item/paper{
 	info = "I've had enough of you cacks, so long, I left the tools and the forge, I dont care what you lot do with it, just dont try and hunt me down.      - Stonehead";
@@ -6543,7 +6570,7 @@ MH
 Kn
 so
 so
-so
+dJ
 Iw
 "}
 (15,1,1) = {"
@@ -6644,31 +6671,31 @@ xt
 Sn
 xt
 xt
-so
+dJ
 Kn
 Kn
 XS
 so
 FR
 Kn
-MD
+MW
 so
 xt
 so
 so
 FR
 xt
-xt
+Yv
 xt
 xt
 xt
 so
-FR
+qb
 Kn
 so
 xt
 xt
-xt
+Yv
 so
 so
 so
@@ -7171,24 +7198,24 @@ so
 FR
 so
 so
-so
+dJ
 FR
 Ed
 xt
 so
 so
 Kn
-FR
+qb
 Te
 xt
 xt
 Te
-XS
+jk
 so
 uy
 Sy
 so
-xt
+Yv
 xt
 so
 so
@@ -7323,7 +7350,7 @@ WX
 Wp
 xt
 so
-so
+dJ
 Iw
 "}
 (21,1,1) = {"
@@ -11741,7 +11768,7 @@ Te
 Te
 Te
 Te
-Te
+PV
 Te
 bz
 Iw
@@ -11987,18 +12014,18 @@ dD
 xt
 Te
 xt
-xt
-xt
+qS
+WC
 Te
 Te
-dJ
-Te
-Te
-Te
-Te
+dL
+dM
 Te
 Te
 Te
+Te
+Te
+PV
 xt
 xt
 xt
@@ -12377,8 +12404,8 @@ dD
 xt
 dD
 dD
-Te
-Te
+dC
+dM
 Te
 Te
 dL
@@ -12388,7 +12415,7 @@ Te
 Te
 Te
 Te
-Te
+PV
 xt
 xt
 xt
@@ -12508,7 +12535,7 @@ Te
 dD
 Te
 Te
-bB
+Te
 Te
 Te
 dI
@@ -12638,7 +12665,7 @@ Te
 dD
 bA
 Te
-Te
+bB
 Te
 dH
 dI
@@ -12651,7 +12678,7 @@ Te
 Te
 Te
 Te
-Te
+PV
 Te
 bz
 Iw

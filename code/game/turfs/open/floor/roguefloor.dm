@@ -204,7 +204,7 @@
 
 /turf/open/floor/rogue/grass/yel
 	name = "yellow grass"
-	desc = "Grass, blessed by Astrata's light."
+	desc = "Grass, blessed by Psydon's light."
 	icon_state = "grass_yel"
 	neighborlay = "grass_yeledge"
 	canSmoothWith = list(/turf/open/floor/rogue/grass,
@@ -609,7 +609,7 @@
 
 /turf/open/floor/rogue/underworld/space
 	name = "void"
-	desc = "The shifting blanket of Necra's realm."
+	desc = "The shifting blanket of Labbeus' realm."
 	icon_state = "undervoid"
 	layer = MID_TURF_LAYER
 	footstep = FOOTSTEP_SAND
@@ -622,12 +622,12 @@
 
 /turf/open/floor/rogue/underworld/space/sparkle_quiet
 	name = "void"
-	desc = "The shifting blanket of Necra's realm."
+	desc = "The shifting blanket of Labbeus' realm."
 	icon_state = "undervoid2"
 
 /turf/open/floor/rogue/underworld/space/quiet
 	name = "void"
-	desc = "The shifting blanket of Necra's realm."
+	desc = "The shifting blanket of Labbeus's realm."
 	icon_state = "undervoid3"
 
 /turf/open/floor/rogue/volcanic

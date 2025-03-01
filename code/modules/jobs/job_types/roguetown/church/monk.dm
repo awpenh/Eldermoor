@@ -36,19 +36,19 @@
 	backl = /obj/item/rogueweapon/polearm/woodstaff/quarterstaff
 	backpack_contents = list(/obj/item/needle)
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/lythius)
-			head = /obj/item/clothing/head/roguetown/roguehood/astrata
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
+		if(/datum/patron/veneration/lythios)
+			head = /obj/item/clothing/head/roguetown/roguehood/lythios
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/lythios
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
-		if(/datum/patron/veneration/labbeus) //Necra acolytes are now gravetenders
+		if(/datum/patron/veneration/labbeus) //labbeus acolytes are now gravetenders
 			head = /obj/item/clothing/head/roguetown/padded/deathshroud
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/labbeus
 			H.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
 		if(/datum/patron/veneration/nazar)
 			head = /obj/item/clothing/head/roguetown/padded/operavisage

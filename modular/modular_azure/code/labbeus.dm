@@ -7,7 +7,7 @@
 /obj/effect/proc_holder/spell/invoked/avert
 	name = "Borrowed Time"
 	desc = "Shield someone from the Undermaiden's gaze, preventing them from slipping into death for as long as your faith and fatigue may muster."
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/necra)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/labbeus)
 	associated_skill = /datum/skill/magic/holy
 	miracle = TRUE
 	devotion_cost = 10
@@ -125,7 +125,7 @@
 	icon_state = "stressvb"
 
 /datum/status_effect/churned
-	id = "necra_churned"
+	id = "labbeus_churned"
 	alert_type = /atom/movable/screen/alert/status_effect/churned
 	duration = 30 SECONDS
 	examine_text = "<b>SUBJECTPRONOUN is wreathed in a wild frenzy of ghostly motes!</b>"

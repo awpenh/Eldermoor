@@ -33,9 +33,9 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/lythius)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-			cloak = /obj/item/clothing/cloak/stabard/templar/astrata
+		if(/datum/patron/veneration/lythios)
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
+			cloak = /obj/item/clothing/cloak/stabard/templar/lythios
 			neck = /obj/item/clothing/neck/roguetown/chaincoif
 		if(/datum/patron/veneration/yaakov)	// good helmet but no money
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/dendorhelm
@@ -44,8 +44,8 @@
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak
 			beltr = /obj/item/rogueweapon/knife/stone
 		if(/datum/patron/veneration/labbeus)
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
-			cloak = /obj/item/clothing/cloak/stabard/templar/necra
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
+			cloak = /obj/item/clothing/cloak/stabard/templar/labbeus
 			neck = /obj/item/clothing/neck/roguetown/gorget
 		if(/datum/patron/veneration/nazar)
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/eora

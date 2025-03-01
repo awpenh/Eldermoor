@@ -666,7 +666,7 @@
 /obj/structure/fluff/statue/knight
 	icon_state = "knightstatue_l"
 
-/obj/structure/fluff/statue/astrata
+/obj/structure/fluff/statue/lythios
 	name = "statue of Astrata"
 	desc = "Astrata, the Sun Queen, reigns over light, order, and conquest. She is worshipped and feared in equal measure."
 	max_integrity = 100 // You wanted descructible statues, you'll get them.
@@ -732,9 +732,9 @@
 	var/message2send = ""
 	switch(random_message)
 		if(1)
-			message2send = "You can see Noc rotating."
+			message2send = "You can see the moon rotating."
 		if(2)
-			message2send = "Looking at Astrata blinds you!"
+			message2send = "Looking at Psydon blinds you!"
 		if(3)
 			message2send = "The stars smile at you."
 		if(4)

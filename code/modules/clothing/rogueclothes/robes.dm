@@ -28,9 +28,9 @@
 
 
 //................ Temple Robes ............... //
-/obj/item/clothing/suit/roguetown/shirt/robe/astrata
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios
 	name = "sun robe"
-	desc = "The cloth of a follower of Astrata."
+	desc = "The cloth of a follower of Lythios."
 	icon_state = "astratarobe"
 	sleeved = null
 
@@ -61,7 +61,7 @@
 	desc = "Sanctified, form fitting straps. Used by more radical followers of the Eoran Church"
 	icon_state = "eorastraps"
 
-/obj/item/clothing/suit/roguetown/shirt/robe/necra
+/obj/item/clothing/suit/roguetown/shirt/robe/labbeus
 	name = "mourning robe"
 	desc = "Black robes which cover the body not unlike those in depictions of the Carriageman himself."
 	icon_state = "necrarobe"

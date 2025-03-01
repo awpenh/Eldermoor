@@ -84,7 +84,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = EGG_NUTRITION)
 	tastes = list("fried egg" = 1)
 	name = "fried egg"
-	desc = "A staple of Astratan midsummer festival eating."
+	desc = "A staple of Psydonian midsummer festival eating."
 	icon_state = "friedegg"
 	base_icon_state = "friedegg"
 	biting = TRUE

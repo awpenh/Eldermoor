@@ -50,24 +50,24 @@
 /obj/structure/astratanshard/proc/on_bump(atom/shard,atom/movable/movie)
 	SIGNAL_HANDLER
 	if(ismob(movie))
-		send_to_necra(movie)
+		send_to_labbeus(movie)
 	else
 		on_whacked(movie)
 
 /obj/structure/astratanshard/proc/on_touched(atom/shard,mob/fool)
 	SIGNAL_HANDLER
-	send_to_necra(fool)
+	send_to_labbeus(fool)
 
 /obj/structure/astratanshard/proc/on_whacked(atom/shard,atom/thingy)
 	SIGNAL_HANDLER
 	if(ismob(thingy))
-		send_to_necra(thingy)
+		send_to_labbeus(thingy)
 	if(istype(thingy,/obj))
 		var/obj/deadthing = thingy
 		src.visible_message(span_danger("\The [deadthing] vanishes in a violent flash on contact with \The [src]!"))
 		deadthing.Destroy()
 
-/obj/structure/astratanshard/proc/send_to_necra(mob/fool,visible_message,mob_message,cause)
+/obj/structure/astratanshard/proc/send_to_labbeus(mob/fool,visible_message,mob_message,cause)
 	if(isdead(fool))
 		return
 	if(!visible_message)

@@ -48,10 +48,10 @@
 	beltl = /obj/item/storage/keyring/priest
 	neck = /obj/item/clothing/neck/roguetown/psycross/silver
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/lythius)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-		if(/datum/patron/veneration/labbeus) //Necra acolytes are now gravetenders
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+		if(/datum/patron/veneration/lythios)
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
+		if(/datum/patron/veneration/labbeus) //labbeus acolytes are now gravetenders
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 		if(/datum/patron/veneration/nazar)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/eora
 		if(/datum/patron/veneration/eosten)

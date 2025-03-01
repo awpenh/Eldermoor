@@ -74,7 +74,7 @@
 
 /obj/item/clothing/head/roguetown/knitcap
 	name = "knit cap"
-	desc = "A crude peasant cap worn by about every serf under Astrata's radiance."
+	desc = "A crude peasant cap worn by about every serf under Psydon's radiance."
 	icon_state = "knitcap"
 
 /obj/item/clothing/head/roguetown/headband
@@ -355,7 +355,7 @@
 //................ Death Face ............... //
 /obj/item/clothing/head/roguetown/padded/deathface
 	name = "death shroud"
-	desc = "When inducted into the cult of Necra, the supplicant must make a talisman from the remains of a deceased loved one. Many favor a chin-guard made from a jawbone."
+	desc = "When inducted into the cult of Labbeus, the supplicant must make a talisman from the remains of a deceased loved one. Many favor a chin-guard made from a jawbone."
 	icon_state = "deathface"
 	flags_inv = HIDEEARS | HIDEHAIR | HIDEFACIALHAIR
 
@@ -365,7 +365,7 @@
 //................ Death Shroud ............... //	- Necra headwear that conceals indentity
 /obj/item/clothing/head/roguetown/padded/deathshroud
 	name = "death shroud"
-	desc = "Worn by the faithful of Necra, or less savory individuals."
+	desc = "Worn by the faithful of Labbeus, or less savory individuals."
 	icon_state = "necrahood"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
@@ -411,9 +411,9 @@
 
 
 //................ Sun Hood ............... //	- Basic Astrata Acolyte
-/obj/item/clothing/head/roguetown/roguehood/astrata
+/obj/item/clothing/head/roguetown/roguehood/lythios
 	name = "sun hood"
-	desc = "Worn by the faithful of Astrata."
+	desc = "Worn by the faithful of Lythios."
 	icon_state = "astratahood"
 	resistance_flags = FIRE_PROOF // Not the sun hat!
 
@@ -1011,9 +1011,9 @@
 
 //............... Temple heavy helmets ......................//
 //............... Astrata Helmet ............... //
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
-	name = "astrata helmet"
-	desc = "A great helmet decorated with a golden sigil of the solar order and a maille neck cover. The dependable companion of many holy warriors of Astrata."
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/lythios
+	name = "lythios helmet"
+	desc = "A great helmet decorated with a golden sigil of the solar order and a maille neck cover. The dependable companion of many holy warriors of Lythios."
 	icon_state = "astratahelm"
 
 //............... Noc Helmet ............... //
@@ -1023,8 +1023,8 @@
 	icon_state = "nochelm"
 
 //............... Necra Helmet ............... //
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/necra
-	name = "necra helmet"
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/labbeus
+	name = "labbeus helmet"
 	desc = "A reinforced helmet shaped into the visage of a skull with a maille neck cover under the cloth. A symbol of authority for the battle servants of the Undermaiden."
 	icon_state = "necrahelm"
 
@@ -1525,7 +1525,7 @@
 //............... Hoplite Helmet ............... //
 /obj/item/clothing/head/roguetown/rare/hoplite // Unique Hoplite kit
 	name = "ancient helmet"
-	desc = "A weathered bronze helmet topped with a symbol of Astrata's sun."
+	desc = "A weathered bronze helmet topped with a symbol of Psydon's sun."
 	icon = 'icons/roguetown/clothing/head.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'

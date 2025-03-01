@@ -15,18 +15,18 @@
 	return FALSE
 
 /* ----------------- */
-/datum/patron/veneration/lythius
-	name = "Lythius"
+/datum/patron/veneration/lythios
+	name = "Lythios"
 	domain = "Saint of Civilization, Light and Truth"
-	desc = "First amongst equals, Lythius is considered to be a zealous guardian. His followers believe The One and All can be found in the act of shepherding humanity into a new age of civilisation."
+	desc = "First amongst equals, Lythios is considered to be a zealous guardian. His followers believe The One and All can be found in the act of shepherding humanity into a new age of civilisation."
 	worshippers = "Nobles, Zealots, Commoners"
-	boons = "The warmth of Lythius' light fills you, you gain stamina faster in the light."
+	boons = "The warmth of Lythios' light fills you, you gain stamina faster in the light."
 	added_traits = list(TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
 	confess_lines = list(
-	"LYTHIUS GUIDES CIVILIZATION!",
+	"LYTHIOS GUIDES CIVILIZATION!",
 	"LIGHT AND TRUTH SHALL PREVAIL!",
 	"I BUILD A BRIGHTER FUTURE!"
 )
@@ -52,7 +52,7 @@
 /datum/patron/veneration/patras
 	name = "Patras"
 	domain = "Saint of Order, Duty and Accord"
-	desc = "Although Lythius now guides the church, Patras was the one to establish it when The One and All delivered a new covenant. His followers believe that the essence of divinity can be found in building consensus and obeying the common law. "
+	desc = "Although Lythios now guides the church, Patras was the one to establish it when The One and All delivered a new covenant. His followers believe that the essence of divinity can be found in building consensus and obeying the common law. "
 	worshippers = "Guards, Stewards, Vigilantes"
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	confess_lines = list(

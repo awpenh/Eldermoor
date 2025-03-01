@@ -6429,7 +6429,7 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "ehh" = (
-/obj/structure/fluff/statue/astrata,
+/obj/structure/fluff/statue/lythios,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
 "ehk" = (
@@ -6651,12 +6651,12 @@
 /area/rogue/outdoors/town/roofs)
 "enc" = (
 /obj/structure/closet/crate/roguecloset,
-/obj/item/clothing/suit/roguetown/shirt/robe/astrata,
-/obj/item/clothing/suit/roguetown/shirt/robe/astrata,
-/obj/item/clothing/suit/roguetown/shirt/robe/astrata,
-/obj/item/clothing/head/roguetown/roguehood/astrata,
-/obj/item/clothing/head/roguetown/roguehood/astrata,
-/obj/item/clothing/head/roguetown/roguehood/astrata,
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios,
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios,
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios,
+/obj/item/clothing/head/roguetown/roguehood/lythios,
+/obj/item/clothing/head/roguetown/roguehood/lythios,
+/obj/item/clothing/head/roguetown/roguehood/lythios,
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4;
 	icon_state = "churchslate"
@@ -12662,7 +12662,7 @@
 /turf/open/floor/rogue/blocks/paving,
 /area/rogue/indoors/town/bath)
 "isM" = (
-/obj/structure/astratanshard,
+/obj/structure/lythiosnshard,
 /turf/open/floor/rogue/metal/barograte/open,
 /area/rogue/indoors/town/clocktower)
 "isY" = (
@@ -14832,7 +14832,7 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/item/clothing/neck/roguetown/psycross/silver/astrata,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
 /obj/item/clothing/neck/roguetown/psycross/silver/ravox,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
@@ -25987,7 +25987,7 @@
 /area/rogue/under/town/sewer)
 "rFR" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/necra{
+/obj/item/clothing/neck/roguetown/psycross/silver/labbeus{
 	pixel_x = -8;
 	pixel_y = 4
 	},

@@ -174,9 +174,9 @@
 				if(isliving(user))
 					var/mob/living/L = user
 					if(HAS_TRAIT(L, TRAIT_GRAVEROBBER))
-						to_chat(user, "<span class='warning'>Necra turns a blind eye to my deeds.</span>")
+						to_chat(user, "<span class='warning'>Labbeus turns a blind eye to my deeds.</span>")
 					else
-						to_chat(user, "<span class='warning'>Necra shuns my blasphemous deeds, I am cursed!</span>")
+						to_chat(user, "<span class='warning'>Labbeus shuns my blasphemous deeds, I am cursed!</span>")
 						L.apply_status_effect(/datum/status_effect/debuff/cursed)
 		update_icon()
 		attacking_shovel.heldclod = new(attacking_shovel)
@@ -192,7 +192,7 @@
 
 /atom/movable/screen/alert/status_effect/debuff/cursed
 	name = "Cursed"
-	desc = "Necra has punished me by my blasphemous deeds with terribly bad luck."
+	desc = "Labbeus has punished me by my blasphemous deeds with terribly bad luck."
 	icon_state = "debuff"
 
 /obj/structure/closet/dirthole/MouseDrop_T(atom/movable/O, mob/living/user)

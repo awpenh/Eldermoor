@@ -3,14 +3,14 @@
 	tutorial = "The Crusaders are knights who have pledged \
 	their wealth and lands to the Church, taking up the banner \
 	of the Totod Order dedicated to retaking Valoria. \
-	Three cults provide knights for the Order: Astrata, Necra and Psydon. \
+	Three cults provide knights for the Order: Lythios, Labbeus and Psydon. \
 	You were sent to Albia by the Order to get any and all assistance from the faithful for the Crusade."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
 		"Dwarf"
 	)
-	allowed_patrons = list(/datum/patron/veneration/lythius, /datum/patron/veneration/labbeus, /datum/patron/psydon)
+	allowed_patrons = list(/datum/patron/veneration/lythios, /datum/patron/veneration/labbeus, /datum/patron/psydon)
 	outfit = /datum/outfit/job/roguetown/adventurer/crusader
 	category_tags = list(CTAG_ADVENTURER)
 	maximum_possible_slots = 1
@@ -18,7 +18,7 @@
 	min_pq = 0
 
 /datum/outfit/job/roguetown/adventurer/crusader
-	allowed_patrons = list(/datum/patron/veneration/lythius, /datum/patron/veneration/labbeus, /datum/patron/psydon)
+	allowed_patrons = list(/datum/patron/veneration/lythios, /datum/patron/veneration/labbeus, /datum/patron/psydon)
 
 /datum/outfit/job/roguetown/adventurer/crusader/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -38,12 +38,12 @@
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/rich = 1)
 
 	switch(H.patron?.name)
-		if("Astrata")
+		if("Lythios")
 			cloak = /obj/item/clothing/cloak/stabard/crusader // Gold for Astrata regardless of gender
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-		if("Necra")
-			cloak = /obj/item/clothing/cloak/stabard/templar/necra
-			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
+		if("Labbeus")
+			cloak = /obj/item/clothing/cloak/stabard/templar/labbeus
+			wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 		if("Psydon")
 			wrists = /obj/item/clothing/neck/roguetown/psycross/silver
 			if(H.gender == FEMALE) // Silver for female, gold for male

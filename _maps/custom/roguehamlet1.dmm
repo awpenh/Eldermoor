@@ -2223,7 +2223,7 @@
 /obj/structure/fluff/walldeco/painting{
 	pixel_y = 32
 	},
-/obj/item/clothing/neck/roguetown/psycross/silver/astrata,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
 /obj/structure/closet/crate/chest/gold,
 /turf/open/floor/rogue/tile{
 	icon_state = "chess"
@@ -18532,7 +18532,7 @@
 	dir = 6
 	},
 /obj/structure/bookcase,
-/obj/item/book/rogue/necra,
+/obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/secret/ledger,
 /obj/item/book/rogue/secret/xylix,
 /obj/item/book/rogue/law,

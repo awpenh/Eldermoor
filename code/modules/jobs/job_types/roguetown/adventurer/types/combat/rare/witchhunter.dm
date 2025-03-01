@@ -51,10 +51,10 @@
 		H.change_stat("perception", 2)
 		H.change_stat("constitution", 2)
 		switch(H.patron?.name)
-			if("Astrata")
-				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-			if("Necra")
-				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+			if("Lythios")
+				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
+			if("Labbeus")
+				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 			if("Pestra")
 				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
 			else

@@ -73,10 +73,10 @@
 //////////////////////
 ///   TEN CURSES   ///
 //////////////////////
-/datum/curse/astrata
-	name = "Astrata's Curse"
+/datum/curse/lythios
+	name = "Lythios's Curse"
 	description = "I am forsaken by the Sun. Healing miracles have no effect on me."
-	trait = TRAIT_ASTRATA_CURSE
+	trait = TRAIT_LYTHIOS_CURSE
 
 /datum/curse/noc
 	name = "Noc's Curse"
@@ -88,10 +88,10 @@
 	description = "Violence disgusts me. I cannot bring myself to wield any kind of weapon."
 	trait = TRAIT_RAVOX_CURSE
 
-/datum/curse/necra
-	name = "Necra's Curse"
-	description = "Necra has claimed my soul. No one will bring me back from the dead."
-	trait = TRAIT_NECRA_CURSE
+/datum/curse/labbeus
+	name = "Labbeus' Curse"
+	description = "Labbeus has claimed my soul. No one will bring me back from the dead."
+	trait = TRAIT_LABBEUS_CURSE
 
 /datum/curse/xylix
 	name = "Xylix's Curse"

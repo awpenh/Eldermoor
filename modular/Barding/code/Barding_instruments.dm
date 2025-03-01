@@ -229,7 +229,7 @@
 								"Pestra's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
 								"Xylix's Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed,
 								"Ravox's Righteous Fury (+1 STR, +1 PER)" = /datum/status_effect/bardicbuff/ravox,
-								"Astrata's Awakening (+energy, +stamina, +1 FOR)" = /datum/status_effect/bardicbuff/awaken) // TAKE THE LAND THAT MUST BE TAKEN
+								"Lythios' Awakening (+energy, +stamina, +1 FOR)" = /datum/status_effect/bardicbuff/awaken) // TAKE THE LAND THAT MUST BE TAKEN
 			else // debug
 				message_admins("<span class='warning'>[key_name(usr)] is a bard with zero music skill and couldn't choose a buff.</span>")
 		var/buff2use = input(user, "Which buff to add to your song?", "Bardic Buffs", name) as null|anything in buffs2pick
@@ -389,7 +389,7 @@
 	desc = "This talisman emanates a small shimmer of light. When held, it can amplify and even change one's voice."
 	icon_state = "vtalisman"
 	song_list = list("Harpy's Call (Feminine)" = 'sound/instruments/vocalsf (1).ogg',
-	"Necra's Lullaby (Feminine)" = 'sound/instruments/vocalsf (2).ogg',
+	"Labbeus' Lament (Feminine)" = 'sound/instruments/vocalsf (2).ogg',
 	"Death Touched Anakim (Feminine)" = 'sound/instruments/vocalsf (3).ogg',
 	"Our Mother, Our Divine (Feminine)" = 'sound/instruments/vocalsf (4).ogg',
 	"Wed, Forever More (Feminine)" = 'sound/instruments/vocalsf (5).ogg',
