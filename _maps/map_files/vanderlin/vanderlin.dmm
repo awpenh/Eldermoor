@@ -19462,11 +19462,6 @@
 "nae" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/town/caverogue)
-"nar" = (
-/obj/item/clothing/head/peaceflower,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town)
 "nau" = (
 /obj/item/clothing/shoes/roguetown/boots/leather,
 /obj/item/clothing/shoes/roguetown/boots/leather{
@@ -19899,10 +19894,6 @@
 /obj/structure/roguerock,
 /turf/open/water/river,
 /area/rogue/outdoors/river)
-"ntX" = (
-/obj/item/clothing/head/corruptflower,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/town/basement)
 "nuh" = (
 /obj/structure/toilet,
 /turf/open/floor/rogue/blocks{
@@ -25877,10 +25868,6 @@
 /area/rogue/under/town/sewer)
 "rFR" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/head/peaceflower{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /obj/item/clothing/neck/roguetown/psycross/silver/necra{
 	pixel_x = -8;
 	pixel_y = 4
@@ -72912,7 +72899,7 @@ oLM
 oGi
 bUM
 iYq
-ntX
+xtX
 lhg
 quC
 bUM
@@ -74428,7 +74415,7 @@ bUM
 jJL
 bET
 lhg
-ntX
+xtX
 jJL
 dEJ
 hBS
@@ -117884,7 +117871,7 @@ kRP
 kRP
 lKX
 dEt
-nar
+oqs
 hwZ
 lKX
 ehF
