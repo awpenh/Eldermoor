@@ -742,8 +742,8 @@ ____________End of Example*/
 
 /obj/item/book/rogue/psybibble
 	name = "The Book"
-	icon_state = "psybibble_0"
-	base_icon_state = "psybibble"
+	icon_state = "bibble"
+	base_icon_state = "bibble"
 	title = "bible"
 	dat = "gott.json"
 	force = 2

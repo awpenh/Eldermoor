@@ -16,8 +16,9 @@
 	Once a proud and mighty civilization, the dark elves bent magic to their will, shaping both their forms and their fate.\
 	Their greatest mages wove enchantments to darken their skin, shielding themselves from the relentless elements of their homeland,\
 	and their empire stood as a rival to the high elves in power and influence.\
-	But greatness came at a price—when their emperor, Julius, ascended to godhood, the aftermath shattered their world.\
-	Reality twisted, the land withered, and the very foundation of their society crumbled under the weight of unchecked magic.\
+	But greatness came at a price—when a human slave named Julius defied his chains and was granted sainthood by Psydon, divine retribution followed.\
+	In his wrath, Psydon shattered the dark elven empire, razing their cities, sundering their lands, and leaving their people in ruin.\
+	The once-great civilization crumbled beneath the weight of divine punishment, forced to claw its way back from the ashes.\
 	From this ruin, only one force could lead them to salvation: Zizo.\
 	A conqueror, a god in the making, he reforged their broken people under his rule, not as they once were, but as they must become.\
 	Under the new laws of Zizo, strength and ambition are the only truths—loyalty is currency, and weakness is death.\

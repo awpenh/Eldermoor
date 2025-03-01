@@ -7,6 +7,9 @@
 	sins = "Apostasy, Demon Worship, Betraying thy Father"
 	boons = "You possess an innate sense for suffering—whether hidden or unspoken, you can always tell when someone is in pain."
 	added_traits = list(TRAIT_EMPATH)
+	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
+	t2 = /obj/effect/proc_holder/spell/invoked/heal
+	t3 = /obj/effect/proc_holder/spell/invoked/revive
 	associated_faith = /datum/faith/psydon
 	confess_lines = list(
 		"THERE IS ONLY ONE GOD!",
