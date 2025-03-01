@@ -348,16 +348,16 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/astratatemplar
+/datum/repeatable_crafting_recipe/sewing/lythiostemplar
 	name = "solar surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/astrata
+	output = /obj/item/clothing/cloak/stabard/templar/lythios
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/necratemplar
-	name = "necran surcoat"
-	output = /obj/item/clothing/cloak/stabard/templar/necra
+/datum/repeatable_crafting_recipe/sewing/labbeustemplar
+	name = "labbeusian surcoat"
+	output = /obj/item/clothing/cloak/stabard/templar/labbeus
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
@@ -556,8 +556,8 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/weaving/necrahood
-	name = "hood (Necra)"
+/datum/repeatable_crafting_recipe/sewing/weaving/labbeushood
+	name = "hood (Labbeus)"
 	output = /obj/item/clothing/head/roguetown/padded/deathshroud
 	requirements = list(/obj/item/natural/cloth = 2,
 				/obj/item/natural/silk = 1)
@@ -570,9 +570,9 @@
 				/obj/item/natural/silk = 4)
 	craftdiff = 3
 
-/datum/repeatable_crafting_recipe/sewing/weaving/astratahood
-	name = "hood (solar/Astrata)"
-	output = /obj/item/clothing/head/roguetown/roguehood/astrata
+/datum/repeatable_crafting_recipe/sewing/weaving/lythioshood
+	name = "hood (solar/Lythios)"
+	output = /obj/item/clothing/head/roguetown/roguehood/lythios
 	requirements = list(/obj/item/natural/cloth = 2,
 				/obj/item/natural/silk = 1)
 	craftdiff = 3
@@ -632,9 +632,9 @@
 				/obj/item/natural/silk = 3)
 	craftdiff = 4
 
-/datum/repeatable_crafting_recipe/sewing/weaving/astratarobe
-	name = "robes (Astrata)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+/datum/repeatable_crafting_recipe/sewing/weaving/lythiosrobe
+	name = "robes (Lythios)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/lythios
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
@@ -653,9 +653,9 @@
 				/obj/item/natural/silk = 1)
 	craftdiff = 4
 
-/datum/repeatable_crafting_recipe/sewing/weaving/necrarobe
-	name = "robes (Necra)"
-	output = /obj/item/clothing/suit/roguetown/shirt/robe/necra
+/datum/repeatable_crafting_recipe/sewing/weaving/labbeusrobe
+	name = "robes (Labbeus)"
+	output = /obj/item/clothing/suit/roguetown/shirt/robe/labbeus
 	requirements = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/silk = 1)
 	craftdiff = 4

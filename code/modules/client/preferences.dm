@@ -83,7 +83,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	var/detail_color = "000"
 	var/datum/species/pref_species = new /datum/species/human/northern()	//Mutant race
 	var/datum/patron/selected_patron
-	var/static/datum/patron/default_patron = /datum/patron/veneration/lythius
+	var/static/datum/patron/default_patron = /datum/patron/veneration/lythios
 	var/list/features = MANDATORY_FEATURE_LIST
 	var/list/randomise = list(RANDOM_UNDERWEAR = TRUE, RANDOM_UNDERWEAR_COLOR = TRUE, RANDOM_UNDERSHIRT = TRUE, RANDOM_SOCKS = TRUE, RANDOM_HAIRSTYLE = TRUE, RANDOM_HAIR_COLOR = TRUE, RANDOM_FACIAL_HAIRSTYLE = TRUE, RANDOM_FACIAL_HAIR_COLOR = TRUE, RANDOM_SKIN_TONE = TRUE, RANDOM_EYE_COLOR = TRUE)
 	var/list/friendlyGenders = list("Male" = "male", "Female" = "female")

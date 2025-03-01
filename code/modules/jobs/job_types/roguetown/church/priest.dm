@@ -10,7 +10,7 @@
 	f_title = "Priest"
 	allowed_races = list("Humen")
 	allowed_sexes = list(MALE)
-	tutorial = "You are a devoted follower of Astrata. The divine is all that matters in an immoral world. The Sun Queen and her pantheon rule over all, and you will preach their wisdom to Vanderlin. It is up to you to shephard the flock into a Ten-fearing future."
+	tutorial = "You are a devoted follower of Psydon and the Eleven Saints, the pillars of divine order. In a world consumed by immorality, only their guidance can lead the faithful to salvation. Psydon reigns supreme, with the saints as his chosen intercessors, each embodying a path to righteousness. It is your duty to preach their wisdom to Vanderlin and shepherd the flock toward a future devoted to the One and All."
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/roguetown/priest
@@ -33,10 +33,11 @@
 	H.verbs |= /mob/living/carbon/human/proc/churchexcommunicate
 	H.verbs |= /mob/living/carbon/human/proc/churchcurse
 	H.verbs |= /mob/living/carbon/human/proc/churchannouncement
-	neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-	head = /obj/item/clothing/head/roguetown/priestmask
+	neck = /obj/item/clothing/neck/roguetown/psycross/silver
+	head = /obj/item/clothing/head/roguetown/roguehood/priest
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black
+	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	beltl = /obj/item/storage/keyring/priest
 	belt = /obj/item/storage/belt/rogue/leather/rope
@@ -49,8 +50,8 @@
 
 
 	if(H.mind)
-		if(H.patron != /datum/patron/veneration/lythius) // For some stupid reason this was checking for Dendor before.
-			H.set_patron(/datum/patron/veneration/lythius)
+		if(H.patron != /datum/patron/psydon) // For some stupid reason this was checking for Dendor before.
+			H.set_patron(/datum/patron/psydon)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)

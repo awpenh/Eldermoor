@@ -64,7 +64,7 @@
 
 /obj/item/clothing/wrists/roguetown/wrappings
 	name = "solar wrappings"
-	desc = "Common Astratan vestments for the forearms."
+	desc = "Common Lythiosn vestments for the forearms."
 	slot_flags = ITEM_SLOT_WRISTS
 	icon_state = "wrappings"
 	item_state = "wrappings"

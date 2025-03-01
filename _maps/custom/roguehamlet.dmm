@@ -1142,7 +1142,7 @@
 	first_time_text = "Blackwine Manor"
 	})
 "bnl" = (
-/obj/item/book/rogue/necra,
+/obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/godofdreamsandnightmares,
 /obj/structure/bookcase,
 /turf/open/floor/rogue/church,
@@ -2310,7 +2310,7 @@
 /obj/structure/fluff/walldeco/painting{
 	pixel_y = 32
 	},
-/obj/item/clothing/neck/roguetown/psycross/silver/astrata,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
 /obj/structure/closet/crate/chest/neu_fancy,
 /turf/open/floor/rogue/tile/kitchen,
 /area/rogue/indoors/town/vault)
@@ -4292,7 +4292,7 @@
 /obj/item/book/rogue/godofdreamsandnightmares,
 /obj/item/book/rogue/noc,
 /obj/item/book/rogue/xylix,
-/obj/item/book/rogue/necra,
+/obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/bookofpriests,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/exposed/under/basement)
@@ -5348,7 +5348,7 @@
 /obj/item/book/rogue/law,
 /obj/item/book/rogue/psybibleplayerbook,
 /obj/structure/bookcase,
-/obj/item/book/rogue/vownecrapage,
+/obj/item/book/rogue/vowlabbeuspage,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
 "fDx" = (

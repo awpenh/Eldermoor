@@ -74,8 +74,8 @@
 		if(target.stat < DEAD)
 			to_chat(user, "<span class='warning'>Nothing happens.</span>")
 			return FALSE
-		if(HAS_TRAIT(target, TRAIT_NECRA_CURSE))
-			to_chat(user, span_warning("Necra's grasp prevents revival."))
+		if(HAS_TRAIT(target, TRAIT_LABBEUS_CURSE))
+			to_chat(user, span_warning("Labbeus' grasp prevents revival."))
 			return FALSE
 		if(GLOB.tod == "night")
 			to_chat(user, "<span class='warning'>Let there be light.</span>")
@@ -86,7 +86,7 @@
 			target.gib()
 			return ..()
 		if(!target.revive(full_heal = FALSE))
-			to_chat(user, "<span class='warning'>Astrata's light fails to heal [target]!</span>")
+			to_chat(user, "<span class='warning'>Lythios's light fails to heal [target]!</span>")
 			return FALSE
 		testing("revived2")
 		var/mob/living/carbon/spirit/underworld_spirit = target.get_spirit()

@@ -19,7 +19,7 @@
 /obj/effect/proc_holder/spell/invoked/lesser_heal/cast(list/targets, mob/living/user)
 	if(isliving(targets[1]))
 		var/mob/living/target = targets[1]
-		if(HAS_TRAIT(target, TRAIT_ASTRATA_CURSE))
+		if(HAS_TRAIT(target, TRAIT_LYTHIOS_CURSE))
 			target.visible_message(span_danger("[target] recoils in pain!"), span_userdanger("Divine healing shuns me!"))
 			target.cursed_freak_out()
 			return FALSE
@@ -44,7 +44,7 @@
 		switch(user.patron.type)
 			if(/datum/patron/psydon)
 				target.visible_message(span_info("A strange stirring feeling pours from [target]!"), span_notice("Sentimental thoughts drive away my pains!"))
-			if(/datum/patron/veneration/lythius)
+			if(/datum/patron/veneration/lythios)
 				target.visible_message(span_info("A wreath of gentle light passes over [target]!"), span_notice("I'm bathed in holy light!"))
 				// during the day, heal 10 more (basic as fuck)
 				if (GLOB.tod == "day")
@@ -160,7 +160,7 @@
 // Miracle
 /obj/effect/proc_holder/spell/invoked/heal
 	name = "Miracle"
-	overlay_state = "astrata"
+	overlay_state = "lythios"
 	releasedrain = 30
 	chargedrain = 0
 	chargetime = 0
@@ -181,7 +181,7 @@
 /obj/effect/proc_holder/spell/invoked/heal/cast(list/targets, mob/living/user)
 	if(isliving(targets[1]))
 		var/mob/living/target = targets[1]
-		if(HAS_TRAIT(target, TRAIT_ASTRATA_CURSE))
+		if(HAS_TRAIT(target, TRAIT_LYTHIOS_CURSE))
 			target.visible_message(span_danger("[target] recoils in pain!"), span_userdanger("Divine healing shuns me!"))
 			target.cursed_freak_out()
 			return FALSE

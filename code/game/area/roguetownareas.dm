@@ -128,7 +128,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 50,
 				/mob/living/carbon/human/species/goblin/npc/ambush/sea = 50,
 				/mob/living/carbon/human/species/goblin/npc/ambush = 50)
-	first_time_text = "VANDERLIN BASIN"
+	first_time_text = "ELDERMOOR BASIN"
 	droning_sound = 'sound/music/area/field.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
@@ -516,7 +516,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/indoors/town/church/chapel
 	icon_state = "chapel"
-	first_time_text = "THE HOUSE OF THE TEN"
+	first_time_text = "THE HOUSE OF PSYDON AND THE SAINTS"
 
 /area/rogue/indoors/town/church/inquisition
 	name = "inquisition"
@@ -544,7 +544,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	return FALSE
 
 /area/rogue/indoors/town/entrance
-	first_time_text = "Vanderlin"
+	first_time_text = "Eldermoor"
 	icon_state = "entrance"
 
 /area/rogue/indoors/town/clocktower
@@ -631,7 +631,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/deliverer.ogg'
 	converted_type = /area/rogue/indoors/shelter/town
-	first_time_text = "THE CITY OF VANDERLIN"
+	first_time_text = "THE CITY OF ELDERMOOR"
 
 /area/rogue/indoors/shelter/town
 	icon_state = "town"
@@ -709,7 +709,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/sewers.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "VANDERLIN'S SEWERS"
+	first_time_text = "ELDERMOOR'S SEWERS"
 	custom_area_sound = "sound/misc/stings/SewerSting.ogg"
 	ambientrain = RAIN_SEWER
 	converted_type = /area/rogue/outdoors/exposed/under/sewer

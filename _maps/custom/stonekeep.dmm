@@ -8176,7 +8176,7 @@
 /obj/structure/bookcase,
 /obj/item/book/rogue/knowledge1,
 /obj/item/book/rogue/law,
-/obj/item/book/rogue/necra,
+/obj/item/book/rogue/labbeus,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
 "DQ" = (
@@ -8770,7 +8770,7 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "FZ" = (
-/obj/structure/fluff/statue/astrata,
+/obj/structure/fluff/statue/lythios,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "Ga" = (
@@ -10602,7 +10602,7 @@
 /area/rogue/indoors/town/magician)
 "Mr" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/necra,
+/obj/item/book/rogue/labbeus,
 /obj/item/book/rogue/robber,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician)

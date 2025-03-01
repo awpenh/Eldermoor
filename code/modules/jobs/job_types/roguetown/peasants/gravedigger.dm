@@ -17,7 +17,7 @@
 		"Anakim",
 		"Half-Orc"
 	)
-	tutorial = "As a servant of Necra, you embody the sanctity of her domain, ensuring the dead rest peacefully within the earth. You are the bane of grave robbers and necromancers, and your holy magic brings undead back into Necra's embrace: the only rightful place for lost souls."
+	tutorial = "As a servant of Labbeus, you embody the sanctity of her domain, ensuring the dead rest peacefully within the earth. You are the bane of grave robbers and necromancers, and your holy magic brings undead back into Labbeus' embrace: the only rightful place for lost souls."
 	allowed_patrons = list(/datum/patron/veneration/labbeus)
 
 	outfit = /datum/outfit/job/roguetown/undertaker
@@ -33,9 +33,9 @@
 /datum/outfit/job/roguetown/undertaker/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/padded/deathshroud
-	neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+	neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 	pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-	armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/labbeus
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/gravetender

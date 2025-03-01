@@ -299,7 +299,7 @@
 		"vision",
 		"hunger",
 		"lust",
-		"necra",
+		"labbeus",
 		"noc",
 		"psydon",
 		"zizo"

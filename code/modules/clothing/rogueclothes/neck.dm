@@ -308,9 +308,9 @@
 
 // PANTHEON SILVER PSYCROSSES START
 
-/obj/item/clothing/neck/roguetown/psycross/silver/astrata
-	name = "amulet of Astrata"
-	desc = "Blessed be everything the light of the sun touches, for it is protected by Her grace."
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios
+	name = "amulet of Lythios"
+	desc = "Blessed be everything the light of the sun touches, for it is protected by his grace."
 	icon_state = "astrata"
 	resistance_flags = FIRE_PROOF
 
@@ -333,10 +333,10 @@
 	icon_state = "abyssor"
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/neck/roguetown/psycross/silver/necra
-	name = "amulet of Necra"
+/obj/item/clothing/neck/roguetown/psycross/silver/labbeus
+	name = "amulet of Labbeus"
 	desc = "Where, grave, thy victory? I triumph still while the Veiled Lady abides by me."
-	icon_state = "necra"
+	icon_state = "labbeus"
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/neck/roguetown/psycross/silver/ravox
@@ -488,7 +488,7 @@
 
 /obj/item/clothing/neck/roguetown/mercmedal/steppesman
 	name = "steppe effigy"
-	desc = "This straw doll is claimed to be a representation of Astrata. In truth, a homage to the steppe's wild spirits of yore."
+	desc = "This straw doll is claimed to be a representation of Psydon. In truth, a homage to the steppe's wild spirits of yore."
 	icon_state = "effigy"
 
 /obj/item/clothing/neck/roguetown/mercmedal/boltslinger

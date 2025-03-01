@@ -833,7 +833,7 @@
 	J?.add_spells(M)
 	M.mind.assigned_role = "Priest"
 	M.job = "Priest"
-	M.set_patron(/datum/patron/veneration/lythius)
+	M.set_patron(/datum/patron/veneration/lythios)
 	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(M, M.patron)
 	C.grant_spells_priest(M)
 	M.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
@@ -842,4 +842,4 @@
 	M.verbs |= /mob/living/carbon/human/proc/churchcurse
 	M.verbs |= /mob/living/carbon/human/proc/churchannouncement
 	removeomen(OMEN_NOPRIEST)
-	priority_announce("Astrata has anointed [M.real_name] as the new head of the Church of the Ten!", title = "Astrata Shines!", sound = 'sound/misc/bell.ogg')
+	priority_announce("Psydon has anointed [M.real_name] as the new head of the Church of the Church!", title = "Psydon Shines!", sound = 'sound/misc/bell.ogg')

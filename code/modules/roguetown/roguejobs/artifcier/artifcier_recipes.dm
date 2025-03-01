@@ -354,10 +354,10 @@
 	hammers_per_item = 5
 	craftdiff = 1
 
-/datum/artificer_recipe/psycross/astrata
-	name = "Astrata Psycross"
+/datum/artificer_recipe/psycross/lythios
+	name = "Lythios Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 	hammers_per_item = 5
 	craftdiff = 2
 
@@ -375,10 +375,10 @@
 	hammers_per_item = 5
 	craftdiff = 2
 
-/datum/artificer_recipe/psycross/necra
-	name = "Necra Psycross"
+/datum/artificer_recipe/psycross/labbeus
+	name = "Labbeus Psycross"
 	required_item = /obj/item/ingot/silver
-	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/necra
+	created_item = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
 	hammers_per_item = 5
 	craftdiff = 2
 

@@ -77,7 +77,7 @@ GLOBAL_LIST_INIT(traits_by_type, list(
 		"Blessing of Graggar" = TRAIT_ORGAN_EATER,
 		"Blessing of Pestra"= TRAIT_ROT_EATER,
 		"Blessing of Dendor" = TRAIT_KNEESTINGER_IMMUNITY,
-		"Blessing of Necra" = TRAIT_SOUL_EXAMINE,
+		"Blessing of Labbeus" = TRAIT_SOUL_EXAMINE,
 		"Golden Blood" = TRAIT_SEEPRICES,
 		"Of the Cabal" = TRAIT_CABAL,
 		"Unleechable" = TRAIT_LEECHIMMUNE,

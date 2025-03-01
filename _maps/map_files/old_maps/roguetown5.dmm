@@ -4628,7 +4628,7 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "rf" = (
-/obj/structure/fluff/statue/astrata,
+/obj/structure/fluff/statue/lythios,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "rg" = (

@@ -277,7 +277,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 				if(T.can_see_sky())
 					if(T.get_lumcount() > 0.15)
 						if(!isspawn)
-							to_chat(H, span_warning("Astrata spurns me! I must get out of her rays!")) // VLord is more punished for daylight excursions.
+							to_chat(H, span_warning("Psydon spurns me! I must get out of her rays!")) // VLord is more punished for daylight excursions.
 							var/turf/N = H.loc
 							if(N.can_see_sky())
 								if(N.get_lumcount() > 0.15)
@@ -740,7 +740,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 						priority_announce("The Sun is torn from the sky!", "Terrible Omen", 'sound/misc/astratascream.ogg')
 						addomen(OMEN_SUNSTEAL)
 						for(var/mob/living/carbon/human/astrater in GLOB.human_list)
-							if(!istype(astrater.patron, /datum/patron/veneration/lythius) || !length(astrater.mind?.antag_datums))
+							if(!istype(astrater.patron, /datum/patron/veneration/lythios) || !length(astrater.mind?.antag_datums))
 								continue
 							to_chat(astrater, span_userdanger("You feel the pain of [astrater.patron.name]!"))
 							astrater.emote_scream()

@@ -246,7 +246,7 @@
 			if(!C.check_for_lord(forced = TRUE))
 				end_reason = pick("Without a King, they were doomed to become slaves of Zizo.",
 								"Without a King, they were doomed to be eaten by nite creachers.",
-								"Without a King, they were doomed to become victims of Gehenna - their souls never reaching Necra's judgement.",
+								"Without a King, they were doomed to become victims of Gehenna - their souls never reaching Labbeus's judgement.",
 								"Without a King, the town would be snuffed out in the night like a finger to a dying, dancing candle.",
 								"Without a King, the Lich made them his playthings - a new undead army would assail the lands.",
 								"Without a King, some jealous rival reigned in tyranny - a despot, traded for a despot.",

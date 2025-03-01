@@ -47,7 +47,7 @@
 #define TRAIT_SEEPRICES				    "Golden Blood" //See prices
 
 // Divine patron trait bonuses:
-#define TRAIT_SOUL_EXAMINE				"Blessing of Necra"  //can check bodies to see if they have departed
+#define TRAIT_SOUL_EXAMINE				"Blessing of Labbeus"  //can check bodies to see if they have departed
 #define TRAIT_ROT_EATER					"Blessing of Pestra" //can eat rotten food
 #define TRAIT_KNEESTINGER_IMMUNITY		"Blessing of Dendor" //Can move through kneestingers.
 #define TRAIT_LEECHIMMUNE				"Unleechable" //leeches drain very little blood
@@ -92,10 +92,10 @@
 #define TRAIT_CURSE "Curse" //source
 #define TRAIT_ATHEISM_CURSE "Curse of Atheism"
 #define TRAIT_PSYDON_CURSE "Psydon's Curse"
-#define TRAIT_ASTRATA_CURSE "Astrata's Curse"
+#define TRAIT_LYTHIOS_CURSE "lythios's Curse"
 #define TRAIT_NOC_CURSE "Noc's Curse"
 #define TRAIT_RAVOX_CURSE "Ravox's Curse"
-#define TRAIT_NECRA_CURSE "Necra's Curse"
+#define TRAIT_LABBEUS_CURSE "Labbeus's Curse"
 #define TRAIT_XYLIX_CURSE "Xylix's Curse"
 #define TRAIT_PESTRA_CURSE "Pestra's Curse"
 #define TRAIT_EORA_CURSE "Eora's Curse"
@@ -141,7 +141,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEECHIMMUNE = "Leeches are reluctant to drain my blood.",
 	TRAIT_ASSASSIN = "My soul has been tainted by Graggar, god of murder.",
 	TRAIT_BARDIC_TRAINING = "Xylixian inspiration grants my songs boons and ailments.",
-	TRAIT_GRAVEROBBER = "Necra favors my grim deeds, I can unearth graves without being cursed by her.",
+	TRAIT_GRAVEROBBER = "Labbeus favors my grim deeds, I can unearth graves without being cursed by her.",
 	TRAIT_MISSING_NOSE = span_warning("I struggle to breathe."),
 	TRAIT_DISFIGURED = span_warning("No one can recognize me..."),
 	TRAIT_SPELLBLOCK = span_warning("I cannot cast any spells."),

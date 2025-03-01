@@ -29,10 +29,10 @@
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/lythius)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
-			cloak = /obj/item/clothing/cloak/stabard/templar/astrata
+		if(/datum/patron/veneration/lythios)
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/lythios
+			cloak = /obj/item/clothing/cloak/stabard/templar/lythios
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/veneration/eosten)
 			neck = /obj/item/clothing/neck/roguetown/psycross/noc
@@ -45,9 +45,9 @@
 			cloak = /obj/item/clothing/cloak/stabard/templar/dendor
 			H.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/veneration/labbeus)
-			neck = /obj/item/clothing/neck/roguetown/psycross/silver/necra
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/necra
-			cloak = /obj/item/clothing/cloak/stabard/templar/necra
+			neck = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/labbeus
+			cloak = /obj/item/clothing/cloak/stabard/templar/labbeus
 			H.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
 		if(/datum/patron/veneration/mikros)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
