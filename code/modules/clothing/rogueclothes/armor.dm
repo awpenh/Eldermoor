@@ -413,7 +413,7 @@
 /obj/item/clothing/suit/roguetown/armor/leather/jacket/sea
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "sea jacket"
-	desc = "A sturdy jacket worn by daring seafarers. The leather it's made from has been tanned by the salt of Abyssor's seas."
+	desc = "A sturdy jacket worn by daring seafarers. The leather it's made from has been tanned by the salt of Cana's seas."
 	icon_state = "sailorvest"
 	sleevetype = "shirt"
 

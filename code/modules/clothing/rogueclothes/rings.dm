@@ -201,24 +201,24 @@
 	REMOVE_TRAIT(wearer, TRAIT_ANTIMAGIC,"[REF(src)]")
 	REMOVE_TRAIT(wearer, TRAIT_SHOCKIMMUNE,"[REF(src)]")
 
-/obj/item/clothing/ring/gold/ravox
-	name = "ring of ravox"
+/obj/item/clothing/ring/gold/mathuin
+	name = "ring of mathuin"
 	desc = "Old ring, inscribed with arcane words. Just being near it imbues you with otherworldly strength."
 	icon_state = "ring_ravox"
 
-/obj/item/clothing/ring/gold/ravox/equipped(mob/living/user, slot)
+/obj/item/clothing/ring/gold/mathuin/equipped(mob/living/user, slot)
 	. = ..()
 	if(user.mind)
 		if(slot == SLOT_RING && istype(user))
 			RegisterSignal(user, COMSIG_MOB_UNEQUIPPED_ITEM, PROC_REF(item_removed))
-			user.apply_status_effect(/datum/status_effect/buff/ravox)
+			user.apply_status_effect(/datum/status_effect/buff/mathuin)
 
-/obj/item/clothing/ring/gold/ravox/proc/item_removed(mob/living/carbon/wearer, obj/item/dropped_item)
+/obj/item/clothing/ring/gold/mathuin/proc/item_removed(mob/living/carbon/wearer, obj/item/dropped_item)
 	SIGNAL_HANDLER
 	if(dropped_item != src)
 		return
 	UnregisterSignal(wearer, COMSIG_MOB_UNEQUIPPED_ITEM)
-	wearer.remove_status_effect(/datum/status_effect/buff/ravox)
+	wearer.remove_status_effect(/datum/status_effect/buff/mathuin)
 
 /obj/item/clothing/ring/silver/calm
 	name = "soothing ring"
@@ -239,21 +239,21 @@
 	UnregisterSignal(wearer, COMSIG_MOB_UNEQUIPPED_ITEM)
 	wearer.remove_status_effect(/datum/status_effect/buff/calm)
 
-/obj/item/clothing/ring/silver/noc
-	name = "ring of noc"
+/obj/item/clothing/ring/silver/eosten
+	name = "ring of eosten"
 	desc = "Old ring, inscribed with arcane words. Just being near it imbues you with otherworldly knowledge."
 	icon_state = "ring_sapphire"
 
-/obj/item/clothing/ring/silver/noc/equipped(mob/living/user, slot)
+/obj/item/clothing/ring/silver/eosten/equipped(mob/living/user, slot)
 	. = ..()
 	if(user.mind)
 		if (slot == SLOT_RING && istype(user))
 			RegisterSignal(user, COMSIG_MOB_UNEQUIPPED_ITEM, PROC_REF(item_removed))
-			user.apply_status_effect(/datum/status_effect/buff/noc)
+			user.apply_status_effect(/datum/status_effect/buff/eosten)
 
-/obj/item/clothing/ring/silver/noc/proc/item_removed(mob/living/carbon/wearer, obj/item/dropped_item)
+/obj/item/clothing/ring/silver/eosten/proc/item_removed(mob/living/carbon/wearer, obj/item/dropped_item)
 	SIGNAL_HANDLER
 	if(dropped_item != src)
 		return
 	UnregisterSignal(wearer, COMSIG_MOB_UNEQUIPPED_ITEM)
-	wearer.remove_status_effect(/datum/status_effect/buff/noc)
+	wearer.remove_status_effect(/datum/status_effect/buff/eosten)

@@ -50,7 +50,7 @@
 
 
 	if(H.mind)
-		if(H.patron != /datum/patron/psydon) // For some stupid reason this was checking for Dendor before.
+		if(H.patron != /datum/patron/psydon) // For some stupid reason this was checking for Yaakov before.
 			H.set_patron(/datum/patron/psydon)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
@@ -184,7 +184,7 @@
 		if(!found)
 			return FALSE
 		GLOB.heretical_players += inputty
-		priority_announce("[real_name] has put Xylix's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
+		priority_announce("[real_name] has put Julius' curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
 
 /mob/living/carbon/human/proc/churchannouncement()
 	set name = "Announcement"

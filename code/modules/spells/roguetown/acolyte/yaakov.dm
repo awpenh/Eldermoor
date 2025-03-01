@@ -1,6 +1,6 @@
 
 /*-----------------\
-|  Dendor Miracles |
+|  Yaakov Miracles |
 \-----------------*/
 
 //===========================================================================================
@@ -13,7 +13,7 @@
 	overlay_state = "blesscrop"
 	releasedrain = 30
 	charge_max = 30 SECONDS
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/dendor)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/yaakov)
 	max_targets = 0
 	cast_without_targets = TRUE
 	sound = 'sound/magic/churn.ogg'
@@ -36,7 +36,7 @@
 		if(amount_blessed >= 5)
 			break
 	if(growed)
-		visible_message("<FONT COLOR='green'>[usr] blesses the crop with Dendor's Favour!</FONT><BR>")
+		visible_message("<FONT COLOR='green'>[usr] blesses the crop with Yaakov's Favour!</FONT><BR>")
 		return ..()
 	return FALSE
 //===========================================================================================
@@ -45,10 +45,10 @@
 
 /obj/effect/proc_holder/spell/self/beastsense
 	name = "Beastial Senses"
-	desc = "Grants the Dendorite a keen sense of smell and excellent vision, to better hunt with."
+	desc = "Grants the Yaakovite a keen sense of smell and excellent vision, to better hunt with."
 	overlay_state = "bestialsense"
 	charge_max = 12 MINUTES
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/dendor)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/yaakov)
 	invocation = "Beast-Lord, lend me the eyes of the zad, the nose of the volf."
 	invocation_type = "whisper"
 	cooldown_min = 10 MINUTES
@@ -80,7 +80,7 @@
 	overlay_state = "tamebeast"
 	releasedrain = 30
 	charge_max = 6 MINUTES
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/dendor)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/yaakov)
 	max_targets = 0
 	cast_without_targets = TRUE
 	sound = 'sound/magic/churn.ogg'
@@ -92,7 +92,7 @@
 
 /obj/effect/proc_holder/spell/targeted/beasttame/cast(list/targets,mob/user = usr)
 	playsound(get_turf(user), 'sound/vo/smokedrag.ogg', 100, TRUE)
-	visible_message("<FONT COLOR='green'>[usr] soothes the beastblood with Dendor's whisper.</FONT><BR>")
+	visible_message("<FONT COLOR='green'>[usr] soothes the beastblood with Yaakov's whisper.</FONT><BR>")
 	for(var/mob/living/simple_animal/hostile/retaliate/B in oview(2))
 		if((B.mob_biotypes & MOB_UNDEAD))
 			continue
@@ -127,7 +127,7 @@
 	if (targets[1] == user) // adds the green thumb item when you target yourself
 		var/obj/item/melee/touch_attack/greenthumb/I = new /obj/item/melee/touch_attack/greenthumb
 		user.put_in_hands(I)
-		to_chat(user, "You feel the power of Dendor course through your thumb.")
+		to_chat(user, "You feel the power of Yaakov course through your thumb.")
 		user.visible_message("<font color='green'>[user]'s thumb turns green.</font>")
 		return TRUE
 	user.faction |= "plants"
@@ -137,7 +137,7 @@
 	var/obj/structure/flora/roguegrass/tangler/real/already_grown = locate(/obj/structure/flora/roguegrass/tangler/real) in (T.contents)
 	var/area/area = get_area(T)
 	if (!area.outdoors)
-		to_chat(user, span_notice("The open air is more suited for Dendor's miracles..."))
+		to_chat(user, span_notice("The open air is more suited for Yaakov's miracles..."))
 		return FALSE
 	if (already_grown)
 		to_chat(user, span_notice("There's no room for more vines..."))
@@ -186,7 +186,7 @@
 		return
 	}
 	var/action = apply ? "adding" : "removing"
-	user.visible_message("[user] presses thumb on [mob_target]'s forehead and begins [action] Dendor's mark to [mob_target].")
+	user.visible_message("[user] presses thumb on [mob_target]'s forehead and begins [action] Yaakov's mark to [mob_target].")
 	if(do_after(user, 5 SECONDS, mob_target))//5 second application
 		if (apply)
 			add_vinemark(mob_target, user)
@@ -219,7 +219,7 @@
 	cast_without_targets = TRUE
 	sound = 'sound/items/dig_shovel.ogg'
 	associated_skill = /datum/skill/magic/holy
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/dendor)
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/yaakov)
 	invocation = "Treefather light the way."
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 
@@ -229,7 +229,7 @@
 	var/already_grown = locate(/obj/structure/kneestingers) in (T)
 	var/area/area = get_area(T)
 	if(!area.outdoors)
-		to_chat(user, span_notice("The open air is more suited for Dendors miracles..."))
+		to_chat(user, span_notice("The open air is more suited for Yaakovs miracles..."))
 		return FALSE
 	if(already_grown)
 		to_chat(user, span_notice("There are too many mycelia here already..."))
@@ -248,8 +248,8 @@
 	desc = "Borrow power from the Troll, his favored beast."
 	overlay_state = "trollshape"
 	charge_max = 12 MINUTES // cast once every 30 minutes, lasts for 3 minutes || Monkey station edit, changed it down from 30 to 12!
-	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/dendor)
-	invocation = "DENDOR; LEND ME YOUR POWER!!"
+	req_items = list(/obj/item/clothing/neck/roguetown/psycross/silver/yaakov)
+	invocation = "YAAKOV; LEND ME YOUR POWER!!"
 	invocation_type = "shout"
 	cooldown_min = 6 MINUTES
 	releasedrain = 100
@@ -264,7 +264,7 @@
 	sleep(30)
 	playsound(get_turf(user), 'sound/foley/sewflesh.ogg', 100, TRUE)
 	user.emote("pain", forced = TRUE)
-	to_chat(user, span_warning("My body is transforming, growing! Unbearable pain, Dendor has answered your prayers!"))
+	to_chat(user, span_warning("My body is transforming, growing! Unbearable pain, Yaakov has answered your prayers!"))
 	user.do_jitter_animation(40)
 	user.Immobilize(40)
 	sleep(40)

@@ -3300,12 +3300,12 @@
 /area/rogue/outdoors/rtfield)
 "cbM" = (
 /obj/structure/closet/crate/roguecloset,
-/obj/item/clothing/suit/roguetown/shirt/robe/noc,
-/obj/item/clothing/suit/roguetown/shirt/robe/noc,
-/obj/item/clothing/suit/roguetown/shirt/robe/noc,
-/obj/item/clothing/head/roguetown/roguehood/nochood,
-/obj/item/clothing/head/roguetown/roguehood/nochood,
-/obj/item/clothing/head/roguetown/roguehood/nochood,
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten,
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten,
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten,
+/obj/item/clothing/head/roguetown/roguehood/eostenhood,
+/obj/item/clothing/head/roguetown/roguehood/eostenhood,
+/obj/item/clothing/head/roguetown/roguehood/eostenhood,
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8;
 	icon_state = "churchslate"
@@ -5636,8 +5636,8 @@
 "dIp" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
-/obj/item/clothing/suit/roguetown/shirt/robe/dendor,
+/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
+/obj/item/clothing/suit/roguetown/shirt/robe/yaakov,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
 "dIR" = (
@@ -9460,12 +9460,12 @@
 /area/rogue/indoors/town/church/chapel)
 "gfb" = (
 /obj/structure/closet/crate/roguecloset,
-/obj/item/clothing/suit/roguetown/shirt/robe/eora,
-/obj/item/clothing/suit/roguetown/shirt/robe/eora,
-/obj/item/clothing/suit/roguetown/shirt/robe/eora,
-/obj/item/clothing/head/roguetown/roguehood/eora,
-/obj/item/clothing/head/roguetown/roguehood/eora,
-/obj/item/clothing/head/roguetown/roguehood/eora,
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar,
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar,
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar,
+/obj/item/clothing/head/roguetown/roguehood/nazar,
+/obj/item/clothing/head/roguetown/roguehood/nazar,
+/obj/item/clothing/head/roguetown/roguehood/nazar,
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
@@ -9942,7 +9942,7 @@
 /area/rogue/outdoors/town)
 "gxM" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
+/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
 /obj/item/clothing/head/roguetown/padded/briarthorns,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
@@ -12020,7 +12020,7 @@
 /area/rogue/indoors/shelter/bog)
 "hSv" = (
 /obj/structure/table/stone_small,
-/obj/item/clothing/neck/roguetown/psycross/silver/malum_steel,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = -32;
 	pixel_y = 0
@@ -14833,7 +14833,7 @@
 	pixel_y = 2
 	},
 /obj/item/clothing/neck/roguetown/psycross/silver/lythios,
-/obj/item/clothing/neck/roguetown/psycross/silver/ravox,
+/obj/item/clothing/neck/roguetown/psycross/silver/mathuin,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
 "jMD" = (
@@ -15093,7 +15093,7 @@
 	icon_state = "pipe"
 	},
 /obj/structure/bookcase,
-/obj/item/book/rogue/abyssor,
+/obj/item/book/rogue/cana,
 /obj/item/book/rogue/bookofpriests,
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/carpet/purple,
@@ -15488,7 +15488,7 @@
 "kfv" = (
 /obj/structure/mineral_door/bars{
 	lockid = "blacksmith";
-	name = "Shrine of Malum"
+	name = "Shrine of Toma"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/smithy)
@@ -26641,7 +26641,7 @@
 	pixel_x = -5;
 	pixel_y = -5
 	},
-/obj/structure/bookcase/random/eoratica{
+/obj/structure/bookcase/random/erotica{
 	name = "bookcase (Torture Manuscripts)"
 	},
 /turf/open/floor/rogue/woodturned/nosmooth,
@@ -33108,11 +33108,11 @@
 /area/rogue/indoors)
 "woh" = (
 /obj/structure/rack/rogue,
-/obj/item/clothing/neck/roguetown/psycross/silver/eora,
-/obj/item/clothing/neck/roguetown/psycross/silver/malum_steel,
-/obj/item/clothing/neck/roguetown/psycross/silver/pestra,
-/obj/item/clothing/neck/roguetown/psycross/silver/xylix,
-/obj/item/clothing/neck/roguetown/psycross/noc,
+/obj/item/clothing/neck/roguetown/psycross/silver/nazar,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
+/obj/item/clothing/neck/roguetown/psycross/silver/mikros,
+/obj/item/clothing/neck/roguetown/psycross/silver/julius,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
 "wok" = (

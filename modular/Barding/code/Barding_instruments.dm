@@ -204,31 +204,31 @@
 		var/list/buffs2pick = list()
 		switch(music_level) // There has to be a better way to do this, but so far all I've tried doesn't work as intended.
 			if(1) // T1
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence)
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence)
 			if(1 to 2) // T2
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
-								"Malum's Resilience (+1 END)" = /datum/status_effect/bardicbuff/endurance)
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
+								"Toma's Resilience (+1 END)" = /datum/status_effect/bardicbuff/endurance)
 			if(1 to 3) // T3
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
-								"Malum's Resilience (+1 END)" = /datum/status_effect/bardicbuff/endurance,
-								"Pestra's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution)
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
+								"Toma's Resilience (+1 END)" = /datum/status_effect/bardicbuff/endurance,
+								"Mikros's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution)
 			if(1 to 4) // T4
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
-								"Malum's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
-								"Pestra's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
-								"Xylix's Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed)
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
+								"Toma's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
+								"Mikros's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
+								"Julius' Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed)
 			if(1 to 5) // T5
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
-								"Malum's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
-								"Pestra's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
-								"Xylix's Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed,
-								"Ravox's Righteous Fury (+1 STR, +1 PER)" = /datum/status_effect/bardicbuff/ravox)
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
+								"Toma's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
+								"Mikros's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
+								"Julius' Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed,
+								"Mathuin's Righteous Fury (+1 STR, +1 PER)" = /datum/status_effect/bardicbuff/mathuin)
 			if(6 to INFINITY) // Legendary onwards
-				buffs2pick += list("Noc's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
-								"Malum's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
-								"Pestra's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
-								"Xylix's Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed,
-								"Ravox's Righteous Fury (+1 STR, +1 PER)" = /datum/status_effect/bardicbuff/ravox,
+				buffs2pick += list("Eosten's Brilliance (+1 INT)" = /datum/status_effect/bardicbuff/intelligence,
+								"Toma's Perseverance (+1 END)" = /datum/status_effect/bardicbuff/endurance,
+								"Mikros's Blessing (+1 CON)" = /datum/status_effect/bardicbuff/constitution,
+								"Julius' Alacrity (+1 SPD)" = /datum/status_effect/bardicbuff/speed,
+								"Mathuin's Righteous Fury (+1 STR, +1 PER)" = /datum/status_effect/bardicbuff/mathuin,
 								"Lythios' Awakening (+energy, +stamina, +1 FOR)" = /datum/status_effect/bardicbuff/awaken) // TAKE THE LAND THAT MUST BE TAKEN
 			else // debug
 				message_admins("<span class='warning'>[key_name(usr)] is a bard with zero music skill and couldn't choose a buff.</span>")
@@ -265,7 +265,7 @@
 
 /obj/item/rogue/instrument/accord
 	name = "accordion"
-	desc = "A complex piece of dwarven intuition, composed of metal, wood, hide and ivory. Favored by Abyssorian bards."
+	desc = "A complex piece of dwarven intuition, composed of metal, wood, hide and ivory. Favored by Canan bards."
 	icon_state = "accordion"
 	item_state = "accordion"
 	song_list = list(
@@ -317,7 +317,7 @@
 	song_list = list(
 	"Through Thine Window, He Glanced" = 'sound/instruments/harp (1).ogg',
 	"The Lady of Red Silks" = 'sound/instruments/harp (2).ogg',
-	"Eora Doth Watches" = 'sound/instruments/harp (3).ogg',
+	"Nazar Doth Watches" = 'sound/instruments/harp (3).ogg',
 	"Dance of the Mages" = 'sound/instruments/harp (4).ogg',
 	"Trickster Wisps" = 'sound/instruments/harp (5).ogg',
 	"On the Breeze" = 'sound/instruments/harp (6).ogg',

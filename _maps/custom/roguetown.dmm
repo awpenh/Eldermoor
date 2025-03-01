@@ -5006,7 +5006,7 @@
 "rQ" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/bookofpriests,
-/obj/item/book/rogue/abyssor,
+/obj/item/book/rogue/cana,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "rR" = (
@@ -7962,7 +7962,7 @@
 /area/rogue/outdoors/town)
 "CZ" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/abyssor,
+/obj/item/book/rogue/cana,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
 "Da" = (
@@ -8156,7 +8156,7 @@
 "DM" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/nitebeast,
-/obj/item/book/rogue/noc,
+/obj/item/book/rogue/eosten,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
 "DN" = (

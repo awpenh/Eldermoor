@@ -55,8 +55,8 @@
 				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/lythios
 			if("Labbeus")
 				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/labbeus
-			if("Pestra")
-				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/pestra
+			if("Mikros")
+				wrists = /obj/item/clothing/neck/roguetown/psycross/silver/mikros
 			else
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim

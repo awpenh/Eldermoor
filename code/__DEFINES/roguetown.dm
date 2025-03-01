@@ -3,20 +3,20 @@
 
 #define ALL_PLAYER_RACES_BY_NAME		list("Humen", "Rakshari", "Half-Elf", "Dark Elf", "Elf", "Dwarf","Tiberian", "Half-Orc", "Anakim")
 
-#define ALL_TEMPLE_PATRONS 		list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/veneration/nazar)
-#define ALL_CLERIC_PATRONS 		list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/veneration/nazar)
-#define ALL_TEMPLAR_PATRONS 	list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/nazar, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/mikros, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/toma)
+#define ALL_TEMPLE_PATRONS 		list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/veneration/nazar, /datum/patron/veneration/patras, /datum/patron/psydon)
+#define ALL_CLERIC_PATRONS 		list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/julias, /datum/patron/veneration/mikros, /datum/patron/veneration/toma, /datum/patron/veneration/nazar, /datum/patron/veneration/patras, /datum/patron/psydon)
+#define ALL_TEMPLAR_PATRONS 	list(/datum/patron/veneration/lythios, /datum/patron/veneration/eosten, /datum/patron/veneration/nazar, /datum/patron/veneration/labbeus, /datum/patron/veneration/mathuin, /datum/patron/veneration/mikros, /datum/patron/veneration/yaakov, /datum/patron/veneration/cana, /datum/patron/veneration/toma, /datum/patron/veneration/patras, /datum/patron/psydon)
 
 GLOBAL_LIST_INIT(curse_names, list())
 
 #define TEN_CURSES list(\
 	/datum/curse/lythios,\
-	/datum/curse/noc,\
-	/datum/curse/ravox,\
+	/datum/curse/eosten,\
+	/datum/curse/mathuin,\
 	/datum/curse/labbeus,\
-	/datum/curse/xylix,\
-	/datum/curse/pestra,\
-	/datum/curse/eora\
+	/datum/curse/julius,\
+	/datum/curse/mikros,\
+	/datum/curse/nazar\
 )
 
 #define INHUMEN_CURSES list(\

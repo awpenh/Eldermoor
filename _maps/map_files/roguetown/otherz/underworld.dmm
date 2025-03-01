@@ -186,7 +186,7 @@
 /turf/open/floor/rogue/underworld/road,
 /area/rogue/underworld)
 "GV" = (
-/obj/structure/underworld/ravox{
+/obj/structure/underworld/mathuin{
 	layer = 4.82;
 	pixel_x = 7;
 	pixel_y = -6

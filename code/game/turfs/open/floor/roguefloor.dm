@@ -196,7 +196,7 @@
 
 /turf/open/floor/rogue/grass/red
 	name = "red grass"
-	desc = "Grass, ripe with Dendor's blood."
+	desc = "Grass, ripe with Yaakov's blood."
 	icon_state = "grass_red"
 	neighborlay = "grass_rededge"
 	canSmoothWith = list(/turf/open/floor/rogue/grass,

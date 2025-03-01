@@ -2,7 +2,7 @@
 
 /obj/structure/kneestingers
 	name = "kneestingers"
-	desc = "They're said to glow with Dendor's wrath."
+	desc = "They're said to glow with Yaakov's wrath."
 	anchored = TRUE
 	opacity = 0
 	density = FALSE
@@ -36,7 +36,7 @@
 	if(isliving(user) && W && user.z == z)
 		if(W.flags_1 & CONDUCT_1)
 			var/mob/living/L = user
-			if(L.electrocute_act(30, src)) // The kneestingers will let you pass if you worship dendor, but they won't take your stupid ass hitting them.
+			if(L.electrocute_act(30, src)) // The kneestingers will let you pass if you worship yaakov, but they won't take your stupid ass hitting them.
 				L.emote("painscream")
 				L.consider_ambush()
 				if(L.throwing)

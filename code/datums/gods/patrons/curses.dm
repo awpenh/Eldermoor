@@ -78,35 +78,35 @@
 	description = "I am forsaken by the Sun. Healing miracles have no effect on me."
 	trait = TRAIT_LYTHIOS_CURSE
 
-/datum/curse/noc
-	name = "Noc's Curse"
+/datum/curse/eosten
+	name = "Eosten's Curse"
 	description = "Magical knowledge is now beyond my grasp."
-	trait = TRAIT_NOC_CURSE
+	trait = TRAIT_EOSTEN_CURSE
 
-/datum/curse/ravox
-	name = "Ravox's Curse"
+/datum/curse/mathuin
+	name = "Mathuin's Curse"
 	description = "Violence disgusts me. I cannot bring myself to wield any kind of weapon."
-	trait = TRAIT_RAVOX_CURSE
+	trait = TRAIT_MATHUIN_CURSE
 
 /datum/curse/labbeus
 	name = "Labbeus' Curse"
 	description = "Labbeus has claimed my soul. No one will bring me back from the dead."
 	trait = TRAIT_LABBEUS_CURSE
 
-/datum/curse/xylix
-	name = "Xylix's Curse"
+/datum/curse/julius
+	name = "Julius's Curse"
 	description = "Fortune is no longer on my side."
-	trait = TRAIT_XYLIX_CURSE
+	trait = TRAIT_JULIUS_CURSE
 
-/datum/curse/pestra
-	name = "Pestra's Curse"
+/datum/curse/mikros
+	name = "Mikros's Curse"
 	description = "I feel sick to my stomach, and my skin is slowly starting to rot."
-	trait = TRAIT_PESTRA_CURSE
+	trait = TRAIT_MIKROS_CURSE
 
-/datum/curse/eora
-	name = "Eora's Curse"
+/datum/curse/nazar
+	name = "Nazar's Curse"
 	description = "I am unable to show any kind of affection or love, whether carnal or platonic."
-	trait = TRAIT_EORA_CURSE
+	trait = TRAIT_NAZAR_CURSE
 
 //////////////////////
 /// INHUMEN CURSES ///
@@ -157,23 +157,23 @@
 	. = ..()
 	hallucinations = null
 
-/datum/curse/xylix/on_gain(mob/living/carbon/human/owner)
+/datum/curse/julius/on_gain(mob/living/carbon/human/owner)
 	. = ..()
 	owner.STALUC -= 10
 
-/datum/curse/xylix/on_loss(mob/living/carbon/human/owner)
+/datum/curse/julius/on_loss(mob/living/carbon/human/owner)
 	. = ..()
 	owner.STALUC += 10
 
 //////////////////////
 ///    ON LIFE     ///
 //////////////////////
-/datum/curse/pestra/on_life(mob/living/carbon/human/owner)
+/datum/curse/mikros/on_life(mob/living/carbon/human/owner)
 	. = ..()
-	if(owner.mob_timers["pestra_curse"])
-		if(world.time < owner.mob_timers["pestra_curse"] + rand(30,60)SECONDS)
+	if(owner.mob_timers["mikros_curse"])
+		if(world.time < owner.mob_timers["mikros_curse"] + rand(30,60)SECONDS)
 			return
-	owner.mob_timers["pestra_curse"] = world.time
+	owner.mob_timers["mikros_curse"] = world.time
 	var/effect = rand(1, 4)
 	switch(effect)
 		if(1)

@@ -75,8 +75,8 @@ GLOBAL_LIST_INIT(traits_by_type, list(
 		//Rogue Traits Past here
 		"Blessing of Baotha" = TRAIT_CRACKHEAD,
 		"Blessing of Graggar" = TRAIT_ORGAN_EATER,
-		"Blessing of Pestra"= TRAIT_ROT_EATER,
-		"Blessing of Dendor" = TRAIT_KNEESTINGER_IMMUNITY,
+		"Blessing of Mikros"= TRAIT_ROT_EATER,
+		"Blessing of Yaakov" = TRAIT_KNEESTINGER_IMMUNITY,
 		"Blessing of Labbeus" = TRAIT_SOUL_EXAMINE,
 		"Golden Blood" = TRAIT_SEEPRICES,
 		"Of the Cabal" = TRAIT_CABAL,

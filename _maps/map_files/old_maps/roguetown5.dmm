@@ -210,7 +210,7 @@
 /area/rogue/indoors/town/vault)
 "aN" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/xylix,
+/obj/item/book/rogue/julius,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
 "aO" = (

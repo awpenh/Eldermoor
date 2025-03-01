@@ -590,7 +590,7 @@
 
 /datum/emote/living/hug/can_run_emote(mob/living/user, status_check = TRUE , intentional)
 	. = ..()
-	if(HAS_TRAIT(user, TRAIT_EORA_CURSE))
+	if(HAS_TRAIT(user, TRAIT_NAZAR_CURSE))
 		var/mob/living/carbon/human/H = user
 		to_chat(H, "<span class='warning'>The idea repulses me!</span>")
 		H.cursed_freak_out()
@@ -603,7 +603,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		// cursed is the one being hugged
-		if(HAS_TRAIT(H, TRAIT_EORA_CURSE))
+		if(HAS_TRAIT(H, TRAIT_NAZAR_CURSE))
 			to_chat(H, "<span class='warning'>I feel unexplicably repelled!</span>")
 			H.cursed_freak_out()
 			return
@@ -645,7 +645,7 @@
 
 /datum/emote/living/kiss/can_run_emote(mob/living/user, status_check = TRUE , intentional)
 	. = ..()
-	if(HAS_TRAIT(user, TRAIT_EORA_CURSE))
+	if(HAS_TRAIT(user, TRAIT_NAZAR_CURSE))
 		var/mob/living/carbon/human/H = user
 		to_chat(H, "<span class='warning'>The idea repulses me!</span>")
 		H.cursed_freak_out()
@@ -666,7 +666,7 @@
 		var/mob/living/carbon/human/E = target
 
 		// cursed is the one being kissed
-		if(HAS_TRAIT(E, TRAIT_EORA_CURSE))
+		if(HAS_TRAIT(E, TRAIT_NAZAR_CURSE))
 			to_chat(E, "<span class='warning'>I feel unexplicably repelled!</span>")
 			E.cursed_freak_out()
 

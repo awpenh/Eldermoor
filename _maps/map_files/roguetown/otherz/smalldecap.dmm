@@ -389,8 +389,8 @@
 /obj/item/book/rogue/yeoldecookingmanual,
 /obj/item/book/rogue/magicaltheory,
 /obj/item/book/rogue/nitebeast,
-/obj/item/book/rogue/noc,
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/eosten,
+/obj/item/book/rogue/secret/julius,
 /obj/item/book/rogue/magicaltheory,
 /obj/item/book/rogue/godofdreamsandnightmares,
 /obj/item/book/rogue/knowledge1,
@@ -564,7 +564,7 @@
 /area/rogue/under/cavelava)
 "nP" = (
 /obj/structure/closet/crate/roguecloset/inn,
-/obj/item/clothing/ring/gold/ravox,
+/obj/item/clothing/ring/gold/mathuin,
 /obj/item/clothing/head/roguetown/crown/circlet/vision,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,

@@ -2,7 +2,7 @@
 
 /datum/advclass/combat/swashbuckler
 	name = "Swashbuckler"
-	tutorial = "Woe the Sea King! You awake, dazed from a true festivity of revelry and feasting. The last thing you remember? Your mateys dumping you over the side of the boat as a joke. Now on some Gods foresaken rock, Abyssor will present you with booty and fun, no doubt."
+	tutorial = "Woe the Sea King! You awake, dazed from a true festivity of revelry and feasting. The last thing you remember? Your mateys dumping you over the side of the boat as a joke. Now on some Gods foresaken rock, Cana will present you with booty and fun, no doubt."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
@@ -29,7 +29,7 @@
 	beltl = /obj/item/rogueweapon/sword/sabre/cutlass
 	beltr = /obj/item/rogueweapon/knife/dagger
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	neck = /obj/item/clothing/neck/roguetown/psycross/silver/abyssor
+	neck = /obj/item/clothing/neck/roguetown/psycross/silver/cana
 
 /datum/outfit/job/roguetown/adventurer/swashbuckler/pre_equip(mob/living/carbon/human/H)
 	..()

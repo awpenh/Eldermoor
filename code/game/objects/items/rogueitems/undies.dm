@@ -1,6 +1,6 @@
 /obj/item/undies
 	name = "smallclothes"
-	desc = "An Eoran designed undergarment to cover the loins."
+	desc = "An Nazaran designed undergarment to cover the loins."
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "undies"
 	resistance_flags = FLAMMABLE
@@ -16,7 +16,7 @@
 
 /obj/item/undies/f
 	name = "women's smallclothes"
-	desc = "An Eoran designed undergarment to cover the privates and chest."
+	desc = "An Nazaran designed undergarment to cover the privates and chest."
 	icon_state = "girlundies"
 	gendered = FEMALE
 

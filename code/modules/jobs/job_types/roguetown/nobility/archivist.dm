@@ -1,6 +1,6 @@
 /datum/job/roguetown/archivist
 	title = "Archivist"
-	tutorial = "A well-traveled and well-learned seeker of knowledge, the Archivist's mind has been touched by Noc himself. They settled in Vanderlin some time ago, coming to the Isle of Albia with the hope of unraveling its mysteries. If they can expand their library and teach the masses, Psydonia may yet enter a new age of enlightenment."
+	tutorial = "A well-traveled and well-learned seeker of knowledge, the Archivist's mind has been touched by Eosten himself. They settled in Vanderlin some time ago, coming to the Isle of Albia with the hope of unraveling its mysteries. If they can expand their library and teach the masses, Psydonia may yet enter a new age of enlightenment."
 	flag = ARCHIVIST
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -40,7 +40,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltl = /obj/item/storage/keyring/archivist
 	backl = /obj/item/storage/backpack/rogue/satchel
-	neck = /obj/item/clothing/neck/roguetown/psycross/noc
+	neck = /obj/item/clothing/neck/roguetown/psycross/eosten
 	backpack_contents = list(/obj/item/literary/apprentice = 1)
 
 	if(H.mind)

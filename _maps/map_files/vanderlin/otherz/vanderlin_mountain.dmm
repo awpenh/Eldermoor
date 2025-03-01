@@ -222,7 +222,7 @@
 /turf/open/lava,
 /area/rogue/under/mountains/anvil/lower/building)
 "cH" = (
-/obj/item/clothing/neck/roguetown/psycross/silver/malum_steel,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
 /turf/open/floor/rogue/underworld/space/sparkle_quiet,
 /area/rogue/under/mountains/anvil/lower/building)
 "cJ" = (
@@ -880,7 +880,7 @@
 /area/rogue/indoors/mountains/anvil/surface/building)
 "ia" = (
 /obj/structure/rack/rogue/shelf/biggest,
-/obj/item/clothing/neck/roguetown/psycross/silver/malum_steel,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
 /turf/open/floor/rogue/tile/tilerg,
 /area/rogue/under/mountains/anvil/lower)
 "ib" = (
@@ -959,7 +959,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/mountains/anvil/lower/building)
 "iv" = (
-/obj/effect/landmark/map_load_mark/malum_dungeon,
+/obj/effect/landmark/map_load_mark/toma_dungeon,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "ix" = (
@@ -1089,8 +1089,8 @@
 /area/rogue/indoors/mountains/anvil/surface/building)
 "jR" = (
 /obj/structure/rack/rogue/shelf/biggest,
-/obj/item/clothing/cloak/stabard/templar/malum,
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/malumhelm,
+/obj/item/clothing/cloak/stabard/templar/toma,
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/tomahelm,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/mountains/anvil/lower)
 "jS" = (
@@ -4794,7 +4794,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/mountains/anvil/lower/building)
 "Rw" = (
-/obj/item/clothing/neck/roguetown/psycross/silver/malum,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/mountains/anvil/lower)
 "RB" = (

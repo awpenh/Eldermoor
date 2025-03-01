@@ -442,42 +442,42 @@
 	icon_state = "tabard_necra_alt"
 	item_state = "tabard_necra_alt"
 
-/obj/item/clothing/cloak/stabard/templar/dendor
-	name = "surcoat of the dendorian order"
+/obj/item/clothing/cloak/stabard/templar/yaakov
+	name = "surcoat of the yaakovian order"
 	icon_state = "tabard_dendor"
 	item_state = "tabard_dendor"
 
-/obj/item/clothing/cloak/stabard/templar/noc
+/obj/item/clothing/cloak/stabard/templar/eosten
 	name = "surcoat of the lunar order"
 	icon_state = "tabard_noc"
 	item_state = "tabard_noc"
 
-/obj/item/clothing/cloak/stabard/templar/noc/alt
+/obj/item/clothing/cloak/stabard/templar/eosten/alt
 	icon_state = "tabard_noc_alt"
 	item_state = "tabard_noc_alt"
 
-/obj/item/clothing/cloak/stabard/templar/abyssor
+/obj/item/clothing/cloak/stabard/templar/cana
 	name = "surcoat of the abyssal order"
 	icon_state = "tabard_abyssor"
 	item_state = "tabard_abyssor"
 
-/obj/item/clothing/cloak/stabard/templar/malum
-	name = "surcoat of the malumite order"
+/obj/item/clothing/cloak/stabard/templar/toma
+	name = "surcoat of the toman order"
 	icon_state = "tabard_malum"
 	item_state = "tabard_malum"
 
-/obj/item/clothing/cloak/stabard/templar/eora
-	name = "surcoat of the eoran order"
+/obj/item/clothing/cloak/stabard/templar/nazar
+	name = "surcoat of the nazaran order"
 	icon_state = "tabard_eora"
 	item_state = "tabard_eora"
 
-/obj/item/clothing/cloak/stabard/templar/pestra
-	name = "surcoat of the pestran order"
+/obj/item/clothing/cloak/stabard/templar/mikros
+	name = "surcoat of the mikrosian order"
 	icon_state = "tabard_pestra"
 	item_state = "tabard_pestra"
 
-/obj/item/clothing/cloak/stabard/templar/ravox
-	name = "surcoat of the ravoxian order"
+/obj/item/clothing/cloak/stabard/templar/mathuin
+	name = "surcoat of the mathuinian order"
 	icon_state = "tabard_ravox"
 	item_state = "tabard_ravox"
 

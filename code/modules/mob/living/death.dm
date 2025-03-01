@@ -147,14 +147,14 @@
 	var/area_of_death = lowertext(get_area_name(src))
 	var/locale = "a locale wreathed in enigmatic fog"
 	switch (area_of_death) // we're deliberately obtuse with this.
-		if ("mountains", "mt decapitation", "malum's anvil forest", "malum's anvil under lower caves", "malum's anvil cave building", "malum's anvil lower dungeon", "malum's anvil surface building", "malum's anvil hidden grove", "malum's anvil peak")
+		if ("mountains", "mt decapitation", "toma's anvil forest", "toma's anvil under lower caves", "toma's anvil cave building", "toma's anvil lower dungeon", "toma's anvil surface building", "toma's anvil hidden grove", "toma's anvil peak")
 			locale = "a twisted tangle of dense rocks and rivers of lava"
 		if ("wilderness", "azure basin")
 			locale = "somewhere in the wilds"
 		if ("the bog", "bog", "dense bog", "latejoin cave")
 			locale = "a wretched, fetid bog"
 		if ("coast", "coastforest", "river")
-			locale = "somewhere betwixt Abyssor's realm and Dendor's bounty"
+			locale = "somewhere betwixt Cana's realm and Yaakov's bounty"
 		if ("indoors", "shop", "physician", "outdoors", "roofs", "manor", "wizard's tower", "garrison","village garrison", "dungeon cell", "baths", "tavern", "basement")
 			locale = "the city of Vanderlin and all its bustling souls"
 		if ("sewers")

@@ -1,7 +1,7 @@
 /datum/advclass/combat/monk
 	name = "Monk"
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "A traveling monk of the God Ravox, unmatched in unarmed combat and with an unwavering devotion to Justice."
+	tutorial = "A traveling monk of Saint Mathuin, unmatched in unarmed combat and with an unwavering devotion to Justice."
 	allowed_races = list(
 		"Humen",
 		"Elf",
@@ -20,7 +20,7 @@
 /datum/outfit/job/roguetown/adventurer/monk/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/roguehood/brown
-	neck = /obj/item/clothing/neck/roguetown/psycross/silver/ravox
+	neck = /obj/item/clothing/neck/roguetown/psycross/silver/mathuin
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/plain

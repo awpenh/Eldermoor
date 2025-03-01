@@ -31,7 +31,7 @@ GLOBAL_LIST_INIT(church_positions, list(
 	"Gravedigger",
 	"Inquisitor",
 	//"Confessor",
-	"Church Guard"
+	"Templar"
 	//"Adept"
 	))
 

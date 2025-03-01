@@ -9,7 +9,7 @@
 
 	allowed_races = ALL_PLAYER_RACES_BY_NAME
 
-	allowed_ages = list(AGE_CHILD)
+	allowed_ages = list(AGE_CHILD, AGE_ADULT)
 
 	tutorial = "One nite the Innkeeper took you in during a harsh winter, you've been thankful ever since."
 
@@ -45,3 +45,9 @@
 		cloak = /obj/item/clothing/cloak/apron/waist
 	else
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress
+
+	if(H.gender == MALE)
+		var/acceptable = list("None")
+		if(!(H.facial_hairstyle in acceptable))
+			H.facial_hairstyle = pick(acceptable)
+			H.update_hair()

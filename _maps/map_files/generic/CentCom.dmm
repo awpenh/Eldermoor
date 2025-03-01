@@ -190,9 +190,9 @@
 /obj/item/clothing/ring/gold/guild_mercator,
 /obj/item/clothing/ring/gold/guild_mercator,
 /obj/item/clothing/ring/gold/guild_mercator,
-/obj/item/clothing/ring/gold/ravox,
-/obj/item/clothing/ring/gold/ravox,
-/obj/item/clothing/ring/gold/ravox,
+/obj/item/clothing/ring/gold/mathuin,
+/obj/item/clothing/ring/gold/mathuin,
+/obj/item/clothing/ring/gold/mathuin,
 /obj/item/clothing/ring/silver,
 /obj/item/clothing/ring/silver,
 /obj/item/clothing/ring/silver,
@@ -1973,8 +1973,8 @@
 	dir = 5;
 	icon_state = "largetable"
 	},
-/obj/item/clothing/suit/roguetown/shirt/robe/eora,
-/obj/item/clothing/suit/roguetown/shirt/robe/eora/alt,
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar,
+/obj/item/clothing/suit/roguetown/shirt/robe/nazar/alt,
 /turf/open/floor/rogue/wood,
 /area/rogue)
 "nW" = (
@@ -4260,12 +4260,12 @@
 	dir = 1;
 	icon_state = "largetable"
 	},
-/obj/item/clothing/neck/roguetown/psycross/silver/ravox,
-/obj/item/clothing/neck/roguetown/psycross/noc,
+/obj/item/clothing/neck/roguetown/psycross/silver/mathuin,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /obj/item/clothing/neck/roguetown/psycross/silver/labbeus,
 /obj/item/clothing/neck/roguetown/psycross/g,
-/obj/item/clothing/neck/roguetown/psycross/silver/eora,
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
+/obj/item/clothing/neck/roguetown/psycross/silver/nazar,
+/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
 /obj/item/clothing/neck/roguetown/psycross/silver/lythios,
 /obj/item/clothing/neck/roguetown/shalal,
 /obj/item/clothing/neck/roguetown/horus,
@@ -4348,7 +4348,7 @@
 /obj/structure/table/wood{
 	icon_state = "largetable"
 	},
-/obj/item/clothing/suit/roguetown/shirt/robe/noc,
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten,
 /turf/open/floor/rogue/wood,
 /area/rogue)
 "Vc" = (

@@ -16,7 +16,7 @@
 	Once a proud and mighty civilization, the dark elves bent magic to their will, shaping both their forms and their fate.\
 	Their greatest mages wove enchantments to darken their skin, shielding themselves from the relentless elements of their homeland,\
 	and their empire stood as a rival to the high elves in power and influence.\
-	But greatness came at a price—when their emperor, Xylix, ascended to godhood, the aftermath shattered their world.\
+	But greatness came at a price—when their emperor, Julius, ascended to godhood, the aftermath shattered their world.\
 	Reality twisted, the land withered, and the very foundation of their society crumbled under the weight of unchecked magic.\
 	From this ruin, only one force could lead them to salvation: Zizo.\
 	A conqueror, a god in the making, he reforged their broken people under his rule, not as they once were, but as they must become.\

@@ -988,18 +988,18 @@
 	dir = SOUTH
 	shrine = TRUE
 
-/obj/structure/fluff/psycross/crafted/shrine/dendor_volf
-	name = "shrine to Dendor"
+/obj/structure/fluff/psycross/crafted/shrine/yaakov_volf
+	name = "shrine to Yaakov"
 	desc = "The life force of a Volf has consecrated this holy place.<br/> Present several blood bait here to craft a worthy sacrifice."
 	icon_state = "shrine_dendor_volf"
 
-/obj/structure/fluff/psycross/crafted/shrine/dendor_saiga
-	name = "shrine to Dendor"
+/obj/structure/fluff/psycross/crafted/shrine/yaakov_saiga
+	name = "shrine to Yaakov"
 	desc = "The life force of a Saiga has consecrated this holy place.<br/> Present jacksberries, westleach leaves, and eels for crafting a worthy sacrifice."
 	icon_state = "shrine_dendor_saiga"
 
-/obj/structure/fluff/psycross/crafted/shrine/dendor_gote
-	name = "shrine to Dendor"
+/obj/structure/fluff/psycross/crafted/shrine/yaakov_gote
+	name = "shrine to Yaakov"
 	desc = "The life force of a Gote has consecrated this holy place.<br/> Present poppies, swampweed leaves, and silk grubs for crafting a worthy sacrifice."
 	icon_state = "shrine_dendor_gote"
 

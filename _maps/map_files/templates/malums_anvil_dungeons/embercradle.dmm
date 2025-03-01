@@ -2461,8 +2461,8 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "Hw" = (
-/obj/item/clothing/head/roguetown/helmet/heavy/necked/noc,
-/obj/item/clothing/cloak/stabard/templar/noc,
+/obj/item/clothing/head/roguetown/helmet/heavy/necked/eosten,
+/obj/item/clothing/cloak/stabard/templar/eosten,
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
 /obj/item/clothing/gloves/roguetown/chain,
 /obj/item/clothing/under/roguetown/chainlegs,
@@ -2471,9 +2471,9 @@
 /obj/item/rogueweapon/shield/tower/metal,
 /obj/item/rogueweapon/sword,
 /obj/item/storage/belt/rogue/leather/plaquesilver,
-/obj/item/clothing/ring/silver/noc,
-/obj/item/clothing/wrists/roguetown/nocwrappings,
-/obj/item/clothing/neck/roguetown/psycross/noc,
+/obj/item/clothing/ring/silver/eosten,
+/obj/item/clothing/wrists/roguetown/eostenwrappings,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /obj/effect/mapping_helpers/floor_clothing_equipper,
 /mob/living/carbon/human/species/skeleton/npc/no_equipment,
 /turf/open/floor/carpet/purple,
@@ -2586,7 +2586,7 @@
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "II" = (
 /obj/structure/table/church/m,
-/obj/item/book/rogue/noc,
+/obj/item/book/rogue/eosten,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "IK" = (
@@ -3078,7 +3078,7 @@
 /area/rogue/under/mountains/anvil/dungeon)
 "ON" = (
 /obj/structure/table/vtable/v2,
-/obj/item/book/rogue/secret/xylix,
+/obj/item/book/rogue/secret/julius,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/mountains/anvil/dungeon/lower)
@@ -3450,7 +3450,7 @@
 /area/rogue/under/mountains/anvil/dungeon)
 "Uf" = (
 /obj/structure/table/church,
-/obj/item/clothing/neck/roguetown/psycross/noc,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "Ui" = (
@@ -3721,16 +3721,16 @@
 /area/rogue/under/mountains/anvil/dungeon)
 "Xr" = (
 /mob/living/carbon/human/species/skeleton/npc/no_equipment,
-/obj/item/clothing/suit/roguetown/shirt/robe/noc,
-/obj/item/clothing/neck/roguetown/psycross/noc,
-/obj/item/clothing/head/roguetown/roguehood/nochood,
+/obj/item/clothing/suit/roguetown/shirt/robe/eosten,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
+/obj/item/clothing/head/roguetown/roguehood/eostenhood,
 /obj/item/clothing/gloves/roguetown/leather/black,
 /obj/item/clothing/shoes/roguetown/boots/leather,
 /obj/item/clothing/under/roguetown/trou/leather,
 /obj/item/clothing/suit/roguetown/shirt/undershirt/uncolored,
 /obj/item/storage/belt/rogue/leather/cloth,
 /obj/effect/mapping_helpers/floor_clothing_equipper,
-/obj/item/clothing/wrists/roguetown/nocwrappings,
+/obj/item/clothing/wrists/roguetown/eostenwrappings,
 /obj/item/rogueweapon/knife/dagger/steel/dirk,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/mountains/anvil/dungeon/lower)

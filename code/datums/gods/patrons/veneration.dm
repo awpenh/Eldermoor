@@ -19,7 +19,9 @@
 	name = "Lythios"
 	domain = "Saint of Civilization, Light and Truth"
 	desc = "First amongst equals, Lythios is considered to be a zealous guardian. His followers believe The One and All can be found in the act of shepherding humanity into a new age of civilisation."
+	flaws = "Tyranny, Fanaticism, Unyielding Pride"
 	worshippers = "Nobles, Zealots, Commoners"
+	sins = "Anarchy, Deception, Defiance"
 	boons = "The warmth of Lythios' light fills you, you gain stamina faster in the light."
 	added_traits = list(TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
@@ -35,6 +37,7 @@
 	name = "Eosten"
 	domain = "Saint of Arcane Spells, Knowledge and The Forbidden"
 	desc = "Eosten was considered a wise man compared to even the other saints. His followers are tasked with collecting and preserving all of the knowledge in the world, through which they hope to find The One and All."
+	flaws = "Obsession, Arrogance, Ruthlessness"
 	worshippers = "Sorcerers, Scholars and Scribes"
 	sins = "Suppressing Truth, Burning Books, Censorship"
 	boons = "Eosten's wisdom sharpens your mind, allowing you to learn and teach more efficiently."
@@ -53,7 +56,11 @@
 	name = "Patras"
 	domain = "Saint of Order, Duty and Accord"
 	desc = "Although Lythios now guides the church, Patras was the one to establish it when The One and All delivered a new covenant. His followers believe that the essence of divinity can be found in building consensus and obeying the common law. "
+	flaws = "Rigidity, Lack of Compassion, Blind Obedience"
 	worshippers = "Guards, Stewards, Vigilantes"
+	sins = "Disobedience, Lawlessness, Rebellion"
+	boons = "Patras' discipline grants you restful sleep, allowing you to recover stamina and mental clarity faster."
+	added_traits = list(TRAIT_BETTER_SLEEP)
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	confess_lines = list(
 	"PATRAS BRINGS ORDER!",
@@ -64,8 +71,9 @@
 /datum/patron/veneration/nazar
 	name = "Nazar"
 	domain = "Saint of Loyalty, Charity and Chastity"
-	desc = "Considered to be the favoured of The One and All, Nazar was gifted with great charisma and shares this with his followers. His word dictates that courtly behaviour and a code of etiquette brings one closer to the Divine."
-	worshippers = "Nobles, Bards and the Sharp-Witted"
+	desc = "Considered to be the favoured of The One and All, Nazar was gifted with great charisma and shares this with his followers. His word dictates that courtly behaviour and a code of etiquette brings one closer to the Divine and to ones beloved."
+	flaws = "Naivete, Vanity, Overattachment"
+	worshippers = "Nobles, Lovers, Bards, and the Sharp-Witted"
 	sins = "Rudeness, Abandonment, Unpoliteness"
 	boons = "Nazar's presence sharpens your perception, making you more attuned to social cues."
 	added_traits = list(TRAIT_EXTEROCEPTION)
@@ -80,7 +88,9 @@
 	name = "Mikros"
 	domain = "Saint of Medicine, Alchemy and Experimentation"
 	desc = "Driven by a fondness for the common man, Mikros brought new methods of caring for the sick and ailing to the world. His followers believe that The One And All lies in compassion for the suffering, using any method available."
+	flaws = "Recklessness, Lack of Restraint, Overconfidence"
 	worshippers = "Healers, Churchlings and Givers of Alms"
+	sins = "Neglect, Hoarding, Indifference"
 	boons = "Mikros' teachings make you resistant to spoiled food and rot."
 	added_traits = list(TRAIT_ROT_EATER)
 	t0 = /obj/effect/proc_holder/spell/invoked/diagnose
@@ -95,9 +105,10 @@
 )
 
 /datum/patron/veneration/yaakov
-	name = "Ya'Akov"
+	name = "Yaakov"
 	domain = "Saint of Creation, Nature and Abundance."
-	desc = "Considered to be in some way ancient, Ya'akov has a unique perspective which he shares with his followers. His teachings promote communion with and stewardship over nature as a way of finding The One and All.  "
+	desc = "Considered to be in some way ancient, Yaakov has a unique perspective which he shares with his followers. His teachings promote communion with and stewardship over nature as a way of finding The One and All.  "
+	flaws = "Stubbornness, Isolationism, Resistance to Progress"
 	worshippers = "Farmers, Hunters and Druids"
 	sins = "Deforestation, Overhunting, Disrespecting Nature"
 	boons = "You are immune to kneestingers."
@@ -116,7 +127,11 @@
 	name = "Julias"
 	domain = "Saint of Secrecy, Wandering and Underhandedness"
 	desc = "Julias is a misanthrophic recluse of a saint, obfuscated from many records. Those who claim his as Patron often do so in private, and promote the rejection of hierarchy and laws as a part of The One and All."
+	flaws = "Paranoia, Distrust, Alienation"
 	worshippers = "Hands, Rogues and Beggars"
+	sins = "Submission, Conformity, Betrayal of Self"
+	boons = "You can rig different forms of gambling in your favor, authority and rules are loose."
+	added_traits = list(TRAIT_BLACKLEG)
 	t1 = /obj/effect/proc_holder/spell/invoked/blindness
 	t2 = /obj/effect/proc_holder/spell/invoked/invisibility
 	confess_lines = list(
@@ -129,6 +144,7 @@
 	name = "Cana"
 	domain = "Saint of Seas, Drowning and Suffering"
 	desc = "One of the Saints who dedicated themselves to preaching in foreign lands, Cana was flayed and drowned in saltwater. His followers often practice ritualistic flaying and consider flesh to hold the essence of The One and All."
+	flaws = "Self-Destruction, Fanaticism, Relentless Suffering"
 	worshippers = "Flaggelants, Sailors, Fishermen"
 	sins = "Cowardice, Cruelty, Stagnation"
 	boons = "Leeches cannot suck your blood."
@@ -148,7 +164,9 @@
 	name = "Mathuin"
 	domain = "Saint of Martial Prowess, Honour and Physical Perfection"
 	desc = "Mathuin is said to have been in a foreign land preaching the holy word, his matyrdom came upon his refusal to besmirch a nun's vows for a lustful king. His teachings advise that The One and All can be found through the idealisation of the form."
+	flaws = "Pride, Harshness, Elitism"
 	worshippers = "Warriors, Knights and Paladins"
+	sins = "Weakness, Cowardice, Sloth"
 	boons = "Your blades dull slower."
 	added_traits = list(TRAIT_SHARPER_BLADES)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
@@ -165,10 +183,11 @@
 	name = "Toma"
 	domain = "Saint of Architecture, Artifice and Toil"
 	desc = "A pragmatic skeptic, Toma believes in a straightforward philosophy that good things come to those who work, and work hard. His followers tend to set themselves to grand projects in hopes of finding a way to The One and All. The dwarves hold a special place of honour for Toma. "
+	flaws = "Overwork, Unyielding Perfectionism, Stubborn Practicality"
 	worshippers = "Smiths, Craftsmen, Brewers"
 	sins = "Cheating, Shoddy Work, Suicide"
 	boons = "You recover more energy when sleeping."
-	added_traits = list(TRAIT_BETTER_SLEEP)
+	added_traits = list(TRAIT_TOMAFIRE)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/invoked/vigorouscraft
 	t2 = /obj/effect/proc_holder/spell/invoked/hammerfall

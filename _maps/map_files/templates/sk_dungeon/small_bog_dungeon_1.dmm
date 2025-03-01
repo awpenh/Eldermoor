@@ -359,7 +359,7 @@
 /area/rogue/outdoors/bog)
 "Wo" = (
 /obj/structure/closet/crate/coffin,
-/obj/item/clothing/neck/roguetown/psycross/noc,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/blocks/paving,
 /area/rogue/outdoors/bog)
 "WF" = (
@@ -372,7 +372,7 @@
 /area/rogue/outdoors/bog)
 "YA" = (
 /obj/structure/closet/crate/coffin,
-/obj/item/clothing/neck/roguetown/psycross/silver/ravox,
+/obj/item/clothing/neck/roguetown/psycross/silver/mathuin,
 /turf/open/floor/rogue/blocks/paving,
 /area/rogue/outdoors/bog)
 

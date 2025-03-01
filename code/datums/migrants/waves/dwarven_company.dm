@@ -1,6 +1,6 @@
 /datum/migrant_role/dwarven_company/captain
 	name = "Captain"
-	greet_text = "You are the captain of a dwarven's expedition, following the tracks of Matthios's influence you shall lead your party in Malum's name."
+	greet_text = "You are the captain of a dwarven's expedition, following the tracks of Matthios's influence you shall lead your party in Toma's name."
 	outfit = /datum/outfit/job/roguetown/dwarven_company/captain
 
 	allowed_races = list("Dwarf")
@@ -47,13 +47,13 @@
 		H.mind?.adjust_skillrank(/datum/skill/craft/engineering, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-		ADD_TRAIT(H, TRAIT_MALUMFIRE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_TOMAFIRE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/migrant_role/dwarven_company/weaponsmith
 	name = "Weapon Smith"
-	greet_text = " You are the weaponsmith of a dwarven expedition, obey your foremand as they lead you in Malum's name into the tomb of Matthios."
+	greet_text = " You are the weaponsmith of a dwarven expedition, obey your foremand as they lead you in Toma's name into the tomb of Matthios."
 	outfit = /datum/outfit/job/roguetown/dwarven_company/weaponsmith
 
 	allowed_races = list("Dwarf")
@@ -79,7 +79,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-		ADD_TRAIT(H, TRAIT_MALUMFIRE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_TOMAFIRE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 		if(H.age == AGE_OLD)
 			H.mind?.adjust_skillrank(/datum/skill/craft/blacksmithing, pick(1,2), TRUE)
@@ -113,7 +113,7 @@
 
 /datum/migrant_role/dwarven_company/armorsmith
 	name = "Armor Smith"
-	greet_text = " You are the armorsmith of a dwarven expedition, obey your foremand as they lead you in Malum's name into the tomb of Matthios."
+	greet_text = " You are the armorsmith of a dwarven expedition, obey your foremand as they lead you in Toma's name into the tomb of Matthios."
 	outfit = /datum/outfit/job/roguetown/dwarven_company/armorsmith
 
 	allowed_races = list("Dwarf")
@@ -139,7 +139,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE) //
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-		ADD_TRAIT(H, TRAIT_MALUMFIRE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_TOMAFIRE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 		if(H.age == AGE_OLD)
 			H.mind?.adjust_skillrank(/datum/skill/craft/blacksmithing, pick(1,2), TRUE)
@@ -182,7 +182,7 @@
 		/datum/migrant_role/dwarven_company/weaponsmith = 2,
 		/datum/migrant_role/dwarven_company/armorsmith = 2
 	)
-	greet_text = "The way to Matthios's tomb is opened. Malum has called for all dwarves bold enough to go in, and we shall answer."
+	greet_text = "The way to Matthios's tomb is opened. Toma has called for all dwarves bold enough to go in, and we shall answer."
 
 /datum/migrant_wave/dwarven_company_down
 	name = "Dwarven Expedition"
@@ -195,7 +195,7 @@
 		/datum/migrant_role/dwarven_company/armorsmith = 1,
 		/datum/migrant_role/dwarven_company/weaponsmith = 1
 	)
-	greet_text = "The way to Matthios's tomb is opened. Malum has called for all dwarves bold enough to go in, and we shall answer."
+	greet_text = "The way to Matthios's tomb is opened. Toma has called for all dwarves bold enough to go in, and we shall answer."
 
 /datum/migrant_wave/dwarven_company_down_one
 	name = "Dwarven Expedition"
@@ -205,6 +205,6 @@
 	roles = list(
 		/datum/migrant_role/dwarven_company/captain = 1,
 	)
-	greet_text = "The way to Matthios's tomb is opened. Malum has called for all dwarves bold enough to go in, and we shall answer."
+	greet_text = "The way to Matthios's tomb is opened. Toma has called for all dwarves bold enough to go in, and we shall answer."
 
 

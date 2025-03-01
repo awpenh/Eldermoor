@@ -175,7 +175,7 @@ SUBSYSTEM_DEF(death_arena)
 
 
 /obj/structure/table/wood/fine/altar
-	name = "Ravox's sacrifical altar"
+	name = "Mathuin's sacrifical altar"
 	desc = "It awaits an offering of your triumphs"
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "ravox_altar"
@@ -187,9 +187,9 @@ SUBSYSTEM_DEF(death_arena)
 	add_abstract_elastic_data("combat", "fight_revives", 1)
 	SSdeath_arena.process_fight_end(item, user)
 
-/obj/structure/underworld/ravox
-	name = "Ravox"
-	desc = "Ravox, God of Warfare, Justice, and Bravery. He finds solice in his friendship with Labbeus and his retreat to the Underworld. Upon your gaze, he gives you a respectful nod. Damn, he's cool.."
+/obj/structure/underworld/mathuin
+	name = "Mathuin"
+	desc = "Mathuin, Saint of Warfare, Justice, and Bravery. He finds solice in his friendship with Labbeus and his retreat to the Underworld. Upon your gaze, he gives you a respectful nod. Damn, he's cool.."
 	icon = 'icons/roguetown/underworld/ravox.dmi'
 	icon_state = "ravox"
 	layer = ABOVE_MOB_LAYER

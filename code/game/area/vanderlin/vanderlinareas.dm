@@ -1,7 +1,7 @@
 // Malum's Anvil Areas
 
 /area/rogue/under/mountains/anvil
-	name = "malum's anvil generic under (don't use)"
+	name = "toma's anvil generic under (don't use)"
 	icon_state = "rogue"
 	ambientsounds = AMB_MOUNTAIN
 	ambientnight = AMB_MOUNTAIN
@@ -15,9 +15,9 @@
 	plane = INDOOR_PLANE
 
 /area/rogue/under/mountains/anvil/lower
-	name = "malum's anvil under lower caves"
+	name = "toma's anvil under lower caves"
 	icon_state = "lowercavemalum"
-	first_time_text = "MALUM'S ANVIL"
+	first_time_text = "TOMA'S ANVIL"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,
 				/turf/open/floor/rogue/cobblerock)
@@ -29,7 +29,7 @@
 				/mob/living/simple_animal/hostile/retaliate/rogue/troll = 5)
 
 /area/rogue/under/mountains/anvil/upper
-	name = "malum's anvil under upper caves"
+	name = "toma's anvil under upper caves"
 	icon_state = "uppercavemalum"
 	ambush_types = list(
 				/turf/open/floor/rogue/naturalstone)
@@ -39,28 +39,28 @@
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 30,)
 
 /area/rogue/under/mountains/anvil/lower/building
-	name = "malum's anvil cave building"
+	name = "toma's anvil cave building"
 	icon_state = "cavebuildingmalum"
 	first_time_text = null
 	ambush_types = null
 	ambush_mobs = null
 
 /area/rogue/under/mountains/anvil/dungeon
-	name = "malum's anvil upper dungeon"
+	name = "toma's anvil upper dungeon"
 	icon_state = "dungeonupper"
 
 /area/rogue/under/mountains/anvil/dungeon/can_craft_here()
 	return FALSE
 
 /area/rogue/under/mountains/anvil/dungeon/lower
-	name = "malum's anvil lower dungeon"
+	name = "toma's anvil lower dungeon"
 	icon_state = "dungeonlower"
 
 /area/rogue/under/mountains/anvil/dungeon/lower/can_craft_here()
 	return FALSE
 
 /area/rogue/outdoors/mountains/anvil
-	name = "malum's anvil generic outdoors (don't use)"
+	name = "toma's anvil generic outdoors (don't use)"
 	icon_state = "rogue"
 	outdoors = TRUE
 	ambientrain = RAIN_OUT
@@ -75,22 +75,22 @@
 	converted_type = /area/rogue/indoors/shelter
 
 /area/rogue/outdoors/mountains/anvil/peak
-	name = "malum's anvil peak"
+	name = "toma's anvil peak"
 	icon_state = "anvilpeakmalum"
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "THE PEAK OF MALUM'S ANVIL"
+	first_time_text = "THE PEAK OF TOMA'S ANVIL"
 
 /area/rogue/outdoors/mountains/anvil/snowy
-	name = "malum's anvil snow"
+	name = "toma's anvil snow"
 	icon_state = "snowypeakmalum"
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 
 /area/rogue/outdoors/mountains/anvil/snowyforest
-	name = "malum's anvil forest"
+	name = "toma's anvil forest"
 	icon_state = "snowyforestmalum"
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
@@ -105,7 +105,7 @@
 				/mob/living/carbon/human/species/orc/ambush = 20)
 
 /area/rogue/outdoors/mountains/anvil/castle
-	name = "malum's anvil castle"
+	name = "toma's anvil castle"
 	icon_state = "castlemalum"
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
@@ -118,7 +118,7 @@
 				/mob/living/carbon/human/species/orc/ambush = 20)
 
 /area/rogue/outdoors/mountains/anvil/grove
-	name = "malum's anvil hidden grove"
+	name = "toma's anvil hidden grove"
 	icon_state = "grovemalum"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,
@@ -127,11 +127,11 @@
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 10)
 
 /area/rogue/outdoors/mountains/anvil/lavaexposed
-	name = "malum's anvil exposed lava" // Mostly exists so lava exposed to the sky will act like it is
+	name = "toma's anvil exposed lava" // Mostly exists so lava exposed to the sky will act like it is
 	icon_state = "exposedlavamalum"
 
 /area/rogue/indoors/mountains/anvil
-	name = "malum's anvil generic indoors (don't use)"
+	name = "toma's anvil generic indoors (don't use)"
 	icon_state = "indoors"
 	ambientrain = RAIN_IN
 	ambientsounds = AMB_INGEN
@@ -150,5 +150,5 @@
 
 
 /area/rogue/indoors/mountains/anvil/surface/building
-	name = "malum's anvil surface building"
+	name = "toma's anvil surface building"
 	icon_state = "surfacebuildingmalum"
