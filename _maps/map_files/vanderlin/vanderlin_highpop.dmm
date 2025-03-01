@@ -12662,7 +12662,7 @@
 /turf/open/floor/rogue/blocks/paving,
 /area/rogue/indoors/town/bath)
 "isM" = (
-/obj/structure/lythiosnshard,
+/obj/structure/astratanshard,
 /turf/open/floor/rogue/metal/barograte/open,
 /area/rogue/indoors/town/clocktower)
 "isY" = (

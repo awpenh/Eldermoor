@@ -10540,7 +10540,7 @@
 	},
 /area/rogue/under/town/basement)
 "lDR" = (
-/obj/structure/lythiosnshard,
+/obj/structure/astratanshard,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/clocktower)
 "lDU" = (
