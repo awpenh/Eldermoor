@@ -740,7 +740,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 						priority_announce("The Sun is torn from the sky!", "Terrible Omen", 'sound/misc/astratascream.ogg')
 						addomen(OMEN_SUNSTEAL)
 						for(var/mob/living/carbon/human/astrater in GLOB.human_list)
-							if(!istype(astrater.patron, /datum/patron/veneration/cephas) || !length(astrater.mind?.antag_datums))
+							if(!istype(astrater.patron, /datum/patron/veneration/lythius) || !length(astrater.mind?.antag_datums))
 								continue
 							to_chat(astrater, span_userdanger("You feel the pain of [astrater.patron.name]!"))
 							astrater.emote_scream()

@@ -29,7 +29,7 @@
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/veneration/cephas)
+		if(/datum/patron/veneration/lythius)
 			neck = /obj/item/clothing/neck/roguetown/psycross/silver/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necked/astrata
 			cloak = /obj/item/clothing/cloak/stabard/templar/astrata

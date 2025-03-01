@@ -49,8 +49,8 @@
 
 
 	if(H.mind)
-		if(H.patron != /datum/patron/veneration/cephas) // For some stupid reason this was checking for Dendor before.
-			H.set_patron(/datum/patron/veneration/cephas)
+		if(H.patron != /datum/patron/veneration/lythius) // For some stupid reason this was checking for Dendor before.
+			H.set_patron(/datum/patron/veneration/lythius)
 
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)

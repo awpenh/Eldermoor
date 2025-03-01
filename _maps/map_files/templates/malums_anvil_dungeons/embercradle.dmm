@@ -2402,7 +2402,6 @@
 /area/rogue/under/mountains/anvil/dungeon/lower)
 "GG" = (
 /obj/structure/flora/roguegrass,
-/obj/item/clothing/head/peaceflower,
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/mountains/anvil/dungeon/lower)
