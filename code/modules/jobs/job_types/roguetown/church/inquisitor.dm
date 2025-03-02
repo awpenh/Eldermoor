@@ -149,7 +149,7 @@
 	if(H == src)
 		to_chat(src, span_warning("I won't torture myself!"))
 		return
-	var/painpercent = (H.get_complex_pain() / (H.STAEND * 10)) * 100
+	var/painpercent = (H.get_complex_pain() / (H.STAEND * 10)) * 50
 	if(H.add_stress(/datum/stressevent/tortured))
 		if(!H.stat)
 			var/static/list/faith_lines = list(
@@ -159,7 +159,7 @@
 				"TO WHICH SHEPHERD DO YOU FLOCK TO?",
 			)
 			say(pick(faith_lines), spans = list("torture"))
-			if(painpercent >= 100)
+			if(painpercent >= 50)
 				H.emote("painscream")
 				H.confession_time("patron", src)
 				return
