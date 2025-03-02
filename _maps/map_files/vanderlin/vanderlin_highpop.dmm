@@ -2190,9 +2190,9 @@
 /area/rogue/outdoors/mountains)
 "bsz" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1;
-	name = "forrest garrison barracks"
+	name = "toll garrison barracks"
 	},
 /turf/open/floor/rogue/metal{
 	icon_state = "plating2"
@@ -13829,7 +13829,7 @@
 /area/rogue/indoors/soilsons)
 "jak" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison"
+	lockid = "tollgarrison"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/bog)
@@ -16476,7 +16476,7 @@
 "kOl" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
-	lockid = "forrestgarrison"
+	lockid = "tollgarrison"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/bog)
@@ -31263,9 +31263,9 @@
 /area/rogue/outdoors/river)
 "uUO" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1;
-	name = "forrest garrison"
+	name = "toll garrison"
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/bog)
@@ -33277,7 +33277,7 @@
 /area/rogue/indoors/town/manor)
 "wsC" = (
 /obj/structure/mineral_door/wood/donjon{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,

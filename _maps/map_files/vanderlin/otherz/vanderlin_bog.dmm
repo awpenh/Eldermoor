@@ -63,7 +63,7 @@
 /area/rogue/outdoors/bog)
 "cf" = (
 /obj/structure/mineral_door/wood/donjon{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -268,7 +268,7 @@
 "id" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
-	lockid = "forrestgarrison"
+	lockid = "tollgarrison"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/bog)
@@ -535,9 +535,9 @@
 /area/rogue/outdoors/bog)
 "pc" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1;
-	name = "forrest garrison"
+	name = "toll garrison"
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/bog)
@@ -912,7 +912,7 @@
 /area/rogue/indoors/shelter/bog)
 "zC" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison"
+	lockid = "tollgarrison"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/bog)
@@ -1380,9 +1380,9 @@
 /area/rogue/indoors/shelter/bog)
 "Ko" = (
 /obj/structure/mineral_door/wood/green{
-	lockid = "forrestgarrison";
+	lockid = "tollgarrison";
 	locked = 1;
-	name = "forrest garrison barracks"
+	name = "toll garrison barracks"
 	},
 /turf/open/floor/rogue/metal{
 	icon_state = "plating2"

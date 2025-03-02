@@ -68,7 +68,7 @@
 		head = /obj/item/clothing/head/roguetown/helmet/nasal
 	else
 		head = /obj/item/clothing/head/roguetown/helmet/skullcap
-	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/forrestgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
+	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/tollgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
 	H.verbs |= /mob/proc/haltyell
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
@@ -107,7 +107,7 @@
 	beltl = /obj/item/rogueweapon/knife/cleaver/combat
 	beltr = /obj/item/ammo_holder/quiver/arrows
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/long
-	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/forrestgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
+	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/tollgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
 	H.verbs |= /mob/proc/haltyell
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
@@ -143,7 +143,7 @@
 	neck = /obj/item/clothing/neck/roguetown/coif
 	beltl = /obj/item/rogueweapon/flail
 	beltr = /obj/item/rogueweapon/mace/cudgel/carpenter
-	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/forrestgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
+	backpack_contents = list(/obj/item/rogueweapon/knife/hunting = 1, /obj/item/rope/chain = 1, /obj/item/key/tollgarrison = 1, /obj/item/storage/belt/rogue/pouch/coins/poor)
 	H.verbs |= /mob/proc/haltyell
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)

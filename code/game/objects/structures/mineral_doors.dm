@@ -18,7 +18,7 @@
 			return 2
 		if("garrison")
 			return 2
-		if("forrestgarrison")
+		if("tollgarrison")
 			return 2
 		if("soilson")
 			return 4
