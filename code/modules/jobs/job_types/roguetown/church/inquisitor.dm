@@ -167,9 +167,9 @@
 
 /mob/living/carbon/human/proc/confession_time(confession_type = "antag", mob/living/carbon/human/user)
 	if(istype(src.buckled, /obj/structure/fluff/walldeco/chains)) // If the victim is on hanging chains, they cannot resist.
-		confess_sins(confession_type, resist=TRUE, user=user)
+		confess_sins(confession_type, resist=FALSE, user=user)
 		return
-	var/timerid = addtimer(CALLBACK(src, PROC_REF(confess_sins), confession_type, TRUE, user), 6 SECONDS, TIMER_STOPPABLE)
+	var/timerid = addtimer(CALLBACK(src, PROC_REF(confess_sins), confession_type, FALSE, user), 6 SECONDS, TIMER_STOPPABLE)
 	var/responsey = alert(src, "Resist torture?","TEST OF PAIN","Yes","No")
 	testing("Sent resist request to [src].")
 	testing(" User is [user]. confession_time")
