@@ -171,11 +171,11 @@
 	icon_state = "spikekey"
 	lockid = "garrison"
 
-/obj/item/key/forrestgarrison
-	name = "forrest garrison key"
-	desc = "This key belongs to the Forrest Garrison."
+/obj/item/key/tollgarrison
+	name = "toll garrison key"
+	desc = "This key belongs to the Toll Garrison."
 	icon_state = "spikekey"
-	lockid = "forrestgarrison"
+	lockid = "tollgarrison"
 
 /obj/item/key/dungeon
 	name = "dungeon key"

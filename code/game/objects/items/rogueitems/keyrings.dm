@@ -206,10 +206,10 @@
 	picks = list(/obj/item/lockpick, /obj/item/lockpick, /obj/item/lockpick)
 
 /obj/item/storage/keyring/captain
-	keys = list(/obj/item/key/captain, /obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/forrestgarrison, /obj/item/key/walls, /obj/item/key/manor, /obj/item/key/guest)
+	keys = list(/obj/item/key/captain, /obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/tollgarrison, /obj/item/key/walls, /obj/item/key/manor, /obj/item/key/guest)
 
 /obj/item/storage/keyring/consort
-	keys = list(/obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/forrestgarrison, /obj/item/key/walls, /obj/item/key/manor, /obj/item/key/consort, /obj/item/key/guest)
+	keys = list(/obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/tollgarrison, /obj/item/key/walls, /obj/item/key/manor, /obj/item/key/consort, /obj/item/key/guest)
 
 /obj/item/storage/keyring/guard
 	keys = list(/obj/item/key/dungeon, /obj/item/key/garrison)
@@ -248,7 +248,7 @@
 	keys = list(/obj/item/key/church, /obj/item/key/graveyard)
 
 /obj/item/storage/keyring/hand
-	keys = list(/obj/item/key/hand, /obj/item/key/steward, /obj/item/key/tavern, /obj/item/key/church, /obj/item/key/merchant, /obj/item/key/dungeon, /obj/item/key/walls, /obj/item/key/garrison, /obj/item/key/forrestgarrison, /obj/item/key/manor, /obj/item/key/guest)
+	keys = list(/obj/item/key/hand, /obj/item/key/steward, /obj/item/key/tavern, /obj/item/key/church, /obj/item/key/merchant, /obj/item/key/dungeon, /obj/item/key/walls, /obj/item/key/garrison, /obj/item/key/tollgarrison, /obj/item/key/manor, /obj/item/key/guest)
 
 /obj/item/storage/keyring/steward
 	keys = list(/obj/item/key/steward, /obj/item/key/vault, /obj/item/key/manor, /obj/item/key/warehouse)
