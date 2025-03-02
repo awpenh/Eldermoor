@@ -135,5 +135,19 @@
 	switch(H.skin_tone)
 		if(SKIN_COLOR_HAMMERHOLD) //Anglish, just a placeholder for now for demonstration.
 			return strings("Anglish.json", "Anglish")
+
+	switch(H.skin_tone)
+		if(SKIN_COLOR_ZYBANTINE)
+			H.grant_language(/datum/language/zybantine)
+			to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")
+
+	switch(H.skin_tone)
+		if(SKIN_COLOR_GYZAN)
+			H.grant_language(/datum/language/zybantine)
+			to_chat(H, "<span class='info'>I can speak Zybean with ,z before my speech.</span>")
+
+	switch(H.skin_tone)
 		if(SKIN_COLOR_GRENZELHOFT)
+			H.grant_language(/datum/language/oldpsydonic)
+			to_chat(H, "<span class='info'>I can speak Old Psydonic with ,m before my speech.</span>")
 			return strings("german_replacement.json", "german")

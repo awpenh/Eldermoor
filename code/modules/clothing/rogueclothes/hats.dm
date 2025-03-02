@@ -1423,8 +1423,13 @@
 
 //............... Feldshers Cage ............... //
 /obj/item/clothing/head/roguetown/helmet/feld
+	clothing_flags = NONE //they're used to this being stuck on their face
+
+/obj/item/clothing/head/roguetown/helmet/feld/Initialize()
+	. = ..()
 	name = "feldsher's cage"
 	desc = "To protect me from the maggets and creachers I treat."
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	icon_state = "headcage"
 	worn_x_dimension = 64
@@ -1435,7 +1440,11 @@
 	body_parts_covered = FULL_HEAD
 	prevent_crits = BLUNT_AND_MINOR_CRITS
 
-
+/obj/item/clothing/head/roguetown/helmet/feld/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(QDELETED(src))
+		return
+	qdel(src)
 
 //......................................................................................................
 /*----------------------\

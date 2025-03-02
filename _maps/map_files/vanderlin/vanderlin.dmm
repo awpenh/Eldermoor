@@ -1003,7 +1003,7 @@
 	},
 /obj/structure/fluff/railing/wood,
 /obj/structure/fluff/signage{
-	name = "Church of the Ten - East"
+	name = "Church of the Saints - East"
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
@@ -5575,8 +5575,6 @@
 "dIp" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
-/obj/item/clothing/suit/roguetown/shirt/robe/dendor,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
 "dIq" = (
@@ -9361,6 +9359,10 @@
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
+/obj/item/clothing/head/roguetown/roguehood/lythios,
+/obj/item/clothing/head/roguetown/roguehood/lythios,
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios,
+/obj/item/clothing/suit/roguetown/shirt/robe/lythios,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
 "gfc" = (
@@ -9825,7 +9827,6 @@
 /area/rogue/outdoors/town)
 "gxM" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/clothing/neck/roguetown/psycross/silver/dendor,
 /obj/item/clothing/head/roguetown/padded/briarthorns,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/mountains)
@@ -14750,6 +14751,19 @@
 	pixel_y = 2
 	},
 /obj/item/clothing/neck/roguetown/psycross/silver/mathuin,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
+/obj/item/clothing/neck/roguetown/psycross/silver/lythios,
+/obj/item/clothing/neck/roguetown/psycross,
+/obj/item/clothing/neck/roguetown/psycross,
+/obj/item/clothing/neck/roguetown/psycross/silver/mikros,
+/obj/item/clothing/neck/roguetown/psycross/silver/mikros,
+/obj/item/clothing/neck/roguetown/psycross/silver/nazar,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma,
+/obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
+/obj/item/clothing/neck/roguetown/psycross/silver/yaakov,
+/obj/item/clothing/neck/roguetown/psycross/silver/julius,
+/obj/item/clothing/neck/roguetown/psycross/silver/cana,
+/obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church)
 "jMD" = (
@@ -15017,7 +15031,6 @@
 	icon_state = "pipe"
 	},
 /obj/structure/bookcase,
-/obj/item/book/rogue/abyssor,
 /obj/item/book/rogue/bookofpriests,
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/carpet/purple,
@@ -33088,7 +33101,6 @@
 /obj/structure/rack/rogue,
 /obj/item/clothing/neck/roguetown/psycross/silver/nazar,
 /obj/item/clothing/neck/roguetown/psycross/silver/toma_steel,
-/obj/item/clothing/neck/roguetown/psycross/silver/pestra,
 /obj/item/clothing/neck/roguetown/psycross/silver/julius,
 /obj/item/clothing/neck/roguetown/psycross/eosten,
 /turf/open/floor/rogue/churchmarble,

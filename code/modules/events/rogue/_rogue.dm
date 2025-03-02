@@ -35,7 +35,7 @@ GLOBAL_LIST_INIT(badomens, list())
 		if(OMEN_ROUNDSTART)
 			used = "Zizo's apocalypse brings death to the land once more."
 		if(OMEN_NOPRIEST)
-			used = "The Priest has perished! The Ten are weakened..."
+			used = "The Priest has perished! The Saints are weakened..."
 		if(OMEN_SKELETONSIEGE)
 			used = "Unwelcome visitors invade our lands!"
 		if(OMEN_NOLORD)

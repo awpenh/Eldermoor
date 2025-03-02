@@ -15,7 +15,7 @@
 	)
 	allowed_sexes = list(MALE)
 
-	tutorial = "A rather demented job but one that must be done; The Inquisitor is typically a religious zealot or someone who finds striking pain into others fun. While typically they are Psydonians (Old Believers) It is not uncommon to see some that praise the Ten. Primarily hired to do the Church's dirty work and to keep heretics from amongst the men."
+	tutorial = "A rather demented job but one that must be done; The Inquisitor is typically a religious zealot or someone who finds striking pain into others fun. While typically they are Psydonians who would rather pray to him directly than use the Saints as messengers, It is not uncommon to see some that praise the Saints. Primarily hired to do the Church's dirty work and to keep heretics from amongst the men."
 	whitelist_req = FALSE
 
 	outfit = /datum/outfit/job/roguetown/inquisitor
@@ -153,7 +153,7 @@
 	if(H.add_stress(/datum/stressevent/tortured))
 		if(!H.stat)
 			var/static/list/faith_lines = list(
-				"DO YOU DENY PSYDON AND THE TEN?",
+				"DO YOU DENY PSYDON AND HIS SAINTS?",
 				"WHO IS YOUR GOD?",
 				"ARE YOU FAITHFUL?",
 				"TO WHICH SHEPHERD DO YOU FLOCK TO?",

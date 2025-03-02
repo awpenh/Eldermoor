@@ -136,14 +136,14 @@
 	set category = "Priest"
 	if(stat)
 		return
-	var/inputty = input("Excommunicate someone, cutting off their connection to the Ten. (excommunicate them again to remove it)", "Sinner Name") as text|null
+	var/inputty = input("Excommunicate someone, cutting off their connection to the Saints and Psydon. (excommunicate them again to remove it)", "Sinner Name") as text|null
 	if(inputty)
 		if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
 			to_chat(src, span_warning("I need to do this from the chapel."))
 			return FALSE
 		if(inputty in GLOB.excommunicated_players)
 			GLOB.excommunicated_players -= inputty
-			priority_announce("[real_name] has forgiven [inputty]. The Ten hear their prayers once more!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has forgiven [inputty]. The Saints hear their prayers once more!", title = "Hail the Saints!", sound = 'sound/misc/bell.ogg')
 			for(var/mob/living/carbon/human/H in GLOB.player_list)
 				if(H.real_name == inputty)
 					H.cleric?.recommunicate()
@@ -157,7 +157,7 @@
 			return FALSE
 
 		GLOB.excommunicated_players += inputty
-		priority_announce("[real_name] has excommunicated [inputty]! The Ten have turned away from them!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
+		priority_announce("[real_name] has excommunicated [inputty]! The Saints have turned away from them!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
 
 /mob/living/carbon/human/proc/churchcurse()
 	set name = "Curse"
@@ -171,7 +171,7 @@
 			return FALSE
 		if(inputty in GLOB.heretical_players)
 			GLOB.heretical_players -= inputty
-			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Saints!", sound = 'sound/misc/bell.ogg')
 			for(var/mob/living/carbon/H in GLOB.player_list)
 				if(H.real_name == inputty)
 					H.remove_stress(/datum/stressevent/psycurse)
@@ -204,8 +204,8 @@
 	new_role = "Templar"
 	overlay_state = "recruit_templar"
 	recruitment_faction = "Church"
-	recruitment_message = "Serve the Ten, %RECRUIT!"
-	accept_message = "FOR THE TEN!"
+	recruitment_message = "Serve the Saints and Psydon, %RECRUIT!"
+	accept_message = "FOR THE SAINTS AND PSYDON!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/templar/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)
@@ -221,8 +221,8 @@
 	new_role = "Acolyte"
 	overlay_state = "recruit_acolyte"
 	recruitment_faction = "Church"
-	recruitment_message = "Serve the Ten, %RECRUIT!"
-	accept_message = "FOR THE TEN!"
+	recruitment_message = "Serve the Saints and Psydon, %RECRUIT!"
+	accept_message = "FOR THE SAINTS OF PSYDON!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/monk/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)
@@ -238,8 +238,8 @@
 	new_role = "Churchling"
 	overlay_state = "recruit_acolyte"
 	recruitment_faction = "Church"
-	recruitment_message = "Serve the Ten, %RECRUIT!"
-	accept_message = "FOR THE TEN!"
+	recruitment_message = "Serve the Saints, %RECRUIT!"
+	accept_message = "FOR THE SAINTS OF PSYDON!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/churchling/can_convert(mob/living/carbon/human/recruit)

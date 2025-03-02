@@ -126,9 +126,9 @@
 /datum/patron/veneration/julias
 	name = "Julias"
 	domain = "Saint of Secrecy, Wandering and Underhandedness"
-	desc = "Julias is a misanthrophic recluse of a saint, obfuscated from many records. Those who claim his as Patron often do so in private, and promote the rejection of hierarchy and laws as a part of The One and All."
+	desc = "Once a mere slave beneath the cruel dominion of the dark elves, Julias rose as the leader of a great rebellion, guiding the oppressed to rise against their masters. Yet, his triumph was brief—captured, flayed, and left to die as an example, his body was broken, but his spirit endured. In death, Psydon raised him to sainthood, not as a ruler, but as a whisper in the dark, a patron of those who reject the chains of tyranny. Those who follow him do so in secret, forsaking law and order to forge their own path, free from the yoke of kings and gods alike."
 	flaws = "Paranoia, Distrust, Alienation"
-	worshippers = "Hands, Rogues and Beggars"
+	worshippers = "Hands, Rebels, Rogues and Beggars"
 	sins = "Submission, Conformity, Betrayal of Self"
 	boons = "You can rig different forms of gambling in your favor, authority and rules are loose."
 	added_traits = list(TRAIT_BLACKLEG)
