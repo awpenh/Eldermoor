@@ -28,10 +28,10 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
 	confess_lines = list(
-	"LYTHIOS GUIDES CIVILIZATION!",
-	"LIGHT AND TRUTH SHALL PREVAIL!",
-	"I BUILD A BRIGHTER FUTURE!"
-)
+		"LYTHIOS GUIDES CIVILIZATION!",
+		"LIGHT AND TRUTH SHALL PREVAIL!",
+		"I BUILD A BRIGHTER FUTURE!",
+	)
 
 /datum/patron/veneration/eosten
 	name = "Eosten"
@@ -47,10 +47,10 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/blindness
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/moondagger
 	confess_lines = list(
-	"EOSTEN HOLDS THE SECRETS!",
-	"KNOWLEDGE MUST NEVER BE LOST!",
-	"I SEEK THE TRUTH, NO MATTER THE COST!"
-)
+		"EOSTEN HOLDS THE SECRETS!",
+		"KNOWLEDGE MUST NEVER BE LOST!",
+		"I SEEK THE TRUTH, NO MATTER THE COST!",
+	)
 
 /datum/patron/veneration/patras
 	name = "Patras"
@@ -63,10 +63,10 @@
 	added_traits = list(TRAIT_BETTER_SLEEP)
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	confess_lines = list(
-	"PATRAS BRINGS ORDER!",
-	"DUTY AND LAW ABOVE ALL!",
-	"I STAND FOR JUSTICE AND UNITY!"
-)
+		"PATRAS BRINGS ORDER!",
+		"DUTY AND LAW ABOVE ALL!",
+		"I STAND FOR JUSTICE AND UNITY!",
+	)
 
 /datum/patron/veneration/nazar
 	name = "Nazar"
@@ -79,10 +79,10 @@
 	added_traits = list(TRAIT_EXTEROCEPTION)
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	confess_lines = list(
-	"NAZAR TEACHES HONOR!",
-	"CHARITY AND LOYALTY ARE MY CREED!",
-	"I WALK THE PATH OF COURTLINESS!"
-)
+		"NAZAR TEACHES HONOR!",
+		"CHARITY AND LOYALTY ARE MY CREED!",
+		"I WALK THE PATH OF COURTLINESS!",
+	)
 
 /datum/patron/veneration/mikros
 	name = "Mikros"
@@ -99,10 +99,10 @@
 	t3 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot
 	confess_lines = list(
-	"MIKROS HEALS THE WEAK!",
-	"COMPASSION IS MY CALLING!",
-	"MEDICINE AND MERCY SHALL NEVER FAIL!"
-)
+		"MIKROS HEALS THE WEAK!",
+		"COMPASSION IS MY CALLING!",
+		"MEDICINE AND MERCY SHALL NEVER FAIL!",
+	)
 
 /datum/patron/veneration/yaakov
 	name = "Yaakov"
@@ -118,10 +118,10 @@
 	t2 = /obj/effect/proc_holder/spell/self/beastsense
 	t3 = /obj/effect/proc_holder/spell/targeted/beasttame
 	confess_lines = list(
-	"YA’AKOV NOURISHES THE LAND!",
-	"NATURE IS OUR SACRED CHARGE!",
-	"I TREAD IN HARMONY WITH CREATION!"
-)
+		"YAAKOV NOURISHES THE LAND!",
+		"NATURE IS OUR SACRED CHARGE!",
+		"I TREAD IN HARMONY WITH CREATION!",
+	)
 
 /datum/patron/veneration/julias
 	name = "Julias"
@@ -135,10 +135,10 @@
 	t1 = /obj/effect/proc_holder/spell/invoked/blindness
 	t2 = /obj/effect/proc_holder/spell/invoked/invisibility
 	confess_lines = list(
-	"JULIAS WALKS IN SHADOW!",
-	"SECRECY IS FREEDOM!",
-	"I OWE NOTHING TO KINGS AND LAWS!"
-)
+		"JULIAS WALKS IN SHADOW!",
+		"SECRECY IS FREEDOM!",
+		"I OWE NOTHING TO KINGS AND LAWS!",
+	)
 
 /datum/patron/veneration/cana
 	name = "Cana"
@@ -154,10 +154,10 @@
 	t2 = /obj/effect/proc_holder/spell/self/summon_trident
 	t3 = /obj/effect/proc_holder/spell/invoked/ocean_embrace
 	confess_lines = list(
-	"CANA SUFFERS FOR US!",
-	"THE SEA CLAIMS ALL IN THE END!",
-	"I EMBRACE THE TIDE OF PAIN!"
-)
+		"CANA SUFFERS FOR US!",
+		"THE SEA CLAIMS ALL IN THE END!",
+		"I EMBRACE THE TIDE OF PAIN!",
+	)
 
 
 /datum/patron/veneration/mathuin
@@ -174,10 +174,10 @@
 	t2 = /obj/effect/proc_holder/spell/self/divine_strike
 	t3 = /obj/effect/proc_holder/spell/invoked/persistence
 	confess_lines = list(
-	"MATHUIN HONORS STRENGTH!",
-	"MY BODY IS A TEMPLE OF PERFECTION!",
-	"I STRIVE FOR GLORY IN ALL THINGS!"
-)
+		"MATHUIN HONORS STRENGTH!",
+		"MY BODY IS A TEMPLE OF PERFECTION!",
+		"I STRIVE FOR GLORY IN ALL THINGS!",
+	)
 
 /datum/patron/veneration/toma
 	name = "Toma"
@@ -193,10 +193,10 @@
 	t2 = /obj/effect/proc_holder/spell/invoked/hammerfall
 	t3 = /obj/effect/proc_holder/spell/invoked/heatmetal
 	confess_lines = list(
-	"TOMA FORGES GREATNESS!",
-	"LABOR IS ITS OWN REWARD!",
-	"MY WORK STANDS ETERNAL!"
-)
+		"TOMA FORGES GREATNESS!",
+		"LABOR IS ITS OWN REWARD!",
+		"MY WORK STANDS ETERNAL!",
+	)
 
 /datum/patron/veneration/labbeus
 	name = "Labbeus"
@@ -210,7 +210,7 @@
 	t2 = /obj/effect/proc_holder/spell/targeted/soulspeak
 	t3 = /obj/effect/proc_holder/spell/targeted/churn
 	confess_lines = list(
-	"LABBEUS DEALS IN LIFE AND DEATH!",
-	"ALL THINGS HAVE A PRICE!",
-	"I HONOR THE SACRED TRANSACTION!"
-)
+		"LABBEUS DEALS IN LIFE AND DEATH!",
+		"ALL THINGS HAVE A PRICE!",
+		"I HONOR THE SACRED TRANSACTION!",
+	)

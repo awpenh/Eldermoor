@@ -149,7 +149,7 @@
 	if(H == src)
 		to_chat(src, span_warning("I won't torture myself!"))
 		return
-	var/painpercent = (H.get_complex_pain() / (H.STAEND * 10)) * 50
+	var/painpercent = (H.get_complex_pain() / (H.STAEND * 10)) * 100
 	if(H.add_stress(/datum/stressevent/tortured))
 		if(!H.stat)
 			var/static/list/faith_lines = list(
@@ -159,7 +159,7 @@
 				"TO WHICH SHEPHERD DO YOU FLOCK TO?",
 			)
 			say(pick(faith_lines), spans = list("torture"))
-			if(painpercent >= 50)
+			if(painpercent >= 100)
 				H.emote("painscream")
 				H.confession_time("patron", src)
 				return
@@ -167,9 +167,9 @@
 
 /mob/living/carbon/human/proc/confession_time(confession_type = "antag", mob/living/carbon/human/user)
 	if(istype(src.buckled, /obj/structure/fluff/walldeco/chains)) // If the victim is on hanging chains, they cannot resist.
-		confess_sins(confession_type, resist=FALSE, user=user)
+		confess_sins(confession_type, resist=TRUE, user=user)
 		return
-	var/timerid = addtimer(CALLBACK(src, PROC_REF(confess_sins), confession_type, FALSE, user), 6 SECONDS, TIMER_STOPPABLE)
+	var/timerid = addtimer(CALLBACK(src, PROC_REF(confess_sins), confession_type, TRUE, user), 6 SECONDS, TIMER_STOPPABLE)
 	var/responsey = alert(src, "Resist torture?","TEST OF PAIN","Yes","No")
 	testing("Sent resist request to [src].")
 	testing(" User is [user]. confession_time")
