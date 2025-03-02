@@ -356,7 +356,7 @@
 
 /obj/item/melee/touch_attack/orison/lesser
 	name = "\improper lesser prayer"
-	desc = "The fundamental teachings of theology are still foreign to you, but your mind is malleable to the influence of the Ten:\n \
+	desc = "The fundamental teachings of theology are still foreign to you, but your mind is malleable to the influence of the Saints:\n \
 		<b>Fill</b>: Beseech your Divine to create a small quantity of water in a container that you touch for some devotion."
 	possible_item_intents = list(/datum/intent/fill)
 

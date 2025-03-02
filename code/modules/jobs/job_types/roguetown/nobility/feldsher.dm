@@ -33,8 +33,8 @@
 	pants = /obj/item/clothing/under/roguetown/tights/random
 	gloves = /obj/item/clothing/gloves/roguetown/leather/feld
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/feld
-	head = /obj/item/clothing/head/roguetown/roguehood/feld
-	mask = /obj/item/clothing/mask/rogue/feld
+	head = /obj/item/clothing/head/roguetown/helmet/feld
+	mask = /obj/item/clothing/mask/rogue/facemask
 	neck = /obj/item/clothing/neck/roguetown/feld
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/doctor

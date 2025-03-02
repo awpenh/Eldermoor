@@ -219,7 +219,7 @@
 /datum/devotion/cleric_holder/proc/excommunicate()
 	prayer_effectiveness = 0
 	devotion = -1
-	to_chat(holder_mob, span_userdanger("I have been excommunicated! The Ten no longer listen to my prayers nor my requests."))
+	to_chat(holder_mob, span_userdanger("I have been excommunicated! The Saints no longer listen to my prayers nor my requests."))
 	STOP_PROCESSING(SSprocessing, src)
 
 /datum/devotion/cleric_holder/proc/recommunicate()

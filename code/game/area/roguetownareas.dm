@@ -394,7 +394,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
-	first_time_text = "THE KEEP OF VANDERLIN"
+	first_time_text = "MANOR ELDERMOOR"
 
 /area/rogue/indoors/town/manorgate
 	name = "Manor Gate"

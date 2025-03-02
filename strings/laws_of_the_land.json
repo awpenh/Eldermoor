@@ -1,13 +1,13 @@
 {
 	"lawsets": {
 		"ten_commandments": {
-			"name": "The Ten Commandments",
+			"name": "The Saints Commandments",
 			"laws": [
-				"Thou shalt have no other Gods before the Ten.",
+				"Thou shalt have no other Patrons before the Saints or Psydon.",
 				"Thou shalt not make unto thee any graven image, or any likeness of any thing that is in skies above, or that is in the ground beneath, or that is in the water under the soil.",
-				"Thou shalt not take the name of thy Gods in vain; for the Gods will not hold him guiltless that taketh their name in vain.",
-				"Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the seventh day is the sabbath of thy Gods: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates.",
-				"Honour thy father and thy mother: that thy days may be long upon the land which thy Gods giveth thee.",
+				"Thou shalt not take the name of the Saints and Psydon in vain; for the Saints and Psydon will not hold him guiltless that taketh their name in vain.",
+				"Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the seventh day is the sabbath of Psydon: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates.",
+				"Honour thy father and thy mother: that thy days may be long upon the land which Psydon giveth thee.",
 				"Thou shalt not kill.",
 				"Thou shalt not commit adultery.",
 				"Thou shalt not steal.",

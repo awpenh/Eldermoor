@@ -921,7 +921,7 @@
 
 /obj/structure/fluff/psycross
 	name = "pantheon cross"
-	desc = "A towering monument to the Ten. Marriages are performed under its shadow."
+	desc = "A towering monument to the Saints. Marriages are performed under its shadow."
 	icon_state = "psycross"
 	icon = 'icons/roguetown/misc/tallstructure.dmi'
 	break_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'

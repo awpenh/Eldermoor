@@ -8,7 +8,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 	antag_hud_type = ANTAG_HUD_TRAITOR
 	antag_hud_name = "cultist"
 	confess_lines = list(
-		"DEATH TO THE TEN!",
+		"DEATH TO the Saints!",
 		"PRAISE ZIZO!",
 		"I AM THE FUTURE!",
 		"NO GODS! ONLY MASTERS!",

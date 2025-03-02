@@ -5,8 +5,8 @@
 	profane_words = list()
 	confess_lines = list(
 		"PSYDON AND HIS CHILDREN ARE THE DEMIURGE!",
-		"THE TEN ARE WORTHLESS COWARDS!",
-		"THE TEN ARE DECEIVERS!"
+		"THE SAINTS ARE WORTHLESS COWARDS!",
+		"THE SAINTS ARE DECEIVERS!"
 	)
 
 /datum/patron/inhumen/can_pray(mob/living/follower)

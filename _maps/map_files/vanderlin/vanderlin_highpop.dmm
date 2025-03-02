@@ -1015,7 +1015,7 @@
 	},
 /obj/structure/fluff/railing/wood,
 /obj/structure/fluff/signage{
-	name = "Church of the Ten - East"
+	name = "Church of the Saints - East"
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
