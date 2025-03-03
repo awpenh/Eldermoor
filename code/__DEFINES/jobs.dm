@@ -161,6 +161,7 @@
 #define SQUIRE		(1<<1)
 #define SERVANT		(1<<2)
 #define PRINCE		(1<<3)
+#define NOVICE		(1<<4)
 
 #define YOUNGFOLK           (1<<6)
 #define INNKEEPCHILD    (1<<1)
@@ -189,7 +190,7 @@
 #define JDO_MINOR_NOBLE 3.5
 
 #define JDO_MAGICIAN 4
-#define JDO_WAPP 5
+#define JDO_NOVICE 5
 
 #define JDO_FELDSHER 6
 #define JDO_PHYSICIAN 6.1
@@ -248,15 +249,16 @@
 #define JDO_JESTER 30
 #define JDO_BARD 30.1
 #define JDO_PRISONER 31
+#define JDO_DRUNK 32
 
-#define JDO_CHIEF 32
+#define JDO_CHIEF 33
 
-#define JDO_ADVENTURER 33
-#define JDO_PILGRIM 34.2
-#define JDO_MIGRANT  34.3
-#define JDO_BANDIT 34.3
+#define JDO_ADVENTURER 34
+#define JDO_PILGRIM 35.2
+#define JDO_MIGRANT  35.3
+#define JDO_BANDIT 35.3
 
-#define JDO_MERCENARY 35
+#define JDO_MERCENARY 36
 
-#define JDO_VAGRANT 36
-#define JDO_ORPHAN 37
+#define JDO_VAGRANT 37
+#define JDO_ORPHAN 38
