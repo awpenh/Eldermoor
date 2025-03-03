@@ -5254,7 +5254,7 @@
 /area/rogue)
 "aqu" = (
 /obj/structure/bed/rogue/shit,
-/obj/effect/landmark/start/wapprentice,
+/obj/effect/landmark/start/novice,
 /turf/open/floor/rogue/wood,
 /area/rogue)
 "aqv" = (

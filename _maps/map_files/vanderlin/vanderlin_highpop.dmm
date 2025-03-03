@@ -3515,7 +3515,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/town/roofs)
 "cjr" = (
-/obj/effect/landmark/start/wapprentice,
+/obj/effect/landmark/start/novice,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/magician)
 "cjt" = (

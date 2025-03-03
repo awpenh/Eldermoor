@@ -5684,7 +5684,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/town/basement)
 "fYv" = (
-/obj/effect/landmark/start/wapprentice{
+/obj/effect/landmark/start/novice{
 	dir = 8
 	},
 /turf/open/floor/rogue/hexstone,
