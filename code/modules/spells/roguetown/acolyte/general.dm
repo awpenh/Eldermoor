@@ -78,7 +78,7 @@
 					situational_bonus = min(situational_bonus + 1, 25)
 				conditional_buff = TRUE
 			if(/datum/patron/veneration/labbeus)
-				target.visible_message(span_info("A sense of quiet respite radiates from [target]!"), span_notice("I feel the Undermaiden's gaze turn from me for now!"))
+				target.visible_message(span_info("A sense of quiet respite radiates from [target]!"), span_notice("I feel the Reaper's gaze turn from me for now!"))
 				if (iscarbon(target))
 					var/mob/living/carbon/C = target
 					// if the target is "close to death" (at or below 25% health)

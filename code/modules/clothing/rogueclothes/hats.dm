@@ -1025,7 +1025,7 @@
 //............... Necra Helmet ............... //
 /obj/item/clothing/head/roguetown/helmet/heavy/necked/labbeus
 	name = "labbeus helmet"
-	desc = "A reinforced helmet shaped into the visage of a skull with a maille neck cover under the cloth. A symbol of authority for the battle servants of the Undermaiden."
+	desc = "A reinforced helmet shaped into the visage of a skull with a maille neck cover under the cloth. A symbol of authority for the battle servants of the Reaper."
 	icon_state = "necrahelm"
 
 //............... Dendor Helmet ............... //	This one seems a bit out of place
