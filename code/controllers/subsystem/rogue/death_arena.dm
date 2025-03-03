@@ -202,7 +202,7 @@ SUBSYSTEM_DEF(death_arena)
 
 /obj/structure/underworld/labbeus
 	name = "Labbeus"
-	desc = "The Undermaiden himself, in his true form. The most strange of living saints. He observes your battles gleefully, gratitude in his eyes to be relieved from the arduousness of eternity. His close friend and confidant, Mathuin, sits by her side. The two must have worked hard to restructure the underworld like this. They seem pleased with their work."
+	desc = "The Reaper himself, in his true form. The most strange of living saints. He observes your battles gleefully, gratitude in his eyes to be relieved from the arduousness of eternity. His close friend and confidant, Mathuin, sits by his side. The two must have worked hard to restructure the underworld like this. They seem pleased with their work."
 	icon = 'icons/roguetown/underworld/necra.dmi'
 	icon_state = "necra"
 	layer = ABOVE_MOB_LAYER
