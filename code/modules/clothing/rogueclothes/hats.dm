@@ -573,6 +573,11 @@
 	desc = "Just remember that the last laugh is on you."
 	icon_state = "jester"
 
+/obj/item/clothing/head/roguetown/jester/alt
+	name = "jester's hat"
+	desc = "Just remember that the last laugh is on you."
+	icon_state = "jester_alt"
+
 /obj/item/clothing/head/roguetown/cookhat/chef // only unique thing is the name
 	name = "chef's hat"
 

@@ -258,6 +258,13 @@
 	resistance_flags = null
 	sellprice = 10
 
+/obj/item/clothing/shoes/roguetown/jester/alt
+	name = "funny shoes"
+	desc = "Shoes typically worn by a Jester."
+	icon_state = "jestershoes_alt"
+	resistance_flags = null
+	sellprice = 10
+
 /obj/item/clothing/shoes/roguetown/grenzelhoft
 	name = "grenzelhoft boots"
 	icon_state = "grenzelboots"

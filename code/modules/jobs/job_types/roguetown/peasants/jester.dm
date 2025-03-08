@@ -31,14 +31,19 @@
 
 /datum/outfit/job/roguetown/jester/pre_equip(mob/living/carbon/human/H)
 	..()
-	shoes = /obj/item/clothing/shoes/roguetown/jester
 	pants = /obj/item/clothing/under/roguetown/tights
-	armor = /obj/item/clothing/suit/roguetown/shirt/jester
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/jester
 	beltl = /obj/item/storage/belt/rogue/pouch
-	head = /obj/item/clothing/head/roguetown/jester
 	neck = /obj/item/clothing/neck/roguetown/coif
+	if(prob(50))
+		armor = /obj/item/clothing/suit/roguetown/shirt/jester/alt
+		head = /obj/item/clothing/head/roguetown/jester/alt
+		shoes = /obj/item/clothing/shoes/roguetown/jester/alt
+	else
+		armor = /obj/item/clothing/suit/roguetown/shirt/jester
+		head = /obj/item/clothing/head/roguetown/jester
+		shoes = /obj/item/clothing/shoes/roguetown/jester
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, pick(1,2,3,4,5), TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, pick(1,2,3,4,5,6), TRUE)
@@ -144,3 +149,4 @@
 
 	var/japery = pick(japery_list)
 	return japery
+

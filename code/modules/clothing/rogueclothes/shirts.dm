@@ -492,6 +492,19 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
+/obj/item/clothing/suit/roguetown/shirt/jester/alt
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	name = "jester's tunick"
+	desc = "Just remember that the last laugh is on you."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "jestershirt_alt"
+	icon = 'icons/roguetown/clothing/shirts.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/shirts.dmi'
+	boobed = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+
 /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "grenzelhoftian hip-shirt"
