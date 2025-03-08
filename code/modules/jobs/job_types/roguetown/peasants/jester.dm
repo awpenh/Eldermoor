@@ -37,13 +37,13 @@
 	beltl = /obj/item/storage/belt/rogue/pouch
 	neck = /obj/item/clothing/neck/roguetown/coif
 	if(prob(50))
-		armor = /obj/item/clothing/suit/roguetown/shirt/jester/alt
-		head = /obj/item/clothing/head/roguetown/jester/alt
-		shoes = /obj/item/clothing/shoes/roguetown/jester/alt
-	else
 		armor = /obj/item/clothing/suit/roguetown/shirt/jester
 		head = /obj/item/clothing/head/roguetown/jester
 		shoes = /obj/item/clothing/shoes/roguetown/jester
+	else
+		armor = /obj/item/clothing/suit/roguetown/shirt/jester/alt
+		head = /obj/item/clothing/head/roguetown/jester/alt
+		shoes = /obj/item/clothing/shoes/roguetown/jester/alt
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, pick(1,2,3,4,5), TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, pick(1,2,3,4,5,6), TRUE)
