@@ -16,7 +16,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 	confess_lines = list(
 		"I AM ANCIENT",
 		"I AM THE LAND",
-		"FIRSTBORNE CHILD OF KAIN!",
+		"FIRSTBORNE CHILD OF MORYN!",
 	)
 	var/isspawn = FALSE
 	var/disguised = FALSE
@@ -39,10 +39,14 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		return span_boldnotice("A vampire spawn.")
 	if(istype(examined_datum, /datum/antagonist/vampirelord))
 		return span_boldnotice("A Vampire Lord!.")
+	if(istype(examined_datum, /datum/antagonist/vampire/lesser))
+		return span_boldnotice("A foreign vampire.")
+	if(istype(examined_datum, /datum/antagonist/vampire))
+		return span_boldnotice("A foreign vampire.")
 	if(istype(examined_datum, /datum/antagonist/zombie))
-		return span_boldnotice("Another deadite.")
+		return span_boldnotice("A lesser deadite.")
 	if(istype(examined_datum, /datum/antagonist/skeleton))
-		return span_boldnotice("Another deadite.")
+		return span_boldnotice("A lesser deadite.")
 
 /datum/antagonist/vampirelord/apply_innate_effects(mob/living/mob_override)
 	var/mob/living/M = mob_override || owner.current

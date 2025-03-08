@@ -7178,6 +7178,10 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Rowena"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "eIO" = (
@@ -8047,6 +8051,13 @@
 "fkZ" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/town/caverogue)
+"flo" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Beatrix"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/town/basement)
 "flF" = (
 /obj/effect/landmark/start/shepherd{
 	dir = 1
@@ -17557,7 +17568,10 @@
 /area/rogue/outdoors/rtfield)
 "lIB" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/mob/living/simple_animal/hostile/retaliate/rogue/troll,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Gurdin"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "lIF" = (
@@ -18724,8 +18738,19 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/indoors/town/smithy)
 "mDc" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/troll,
-/turf/open/floor/rogue/blocks,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Oparlip"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"mDj" = (
+/obj/machinery/light/rogue/torchholder/c,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Vurrgil"
+	},
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
 "mDG" = (
 /obj/machinery/light/rogue/torchholder{
@@ -29696,6 +29721,10 @@
 "tWt" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/blood/gibs/old,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Aruzhan"
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
 "tWK" = (
@@ -33828,7 +33857,10 @@
 /area/rogue/indoors/soilsons)
 "wFU" = (
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/retaliate/rogue/troll,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Margil"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "wFW" = (
@@ -34285,6 +34317,14 @@
 "wVd" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/cobble/alt,
+/area/rogue/under/town/basement)
+"wVu" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf{
+	del_on_deaggro = 0;
+	name = "Lupin"
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "wVS" = (
 /obj/structure/closet/crate/chest,
@@ -34991,7 +35031,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/mob/living/simple_animal/hostile/retaliate/rogue/troll,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "xwQ" = (
@@ -69689,7 +69728,7 @@ xaU
 krR
 xaU
 mcU
-chr
+mDj
 kJJ
 rjY
 bge
@@ -70293,11 +70332,11 @@ xaU
 krR
 xaU
 mcU
-mDc
 bET
+flo
 iRT
 wkJ
-kJJ
+wVu
 iRT
 hJh
 iRT
@@ -70598,11 +70637,11 @@ mcU
 bET
 kxs
 bET
+bET
+iRT
+iRT
 mDc
-iRT
-iRT
-iRT
-mDc
+bET
 bUM
 iRT
 iRT
