@@ -19,7 +19,7 @@
 	outfit = /datum/outfit/job/roguetown/butler
 	display_order = JDO_BUTLER
 	bypass_lastclass = TRUE
-	min_pq = 2
+	min_pq = 0
 	give_bank_account = 30 // Along with the pouch, enough to purchase some ingredients from the farm and give hard working servants a silver here and there. Still need the assistance of the crown's coffers to do anything significant
 	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
 

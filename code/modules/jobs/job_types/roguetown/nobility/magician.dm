@@ -22,7 +22,7 @@
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	give_bank_account = 120
-	min_pq = 6
+	min_pq = 0
 	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
 
 /datum/outfit/job/roguetown/magician/pre_equip(mob/living/carbon/human/H)

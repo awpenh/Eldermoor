@@ -23,7 +23,7 @@
 	outfit = /datum/outfit/job/roguetown/apothecary
 	display_order = JDO_APOTHECARY
 	give_bank_account = 100
-	min_pq = 1
+	min_pq = 0
 	bypass_lastclass = TRUE
 	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
 

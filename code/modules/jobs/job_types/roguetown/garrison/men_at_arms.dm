@@ -23,7 +23,7 @@
 	bypass_lastclass = TRUE
 	cmode_music = 'sound/music/cmode/garrison/CombatManAtArms.ogg'
 	give_bank_account = 15
-	min_pq = 6
+	min_pq = 0
 
 /datum/outfit/job/roguetown/watchman/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
