@@ -26,7 +26,7 @@
 	bypass_lastclass = TRUE
 	selection_color = "#0d6929"
 	give_bank_account = 30
-	min_pq = 5
+	min_pq = 0
 	cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 
 	outfit = /datum/outfit/job/roguetown/tollguard

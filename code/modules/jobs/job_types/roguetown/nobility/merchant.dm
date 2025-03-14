@@ -19,7 +19,7 @@
 	outfit = /datum/outfit/job/roguetown/merchant
 	bypass_lastclass = TRUE
 	give_bank_account = 100
-	min_pq = 1
+	min_pq = 0
 	selection_color = "#192bc2"
 
 /datum/outfit/job/roguetown/merchant/pre_equip(mob/living/carbon/human/H)

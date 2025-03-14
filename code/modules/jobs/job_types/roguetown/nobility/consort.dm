@@ -18,7 +18,7 @@
 
 	display_order = JDO_CONSORT
 	bypass_lastclass = TRUE
-	min_pq = 6
+	min_pq = 0
 	give_bank_account = 500
 
 	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'

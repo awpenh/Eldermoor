@@ -22,7 +22,7 @@
 	display_order = JDO_MATRON
 	outfit = /datum/outfit/job/roguetown/matron
 	give_bank_account = 35
-	min_pq = 10
+	min_pq = 0
 	can_have_apprentices = TRUE
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 
