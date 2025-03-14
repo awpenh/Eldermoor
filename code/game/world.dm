@@ -394,9 +394,9 @@ GLOBAL_PROTECT(tracy_init_reason)
 
 /world/proc/update_status()
 	var/s = ""
-	s += "<center><a href=\"https://discord.gg/zNAGFDcQ\">"
+	s += "<center><a href=\"https://discord.gg/42ZUAjsCGH\">"
 #ifdef MATURESERVER
-	s += "<big><b>Vanderlin - Now 24/7 (Hosted by Monkestation)</b></big></a><br>"
+	s += "<big><b>Eldermoor</b></big></a><br>"
 	s += "<b>Dark Medieval Fantasy Roleplay<b><br>"
 
 #else
