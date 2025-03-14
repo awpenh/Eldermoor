@@ -343,7 +343,7 @@
 		/datum/migrant_role/qatil = 1,
 		/datum/migrant_role/zybantine_guard = 2
 	)
-	greet_text = "The Mercator Guild sent you, respected Zybantinian to seek favorable business proposal within the Kingdom of Vanderlin."
+	greet_text = "The Mercator Guild sent you, respected Zybantinian to seek favorable business proposal within the Kingdom of Eldermoor."
 
 /datum/migrant_wave/zybantine_wave_down
 	name = "The Ziggurat expedition"
@@ -356,4 +356,4 @@
 		/datum/migrant_role/zybantine/furusiyya = 1,
 		/datum/migrant_role/qatil = 1
 	)
-	greet_text = "The Mercator Guild sent you, respected Zybantinian to seek favorable business proposal within the Kingdom of Vanderlin. Unfortunately most of your guards died on the way here."
+	greet_text = "The Mercator Guild sent you, respected Zybantinian to seek favorable business proposal within the Kingdom of Eldermoor. Unfortunately most of your guards died on the way here."

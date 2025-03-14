@@ -15,12 +15,13 @@
 	id = "elf"
 	desc = "<b>Elf</b><br>\
 	Elves, the first species of Psydonia, are characterized by lengthened age, \
-	low fertility, and magical aptitude originating from a vast array of tribal cultures and sub-races. \
-	With the ascension of Zizo, the entire culture of snow-elves was all but destroyed, \
-	leading the remaining tribes to live in fear and paranoia of suffering the same fate. \
-	Many elves sought safety through mixing culture, positioning themselves under the watchful guard of their stronger humen counterparts. \
-	A longstanding fued remains between elves and dwarves. Elven kind has never forgiven the dwarves for their destruction of homeland and \
-	pillaging of natural resources within the former snow-elf territory. To elves, it was the greatest signifier of disrespect for those lost. "
+	low fertility, and an innate mastery of magic, shaped by a rich tapestry of tribal cultures and sub-races. \
+	The fall of the snow-elves at the hands of Zizo was a wound that never healed, driving elvenkind into isolation, \
+	cloaked in distrust and an ever-deepening sense of superiority. No longer willing to risk their survival \
+	through shared dominion, they withdrew, turning inward and cultivating an air of refined exclusivity. \
+	They view humans, the so-called favored children of Psydon, with quiet resentment, seeing their prominence as an \
+	affront to the natural order. Their enmity with the dwarves festers still, rooted in the despoiling of former \
+	snow-elf lands—an unforgivable desecration that serves as a constant reminder of all that was lost."
 
 	skin_tone_wording = "Tribal Identity"
 
@@ -54,7 +55,7 @@
 	OFFSET_NECK_F = list(0,0), OFFSET_MOUTH_F = list(0,0), OFFSET_PANTS_F = list(0,1), \
 	OFFSET_SHIRT_F = list(0,1), OFFSET_ARMOR_F = list(0,1), OFFSET_UNDIES_F = list(0,1))
 	specstats = list("strength" = -2, "perception" = 1, "intelligence" = 2, "constitution" = -1, "endurance" = 0, "speed" = 2, "fortune" = 0)
-	specstats_f = list("strength" = -4, "perception" = 2, "intelligence" = 2, "constitution" = -2, "endurance" = 0, "speed" = 3, "fortune" = 0)
+	specstats_f = list("strength" = -3, "perception" = 2, "intelligence" = 2, "constitution" = -2, "endurance" = 0, "speed" = 3, "fortune" = 0)
 	enflamed_icon = "widefire"
 	patreon_req = 0
 

@@ -11,16 +11,13 @@
 	name = "Half-Elf"
 	id = "human"
 	desc = "<b>Half Elf</b><br>\
-	The child of an Elf and Humen, Half-Elves are generally frowned \
-	upon by more conservative peoples, although as species tensions lower, \
-	more and more half-elves are being born. To the point that some scholars \
-	worry that someday, it may be impossible to distinguish the two species. \
-	Half-Elves are extremely diverse, as they bring in humen and elvish culture\
-	and it is widely considered that Half-Elf culture is simply a melting pot of \
-	various others condensing into one vibrant entity. \
-	Their longevity spanning too long for a human and short for an elf lead them to congregate together. \
-	Due to their heritage, Half-Elves tend to gain species traits depending on how strong their fathers, or mothers, genes were. \
-	Half-Elves also typically try to find identity."
+	The offspring of elves and humans, Half-Elves exist in an uneasy limbo between two worlds. \
+	Among humans, they are tolerated but rarely embraced, blending into society where their kind is neither celebrated nor scorned. \
+	Among elves, however, they are an unwelcome reminder of impurity, proof of human blood's insidious dominance, \
+	tainting what should be refined and eternal. Their features lean human apart from their pointed ears and striking eyes, \
+	but their lifespans, caught between fleeting mortality and elven endurance, leave them feeling adrift. \
+	Too human for elves, too elven for humans, they often carve out their own spaces, seeking purpose and belonging \
+	in the absence of a people who truly claim them."
 
 	skin_tone_wording = "Half-Elven Identity"
 
@@ -72,7 +69,7 @@
 
 /datum/species/human/halfelf/get_skin_list()
 	return sortList(list(
-		"Zizo-Cursed" = SKIN_COLOR_ZIZO_CURSED, // - (Pale)
+		"Half-Snow" = SKIN_COLOR_ZIZO_CURSED, // - (Pale)
 		"Timber-Gronn" = SKIN_COLOR_TIMBER_GRONN, // - (White 1)
 		"Solar-Hue" = SKIN_COLOR_SOLAR_HUE, // - (White 2)
 		"Walnut-Stine" = SKIN_COLOR_WALNUT_STINE, // - (White 3)
