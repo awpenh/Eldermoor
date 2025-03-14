@@ -24817,7 +24817,7 @@
 "qIn" = (
 /obj/structure/fluff/traveltile{
 	aportalid = "bogmaze15";
-	aportalgoesto = bogmaze5"
+	aportalgoesto = "bogmaze5"
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
