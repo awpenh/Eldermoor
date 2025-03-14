@@ -336,7 +336,7 @@
 		grinded = null
 		to_chat(user, "<span class='notice'>I eject the item inside.</span>")
 
-//VANDERLIN TODO: add a stamina check for the system we actually use.
+//ELDERMOOR TODO: add a stamina check for the system we actually use.
 /obj/item/reagent_containers/glass/mortar/attackby(obj/item/I, mob/living/carbon/human/user)
 	..()
 	if(istype(I,/obj/item/pestle))

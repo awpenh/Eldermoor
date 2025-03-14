@@ -185,7 +185,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 		return
 	var/mob/living/carbon/human/H = src
 	var/datum/game_mode/chaosmode/C = SSticker.mode
-	var/speak = input("What do you speak of?", "VANDERLIN") as text|null
+	var/speak = input("What do you speak of?", "ELDERMOOR") as text|null
 	if(!speak)
 		return
 	whisper("O schlet'a ty'schkotot ty'skvoro...")
@@ -267,7 +267,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 			if(path.circle == sigil_type)
 				rituals |= path.name
 
-		var/ritualnameinput = input(user, "Rituals", "VANDERLIN") as null|anything in rituals
+		var/ritualnameinput = input(user, "Rituals", "ELDERMOOR") as null|anything in rituals
 		testing("ritualnameinput [ritualnameinput]")
 		var/datum/ritual/pickritual
 
@@ -421,7 +421,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 		to_chat(src, "<span class='danger'>My hands aren't bloody enough.</span>")
 		return
 
-	var/input = input("Sigil Type", "VANDERLIN") as null|anything in runes
+	var/input = input("Sigil Type", "ELDERMOOR") as null|anything in runes
 	if(!input)
 		return
 
@@ -438,9 +438,9 @@ GLOBAL_LIST_EMPTY(ritualslist)
 		if(V.special_role == "Zizoid Lackey")
 			possible |= V.current
 
-	var/mob/living/carbon/human/choice = input(src, "Whom do you no longer have use for?", "VANDERLIN") as null|anything in possible
+	var/mob/living/carbon/human/choice = input(src, "Whom do you no longer have use for?", "ELDERMOOR") as null|anything in possible
 	if(choice)
-		var/alert = alert(src, "Are you sure?", "VANDERLIN", "Yes", "Cancel")
+		var/alert = alert(src, "Are you sure?", "ELDERMOOR", "Yes", "Cancel")
 		if(alert == "Yes")
 			visible_message("<span class='danger'>[src] reaches out, ripping up [choice]'s soul!</span>")
 			to_chat(choice, "<span class='userdanger'>I HAVE FAILED MY LEADER! I HAVE FAILED ZIZO! NOTHING ELSE BUT DEATH REMAINS FOR ME NOW!</span>")
@@ -492,7 +492,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 				to_chat(user.mind, "<span class='danger'>\"The veil is too strong to support more than seven lackeys.\"</span>")
 				return
 			var/datum/antagonist/zizocultist/PR = user.mind.has_antag_datum(/datum/antagonist/zizocultist)
-			var/alert = alert(H, "YOU WILL BE SHOWN THE TRUTH. DO YOU RESIST? (Resisting: 1 TRI)", "VANDERLIN", "Yield", "Resist")
+			var/alert = alert(H, "YOU WILL BE SHOWN THE TRUTH. DO YOU RESIST? (Resisting: 1 TRI)", "ELDERMOOR", "Yield", "Resist")
 			H.anchored = TRUE
 			if(alert == "Yield")
 				to_chat(H.mind, "<span class='notice'>I see the truth now! It all makes so much sense! They aren't HERETICS! They want the BEST FOR US!</span>")
@@ -800,7 +800,7 @@ GLOBAL_LIST_EMPTY(ritualslist)
 	for(var/obj/item/paper/P in C.contents)
 		var/info = ""
 		info = sanitize(P.info)
-		var/input = stripped_input(user, "To whom do we send this message?", "VANDERLIN")
+		var/input = stripped_input(user, "To whom do we send this message?", "ELDERMOOR")
 		if(!input)
 			return
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)

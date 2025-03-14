@@ -50,7 +50,7 @@
 			return
 
 	if(istype(W, /obj/item/rogueore/coal))
-		if(alert(usr, "Fuel \the [src] with [W]?", "VANDERLIN", "Fuel", "Smelt") == "Fuel")
+		if(alert(usr, "Fuel \the [src] with [W]?", "ELDERMOOR", "Fuel", "Smelt") == "Fuel")
 			return ..()
 	if(W.smeltresult)
 		if(ore.len < maxore)
