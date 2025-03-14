@@ -1,17 +1,17 @@
-/datum/migrant_role/rockhill/mayor
-	name = "Mayor of Rockhill"
-	greet_text = "You are the mayor of Rockhill, you've come to Vanderlin to discuss important matters with their King."
-	outfit = /datum/outfit/job/roguetown/rockhill/mayor
+/datum/migrant_role/rockhill/king
+	name = "King of Rockhill"
+	greet_text = "You are the King of Rockhill, you've come to Eldermoor to discuss important matters with their King."
+	outfit = /datum/outfit/job/roguetown/rockhill/king
 	allowed_sexes = list(MALE)
 	allowed_races = list("Humen","Dwarf","Elf","Half-Elf")
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
-/datum/outfit/job/roguetown/rockhill/mayor/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/rockhill/king/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	belt = /obj/item/storage/belt/rogue/leather/black
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	head = /obj/item/clothing/head/roguetown/helmet
+	head = /obj/item/clothing/head/roguetown/crown/rockhillcrown
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
@@ -115,7 +115,7 @@
 
 /datum/migrant_role/rockhill/sergeant_at_arms
 	name = "Serjeant at arms"
-	greet_text = "The mayor of rockhill has conscripted you and your mens to go see the rulers of Vanderlin."
+	greet_text = "The King of rockhill has conscripted you and your mens to go see the rulers of Eldermoor."
 	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
@@ -172,7 +172,7 @@
 
 /datum/migrant_role/footman_guard
 	name = "Guardsmen of Rockhill"
-	greet_text = "Your serjeant-at-arms has been conscripted by the mayor of rockhill to guard them as they visit the rulers of Vanderlin. Ensure they live."
+	greet_text = "Your serjeant-at-arms has been conscripted by the king of rockhill to guard them as they visit the rulers of Eldermoor. Ensure they live."
 	outfit = /datum/outfit/job/roguetown/footman_bannerman
 	allowed_races = list("Humen","Dwarf","Anakim","Elf","Half-Elf")
 	allowed_sexes = list(MALE)
@@ -180,39 +180,39 @@
 	advjob_examine = FALSE
 
 /datum/migrant_wave/rockhill_wave
-	name = "The Mayor's visit"
+	name = "Rockhill's visit"
 	shared_wave_type = list(/datum/migrant_wave/grenzelhoft_visit,/datum/migrant_wave/zybantine_wave,/datum/migrant_wave/rockhill_wave,/datum/migrant_wave/heartfelt)
 	downgrade_wave = /datum/migrant_wave/rockhill_wave_down
 	max_spawns = 1
 	weight = 30
 	roles = list(
-		/datum/migrant_role/rockhill/mayor = 1,
+		/datum/migrant_role/rockhill/king = 1,
 		/datum/migrant_role/rockhill_knight = 1,
 		/datum/migrant_role/rockhill/sergeant_at_arms = 1,
 		/datum/migrant_role/footman_guard = 4
 	)
-	greet_text = "The Mayor has it, something must be discussed with the rulers of Vanderlin which is why we're on our way over there."
+	greet_text = "The King of Rockhill has had it, something must be discussed with the rulers of Eldermoor which is why we're on our way over there."
 
 /datum/migrant_wave/rockhill_wave_down
-	name = "The Mayor's visit"
+	name = "Rockhill's visit"
 	shared_wave_type = list(/datum/migrant_wave/grenzelhoft_visit,/datum/migrant_wave/zybantine_wave,/datum/migrant_wave/rockhill_wave,/datum/migrant_wave/heartfelt)
 	downgrade_wave = /datum/migrant_wave/rockhill_wave_down_one
 	can_roll = FALSE
 	roles = list(
-		/datum/migrant_role/rockhill/mayor = 1,
+		/datum/migrant_role/rockhill/king = 1,
 		/datum/migrant_role/rockhill_knight = 1,
 		/datum/migrant_role/rockhill/sergeant_at_arms = 1,
 		/datum/migrant_role/footman_guard = 2
 	)
-	greet_text = "The Mayor has it, something must be discussed with the rulers of Vanderlin which is why we're on our way over there."
+	greet_text = "The King of Rockhill has had it, something must be discussed with the rulers of Eldermoor which is why we're on our way over there."
 
 /datum/migrant_wave/rockhill_wave_down_one
-	name = "The Mayor's visit"
+	name = "Rockhill's visit"
 	shared_wave_type = list(/datum/migrant_wave/grenzelhoft_visit,/datum/migrant_wave/zybantine_wave,/datum/migrant_wave/rockhill_wave,/datum/migrant_wave/heartfelt)
 	can_roll = FALSE
 	roles = list(
-		/datum/migrant_role/rockhill/mayor = 1,
+		/datum/migrant_role/rockhill/king = 1,
 		/datum/migrant_role/rockhill_knight = 1,
 		/datum/migrant_role/footman_guard = 2
 	)
-	greet_text = "The Mayor has it, something must be discussed with the rulers of Vanderlin which is why we're on our way over there."
+	greet_text = "The King of Rockhill has had it, something must be discussed with the rulers of Eldermoor which is why we're on our way over there."

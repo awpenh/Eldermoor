@@ -30,7 +30,7 @@
 	owner.special_role = ROLE_ASPIRANT
 
 /datum/antagonist/aspirant/greet()
-	to_chat(owner, span_danger("I have grown weary of being near the throne, but never on it. I have decided that it is time I ruled Vanderlin."))
+	to_chat(owner, span_danger("I have grown weary of being near the throne, but never on it. I have decided that it is time I ruled Eldermoor."))
 	..()
 
 /datum/antagonist/aspirant/loyalist/greet()

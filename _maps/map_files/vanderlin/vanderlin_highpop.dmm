@@ -5507,7 +5507,7 @@
 /area/rogue/indoors/soilsons)
 "dEp" = (
 /obj/structure/roguethrone{
-	name = "Throne of Vanderlin"
+	name = "Throne of Eldermoor"
 	},
 /obj/structure/roguemachine/titan{
 	pixel_y = 32

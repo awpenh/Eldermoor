@@ -540,7 +540,7 @@
 \------------*/
 
 /obj/item/clothing/head/roguetown/crown/serpcrown
-	name = "crown of Vanderlin"
+	name = "crown of Eldermoor"
 	desc = "Heavy is the weight of the crown, and even heavier the responsibility it infers to its wearer."
 	icon_state = "serpcrown"
 	sellprice = VALUE_EXTREME
@@ -558,7 +558,7 @@
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/surplus
 	name = "crown"
-	desc = "A replacement for the Crown of Vanderlin, every bit as valid as proof of sovereignity as the original."
+	desc = "A replacement for the Crown of Eldermoor, every bit as valid as proof of sovereignity as the original."
 	icon_state = "serpcrowno"
 	sellprice = VALUE_GOLD_ITEM
 
@@ -566,6 +566,12 @@
 	name = "champions circlet"
 	desc = "Winner of tournaments, bask in Mathuin's glory."
 	icon_state = "sparrowcrown"
+	sellprice = VALUE_GOLD_ITEM
+
+/obj/item/clothing/head/roguetown/crown/rockhillcrown
+	name = "Crown of Rockhill"
+	desc = "Crown of the Kings of Rockhill, though their kingdom is small, their pride is large.(DOES NOW WORK ON THRONE)"
+	icon_state = "rockcrown"
 	sellprice = VALUE_GOLD_ITEM
 
 /obj/item/clothing/head/roguetown/jester

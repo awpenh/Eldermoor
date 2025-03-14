@@ -1,4 +1,4 @@
 <!-- Most valid html will work in here, excluding images. -->
-<center>Eldermoore</a></center>
+<center>Eldermoor</a></center>
 <center>* WE ARE EVIL! *</center>
 <!-- We're no longer so unstable, also it's shit advertising. -->

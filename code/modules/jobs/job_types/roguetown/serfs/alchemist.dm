@@ -14,7 +14,7 @@
 		"Anakim"
 	)
 
-	tutorial = "You came to Vanderlin either to seek knowledge or riches."
+	tutorial = "You came to Eldermoor either to seek knowledge or riches."
 
 	outfit = /datum/outfit/job/roguetown/alchemist
 	display_order = 6

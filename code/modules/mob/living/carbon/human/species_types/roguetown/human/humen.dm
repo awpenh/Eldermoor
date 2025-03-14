@@ -13,7 +13,7 @@
 	name = "Humen"
 	id = "human"
 	desc = "<b>Humen</b><br>\
-	Humenity, the ideal image in one of the many Saints. \
+	Humenity, created in Psydon's image as his second and favorite children. \
 	With their tenacity and overwhelming population, humens tend to outnumber the other species drastically. \
 	Humens come from a vast swathe of cultures and ethnicities all around Psydonia, most of which \
 	have historically been at odds with one another and other species. \

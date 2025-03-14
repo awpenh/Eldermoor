@@ -10,7 +10,7 @@
 	f_title = "Priest"
 	allowed_races = list("Humen")
 	allowed_sexes = list(MALE)
-	tutorial = "You are a devoted follower of Psydon and the Eleven Saints, the pillars of divine order. In a world consumed by immorality, only their guidance can lead the faithful to salvation. Psydon reigns supreme, with the saints as his chosen intercessors, each embodying a path to righteousness. It is your duty to preach their wisdom to Vanderlin and shepherd the flock toward a future devoted to the One and All."
+	tutorial = "You are a devoted follower of Psydon and the Eleven Saints, the pillars of divine order. In a world consumed by immorality, only their guidance can lead the faithful to salvation. Psydon reigns supreme, with the saints as his chosen intercessors, each embodying a path to righteousness. It is your duty to preach their wisdom to Eldermoor and shepherd the flock toward a future devoted to the One and All."
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/roguetown/priest

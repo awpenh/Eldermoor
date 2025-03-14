@@ -52,7 +52,7 @@
 
 /datum/objective/werewolf/conquer
 	name = "conquer"
-	explanation_text = "Destroy all elder vampires in Vanderlin. I can sniff them in my true form."
+	explanation_text = "Destroy all elder vampires in Eldermoor. I can sniff them in my true form."
 	team_explanation_text = ""
 	triumph_count = 5
 
@@ -110,7 +110,7 @@
 
 /datum/objective/vampire
 	name = "conquer"
-	explanation_text = "Destroy all alpha werewolves in Vanderlin. I can detect them in my true form."
+	explanation_text = "Destroy all alpha werewolves in Eldermoor. I can detect them in my true form."
 	team_explanation_text = ""
 	triumph_count = 5
 
@@ -147,7 +147,7 @@
 
 /datum/objective/vampirelord/destroy
 	name = "destroy"
-	explanation_text = "Destroy all alpha werewolves in Vanderlin. I can detect them in my true form."
+	explanation_text = "Destroy all alpha werewolves in Eldermoor. I can detect them in my true form."
 	team_explanation_text = ""
 	triumph_count = 5
 

@@ -1,6 +1,6 @@
 /datum/job/roguetown/archivist
 	title = "Archivist"
-	tutorial = "A well-traveled and well-learned seeker of knowledge, the Archivist's mind has been touched by Eosten himself. They settled in Vanderlin some time ago, coming to the Isle of Albia with the hope of unraveling its mysteries. If they can expand their library and teach the masses, Psydonia may yet enter a new age of enlightenment."
+	tutorial = "A well-traveled and well-learned seeker of knowledge, the Archivist's mind has been touched by Eosten himself. They settled in Eldermoor some time ago, coming to the Isle of Albia with the hope of unraveling its mysteries. If they can expand their library and teach the masses, Psydonia may yet enter a new age of enlightenment."
 	flag = ARCHIVIST
 	department_flag = NOBLEMEN
 	faction = "Station"
