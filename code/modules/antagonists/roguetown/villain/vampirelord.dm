@@ -554,7 +554,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 	var/datum/antagonist/vampirelord/lord = user.mind.has_antag_datum(/datum/antagonist/vampirelord)
 	if(user.mind.special_role != "Vampire Lord")
 		return
-	var/choice = input(user,"What to do?", "VANDERLIN") as anything in useoptions|null
+	var/choice = input(user,"What to do?", "ELDERMOOR") as anything in useoptions|null
 	switch(choice)
 		if("Grow Power")
 			if(lord.vamplevel == 4)
@@ -575,7 +575,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 					return
 				if(do_after(user, 10 SECONDS))
 					lord.handle_vitae(-500)
-					var/naming = input(user, "Select a name for the amulet.", "VANDERLIN") as text|null
+					var/naming = input(user, "Select a name for the amulet.", "ELDERMOOR") as text|null
 					var/obj/item/clothing/neck/roguetown/portalamulet/P = new(src.loc)
 					if(naming)
 						P.name = naming
@@ -705,7 +705,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		if(!unlocked)
 			to_chat(user, "I have yet to regain this aspect of my power!")
 			return
-		var/choice = input(user,"What to do?", "VANDERLIN") as anything in useoptions|null
+		var/choice = input(user,"What to do?", "ELDERMOOR") as anything in useoptions|null
 		switch(choice)
 			if("Create Death Knight")
 				if(alert(user, "Create a Death Knight? Cost:5000","","Yes","No") == "Yes")
@@ -1005,7 +1005,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		var/area/A = V
 		if(!A.hidden)
 			filtered += A
-	var/area/thearea  = input("Area to jump to", "VANDERLIN") as null|anything in filtered
+	var/area/thearea  = input("Area to jump to", "ELDERMOOR") as null|anything in filtered
 
 	if(!thearea)
 		return

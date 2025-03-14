@@ -1,1 +1,1 @@
-#define FORCE_MAP "_maps/vanderlin.json"
+#define FORCE_MAP "_maps/eldermoor.json"
