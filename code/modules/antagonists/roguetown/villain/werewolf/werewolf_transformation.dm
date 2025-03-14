@@ -105,6 +105,7 @@
 	mind.transfer_to(W)
 	W.mind.known_skills = list()
 	W.mind.skill_experience = list()
+	W.remove_all_languages()
 	W.grant_language(/datum/language/beast)
 
 	W.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB)
