@@ -169,7 +169,7 @@
 	..()
 
 /obj/structure/fluff/walldeco/customflag
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	desc = ""
 	icon_state = "wallflag"
 

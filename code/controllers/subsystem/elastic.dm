@@ -49,7 +49,7 @@ SUBSYSTEM_DEF(elastic)
 	///you see why this needs to be an assoc list now?
 	compiled |= assoc_list_data
 
-	///down here is specific to vanderlin so if you are porting this you can take this out
+	///down here is specific to eldermoor so if you are porting this you can take this out
 	compiled["round_data"] = get_round_data()
 	assoc_list_data = list()
 	return json_encode(compiled)

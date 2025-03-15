@@ -127,8 +127,8 @@
 		J?.add_spells(HU)
 		SSticker.rulermob = HU
 		GLOB.badomens -= OMEN_NOLORD
-		say("By the authority of the gods, I pronounce you Ruler of all Vanderlin!")
-		priority_announce("[real_name] the [get_role_title()] has named [HU.real_name] the inheritor of Vanderlin!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
+		say("By the authority of the gods, I pronounce you Ruler of all Eldermoor!")
+		priority_announce("[real_name] the [get_role_title()] has named [HU.real_name] the inheritor of Eldermoor!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
 		return
 
 /mob/living/carbon/human/proc/churchexcommunicate()
@@ -191,7 +191,7 @@
 	set category = "Priest"
 	if(stat)
 		return
-	var/inputty = input("Make an announcement", "VANDERLIN") as text|null
+	var/inputty = input("Make an announcement", "ELDERMOOR") as text|null
 	if(inputty)
 		if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
 			to_chat(src, "<span class='warning'>I need to do this from the chapel.</span>")

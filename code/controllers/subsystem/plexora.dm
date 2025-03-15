@@ -37,7 +37,7 @@ SUBSYSTEM_DEF(plexora)
 	var/version_increment_counter = 2
 	var/configuration_path = "config/plexora.json"
 	var/plexora_is_alive = FALSE
-	var/vanderlin_available = FALSE
+	var/eldermoor_available = FALSE
 	var/http_root = ""
 	var/http_port = 0
 	var/enabled = TRUE

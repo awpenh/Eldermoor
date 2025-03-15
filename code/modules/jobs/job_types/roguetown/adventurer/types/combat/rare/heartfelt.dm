@@ -1,7 +1,7 @@
 /datum/advclass/combat/heartfeltlord
 	name = "Lord of Heartfelt"
 	tutorial = "You are the proud lord of Heartfelt, \
-	but why have you come to Vanderlin?"
+	but why have you come to Eldermoor?"
 	allowed_sexes = list(MALE)
 	allowed_races = list("Humen")
 	outfit = /datum/outfit/job/roguetown/adventurer/heartfeltlord

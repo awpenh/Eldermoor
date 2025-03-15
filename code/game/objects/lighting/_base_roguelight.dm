@@ -144,7 +144,7 @@
 		else
 			if(!on)
 				return
-		if (alert(usr, "Feed [W] to the fire?", "VANDERLIN", "Yes", "No") != "Yes")
+		if (alert(usr, "Feed [W] to the fire?", "ELDERMOOR", "Yes", "No") != "Yes")
 			return
 		if(!(W in user.held_items)|| !user.temporarilyRemoveItemFromInventory(W))
 			return
