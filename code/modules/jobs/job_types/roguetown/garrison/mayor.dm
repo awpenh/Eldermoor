@@ -1,5 +1,5 @@
 /datum/job/roguetown/mayor
-	title = "Town Elder"
+	title = "Old Woodcutter"
 	flag = MAYOR
 	department_flag = GARRISON
 	faction = "Station"
@@ -7,7 +7,7 @@
 	spawn_positions = 0
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/town_militia)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Elf",
@@ -15,8 +15,8 @@
 		"Dwarf",
 		"Anakim"
 	)
-	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
-	tutorial = "The crown may lead officially, but the townsfolk of Eldermoor look to you to manage the settlement and solve lesser issues. Remember the old ways of the law... not everything must end in bloodshed, but do what is necessary to maintain the peace."
+	allowed_ages = list(AGE_OLD, AGE_IMMORTAL)
+	tutorial = "The crown may rule on paper, but the folk of Eldermoor know whose word truly carries weight. Like it or not, they come seeking your wisdom—though you'd much rather be left alone with your axe and your peace. From your porch, you grumble at foolhardy adventurers and meddlesome troublemakers, warning them not to stir up problems they can't fix. Not every issue needs a fight, but if one does, well... you've split tougher things than firewood."
 	whitelist_req = FALSE
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/roguetown/mayor
@@ -28,7 +28,7 @@
 	can_have_apprentices = FALSE
 
 /datum/outfit/job/roguetown/mayor
-	name = "Town Elder"
+	name = "Old Woodcutter"
 	jobtype = /datum/job/roguetown/mayor
 
 /datum/outfit/job/roguetown/mayor/pre_equip(mob/living/carbon/human/H)
@@ -46,21 +46,19 @@
 	r_hand = /obj/item/rogueweapon/polearm/woodstaff/quarterstaff
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/labor/lumberjacking, 5, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		if(H.age == AGE_OLD)
 			H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-			H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 1, TRUE)
 			H.change_stat("strength", 1)
 			H.change_stat("perception", 1)
 			H.change_stat("intelligence", 2)
