@@ -134,6 +134,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "City Watchmen"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/gatekeep
+	name = "Gate Keep"
+	icon_state = "arrow"
+
 /obj/effect/landmark/start/manorguardsman
 	name = "Royal Knight"
 	icon_state = "arrow"
@@ -172,7 +176,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/woodsman
-	name = "Town Elder"
+	name = "Old Woodsman"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/priest

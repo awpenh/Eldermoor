@@ -18,9 +18,10 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"Veteran",
 	"City Watchmen",
 	"Men-at-arms",
+	"Gate Keep",
 	//"Jailor",
 	"Dungeoneer",
-	//"Town Elder",
+	"Old Woodsman",
 	"Toll Keeper",
 	"Toll Guard"
 	))

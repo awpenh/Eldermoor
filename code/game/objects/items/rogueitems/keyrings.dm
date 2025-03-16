@@ -214,6 +214,9 @@
 /obj/item/storage/keyring/guard
 	keys = list(/obj/item/key/dungeon, /obj/item/key/garrison)
 
+/obj/item/storage/keyring/gatekeeper
+	keys = list(/obj/item/key/garrison, /obj/item/key/gatekeeper)
+
 /obj/item/storage/keyring/manorguard
 	keys = list(/obj/item/key/manor, /obj/item/key/dungeon, /obj/item/key/garrison, /obj/item/key/walls)
 

@@ -171,6 +171,12 @@
 	icon_state = "spikekey"
 	lockid = "garrison"
 
+/obj/item/key/gatekeeper
+	name = "townkeep key"
+	desc = "This key belongs to the Gatekeep, looks like crap."
+	icon_state = "brownkey"
+	lockid = "towngate"
+
 /obj/item/key/tollgarrison
 	name = "toll garrison key"
 	desc = "This key belongs to the Toll Garrison."

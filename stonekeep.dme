@@ -1328,6 +1328,7 @@
 #include "code\modules\jobs\job_types\roguetown\garrison\jailor.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\mayor.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\men_at_arms.dm"
+#include "code\modules\jobs\job_types\roguetown\garrison\gatekeeper.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\royalguard.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\tollguard.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\tollkeeper.dm"
