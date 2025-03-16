@@ -25,12 +25,11 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/winterjacket
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
 	head = /obj/item/clothing/head/roguetown/helmet/leather/inquisitor
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	beltl = /obj/item/rogueweapon/sword/rapier/silver
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	cloak = /obj/item/clothing/cloak/cape/puritan
 
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)

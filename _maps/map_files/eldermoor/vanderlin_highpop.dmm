@@ -6154,7 +6154,7 @@
 /area/rogue/indoors/town/tavern)
 "dYh" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/clocktower)
@@ -7806,7 +7806,7 @@
 /area/rogue/outdoors/town/roofs)
 "eZF" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/steward)
@@ -25753,7 +25753,7 @@
 /area/rogue/indoors/town)
 "rya" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/manorgate)
@@ -27719,7 +27719,7 @@
 /area/rogue/indoors/town/tavern)
 "sLE" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/outdoors/town)
@@ -29438,7 +29438,7 @@
 /area/rogue/indoors/town/manor)
 "tNw" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/manorgate)
@@ -33781,7 +33781,7 @@
 "wGw" = (
 /mob/living/simple_animal/pet/cat/rogue/inn{
 	name = "His Majesty";
-	desc = "This old, wrinkled cat demands the utmost respect from his servants. Not even the king of Vanderlin is exempt from his worship."
+	desc = "This old, wrinkled cat demands the utmost respect from his servants. Not even the king of Eldermoor is exempt from his worship."
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
@@ -34315,7 +34315,7 @@
 /area/rogue/indoors)
 "wYW" = (
 /obj/structure/fluff/walldeco/customflag{
-	name = "vanderlin flag"
+	name = "eldermoor flag"
 	},
 /turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town/manor)

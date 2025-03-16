@@ -261,6 +261,18 @@
 	icon_state = "brownkey"
 	lockid = "roomvi"
 
+/obj/item/key/poorroomi
+	name = "poor room I key"
+	desc = "The key to the first poor room downstairs."
+	icon_state = "brownkey"
+	lockid = "poorroomi"
+
+/obj/item/key/poorroomii
+	name = "poor room II key"
+	desc = "The key to the second poor room downstairs."
+	icon_state = "brownkey"
+	lockid = "poorroomii"
+
 /obj/item/key/medroomi
 	name = "medium room I key"
 	desc = "The key to the first medium room."

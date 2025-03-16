@@ -1,6 +1,6 @@
 {
     "map_name": "Toma's Anvil",
-    "map_path": "map_files/vanderlin/otherz",
-    "map_file": "vanderlin_mountain.dmm",
+    "map_path": "map_files/eldermoor/otherz",
+    "map_file": "eldermoor_mountain.dmm",
 	"traits": [{"Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true}]
 }

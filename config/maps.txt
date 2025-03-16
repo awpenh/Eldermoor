@@ -13,12 +13,12 @@ Format:
 	votable (is this map votable)
 endmap
 
-map vanderlin
+map eldermoor
 	default
 	votable
 endmap
 
-#until vanderlin is working roguetown should be default
+#until eldermoor is working roguetown should be default
 map roguetown
 endmap
 

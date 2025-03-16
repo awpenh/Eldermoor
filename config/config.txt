@@ -239,10 +239,10 @@ USEBLACKLIST
 # FORUMURL N/A
 
 ## Wiki address
-WIKIURL https://wiki.monkestation.com/en/vanderlin
+WIKIURL https://wiki.monkestation.com/en/eldermoor
 
 ## Rules address
-RULESURL https://wiki.monkestation.com/en/vanderlin/rules
+RULESURL https://wiki.monkestation.com/en/eldermoor/rules
 
 ## Github address
 GITHUBURL https://github.com/FewOldTunes/Eldermoor
