@@ -18,6 +18,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"Veteran",
 	"City Watchmen",
 	"Men-at-arms",
+	"Gate Keep",
 	//"Jailor",
 	"Dungeoneer",
 	"Old Woodsman",
