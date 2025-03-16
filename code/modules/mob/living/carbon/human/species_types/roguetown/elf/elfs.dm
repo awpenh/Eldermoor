@@ -92,6 +92,7 @@
 		"Savannah Elf" = SKIN_COLOR_SAVANNAH_ELF, // - (Middle-Eastern)
 		"Sand Elf" = SKIN_COLOR_SAND_ELF, // - (Black 1)
 		"Crimson Elf" = SKIN_COLOR_CRIMSON_ELF, // - (Black2)
+		"Snow Elf" = SKIN_COLOR_SNOW_ELF, // (Pale)
 	))
 
 /datum/species/elf/snow/get_hairc_list()
