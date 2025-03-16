@@ -426,9 +426,10 @@
 #define SKIN_COLOR_HOMUNCULUS "5f5f70" //Grey-blue
 #define SKIN_COLOR_ARACHNID_ICHOR "2F2F38" //Black-blue
 #define SKIN_COLOR_GLOOMHAVEN "897489" //Pink
+#define SKIN_COLOR_NYXORA "634A63" //Black
 
 //ELF SKIN TONES
-#define SKIN_COLOR_SNOW_ELF "fff0e9" //Pale as SHIT!
+#define SKIN_COLOR_SNOW_ELF "fff9f8" //Pale as SHIT!
 #define SKIN_COLOR_PLAIN_ELF "fcccb3" //White 2
 #define SKIN_COLOR_MOUNTAIN_ELF "edc6b3" //White 3
 #define SKIN_COLOR_COASTAL_ELF "e2b9a3" //White 4
