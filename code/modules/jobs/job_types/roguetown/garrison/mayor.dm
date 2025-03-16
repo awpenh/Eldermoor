@@ -1,10 +1,10 @@
 /datum/job/roguetown/mayor
-	title = "Old Woodcutter"
+	title = "Old Woodsman"
 	flag = MAYOR
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/town_militia)
 	allowed_sexes = list(MALE)
@@ -28,7 +28,7 @@
 	can_have_apprentices = FALSE
 
 /datum/outfit/job/roguetown/mayor
-	name = "Old Woodcutter"
+	name = "Old Woodsman"
 	jobtype = /datum/job/roguetown/mayor
 
 /datum/outfit/job/roguetown/mayor/pre_equip(mob/living/carbon/human/H)

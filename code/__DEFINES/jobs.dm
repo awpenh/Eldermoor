@@ -234,24 +234,23 @@
 #define JDO_INNKEEP_CHILD 27.5
 #define JDO_COOK 28
 
-#define JDO_BUTCHER 28.1
-#define JDO_SOILSON 28.2
-#define JDO_FISHER 28.3
-#define JDO_HUNTER 28.4
-#define JDO_CARPENTER 28.6
-#define JDO_CHEESEMAKER 28.7
-#define JDO_MINER 28.8
-#define JDO_MATRON 28.9
-#define JDO_GRAVEMAN 29
+#define JDO_CHIEF 28.1
+#define JDO_BUTCHER 29.1
+#define JDO_SOILSON 29.2
+#define JDO_FISHER 29.3
+#define JDO_HUNTER 29.4
+#define JDO_CARPENTER 29.6
+#define JDO_CHEESEMAKER 29.7
+#define JDO_MINER 29.8
+#define JDO_MATRON 29.9
+#define JDO_GRAVEMAN 30
 
-#define JDO_APOTHECARY 29.1
+#define JDO_APOTHECARY 30.1
 
-#define JDO_JESTER 30
-#define JDO_BARD 30.1
-#define JDO_PRISONER 31
-#define JDO_DRUNK 32
-
-#define JDO_CHIEF 33
+#define JDO_JESTER 31
+#define JDO_BARD 31.1
+#define JDO_PRISONER 32
+#define JDO_DRUNK 33
 
 #define JDO_ADVENTURER 34
 #define JDO_PILGRIM 35.2
