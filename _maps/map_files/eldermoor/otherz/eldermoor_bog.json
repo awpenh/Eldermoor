@@ -1,0 +1,6 @@
+{
+    "map_name": "Eldermoor Bog",
+    "map_path": "map_files/eldermoor/otherz",
+    "map_file": "eldermoor_bog.dmm",
+	"traits": [{"Up": true}, {"Down": true}]
+}

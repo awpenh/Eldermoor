@@ -1009,7 +1009,7 @@ $(function() {
 			url: 'browserOutput_white.css',
 			success: function(styleData) {
 				var blob = new Blob([
-					'<head><title>Vanderlin Chat Log</title><style>',
+					'<head><title>Eldermoor Chat Log</title><style>',
 					styleData,
 					'</style></head><body>',
 					$messages.html(),

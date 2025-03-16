@@ -7,7 +7,15 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = ALL_PLAYER_RACES_BY_NAME
+	allowed_races = list(
+		"Humen",
+		"Elf",
+		"Half-Elf",
+		"Dwarf",
+		"Tiberian",
+		"Dark Elf",
+		"Anakim"
+	)
 
 	allowed_ages = list(AGE_CHILD, AGE_ADULT)
 

@@ -1422,6 +1422,16 @@
 
 	prevent_crits = MINOR_CRITICALS
 
+//............... Physicians Hat ............... //
+/obj/item/clothing/head/roguetown/physhat
+	name = "physician's hood"
+	desc = "My cure is mostly effective."
+	icon_state = "physhat"
+	item_state = "physhat"
+	color = null
+
+	prevent_crits = MINOR_CRITICALS
+
 //............... Daywalkers Hood ............... //
 /obj/item/clothing/head/roguetown/roguehood/daywalker
 	name = "daywalker's hood"

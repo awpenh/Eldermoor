@@ -881,6 +881,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/indoors/vampire_manor
 	name = "lair (Vampire Lord)"
 
+/area/rogue/outdoors/bog/lich
+	name = "lair (Lich)"
+
 /area/rogue/outdoors/bog/inhumen_camp
 	name = "lair (Inhumen)"
 	droning_sound = 'sound/music/area/decap.ogg'
