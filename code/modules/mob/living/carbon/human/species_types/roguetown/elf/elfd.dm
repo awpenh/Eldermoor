@@ -97,15 +97,14 @@
 	return sortList(list(
 		"Shodom" = SKIN_COLOR_MAGGOT, // - (Pale blue)
 		"Comorrah" = SKIN_COLOR_COCOON, // - (Pale purple)
-		"Gloomhaven" = SKIN_COLOR_ASHEN, // - (Pale grey)
+		"Yuethindrynn" = SKIN_COLOR_ASHEN, // - (Pale grey)
 		"Darkpila" = SKIN_COLOR_SPIDER_VENOM, // - (Deep grey)
 		"Sshanntynlan" = SKIN_COLOR_JACKPOISON, // - (Grey-purple)
 		"Llurth Drei" = SKIN_COLOR_HOMUNCULUS, // - (Grey-blue)
 		"Tafravma" = SKIN_COLOR_ARACHNID_ICHOR, // - (Black-blue)
-		"Snow Elf" = SKIN_COLOR_SNOW_ELF, // - (Pale white)
-		"Yuethindrynn" = SKIN_COLOR_GLOOMHAVEN, // - (Pink)
+		"Gloomhaven" = SKIN_COLOR_GLOOMHAVEN, // - (Pink)
+		"Nyxora" = SKIN_COLOR_NYXORA, //Deep Purple
 	))
-
 /datum/species/elf/dark/get_hairc_list()
 	return sortList(list(
 	"black - oil" = "181a1d",

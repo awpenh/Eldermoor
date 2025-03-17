@@ -28,8 +28,13 @@
 /datum/antagonist/lich/greet()
 	to_chat(owner.current, span_userdanger("The secret of immortality is mine, but this is not enough. A thousand lichdoms have risen and fallen over the eras. Mine will be the one to last."))
 	owner.announce_objectives()
-	..()
+
+/datum/antagonist/lich/proc/finalize_vampire()
+	owner.current.forceMove(pick(GLOB.lich_starts))
 	owner.current.playsound_local(get_turf(owner.current), 'sound/music/lichintro.ogg', 80, FALSE, pressure_affected = FALSE)
+
+/datum/antagonist/lich/proc/move_to_spawnpoint()
+	owner.current.forceMove(pick(GLOB.lich_starts))
 
 /datum/antagonist/lich/proc/skele_look()
 	var/mob/living/carbon/human/L = owner.current
@@ -51,7 +56,7 @@
 	ADD_TRAIT(L, TRAIT_TOXIMMUNE, "[type]")
 	ADD_TRAIT(L, TRAIT_STEELHEARTED, "[type]")
 	ADD_TRAIT(L, TRAIT_NOSLEEP, "[type]")
-	ADD_TRAIT(L, TRAIT_VAMPMANSION, "[type]")
+	ADD_TRAIT(L, TRAIT_LICHLAIR, "[type]")
 	ADD_TRAIT(L, TRAIT_NOMOOD, "[type]")
 	ADD_TRAIT(L, TRAIT_NOLIMBDISABLE, "[type]")
 	ADD_TRAIT(L, TRAIT_SHOCKIMMUNE, "[type]")
@@ -197,3 +202,13 @@
 		possessor.owner.current.forceMove(get_turf(src))
 		possessor.rise_anew()
 		qdel(src)
+//LANDMARKS
+
+/obj/effect/landmark/start/lich
+	name = "Lich"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/lich/Initialize()
+	. = ..()
+	GLOB.lich_starts += loc

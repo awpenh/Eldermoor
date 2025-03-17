@@ -192,6 +192,13 @@
 	check_other_side = TRUE
 	invis_without_trait = TRUE
 
+/obj/structure/fluff/traveltile/lich
+	required_trait = TRAIT_LICHLAIR
+	can_gain_with_sight = TRUE
+	can_gain_by_walking = TRUE
+	check_other_side = TRUE
+	invis_without_trait = TRUE
+
 /obj/structure/fluff/traveltile/inhumen
 	required_trait = TRAIT_INHUMENCAMP
 	can_gain_with_sight = FALSE
@@ -216,6 +223,14 @@
 /obj/structure/fluff/traveltile/vampire
 	aportalid = "vampexit"
 	aportalgoesto = "vampin"
+
+/obj/structure/fluff/traveltile/exit_lich
+	aportalid = "lichin"
+	aportalgoesto = "lichexit"
+
+/obj/structure/fluff/traveltile/lich
+	aportalid = "lichexit"
+	aportalgoesto = "lichin"
 
 /obj/structure/fluff/traveltile/exit_inhumen
 	aportalid = "inhumenin"

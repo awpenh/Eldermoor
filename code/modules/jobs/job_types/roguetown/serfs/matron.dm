@@ -17,12 +17,12 @@
 		"Anakim",
 		"Half-Orc"
 	)
-	tutorial = "You are the Matron of the orphanage, an old strict lady whom oversee the 'wellbeing' of the orphans, you show them your tricks and you'll make them just as good as you one day."
+	tutorial = "You are the Matron, a strict overseer of the orphanage within your late husband's church. By day, you preach virtue; by night, you teach the orphans the skills of your former life, ensuring they survive a world that offers them no mercy."
 	allowed_ages = list(AGE_MIDDLEAGED,AGE_OLD, AGE_IMMORTAL)
 	display_order = JDO_MATRON
 	outfit = /datum/outfit/job/roguetown/matron
 	give_bank_account = 35
-	min_pq = 10
+	min_pq = 0
 	can_have_apprentices = TRUE
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 

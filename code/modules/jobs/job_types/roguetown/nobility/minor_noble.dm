@@ -23,7 +23,7 @@
 	apprentice_name = "Servant"
 	total_positions = 0
 	spawn_positions = 0
-	min_pq = 1
+	min_pq = 0
 	give_bank_account = 60
 
 /datum/outfit/job/roguetown/noble/pre_equip(mob/living/carbon/human/H)

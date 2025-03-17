@@ -1,7 +1,7 @@
 {
-    "map_name": "Vanderlin",
-    "map_path": "map_files/vanderlin",
-    "map_file": "vanderlin.dmm",
+    "map_name": "Eldermoor",
+    "map_path": "map_files/eldermoor",
+    "map_file": "eldermoor.dmm",
 	"traits": [{"Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true}],
 	"minetype": null,
 	"space_empty_levels": 0,

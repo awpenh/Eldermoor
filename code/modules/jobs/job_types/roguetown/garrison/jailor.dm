@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/job/roguetown/jailor
 	cmode_music = 'sound/music/cmode/garrison/CombatJailor.ogg'
 	give_bank_account = 25
-	min_pq = 4
+	min_pq = 0
 
 /datum/outfit/job/roguetown/jailor/pre_equip(mob/living/carbon/human/H)
 	..()

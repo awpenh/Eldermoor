@@ -2,7 +2,7 @@
 	name = "Battle Nun"
 	tutorial = "Battle Nuns are rare warrior-priestesses, wielding faith and steel in defiance of tradition. Unlike their male counterparts, they earn no promised redemption—only relentless trials to prove their worth. Their prayers are spoken through battle, their devotion tested with every strike."
 	allowed_sexes = list(FEMALE)
-	allowed_races = list("Humen")
+	allowed_races = list("Humen", "Half-Elf")
 	outfit = /datum/outfit/job/roguetown/adventurer/battlenun
 	maximum_possible_slots = 1
 	min_pq = 2
@@ -59,7 +59,7 @@
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)

@@ -20,6 +20,7 @@ GLOBAL_LIST_EMPTY(jobspawn_overrides)			//These will take precedence over normal
 
 GLOBAL_LIST_EMPTY(bandit_starts)
 GLOBAL_LIST_EMPTY(admin_warp)
+GLOBAL_LIST_EMPTY(lich_starts)
 GLOBAL_LIST_EMPTY(vlord_starts)
 GLOBAL_LIST_EMPTY(vspawn_starts)
 GLOBAL_LIST_EMPTY(dknight_starts)

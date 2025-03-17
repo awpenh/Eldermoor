@@ -24,7 +24,7 @@
 	selection_color = "#0d6929"
 	outfit = /datum/outfit/job/roguetown/tollkeeper
 	give_bank_account = 45
-	min_pq = 5
+	min_pq = 0
 	cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 
 /datum/outfit/job/roguetown/tollkeeper/pre_equip(mob/living/carbon/human/H)

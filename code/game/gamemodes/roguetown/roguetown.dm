@@ -243,7 +243,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	"Hand",
 	"Steward",
 	"Feldsher",
-	"Town Elder",
+	"Old Woodsman",
 	"Captain",
 	"Archivist",
 	"Merchant",
@@ -326,8 +326,8 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 
 
 /datum/game_mode/chaosmode/proc/pick_aspirants()
-	var/list/possible_jobs_aspirants = list("Consort" ,"Hand" ,"Prince" ,"Captain", "Steward", "Court Magician","Archivist","Town Elder")
-	var/list/possible_jobs_helpers = list("Consort" ,"Hand" ,"Prince" ,"Captain" ,"Steward" ,"Court Magician ","Archivist", "Royal Knight", "Town Elder","Veteran")
+	var/list/possible_jobs_aspirants = list("Consort" ,"Hand" ,"Prince" ,"Captain", "Steward", "Court Magician","Archivist","Old Woodsman")
+	var/list/possible_jobs_helpers = list("Consort" ,"Hand" ,"Prince" ,"Captain" ,"Steward" ,"Court Magician ","Archivist", "Royal Knight", "Old Woodsman","Veteran")
 	var/list/rolesneeded = list("Aspirant","Loyalist","Supporter")
 
 	antag_candidates = get_players_for_role(ROLE_ASPIRANT)
@@ -430,7 +430,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	"Hand",
 	"Steward",
 	"Feldsher",
-	"Town Elder",
+	"Old Woodsman",
 	"Captain",
 	"Archivist",
 	"Merchant",
@@ -487,7 +487,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	"Hand",
 	"Steward",
 	"Feldsher",
-	"Town Elder",
+	"Old Woodsman",
 	"Captain",
 	"Archivist",
 	"Merchant",
@@ -541,7 +541,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	"Hand",
 	"Steward",
 	"Feldsher",
-	"Town Elder",
+	"Old Woodsman",
 	"Captain",
 	"Archivist",
 	"Merchant",
@@ -602,7 +602,7 @@ GLOBAL_LIST_INIT(roguegamemodes, list(
 	"Hand",
 	"Steward",
 	"Feldsher",
-	"Town Elder",
+	"Old Woodsman",
 	"Captain",
 	"Archivist",
 	"Merchant",
